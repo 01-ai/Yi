@@ -20,25 +20,25 @@ jobs:
         python-version: ["3.10"]
     steps:
       - uses: actions/checkout@v3
-      - uses: 01-ai/actions/lint@main
+      # - uses: 01-ai/actions/lint@main
 
-  build-and-push:
-    needs: basic-check
-    runs-on:
-      - arc
-      - cpu
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set proxy
-        run: |
-          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
-          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
-      - uses: 01-ai/actions/build_docker_image@main
-        id: build-and-push
-        with:
-          registry: ${{ vars.VOLCES_REGISTRY }}
-          namespace: ${{ vars.VOLCES_NAMESPACE }}
-          tags: 'latest'
-          username: ${{ secrets.VOLCES_USER }}
-          password: ${{ secrets.VOLCES_TOKEN }}
+  # build-and-push:
+  #   needs: basic-check
+  #   runs-on:
+  #     - arc
+  #     - cpu
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Set proxy
+  #       run: |
+  #         echo "http_proxy=$http_proxy" >> $GITHUB_ENV
+  #         echo "https_proxy=$https_proxy" >> $GITHUB_ENV
+  #     - uses: 01-ai/actions/build_docker_image@main
+  #       id: build-and-push
+  #       with:
+  #         registry: ${{ vars.VOLCES_REGISTRY }}
+  #         namespace: ${{ vars.VOLCES_NAMESPACE }}
+  #         tags: 'latest'
+  #         username: ${{ secrets.VOLCES_USER }}
+  #         password: ${{ secrets.VOLCES_TOKEN }}

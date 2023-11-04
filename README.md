@@ -204,9 +204,9 @@ misinformation, as well as any associated data security concerns.
 ## License
 
 The source code in this repo is licensed under the [Apache 2.0
-license](https://github.com/01-ai/Yi/blob/main/LICENSE). The **Yi** series
-models are fully open for academic research and free commercial usage. All usage
-must be adhered to the [Model License
-Agreement](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
+license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models
+are fully open for academic research and free commercial usage with permission
+via applications. All usage must adhere to the [Model License
+Agreement 2.0](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
 To apply for the official commercial license, please contact us
 ([yi@01.ai](mailto:yi@01.ai)).

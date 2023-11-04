@@ -1,6 +1,6 @@
                     Yi Series Models License Agreement
-                            Version: 1.0
-                    Date of Release: November 1, 2023
+                            Version: 2.0
+                    Date of Release: November 4, 2023
  
 1. Definition
 
@@ -51,13 +51,12 @@ excluding information that has been anonymized.
 “Logo” refers to any trademark, service mark, trade name, domain name, website
 name, or other distinctive branding marks.
  
- 
+
 2. License and License Restrictions
 
 The Licensor hereby grants you a non-exclusive, global, non-transferable,
-non-sub-licensable, revocable, and royalty-free copyright license. You may only
-use the Yi Series Models for non-Commercial Purposes, and you must adhere to the
-following license restrictions:
+non-sub-licensable, revocable, and royalty-free copyright license. You must
+adhere to the following license restrictions:
  
 1) Your use of the Yi Series Models must comply with the Laws and Regulations as
 well as applicable legal requirements of other countries/regions, and respect
@@ -95,9 +94,7 @@ you should contact the Licensor in advance as specified in Section 7 of this
 Agreement named "Updates to the Agreement and Contact Information" and obtain
 written authorization from the Licensor. When you obtain authorization from the
 Licensor to use the Yi Series Models and Derivatives for Commercial Purposes,
-you must comply with the afore-mentioned license restrictions and any other
-additional license restrictions specified by the Licensor at the time of
-granting written authorization.
+you must comply with the afore-mentioned license restrictions.
  
  
 3. Intellectual Property
@@ -170,7 +167,7 @@ the Licensor.
  
  
 6. Effectiveness and Termination of the Agreement
- 
+
 Your use of the Yi Series Models signifies that you have read and agreed to be
 bound by the terms of the Agreement. The Agreement becomes effective from the
 date of your use of the Yi Series Models and will terminate from the date you
@@ -194,8 +191,8 @@ Licensor at yi@01.ai.
 
 
                       Yi系列模型许可协议
-                        版本: 1.0
-                    发布日期: 2023年11月1日
+                        版本: 2.0
+                    发布日期: 2023年11月4日 
  
 1. 定义
 
@@ -239,7 +236,7 @@ Yi-6B、Yi-34B等。
 2. 许可及许可限制
 
 许可方特此授予您非排他性、全球性、不可转让、不可再许可、可撤销、免版税的版权许
-可。您仅可出于非商业用途使用Yi系列模型，并且您必须满足如下许可限制条件：
+可。您必须满足如下许可限制条件：
  
 1) 您对Yi系列模型的使用应遵守法律法规以及其他国家/地区适用的法律要求、尊重社会公
 德和伦理道德。包括但不限于您不得将Yi系列模型用作危害国家安全、宣扬恐怖主义、极端
@@ -262,8 +259,7 @@ Yi-6B、Yi-34B等。
  
 如果您计划将 Yi系列模型及模型衍生品用作商业用途，您应当事先通过第7款“协议更新及
 联系方式”中的方式联系许可方进行登记并获得许可方的书面授权。若您取得许可方授权将
-Yi系列模型及模型衍生品用作商业用途时，您应满足许可方上述许可限制条件以及书面授权
-时许可方提出的任何其它许可限制条件。
+Yi系列模型及模型衍生品用作商业用途时，您应满足许可方上述许可限制条件。
  
  
 3. 知识产权
