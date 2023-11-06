@@ -107,9 +107,12 @@ By default the model weights and tokenizer will be downloaded from
 can also download them manually from the following places:
 
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
+- [WiseModel](https://wisemodel.cn/models) (Search for `Yi`)
 - Mirror site (remember to extract the content with `tar`)
   - [Yi-6B.tar](https://storage.lingyiwanwu.com/yi/models/Yi-6B.tar)
+  - [Yi-6B-200K.tar](https://storage.lingyiwanwu.com/yi/models/Yi-6B-200K.tar)
   - [Yi-34B.tar](https://storage.lingyiwanwu.com/yi/models/Yi-34B.tar)
+  - [Yi-34B-200K.tar](https://storage.lingyiwanwu.com/yi/models/Yi-34B-200K.tar)
 
 ### 3. Examples
 
