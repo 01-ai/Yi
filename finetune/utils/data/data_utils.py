@@ -452,7 +452,7 @@ class MiniDataset:
         self.max_size = max_size
         self.small_batch_size = small_batch_size
 
-    def seperate(self):
+    def separate(self):
         small_dataset = []
         for large_batch in self.dataset:
             if type(large_batch) == list or type(large_batch) == tuple:
@@ -483,7 +483,7 @@ class MiniDataset:
         if len(self.dataset) < self.max_size:
             self.dataset.append(data)
             if len(self.dataset) == self.max_size:
-                return self.seperate()
+                return self.separate()
             else:
                 return None
         else:
