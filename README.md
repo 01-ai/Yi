@@ -26,7 +26,7 @@
 
 The **Yi** series models are large language models trained from scratch by
 developers at [01.AI](https://01.ai/). The first public release contains two
-bilingual(English/Chinese) base models with the parameter sizes of 6B and 34B.
+bilingual (English/Chinese) base models with the parameter sizes of 6B and 34B.
 Both of them are trained with 4K sequence length and can be extended to 32K
 during inference time.
 
