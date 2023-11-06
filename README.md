@@ -110,7 +110,7 @@ can also download them manually from the following places:
 
 ### 3. Examples
 
-#### 3.1 Try out the base model
+#### 3.1 Use the base model
 
 ```bash
 python demo/text_generation.py
