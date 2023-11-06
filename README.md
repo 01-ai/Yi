@@ -26,7 +26,7 @@
 
 The **Yi** series models are large language models trained from scratch by
 developers at [01.AI](https://01.ai/). The first public release contains two
-bilingual(English/Chinese) base models with the parameter sizes of 6B and 34B.
+bilingual (English/Chinese) base models with the parameter sizes of 6B and 34B.
 Both of them are trained with 4K sequence length and can be extended to 32K
 during inference time.
 
@@ -110,7 +110,7 @@ can also download them manually from the following places:
 
 ### 3. Examples
 
-#### 3.1 Try out the base model
+#### 3.1 Use the base model
 
 ```bash
 python demo/text_generation.py
@@ -192,14 +192,7 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 
 ## Disclaimer
 
-Although we use data compliance checking algorithms during the training process
-to ensure the compliance of the trained model to the best of our ability, due to
-the complexity of the data and the diversity of language model usage scenarios,
-we cannot guarantee that the model will generate correct and reasonable output
-in all scenarios. Please be aware that there is still a risk of the model
-producing problematic outputs. We will not be responsible for any risks and
-issues resulting from misuse, misguidance, illegal usage, and related
-misinformation, as well as any associated data security concerns.
+We use data compliance checking algorithms during the training process, to ensure the compliance of the trained model to the best of our ability. Due to complex data and the diversity of language model usage scenarios, we cannot guarantee that the model will generate correct, and reasonable output in all scenarios. Please be aware that there is still a risk of the model producing problematic outputs. We will not be responsible for any risks and issues resulting from misuse, misguidance, illegal usage, and related misinformation, as well as any associated data security concerns.
 
 ## License
 
