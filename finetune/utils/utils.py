@@ -8,7 +8,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from deepspeed.runtime.zero.partition_parameters import ZeroParamStatus
-from transformers import AutoTokenizer, set_seed
+from transformers import AutoTokenizer
 
 
 def print_rank_0(msg, rank=0):
@@ -97,15 +97,6 @@ def save_hf_format(model, tokenizer, args, sub_folder=""):
     copy(os.path.join(source, "configuration_yi.py"), target)
     copy(os.path.join(source, "modeling_yi.py"), target)
     copy(os.path.join(source, "tokenization_yi.py"), target)
-
-
-def set_random_seed(seed):
-    if seed is not None:
-        set_seed(seed)
-        random.seed(seed)
-        np.random.seed(seed)
-        torch.manual_seed(seed)
-        torch.cuda.manual_seed_all(seed)
 
 
 def get_all_reduce_mean(tensor):
