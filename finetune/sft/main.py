@@ -20,6 +20,7 @@ sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir))
 )
 from constant import SFT
+from transformers import set_seed
 from utils.data.data_utils import create_prompt_dataset
 from utils.ds_utils import get_train_ds_config
 from utils.model.model_utils import create_hf_model
@@ -36,7 +37,6 @@ from utils.utils import (
     load_hf_tokenizer,
     print_rank_0,
     save_hf_format,
-    set_random_seed,
     to_device,
 )
 
@@ -244,7 +244,7 @@ def main():
     )
 
     # If passed along, set the training seed now.
-    set_random_seed(args.seed)
+    set_seed(args.seed)
     torch.distributed.barrier()
 
     # load_hf_tokenizer will get the correct tokenizer and set padding tokens based on the model family
