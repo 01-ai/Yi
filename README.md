@@ -137,7 +137,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34B", device_map="auto", torch_dtype="auto", trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34B", trust_remote_code=True)
 inputs = tokenizer("There's a place where time stands still. A place of breath taking wonder, but also", return_tensors="pt")
-outputs = model.generate(inputs.input_ids.cuda(), max_new_tokens=256)
+max_length = 256  
+
+outputs = model.generate(
+    inputs.input_ids.cuda(),
+    max_length=max_length,
+    eos_token_id=tokenizer.eos_token_id 
+)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 
