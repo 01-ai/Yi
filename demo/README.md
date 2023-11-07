@@ -22,4 +22,5 @@ torchrun --nproc_per_node 2 \
     --model 01-ai/Yi-6B \
     --max-tokens 512 \
     --streaming
+
 ```
