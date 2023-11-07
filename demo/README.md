@@ -7,6 +7,7 @@ python text_generation.py \
     --model 01-ai/Yi-6B \
     --tokenizer 01-ai/Yi-6B \
     --max-tokens 512 \
+    --eos-token $'\n' \
     --streaming
 ```
 
@@ -21,5 +22,7 @@ torchrun --nproc_per_node 2 \
     text_generation_tp.py \
     --model 01-ai/Yi-6B \
     --max-tokens 512 \
+    --eos-token $'\n' \
     --streaming
+
 ```

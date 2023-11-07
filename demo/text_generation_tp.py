@@ -41,6 +41,12 @@ def parse_inputs():
         default="Let me tell you an interesting story about cat Tom and mouse Jerry,",
         help="The prompt to start with",
     )
+    parser.add_argument(
+        "--eos-token",
+        type=str,
+        default="<|endoftext|>",
+        help="End of sentence token",
+    )
     args = parser.parse_args()
     return args
 
@@ -93,6 +99,7 @@ def main(args):
         inputs.input_ids.cuda(),
         max_new_tokens=args.max_tokens,
         streamer=streamer,
+        eos_token_id=tokenizer.convert_tokens_to_ids(args.eos_token),
         do_sample=True,
     )
     if distributed.get_rank() == 0 and streamer is None:
