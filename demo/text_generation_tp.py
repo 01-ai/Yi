@@ -48,10 +48,10 @@ def parse_inputs():
         help="End of sentence token",
     )
     parser.add_argument(
-        "--eos-token",
-        type=str,
-        default="<|endoftext|>",
-        help="End of sentence token",
+        "--local_rank",
+        type=int,
+        default=0,
+        help="local rank for deepspeed",
     )
     args = parser.parse_args()
     return args
