@@ -63,6 +63,11 @@ def main(args):
         streamer=streamer,
         eos_token_id=tokenizer.convert_tokens_to_ids(args.eos_token),
         do_sample=True,
+        repetition_penalty=1.3,
+        no_repeat_ngram_size=5,
+        temperature=0.7,
+        top_k=40,
+        top_p=0.8,
     )
     if streamer is None:
         print(tokenizer.decode(outputs[0], skip_special_tokens=True))
