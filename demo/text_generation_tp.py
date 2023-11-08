@@ -47,6 +47,12 @@ def parse_inputs():
         default="<|endoftext|>",
         help="End of sentence token",
     )
+    parser.add_argument(
+        "--eos-token",
+        type=str,
+        default="<|endoftext|>",
+        help="End of sentence token",
+    )
     args = parser.parse_args()
     return args
 
