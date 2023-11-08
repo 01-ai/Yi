@@ -13,7 +13,7 @@ python text_generation.py \
 
 You can also provide an extra `--prompt` argument to try some other prompts.
 
-When dealing with extreme long input sequence, you may need multiple GPU devices and to enable tensor parallelism acceleration during inference to avoid insufficient memory error.
+When dealing with extremely long input sequences, you may need multiple GPU devices and to enable tensor parallelism acceleration during inference to avoid insufficient memory error.
 
 To run text generation task using tensor parallelism acceleration with 2 GPU devices:
 
