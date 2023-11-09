@@ -36,7 +36,7 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
             and os.path.isfile(chat_path + "/data/eval.json")
         ):
             raise RuntimeError(
-                f"Please check both the train.json and eval.json files in your local directory."
+                "Please check both the train.json and eval.json files in your local directory."
             )
         return raw_datasets.LocalJsonFileDataset(
             output_path, seed, local_rank, dataset_name, chat_path
@@ -52,14 +52,14 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
             and os.path.isfile(chat_path + "/data/eval.jsonl")
         ):
             raise RuntimeError(
-                f"Please check both the train.json and eval.json files in your local directory."
+                "Please check both the train.json and eval.json files in your local directory."
             )
         return raw_datasets.YiDataset(
             output_path, seed, local_rank, dataset_name, chat_path
         )
     else:
         raise RuntimeError(
-            f"We do not have configs for dataset {dataset_name}, but you can add it by yourself in raw_datasets.py."
+            "We do not have configs for dataset {dataset_name}, but you can add it by yourself in raw_datasets.py."
         )
 
 
