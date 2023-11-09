@@ -59,7 +59,7 @@ def get_raw_dataset(dataset_name, output_path, seed, local_rank):
         )
     else:
         raise RuntimeError(
-            "We do not have configs for dataset {dataset_name}, but you can add it by yourself in raw_datasets.py."
+            f"We do not have configs for dataset {dataset_name}, but you can add it by yourself in raw_datasets.py."
         )
 
 
