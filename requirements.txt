@@ -7,3 +7,4 @@ datasets==2.14.5
 optimum==1.13.2
 exllama==0.1.0
 autoawq
+einops==0.7.0

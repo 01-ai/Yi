@@ -142,7 +142,7 @@ max_length = 256
 outputs = model.generate(
     inputs.input_ids.cuda(),
     max_length=max_length,
-    eos_token_id=tokenizer.eos_token_id
+    eos_token_id=tokenizer.eos_token_id,
     do_sample=True,
     repetition_penalty=1.3,
     no_repeat_ngram_size=5,

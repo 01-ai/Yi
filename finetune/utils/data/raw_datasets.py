@@ -134,7 +134,7 @@ class LocalJsonFileDataset(PromptRawDataset):
 class YiDataset(PromptRawDataset):
     def __init__(self, output_path, seed, local_rank, dataset_name, chat_path):
         super().__init__(output_path, seed, local_rank, dataset_name)
-        print("chat path is {}".format(chat_path))
+        print("data path is {}".format(chat_path))
         self.dataset_name = "yi"
         self.dataset_name_clean = "yi"
         self.raw_datasets = load_dataset(
@@ -153,6 +153,11 @@ class YiDataset(PromptRawDataset):
     def get_eval_data(self):
         if self.raw_datasets["eval"] is not None:
             return self.raw_datasets["eval"]
+        return None
+    
+    def get_prompt(self, sample):
+        if sample["prompt"] is not None:
+            return " " + sample["prompt"]
         return None
 
     def get_prompt_and_chosen(self, sample):
