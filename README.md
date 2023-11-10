@@ -188,8 +188,9 @@ bash finetune/scripts/run_eval.sh
 For more advanced usage like fine-tuning based on your custom data, please refer
 the [doc](https://github.com/01-ai/Yi/tree/main/finetune).
 
-<!-- #### 3.3 Quantization
+#### 3.3 Quantization
 
+##### GPT-Q
 ```bash
 python quantization/gptq/quant_autogptq.py \
   --model /base_model                      \
@@ -205,7 +206,25 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-For a more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq) -->
+For a more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq)
+
+##### AWQ
+```bash
+python quantization/awq/quant_autoawq.py \
+  --model /base_model                      \
+  --output_dir /quantized_model            \
+  --trust_remote_code
+```
+
+Once finished, you can then evaluate the resulted model as follows:
+
+```bash
+python quantization/awq/eval_quantized_model.py \
+  --model /quantized_model                       \
+  --trust_remote_code
+```
+
+For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
 
 ## Disclaimer
 
