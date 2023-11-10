@@ -15,67 +15,37 @@ concurrency:
 jobs:
   basic-check:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.10"]
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install linting libraries
-        run: pip install autoflake isort black
-      - name: Autoflake
-        run: |
-          output="$(autoflake . --remove-all-unused-imports --remove-unused-variables --expand-star-imports --ignore-init-module-imports -r)"
-          if [[ -n $output ]]
-          then
-          printf "%s\n" "$output"
-          exit 1
-          else
-          exit 0
-          fi
-      - name: Isort
-        run: isort . --profile black --check-only --diff
-      - name: Black
-        run: black . --diff --color --check
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main  
+      - name: Basic check
+        uses: ./actions/lint
 
   build-and-push:
+    runs-on:
+      - cpu
+      - arc
     needs: basic-check
-    runs-on: ubuntu-latest
     steps:
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
+      - uses: actions/checkout@v3
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main
+      - name: Build Docker Image
+        uses: ./actions/build_docker_image
         with:
-          root-reserve-mb: 512
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-      - name: Extract docker meta
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: |
-            ghcr.io/${{ github.repository }}
-          tags: |
-            # set latest tag for default branch
-            type=raw,value=latest,enable={{is_default_branch}}
-            # type=raw,value=FIXME,enable={{is_default_branch}}
-            # pull request event
-            type=ref,event=pr
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          registry: ${{ secrets.DEFAULT_REGISTRY }}
+          namespace: ci
+          tags: latest
+          username: ${{ secrets.DEFAULT_REGISTRY_USER }}
+          password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
