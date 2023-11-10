@@ -1,10 +1,8 @@
 import json
 import os
-import random
 from shutil import copy
 
 import deepspeed
-import numpy as np
 import torch
 import torch.nn as nn
 from deepspeed.runtime.zero.partition_parameters import ZeroParamStatus
