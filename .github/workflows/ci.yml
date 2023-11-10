@@ -20,7 +20,26 @@ jobs:
         python-version: ["3.10"]
     steps:
       - uses: actions/checkout@v3
-      # - uses: 01-ai/actions/lint@main
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install linting libraries
+        run: pip install autoflake isort black
+      - name: Autoflake
+        run: |
+          output="$(autoflake . --remove-all-unused-imports --remove-unused-variables --expand-star-imports --ignore-init-module-imports -r)"
+          if [[ -n $output ]]
+          then
+          printf "%s\n" "$output"
+          exit 1
+          else
+          exit 0
+          fi
+      - name: Isort
+        run: isort . --profile black --check-only --diff
+      - name: Black
+        run: black . --diff --color --check
 
   # build-and-push:
   #   needs: basic-check
