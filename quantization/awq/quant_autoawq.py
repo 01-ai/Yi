@@ -1,5 +1,6 @@
 import argparse
 import logging
+
 from awq import AutoAWQForCausalLM
 from transformers import AutoTokenizer
 
