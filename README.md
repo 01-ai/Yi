@@ -32,6 +32,7 @@ during inference time.
 
 ## News
 
+- 🔥 **2023/11/08**: Invited test of Yi-34B chat model. ([Zh](https://cn.mikecrm.com/gnEZjiQ),[En](https://cn.mikecrm.com/l91ODJf))
 - 🎯 **2023/11/05**: The base model of `Yi-6B-200K` and `Yi-34B-200K` with 200K context length.
 - 🎯 **2023/11/02**: The base model of `Yi-6B` and `Yi-34B`.
 
