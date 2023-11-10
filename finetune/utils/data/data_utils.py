@@ -130,7 +130,7 @@ class PromptDataset(Dataset):
             return {
                 "input_ids": self.chosen_dataset[idx]["input_ids"],
                 "attention_mask": self.chosen_dataset[idx]["attention_mask"],
-                "labels": self.chosen_dataset[idx]["labels"]
+                "labels": self.chosen_dataset[idx]["labels"],
             }
 
 
@@ -148,7 +148,9 @@ def create_dataset_split(
     if train_phase == SFT:
         for i, tmp_data in enumerate(current_dataset):
             # tokenize the text
-            chosen_sentence = raw_dataset.get_prompt_and_chosen(tmp_data)  # the accept response
+            chosen_sentence = raw_dataset.get_prompt_and_chosen(
+                tmp_data
+            )  # the accept response
             prompt_sentence = raw_dataset.get_prompt(tmp_data)
             if chosen_sentence is not None and prompt_sentence is not None:
                 chosen_sentence += end_of_conversation_token
@@ -160,7 +162,9 @@ def create_dataset_split(
                     return_tensors="pt",
                 )
                 chosen_token["input_ids"] = chosen_token["input_ids"].squeeze(0)
-                chosen_token["attention_mask"] = chosen_token["attention_mask"].squeeze(0)
+                chosen_token["attention_mask"] = chosen_token["attention_mask"].squeeze(
+                    0
+                )
                 prompt_token = tokenizer(prompt_sentence, add_special_tokens=False)
                 prompt_token_len = min(max_seq_len, len(prompt_token["input_ids"]))
                 chosen_token["labels"] = chosen_token["input_ids"].clone()
