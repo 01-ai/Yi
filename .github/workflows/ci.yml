@@ -26,6 +26,14 @@ jobs:
           ref: main  
       - name: Basic check
         uses: ./actions/lint
+      # https://github.com/actions/checkout/issues/692#issuecomment-1502203573
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main  
 
   build-and-push:
     runs-on:
