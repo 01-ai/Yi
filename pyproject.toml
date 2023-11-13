@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "yi-models"
+version = "0.1.0-dev"
+description = ""
+authors = ["Yi Team <yi@01.ai>"]
+license = "Apache 2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytorch = "2.1.0"
+pytorch-cuda = "11.8"
+deepspeed = "0.11.1"
+transformers = "4.34.0"
+sentencepiece = "0.1.99"
+accelerate = "0.24.1"
+datasets = "2.14.5"
+optimum = "1.13.2"
+einops = "0.7.0"
+exllama = {version = "0.1.0", source = "pypi"}
+auto-gptq = {version = "0.4.2", source = "pypi"}
+flash-attn = {version = "2.3.3", source = "pypi"}
+
+[tool.conda-lock]
+channels = ["conda-forge", "pytorch", "nvidia", "nodefaults"]
+platforms = ["linux-64"]
+
+[tool.conda-lock.dependencies]
+pip = ">=23.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

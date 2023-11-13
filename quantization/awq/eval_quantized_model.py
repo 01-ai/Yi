@@ -1,5 +1,5 @@
-from transformers import AutoTokenizer
 from awq import AutoAWQForCausalLM
+from transformers import AutoTokenizer
 
 
 def run_quantization(args):
