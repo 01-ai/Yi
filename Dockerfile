@@ -42,8 +42,8 @@ CMD ["/bin/bash"]
 # Install dependencies
 
 WORKDIR /yi
-COPY ./env.yml .
-RUN micromamba create -y -n ${ENV_NAME} -f env.yml && \
+COPY ./pyproject.toml .
+RUN micromamba create -y -n ${ENV_NAME} -f pyproject.yml && \
   micromamba clean --all --yes
 
 COPY . .

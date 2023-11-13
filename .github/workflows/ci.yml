@@ -44,9 +44,9 @@ jobs:
           field: "tool.poetry.version"
       - uses: rickstaa/action-create-tag@v1
         id: "tag_create"
+        if: (github.ref_name == github.event.repository.default_branch) && !contains(steps.read_version.outputs.value, '-')
         with:
           tag: ${{ steps.read_version.outputs.value }}
-          tag_exists_error: ${{ !contains(steps.read_version.outputs.value, '-') }}
 
   build-and-push:
     runs-on:
