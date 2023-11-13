@@ -43,7 +43,7 @@ CMD ["/bin/bash"]
 
 WORKDIR /yi
 COPY ./pyproject.toml .
-RUN micromamba create -y -n ${ENV_NAME} -f pyproject.yml && \
+RUN micromamba create -y -n ${ENV_NAME} -f pyproject.toml && \
   micromamba clean --all --yes
 
 COPY . .
