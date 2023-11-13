@@ -42,8 +42,8 @@ CMD ["/bin/bash"]
 # Install dependencies
 
 WORKDIR /yi
-COPY ./pyproject.toml .
-RUN micromamba create -y -n ${ENV_NAME} -f pyproject.toml && \
+COPY ./conda-lock.yml .
+RUN micromamba create -y -n ${ENV_NAME} -f conda-lock.yml && \
   micromamba clean --all --yes
 
 COPY . .
