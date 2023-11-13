@@ -15,30 +15,65 @@ concurrency:
 jobs:
   basic-check:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.10"]
+    outputs:
+      tag: ${{ steps.read_version.outputs.value }}
     steps:
       - uses: actions/checkout@v3
-      # - uses: 01-ai/actions/lint@main
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main  
+      - name: Basic check
+        uses: ./actions/lint
+      # https://github.com/actions/checkout/issues/692#issuecomment-1502203573
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main  
+      # try to create a tag
+      - uses: SebRollen/toml-action@v1.0.2
+        id: read_version
+        with:
+          file: "pyproject.toml"
+          field: "tool.poetry.version"
+      - uses: rickstaa/action-create-tag@v1
+        id: "tag_create"
+        if: (github.ref_name == github.event.repository.default_branch) && !contains(steps.read_version.outputs.value, '-')
+        with:
+          tag: ${{ steps.read_version.outputs.value }}
 
-  # build-and-push:
-  #   needs: basic-check
-  #   runs-on:
-  #     - arc
-  #     - cpu
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #     - name: Set proxy
-  #       run: |
-  #         echo "http_proxy=$http_proxy" >> $GITHUB_ENV
-  #         echo "https_proxy=$https_proxy" >> $GITHUB_ENV
-  #     - uses: 01-ai/actions/build_docker_image@main
-  #       id: build-and-push
-  #       with:
-  #         registry: ${{ vars.VOLCES_REGISTRY }}
-  #         namespace: ${{ vars.VOLCES_NAMESPACE }}
-  #         tags: 'latest'
-  #         username: ${{ secrets.VOLCES_USER }}
-  #         password: ${{ secrets.VOLCES_TOKEN }}
+  build-and-push:
+    runs-on:
+      - public
+    needs: basic-check
+    outputs:
+      primary_tag: ${{ steps.build-and-push.outputs.primary_tag }}
+      matrix: ${{ steps.build-and-push.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main
+      - name: Set proxy
+        run: |
+          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
+          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
+      - name: Build Docker Image
+        id: build-and-push
+        uses: ./actions/build_docker_image
+        with:
+          registry: ${{ secrets.DEFAULT_REGISTRY }}
+          namespace: ci
+          tags: ${{ needs.basic-check.outputs.tag }}
+          username: ${{ secrets.DEFAULT_REGISTRY_USER }}
+          password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
