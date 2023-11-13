@@ -133,7 +133,7 @@ jobs:
           src_tag: ${{ steps.meta.outputs.src_tag }}
           src_username: ${{ secrets.DEFAULT_REGISTRY_USER }}
           src_password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
-          dest_registry: ghcr.io
-          dest_namespace: 01-ai
-          dest_username: ${{ github.actor }}
-          dest_password: ${{ secrets.GITHUB_TOKEN }}
+          dest_registry: ${{ secrets.PUBLIC_REGISTRY }}
+          dest_namespace: ci
+          dest_username: ${{ secrets.PUBLIC_REGISTRY_USER }}
+          dest_password: ${{ secrets.PUBLIC_REGISTRY_PASSWORD }}
