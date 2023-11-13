@@ -41,10 +41,6 @@ CMD ["/bin/bash"]
 
 # Install dependencies
 
-RUN echo ${HTTP_PROXY}
-RUN echo ${HTTPS_PROXY}
-RUN echo ${NO_PROXY}
-
 WORKDIR /yi
 COPY ./conda-lock.yml .
 RUN micromamba create -y -n ${ENV_NAME} -f conda-lock.yml && \

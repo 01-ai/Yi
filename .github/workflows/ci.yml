@@ -61,6 +61,10 @@ jobs:
           token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
           path: actions
           ref: main
+      - name: Set proxy
+        run: |
+          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
+          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
       - name: Build Docker Image
         uses: ./actions/build_docker_image
         with:
