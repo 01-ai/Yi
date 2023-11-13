@@ -3,8 +3,6 @@ ARG CUDA_VERSION="11.8.0"
 FROM mambaorg/micromamba:1.5.1 as micromamba
 FROM ${REGISTRY}/nvidia/cuda:${CUDA_VERSION}-devel-ubuntu22.04 as base
 
-RUN env | grep -i _PROXY
-
 #####
 # Setup user & common tools
 #####
@@ -42,6 +40,10 @@ ENTRYPOINT ["/usr/local/bin/_entrypoint.sh"]
 CMD ["/bin/bash"]
 
 # Install dependencies
+
+RUN echo ${HTTP_PROXY}
+RUN echo ${HTTPS_PROXY}
+RUN echo ${NO_PROXY}
 
 WORKDIR /yi
 COPY ./conda-lock.yml .
