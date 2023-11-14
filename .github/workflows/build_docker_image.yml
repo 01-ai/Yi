@@ -37,6 +37,13 @@ jobs:
         with:
           tag: ${{ steps.read_version.outputs.value }}
       # build & push docker image
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main
       - name: Set proxy
         run: |
           echo "http_proxy=$http_proxy" >> $GITHUB_ENV
