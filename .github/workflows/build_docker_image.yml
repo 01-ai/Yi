@@ -23,6 +23,8 @@ jobs:
   build-docker-image:
     needs: authorize
     runs-on: public
+    outputs:
+      matrix: ${{ steps.build-and-push.outputs.matrix }}
     steps:
       - uses: actions/checkout@v3
       # try to create a tag
