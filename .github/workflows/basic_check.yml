@@ -1,0 +1,39 @@
+name: Basic Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  basic-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install linting libraries
+        run: pip install autoflake isort black
+      - name: Autoflake
+        run: |
+          output="$(autoflake . --remove-all-unused-imports --remove-unused-variables --expand-star-imports --ignore-init-module-imports -r)"
+          if [[ -n $output ]]
+          then
+          printf "%s\n" "$output"
+          exit 1
+          else
+          exit 0
+          fi
+      - name: Isort
+        run: isort . --profile black --check-only --diff
+      - name: Black
+        run: black . --diff --color --check
