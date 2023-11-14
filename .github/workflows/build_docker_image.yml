@@ -57,3 +57,12 @@ jobs:
           tags: ${{ steps.read_version.outputs.value }}
           username: ${{ secrets.DEFAULT_REGISTRY_USER }}
           password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
+
+  sync-docker-images-to-public-registry:
+    needs: build-docker-image
+    strategy:
+      matrix: ${{ fromJSON(needs.build-docker-image.outputs.matrix) }}
+    runs-on: public
+    steps:
+      - id: meta
+        run: true
