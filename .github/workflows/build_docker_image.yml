@@ -68,6 +68,13 @@ jobs:
         run: |
             echo "src_path=$(echo '${{ matrix.tag }}' | cut -d '/' -f3- | cut -d ':' -f1 )" >> "$GITHUB_OUTPUT"
             echo "src_tag=$(echo '${{ matrix.tag }}' | cut -d ':' -f2 )" >> "$GITHUB_OUTPUT"
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main
       - uses: ./actions/sync_docker_image
         with:
             src_registry: ${{ secrets.DEFAULT_REGISTRY }}
