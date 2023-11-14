@@ -94,7 +94,7 @@ Note that the `latest` tag always points to the latest code in the `main`
 branch. To test a stable version, please replace it with a specific
 [tag](https://github.com/01-ai/Yi/tags).
 
-If you prefer trying out with your local development environment. First, create
+If you prefer to try out with your local development environment. First, create
 a virtual environment and clone this repo. Then install the dependencies with
 `pip install -r requirements.txt`. For the best performance, we recommend you
 also install the latest version (`>=2.3.3`) of
@@ -102,7 +102,7 @@ also install the latest version (`>=2.3.3`) of
 
 ### 2. Download the model (optional)
 
-By default the model weights and tokenizer will be downloaded from
+By default, the model weights and tokenizer will be downloaded from
 [HuggingFace](https://huggingface.co/01-ai) automatically in the next step. You
 can also download them manually from the following places:
 
@@ -170,7 +170,7 @@ The Arctic is a place of great beauty. The ice and snow are a
 
 </details>
 
-For more advanced usage, please refer the
+For more advanced usage, please refer to the
 [doc](https://github.com/01-ai/Yi/tree/main/demo).
 
 #### 3.2 Finetuning from the base model:
@@ -179,8 +179,7 @@ For more advanced usage, please refer the
 bash finetune/scripts/run_sft_Yi_6b.sh
 ```
 
-Once finished, you can compare the finetuned model and the base model with the
-following command:
+Once finished, you can compare the finetuned model and the base model with the following command:
 
 ```bash
 bash finetune/scripts/run_eval.sh
@@ -199,7 +198,7 @@ python quantization/gptq/quant_autogptq.py \
   --trust_remote_code
 ```
 
-Once finished, you can then evaluate the resulted model as follows:
+Once finished, you can then evaluate the resulting model as follows:
 
 ```bash
 python quantization/gptq/eval_quantized_model.py \
@@ -207,7 +206,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq)
+For a more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq)
 
 ##### AWQ
 ```bash
@@ -226,7 +225,6 @@ python quantization/awq/eval_quantized_model.py \
 ```
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
-
 
 ## Disclaimer
 
