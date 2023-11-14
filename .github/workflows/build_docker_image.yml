@@ -41,12 +41,14 @@ jobs:
         run: |
           echo "http_proxy=$http_proxy" >> $GITHUB_ENV
           echo "https_proxy=$https_proxy" >> $GITHUB_ENV
+          echo "no_proxy=$no_proxy" >> $GITHUB_ENV
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
           driver-opts: |
             env.http_proxy=${{ env.http_proxy }}
             env.https_proxy=${{ env.http_proxy }}
+            env.no_proxy=${{ env.no_proxy }}
           buildkitd-flags: --debug
       - name: Extract docker meta
         id: meta
@@ -95,6 +97,7 @@ jobs:
             REGISTRY=${{ secrets.DEFAULT_REGISTRY }}/ci
             HTTP_PROXY=${{ env.http_proxy }}
             HTTPS_PROXY=${{ env.https_proxy }}
+            NO_PROXY=${{ env.no_proxy }}
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
