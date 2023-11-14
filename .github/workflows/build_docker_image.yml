@@ -1,0 +1,59 @@
+name: Build Docker Image
+
+on:
+  push:
+    branches:
+      - main
+  pull_request_target:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  authorize:
+    environment:
+      ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
+    runs-on: ubuntu-latest
+    steps:
+      - run: true
+
+  build-docker-image:
+    needs: authorize
+    runs-on: public
+    steps:
+      - uses: actions/checkout@v3
+      # try to create a tag
+      - uses: SebRollen/toml-action@v1.0.2
+        id: read_version
+        with:
+          file: "pyproject.toml"
+          field: "tool.poetry.version"
+      - uses: rickstaa/action-create-tag@v1
+        id: "tag_create"
+        if: (github.ref_name == github.event.repository.default_branch) && !contains(steps.read_version.outputs.value, '-')
+        with:
+          tag: ${{ steps.read_version.outputs.value }}
+      # build & push docker image
+      - name: Checkout Actions 
+        uses: actions/checkout@v3 
+        with: 
+          repository: 01-ai/actions
+          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
+          path: actions
+          ref: main
+      - name: Set proxy
+        run: |
+          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
+          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
+      - name: Build Docker Image
+        id: build-and-push
+        uses: ./actions/build_docker_image
+        with:
+          registry: ${{ secrets.DEFAULT_REGISTRY }}
+          namespace: ci
+          tags: ${{ steps.read_version.outputs.value }}
+          username: ${{ secrets.DEFAULT_REGISTRY_USER }}
+          password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}

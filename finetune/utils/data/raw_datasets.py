@@ -154,7 +154,7 @@ class YiDataset(PromptRawDataset):
         if self.raw_datasets["eval"] is not None:
             return self.raw_datasets["eval"]
         return None
-    
+
     def get_prompt(self, sample):
         if sample["prompt"] is not None:
             return " " + sample["prompt"]
