@@ -23,10 +23,7 @@ jobs:
   build-docker-image:
     needs: authorize
     runs-on: public
-    outputs:
-      matrix: ${{ steps.build-and-push.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v3
       # try to create a tag
       - uses: SebRollen/toml-action@v1.0.2
         id: read_version
@@ -39,53 +36,62 @@ jobs:
         with:
           tag: ${{ steps.read_version.outputs.value }}
       # build & push docker image
-      - name: Checkout Actions 
-        uses: actions/checkout@v3 
-        with: 
-          repository: 01-ai/actions
-          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
-          path: actions
-          ref: main
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Extract docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            ${{ secrets.DEFAULT_REGISTRY }}/ci/${{ github.repository }}
+            ${{ secrets.PUBLIC_REGISTRY }}/ci/${{ github.repository }}
+            ghcr.io/${{ github.repository }}
+          tags: |
+            # set latest tag for default branch
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=raw,value=${{ steps.read_version.outputs.value }},enable={{is_default_branch}}
+            # pull request event
+            type=ref,event=pr
+      - name: Extract more docker meta
+        id: more-meta
+        shell: bash
+        run: |
+          PRIMARY_TAG=$(echo '${{ steps.meta.outputs.tags }}' | head -n 1)
+          echo "PRIMARY_TAG=$PRIMARY_TAG" >> "$GITHUB_OUTPUT"
+          echo "PRIMARY_TAG_SHORT=$(echo $PRIMARY_TAG | cut -d ':' -f1)" >> "$GITHUB_OUTPUT"
+      - name: Login to default container registry
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ secrets.DEFAULT_REGISTRY }}
+          username: ${{ secrets.DEFAULT_REGISTRY_USER }}
+          password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
+      - name: Login to public container registry
+        uses: docker/login-action@v2
+        with:
+          registry: ${{ secrets.PUBLIC_REGISTRY }}
+          username: ${{ secrets.PUBLIC_REGISTRY_USER }}
+          password: ${{ secrets.PUBLIC_REGISTRY_PASSWORD }}
+      - name: Login to ghcr.io
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Set proxy
         run: |
           echo "http_proxy=$http_proxy" >> $GITHUB_ENV
           echo "https_proxy=$https_proxy" >> $GITHUB_ENV
-      - name: Build Docker Image
-        id: build-and-push
-        uses: ./actions/build_docker_image
+      - name: Build and push
+        id: build-image
+        uses: docker/build-push-action@v5
         with:
-          registry: ${{ secrets.DEFAULT_REGISTRY }}
-          namespace: ci
-          tags: ${{ steps.read_version.outputs.value }}
-          username: ${{ secrets.DEFAULT_REGISTRY_USER }}
-          password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
-
-  sync-docker-images-to-public-registry:
-    needs: build-docker-image
-    strategy:
-      matrix: ${{ fromJSON(needs.build-docker-image.outputs.matrix) }}
-    runs-on: public
-    steps:
-      - id: meta
-        run: |
-            echo "src_path=$(echo '${{ matrix.tag }}' | cut -d '/' -f3- | cut -d ':' -f1 )" >> "$GITHUB_OUTPUT"
-            echo "src_tag=$(echo '${{ matrix.tag }}' | cut -d ':' -f2 )" >> "$GITHUB_OUTPUT"
-      - name: Checkout Actions 
-        uses: actions/checkout@v3 
-        with: 
-          repository: 01-ai/actions
-          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
-          path: actions
-          ref: main
-      - uses: ./actions/sync_docker_image
-        with:
-            src_registry: ${{ secrets.DEFAULT_REGISTRY }}
-            src_namespace: ci
-            src_path: ${{ steps.meta.outputs.src_path }}
-            src_tag: ${{ steps.meta.outputs.src_tag }}
-            src_username: ${{ secrets.DEFAULT_REGISTRY_USER }}
-            src_password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
-            dest_registry: ${{ secrets.PUBLIC_REGISTRY }}
-            dest_namespace: ci
-            dest_username: ${{ secrets.PUBLIC_REGISTRY_USER }}
-            dest_password: ${{ secrets.PUBLIC_REGISTRY_PASSWORD }}
+          build-args: |
+            REGISTRY=${{ secrets.DEFAULT_REGISTRY }}/ci
+            HTTP_PROXY=${{ env.http_proxy }}
+            HTTPS_PROXY=${{ env.https_proxy }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
+          cache-to: ${{ format('refs/heads/{0}', github.event.repository.default_branch) == github.ref && format('type=registry,image-manifest=true,ref={0}:buildcache,mode=max', steps.more-meta.outputs.PRIMARY_TAG_SHORT) || '' }}
+  
