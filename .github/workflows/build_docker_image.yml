@@ -1,10 +1,10 @@
-name: CI
+name: Build Docker Image
 
 on:
   push:
     branches:
       - main
-  pull_request:
+  pull_request_target:
     branches:
       - main
 
@@ -13,29 +13,18 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  basic-check:
+  authorize:
+    environment:
+      ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
     runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.read_version.outputs.value }}
+    steps:
+      - run: true
+
+  build-docker-image:
+    needs: authorize
+    runs-on: public
     steps:
       - uses: actions/checkout@v3
-      - name: Checkout Actions 
-        uses: actions/checkout@v3 
-        with: 
-          repository: 01-ai/actions
-          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
-          path: actions
-          ref: main  
-      - name: Basic check
-        uses: ./actions/lint
-      # https://github.com/actions/checkout/issues/692#issuecomment-1502203573
-      - name: Checkout Actions 
-        uses: actions/checkout@v3 
-        with: 
-          repository: 01-ai/actions
-          token: ${{ secrets.PAT_TO_CLONE_ACTIONS }} 
-          path: actions
-          ref: main  
       # try to create a tag
       - uses: SebRollen/toml-action@v1.0.2
         id: read_version
@@ -47,16 +36,7 @@ jobs:
         if: (github.ref_name == github.event.repository.default_branch) && !contains(steps.read_version.outputs.value, '-')
         with:
           tag: ${{ steps.read_version.outputs.value }}
-
-  build-and-push:
-    runs-on:
-      - public
-    needs: basic-check
-    outputs:
-      primary_tag: ${{ steps.build-and-push.outputs.primary_tag }}
-      matrix: ${{ steps.build-and-push.outputs.matrix }}
-    steps:
-      - uses: actions/checkout@v3
+      # build & push docker image
       - name: Checkout Actions 
         uses: actions/checkout@v3 
         with: 
@@ -74,6 +54,6 @@ jobs:
         with:
           registry: ${{ secrets.DEFAULT_REGISTRY }}
           namespace: ci
-          tags: ${{ needs.basic-check.outputs.tag }}
+          tags: ${{ steps.read_version.outputs.value }}
           username: ${{ secrets.DEFAULT_REGISTRY_USER }}
           password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
