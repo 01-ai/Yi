@@ -65,4 +65,18 @@ jobs:
     runs-on: public
     steps:
       - id: meta
-        run: true
+        run: |
+            echo "src_path=$(echo '${{ matrix.tag }}' | cut -d '/' -f3- | cut -d ':' -f1 )" >> "$GITHUB_OUTPUT"
+            echo "src_tag=$(echo '${{ matrix.tag }}' | cut -d ':' -f2 )" >> "$GITHUB_OUTPUT"
+      - uses: ./actions/sync_docker_image
+        with:
+            src_registry: ${{ secrets.DEFAULT_REGISTRY }}
+            src_namespace: ci
+            src_path: ${{ steps.meta.outputs.src_path }}
+            src_tag: ${{ steps.meta.outputs.src_tag }}
+            src_username: ${{ secrets.DEFAULT_REGISTRY_USER }}
+            src_password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
+            dest_registry: ${{ secrets.PUBLIC_REGISTRY }}
+            dest_namespace: ci
+            dest_username: ${{ secrets.PUBLIC_REGISTRY_USER }}
+            dest_password: ${{ secrets.PUBLIC_REGISTRY_PASSWORD }}
