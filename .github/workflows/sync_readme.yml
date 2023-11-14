@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        repo: ['Yi-6B', 'Yi-34B', '01-ai/Yi-34B-200K', '01-ai/Yi-6B-200K']
+        repo: ['Yi-6B', 'Yi-34B', 'Yi-34B-200K', 'Yi-6B-200K']
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
     - name: Sync README for ${{ matrix.repo }}
       run: |
-        git clone https://huggingface.co/01-ai/${{ matrix.repo }}
+        GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/01-ai/${{ matrix.repo }}
         cp HUGGINGFACE_README.md ${{ matrix.repo }}/README.md
         cd ${{ matrix.repo }}
         git config --global user.email "bot@01.ai"
