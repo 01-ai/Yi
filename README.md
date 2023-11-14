@@ -108,8 +108,7 @@ encounter any problem when using the **Yi** series models.
 The best approach to try the **Yi** series models is through Docker with GPUs. We
 provide the following docker images to help you get started.
 
-<!-- - `ghcr.io/01-ai/yi:latest` -->
-<!-- - `registry.lingyiwanwu.com/ci/01-ai/yi:latest` -->
+- `registry.lingyiwanwu.com/ci/01-ai/yi:latest`
 
 Note that the `latest` tag always points to the latest code in the `main`
 branch. To test a stable version, please replace it with a specific
