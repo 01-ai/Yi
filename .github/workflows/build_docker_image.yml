@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-#   pull_request_target:
-  pull_request:
+  pull_request_target:
     branches:
       - main
 
@@ -14,15 +13,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-#   authorize:
-#     environment:
-#       ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
-#     runs-on: oversea
-#     steps:
-#       - run: true
+  authorize:
+    environment:
+      ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
+    runs-on: oversea
+    steps:
+      - run: true
 
   build-docker-image:
-    # needs: authorize
+    needs: authorize
     strategy:
       matrix:
         runner: [public, oversea]
