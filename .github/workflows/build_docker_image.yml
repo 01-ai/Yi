@@ -59,7 +59,7 @@ jobs:
           driver-opts: |
             env.http_proxy=${{ env.http_proxy }}
             env.https_proxy=${{ env.http_proxy }}
-            env.no_proxy=${{ env.no_proxy }}
+            env.no_proxy='${{ env.no_proxy }}'
           buildkitd-flags: --debug
       - name: Extract docker meta
         id: meta
