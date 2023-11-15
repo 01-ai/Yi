@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  pull_request_target:
+#   pull_request_target:
+  pull_request:
     branches:
       - main
 
@@ -13,17 +14,27 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  authorize:
-    environment:
-      ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
-    runs-on: ubuntu-latest
-    steps:
-      - run: true
+#   authorize:
+#     environment:
+#       ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: true
 
   build-docker-image:
-    needs: authorize
-    runs-on: public
+    # needs: authorize
+    strategy:
+      matrix:
+        runner: [public, ubumtu-latest]
+    runs-on: ${{ matrix.runner }}
     steps:
+      - name: Maximize build space
+        uses: easimon/maximize-build-space@master
+        if: matrix.runner == 'ubuntu-latest'
+        with:
+          root-reserve-mb: 512
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
       - uses: actions/checkout@v3
       # try to create a tag
       - uses: SebRollen/toml-action@v1.0.2
@@ -55,9 +66,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ secrets.DEFAULT_REGISTRY }}/ci/${{ github.repository }}
-            ${{ secrets.PUBLIC_REGISTRY }}/ci/${{ github.repository }}
-            ghcr.io/${{ github.repository }}
+            ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.DEFAULT_REGISTRY, github.repository) || '' }}
+            ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.PUBLIC_REGISTRY, github.repository) || '' }}
+            ${{ matrix.runner == 'ubuntu-latest' && format('ghcr.io/{0}', github.repository) || '' }}
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
