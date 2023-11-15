@@ -16,13 +16,16 @@ jobs:
   authorize:
     environment:
       ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
-    runs-on: ubuntu-latest
+    runs-on: oversea
     steps:
       - run: true
 
   build-docker-image:
     needs: authorize
-    runs-on: public
+    strategy:
+      matrix:
+        runner: [public, oversea]
+    runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v3
       # try to create a tag
@@ -37,16 +40,26 @@ jobs:
         with:
           tag: ${{ steps.read_version.outputs.value }}
       # build & push docker image
+      - name: Set proxy
+        run: |
+          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
+          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
+          echo "no_proxy=$no_proxy" >> $GITHUB_ENV
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
+        # with:
+        #   driver-opts: |
+        #     env.http_proxy=${{ env.http_proxy }}
+        #     env.https_proxy=${{ env.http_proxy }}
+        #   buildkitd-flags: --debug
       - name: Extract docker meta
         id: meta
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ secrets.DEFAULT_REGISTRY }}/ci/${{ github.repository }}
-            ${{ secrets.PUBLIC_REGISTRY }}/ci/${{ github.repository }}
-            ghcr.io/${{ github.repository }}
+            ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.DEFAULT_REGISTRY, github.repository) || '' }}
+            ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.PUBLIC_REGISTRY, github.repository) || '' }}
+            ${{ matrix.runner == 'oversea' && format('ghcr.io/{0}', github.repository) || '' }}
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
@@ -78,19 +91,17 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Set proxy
-        run: |
-          echo "http_proxy=$http_proxy" >> $GITHUB_ENV
-          echo "https_proxy=$https_proxy" >> $GITHUB_ENV
       - name: Build and push
         id: build-image
         uses: docker/build-push-action@v5
         with:
           build-args: |
-            REGISTRY=${{ secrets.DEFAULT_REGISTRY }}/ci
+            REGISTRY=${{ matrix.runner == 'public' && format('{0}/ci', secrets.DEFAULT_REGISTRY) || 'nvcr.io'}}
             HTTP_PROXY=${{ env.http_proxy }}
             HTTPS_PROXY=${{ env.https_proxy }}
+            NO_PROXY=${{ env.no_proxy }}
           push: true
+          context: .
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
