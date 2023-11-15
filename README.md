@@ -2,8 +2,9 @@
 <p align="center">
 <img src="https://github.com/01-ai/Yi/raw/main/assets/img/Yi.svg?sanitize=true" width="200px">
 </p>
-<a href="https://github.com/01-ai/Yi/actions/workflows/ci.yml">
-  <img src="https://github.com/01-ai/Yi/actions/workflows/ci.yml/badge.svg">
+
+<a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
+  <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
 </a>
 <a href="https://huggingface.co/01-ai">
   <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-01--ai-blue">
@@ -110,6 +111,7 @@ The best approach to try the **Yi** series models is through Docker with GPUs. W
 provide the following docker images to help you get started.
 
 - `registry.lingyiwanwu.com/ci/01-ai/yi:latest`
+- `ghcr.io/01-ai/yi:latest`
 
 Note that the `latest` tag always points to the latest code in the `main`
 branch. To test a stable version, please replace it with a specific

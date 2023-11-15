@@ -1,0 +1,62 @@
+name: Sync Files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      is_readme_changed: ${{ steps.changed-files.outputs.readme_any_changed }}
+      is_license_changed: ${{ steps.changed-files.outputs.license_any_changed }}
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v40
+      with:
+        files_yaml: |
+          readme:
+            - README.md
+          license:
+            - MODEL_LICENSE_AGREEMENT.txt
+  sync-readme:
+    runs-on: ubuntu-latest
+    needs: detect-changes
+    if: needs.detect-changes.outputs.is_readme_changed == 'true' || needs.detect-changes.outputs.is_license_changed == 'true'
+    strategy:
+      matrix:
+        platform:
+          - huggingface
+          - modelscope
+        repo:
+          - Yi-6B
+          - Yi-34B
+          - Yi-6B-200K
+          - Yi-34B-200K
+    steps:
+      - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || '')}}" >> $GITHUB_ENV
+      - run: GIT_LFS_SKIP_SMUDGE=1 git clone ${{ env.REPO }}
+      - name: Sync README to ${{ matrix.platform }} ${{ matrix.repo }}
+        if: needs.detect-changes.outputs.is_readme_changed == 'true'
+        run: |
+          cat README/${{matrix.platform}}_header.md > ${{ matrix.repo }}/README.md
+          csplit README.md '/## Introduction/'
+          cat xx01 >> ${{ matrix.repo }}/README.md
+      - name: Sync LICENSE to ${{ matrix.platform }} ${{ matrix.repo }}
+        if: needs.detect-changes.outputs.is_license_changed == 'true'
+        run: |
+          cat MODEL_LICENSE_AGREEMENT.txt > ${{ matrix.repo }}/LICENSE
+      - run: |
+          cd ${{ matrix.repo }}
+          git config --global user.email "yi@01.ai"
+          git config --global user.name "yi-01-ai"
+          git add .
+          git commit -m "Auto Sync from ${{ github.repositoryUrl}} - ${{ github.sha}}"
+          git push ${{ env.REPO }}
