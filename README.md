@@ -105,6 +105,7 @@ encounter any problem when using the **Yi** series models.
 
 ### 1. Prepare development environment
 
+#### 1.1 Docker
 The best approach to try the **Yi** series models is through Docker with GPUs. We
 provide the following docker images to help you get started.
 
@@ -114,11 +115,12 @@ Note that the `latest` tag always points to the latest code in the `main`
 branch. To test a stable version, please replace it with a specific
 [tag](https://github.com/01-ai/Yi/tags).
 
-If you prefer to try out with your local development environment. First, create
-a virtual environment and clone this repo. Then install the dependencies with
-`pip install -r requirements.txt`. For the best performance, we recommend you
-also install the latest version (`>=2.3.3`) of
-[flash-attention](https://github.com/Dao-AILab/flash-attention#installation-and-features).
+#### 1.2 Local development environment
+We use [`conda-lock`](https://github.com/conda/conda-lock) to generate fully reproducible lock files for conda environments. You can refer to [conda-lock.yml](./conda-lock.yml) for the exact versions of the dependencies. Additionally, we utilize [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) for installing these dependencies.
+
+To install the dependencies, please follow these steps:
+1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/micromamba-installation.html).
+2. Execute `micromamba install -y -n yi -f conda-lock.yml` to create a conda environment named `yi` and install the necessary dependencies.
 
 ### 2. Download the model (optional)
 
