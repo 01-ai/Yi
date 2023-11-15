@@ -17,7 +17,7 @@ jobs:
 #   authorize:
 #     environment:
 #       ${{ github.event_name == 'pull_request_target' && github.event.pull_request.head.repo.full_name != github.repository && 'external' || 'internal' }}
-#     runs-on: ubuntu-latest
+#     runs-on: oversea
 #     steps:
 #       - run: true
 
@@ -25,16 +25,9 @@ jobs:
     # needs: authorize
     strategy:
       matrix:
-        runner: [public, ubuntu-latest]
+        runner: [public, oversea]
     runs-on: ${{ matrix.runner }}
     steps:
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
-        if: matrix.runner == 'ubuntu-latest'
-        with:
-          root-reserve-mb: 512
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
       - uses: actions/checkout@v3
       # try to create a tag
       - uses: SebRollen/toml-action@v1.0.2
@@ -67,7 +60,7 @@ jobs:
           images: |
             ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.DEFAULT_REGISTRY, github.repository) || '' }}
             ${{ matrix.runner == 'public' && format('{0}/ci/{1}', secrets.PUBLIC_REGISTRY, github.repository) || '' }}
-            ${{ matrix.runner == 'ubuntu-latest' && format('ghcr.io/{0}', github.repository) || '' }}
+            ${{ matrix.runner == 'oversea' && format('ghcr.io/{0}', github.repository) || '' }}
           tags: |
             # set latest tag for default branch
             type=raw,value=latest,enable={{is_default_branch}}
