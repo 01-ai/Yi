@@ -104,7 +104,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           build-args: |
-            REGISTRY=${{ secrets.DEFAULT_REGISTRY }}/ci
+            ${{ matrix.runner == 'public' && format('REGISTRY={0}/ci', secrets.DEFAULT_REGISTRY) || ''}}
             HTTP_PROXY=${{ env.http_proxy }}
             HTTPS_PROXY=${{ env.https_proxy }}
             NO_PROXY=${{ env.no_proxy }}
