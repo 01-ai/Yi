@@ -30,6 +30,10 @@ developers at [01.AI](https://01.ai/).
 ## News
 
 <details open>
+<summary>🔔 <b>2023/11/15</b>: The commercial licensing agreement for the Yi series models <a href="https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2">is set to be updated</a>.</summary>
+</details>
+
+<details open>
 <summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
 
 Application form:
