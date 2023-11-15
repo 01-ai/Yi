@@ -104,7 +104,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           build-args: |
-            ${{ matrix.runner == 'public' && format('REGISTRY={0}/ci', secrets.DEFAULT_REGISTRY) || ''}}
+            REGISTRY=${{ matrix.runner == 'public' && format('{0}/ci', secrets.DEFAULT_REGISTRY) || 'nvcr.io'}}
             HTTP_PROXY=${{ env.http_proxy }}
             HTTPS_PROXY=${{ env.https_proxy }}
             NO_PROXY=${{ env.no_proxy }}
