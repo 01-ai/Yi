@@ -25,7 +25,7 @@ jobs:
     # needs: authorize
     strategy:
       matrix:
-        runner: [public, ubumtu-latest]
+        runner: [public, ubuntu-latest]
     runs-on: ${{ matrix.runner }}
     steps:
       - name: Maximize build space
