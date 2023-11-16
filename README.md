@@ -123,7 +123,7 @@ branch. To test a stable version, please replace it with a specific
 We use [`conda-lock`](https://github.com/conda/conda-lock) to generate fully reproducible lock files for conda environments. You can refer to [conda-lock.yml](./conda-lock.yml) for the exact versions of the dependencies. Additionally, we utilize [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) for installing these dependencies.
 
 To install the dependencies, please follow these steps:
-1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/micromamba-installation.html).
+1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html).
 2. Execute `micromamba install -y -n yi -f conda-lock.yml` to create a conda environment named `yi` and install the necessary dependencies.
 
 ### 2. Download the model (optional)
