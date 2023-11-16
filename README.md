@@ -268,15 +268,15 @@ the Yi series models.
 
 ## FAQ
 
-1. Will you release the chat version?
+1. **Will you release the chat version?**
 
-  Yes, the chat version will be released around the end of November 2023.
+    Yes, the chat version will be released around the end of November 2023.
 
-1. What dataset was this trained with?
+1. **What dataset was this trained with?**
 
-  The dataset we use contains Chinese & English only. We used approximately 3T
-  tokens. The detailed number and its construction will be described in the
-  upcoming technical report.
+    The dataset we use contains Chinese & English only. We used approximately 3T
+    tokens. The detailed number and its construction will be described in the
+    upcoming technical report.
 
 ## Disclaimer
 
