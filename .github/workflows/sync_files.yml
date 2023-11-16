@@ -24,6 +24,7 @@ jobs:
         files_yaml: |
           readme:
             - README.md
+            - README/**
           license:
             - MODEL_LICENSE_AGREEMENT.txt
   sync-readme:
