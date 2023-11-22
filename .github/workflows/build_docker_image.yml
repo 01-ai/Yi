@@ -74,18 +74,21 @@ jobs:
           echo "PRIMARY_TAG=$PRIMARY_TAG" >> "$GITHUB_OUTPUT"
           echo "PRIMARY_TAG_SHORT=$(echo $PRIMARY_TAG | cut -d ':' -f1)" >> "$GITHUB_OUTPUT"
       - name: Login to default container registry
+        if: matrix.runner == 'public'
         uses: docker/login-action@v2
         with:
           registry: ${{ secrets.DEFAULT_REGISTRY }}
           username: ${{ secrets.DEFAULT_REGISTRY_USER }}
           password: ${{ secrets.DEFAULT_REGISTRY_PASSWORD }}
       - name: Login to public container registry
+        if: matrix.runner == 'public'
         uses: docker/login-action@v2
         with:
           registry: ${{ secrets.PUBLIC_REGISTRY }}
           username: ${{ secrets.PUBLIC_REGISTRY_USER }}
           password: ${{ secrets.PUBLIC_REGISTRY_PASSWORD }}
       - name: Login to ghcr.io
+        if: matrix.runner == 'oversea'
         uses: docker/login-action@v2
         with:
           registry: ghcr.io

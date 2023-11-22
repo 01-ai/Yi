@@ -2,8 +2,8 @@
 <p align="center">
 <img src="https://github.com/01-ai/Yi/raw/main/assets/img/Yi.svg?sanitize=true" width="200px">
 </p>
-<a href="https://github.com/01-ai/Yi/actions/workflows/ci.yml">
-  <img src="https://github.com/01-ai/Yi/actions/workflows/ci.yml/badge.svg">
+<a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
+  <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
 </a>
 <a href="https://huggingface.co/01-ai">
   <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-01--ai-blue">
@@ -28,6 +28,10 @@ The **Yi** series models are large language models trained from scratch by
 developers at [01.AI](https://01.ai/).
 
 ## News
+
+<details open>
+<summary>🔔 <b>2023/11/15</b>: The commercial licensing agreement for the Yi series models <a href="https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2">is set to be updated</a>.</summary>
+</details>
 
 <details open>
 <summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
@@ -110,6 +114,7 @@ The best approach to try the **Yi** series models is through Docker with GPUs. W
 provide the following docker images to help you get started.
 
 - `registry.lingyiwanwu.com/ci/01-ai/yi:latest`
+- `ghcr.io/01-ai/yi:latest`
 
 Note that the `latest` tag always points to the latest code in the `main`
 branch. To test a stable version, please replace it with a specific
@@ -119,7 +124,7 @@ branch. To test a stable version, please replace it with a specific
 We use [`conda-lock`](https://github.com/conda/conda-lock) to generate fully reproducible lock files for conda environments. You can refer to [conda-lock.yml](./conda-lock.yml) for the exact versions of the dependencies. Additionally, we utilize [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) for installing these dependencies.
 
 To install the dependencies, please follow these steps:
-1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/micromamba-installation.html).
+1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html).
 2. Execute `micromamba install -y -n yi -f conda-lock.yml` to create a conda environment named `yi` and install the necessary dependencies.
 
 ### 2. Download the model (optional)
@@ -247,6 +252,31 @@ python quantization/awq/eval_quantized_model.py \
 ```
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
+
+## Ecosystem
+
+🤗 You are encouraged to create a PR and share your awesome work built on top of
+the Yi series models.
+
+- Serving
+  - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): Efficiently run Yi models locally.
+- Quantization
+  - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
+  - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
+- Finetuning
+  - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
+
+## FAQ
+
+1. **Will you release the chat version?**
+
+    Yes, the chat version will be released around the end of November 2023.
+
+1. **What dataset was this trained with?**
+
+    The dataset we use contains Chinese & English only. We used approximately 3T
+    tokens. The detailed number and its construction will be described in the
+    upcoming technical report.
 
 ## Disclaimer
 
