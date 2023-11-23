@@ -1,0 +1,75 @@
+name: Sync Files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      is_readme_changed: ${{ steps.changed-files.outputs.readme_any_changed }}
+      is_license_changed: ${{ steps.changed-files.outputs.license_any_changed }}
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v40
+      with:
+        files_yaml: |
+          readme:
+            - README.md
+            - README/**
+          license:
+            - MODEL_LICENSE_AGREEMENT.txt
+  sync-readme:
+    runs-on: ${{ matrix.platform == 'huggingface' && 'ubuntu-latest' || 'public' }}
+    needs: detect-changes
+    if: needs.detect-changes.outputs.is_readme_changed == 'true' || needs.detect-changes.outputs.is_license_changed == 'true'
+    strategy:
+      matrix:
+        platform:
+          - huggingface
+          - modelscope
+          - wisemodel
+        repo:
+          - Yi-6B
+          - Yi-6B-200K
+          - Yi-6B-Chat
+          - Yi-6B-Chat-4bits
+          - Yi-6B-Chat-8bits
+          - Yi-34B
+          - Yi-34B-200K
+          - Yi-34B-Chat
+          - Yi-34B-Chat-4bits
+          - Yi-34B-Chat-8bits
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || format('https://oauth2:{0}@www.wisemodel.cn/01.AI/{1}.git', secrets.WISEMODEL_TOKEN, matrix.repo))}}" >> $GITHUB_ENV
+      - run: GIT_LFS_SKIP_SMUDGE=1 git clone ${{ env.REPO }}
+      - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform == 'huggingface'
+        run: |
+          cat README/huggingface_widget_${{ contains(matrix.repo, 'Chat') && 'chat' || 'base'}}.md > ${{ matrix.repo }}/README.md
+          cat README/huggingface_header.md >> ${{ matrix.repo }}/README.md
+          csplit README.md '/## Introduction/'
+          cat xx01 >> ${{ matrix.repo }}/README.md
+      - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform != 'huggingface'
+        run: |
+          cat README/${{matrix.platform}}_header.md > ${{ matrix.repo }}/README.md
+          cat README.md >> ${{ matrix.repo }}/README.md
+      - name: Sync LICENSE to ${{ matrix.platform }} ${{ matrix.repo }}
+        if: needs.detect-changes.outputs.is_license_changed == 'true'
+        run: |
+          cat MODEL_LICENSE_AGREEMENT.txt > ${{ matrix.repo }}/LICENSE
+      - run: |
+          cd ${{ matrix.repo }}
+          git config --global user.email "yi@01.ai"
+          git config --global user.name "yi-01-ai"
+          git add .
+          git commit -m "Auto Sync from ${{ github.repositoryUrl}}/commit/${{ github.sha}}"
+          git push ${{ env.REPO }}
