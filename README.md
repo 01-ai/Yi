@@ -57,8 +57,8 @@ You can try some of them interactively at:
 - [Replicate](https://replicate.com/01-ai)
 </details>
 
-<details>
-<summary>🔔 <b>2023/11/23</b>: The commercial licensing agreement for the Yi series models is updated to v2.1.</summary>
+<details open>
+<summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to v2.1.</summary>
 </details>
 
 <details>
