@@ -134,14 +134,14 @@ We evaluated various benchmarks using both zero-shot and few-shot methods, excep
 
 We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have negligible losses. Additionally, they reduce the memory footprint size. After testing different configurations of prompts and generation lengths, we highly recommend following the guidelines in the memory footprint table below when selecting a device to run our models.
 
-|                | batch=1 | batch=4 | batch=16 | batch=32 |
-| -------------- | ------- | ------- | -------- | -------- |
-| 34b-bfloat16   | 65GiB   | 68GiB   | 76GiB    | >80GiB   |
-| 34b-8bits-gptq | 35GiB   | 37GiB   | 46GiB    | 58GiB    |
-| 34b-4bits-awq  | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
-| 6b-bfloat16    | 12GiB   | 13GiB   | 15GiB    | 18GiB    |
-| 6b-8bits-gptq  | 7GiB    | 8GiB    | 10GiB    | 14GiB    |
-| 6b-4bits-awq   | 4GiB    | 5GiB    | 7GiB     | 10GiB    |
+|                         | batch=1 | batch=4 | batch=16 | batch=32 |
+| ----------------------- | ------- | ------- | -------- | -------- |
+| Yi-34B-Chat             | 65GiB   | 68GiB   | 76GiB    | >80GiB   |
+| Yi-34B-Chat-8bits(GPTQ) | 35GiB   | 37GiB   | 46GiB    | 58GiB    |
+| Yi-6B-Chat-4bits(AWQ)   | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
+| Yi-6B-Chat              | 12GiB   | 13GiB   | 15GiB    | 18GiB    |
+| Yi-6B-Chat-8bits(GPTQ)  | 7GiB    | 8GiB    | 10GiB    | 14GiB    |
+| Yi-6B-Chat-4bits(AWQ)   | 4GiB    | 5GiB    | 7GiB     | 10GiB    |
 
 Note: All the numbers in the table represent the minimum recommended memory for running models of the corresponding size.
 
