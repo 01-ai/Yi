@@ -71,5 +71,6 @@ jobs:
           git config --global user.email "yi@01.ai"
           git config --global user.name "yi-01-ai"
           git add .
+          git commit --dry-run || exit 0
           git commit -m "Auto Sync from ${{ github.repositoryUrl}}/commit/${{ github.sha}}"
           git push ${{ env.REPO }}
