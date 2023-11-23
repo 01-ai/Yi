@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   detect-changes:
@@ -41,13 +38,13 @@ jobs:
           - modelscope
           - wisemodel
         repo:
-          # - Yi-6B
-          # - Yi-6B-200K
+          - Yi-6B
+          - Yi-6B-200K
           - Yi-6B-Chat
           - Yi-6B-Chat-4bits
           - Yi-6B-Chat-8bits
-          # - Yi-34B
-          # - Yi-34B-200K
+          - Yi-34B
+          - Yi-34B-200K
           - Yi-34B-Chat
           - Yi-34B-Chat-4bits
           - Yi-34B-Chat-8bits
@@ -62,7 +59,7 @@ jobs:
           csplit README.md '/## Introduction/'
           cat xx01 >> ${{ matrix.repo }}/README.md
       - name: Sync LICENSE to ${{ matrix.platform }} ${{ matrix.repo }}
-        # if: needs.detect-changes.outputs.is_license_changed == 'true'
+        if: needs.detect-changes.outputs.is_license_changed == 'true'
         run: |
           cat MODEL_LICENSE_AGREEMENT.txt > ${{ matrix.repo }}/LICENSE
       - run: |

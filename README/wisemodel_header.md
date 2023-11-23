@@ -12,6 +12,9 @@ tasks:
 <img src="https://github.com/01-ai/Yi/raw/main/assets/img/Yi.svg?sanitize=true" width="200px">
 </p>
 
+<a href="https://github.com/01-ai/Yi/issues">
+  <img src="https://img.shields.io/github/issues/01-ai/Yi?logo=github">
+</a>
 <a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
   <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
 </a>
