@@ -33,13 +33,13 @@ developers at [01.AI](https://01.ai/).
 
 ## News
 
-<details open>
-<summary>🎯 <b>2023/11/23</b>: The chat model of <code>Yi-6B-Chat</code>, <code>Yi-34B-Chat</code>, <code>Yi-6B-Chat-8bits</code>, <code>Yi-34B-Chat-8bits</code>, <code>Yi-6B-Chat-4bits</code>, <code>Yi-34B-Chat-4bits</code>.</summary>
-This release contains two chat models based on previous released base models, two 8-bits models quntinized by GPTQ, two 4-bits models quantinized by AWQ.
+<details>
+<summary>🔔 <b>2023/11/23</b>: The commercial licensing agreement for the Yi series models is updated to v2.1.</summary>
 </details>
 
-<details>
-<summary>🔔 <b>2023/11/15</b>: The commercial licensing agreement for the Yi series models <a href="https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2">is set to be updated</a>.</summary>
+<details open>
+<summary>🎯 <b>2023/11/23</b>: The chat model of <code>Yi-6B-Chat</code>, <code>Yi-34B-Chat</code>, <code>Yi-6B-Chat-8bits</code>, <code>Yi-34B-Chat-8bits</code>, <code>Yi-6B-Chat-4bits</code>, <code>Yi-34B-Chat-4bits</code>.</summary>
+This release contains two chat models based on previous released base models, two 8-bits models quantized by GPTQ, two 4-bits models quantized by AWQ.
 </details>
 
 <details>
