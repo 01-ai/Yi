@@ -90,12 +90,12 @@ restrictions of this Agreement.
 If you plan to use the Yi Series Models and Derivatives for Commercial Purposes, 
 please refer to the Registration Form of Yi Series Models for Commercial Purposes 
 (“Registration Form”), as provided in Attachment 1 of the Yi Series Models 
-Commercial License Agreement and send completed Registration Form to the email: 
-yi@01.ai to complete the registration and obtain the license for Commercial 
-Purposes. If you obtained the license for Commercial Purposes and use the Yi 
-Series Models and Derivatives for Commercial Purposes, you must comply with the 
-afore-mentioned license restrictions and restrictions specified under the Yi 
-Series Models Commercial License Agreement.
+Commercial License Agreement (available at https://www.lingyiwanwu.com/yi-license) 
+and send completed Registration Form to the email: yi@01.ai to complete the 
+registration and obtain the license for Commercial Purposes. If you obtained the 
+license for Commercial Purposes and use the Yi Series Models and Derivatives for 
+Commercial Purposes, you must comply with the afore-mentioned license restrictions 
+and restrictions specified under the Yi Series Models Commercial License Agreement.
  
  
 3. Intellectual Property
@@ -258,10 +258,10 @@ Yi-6B、Yi-34B等。
 中的许可限制条件。
  
 如果您计划将Yi系列模型及模型衍生品用作商业用途，请参见《Yi系列模型商用许可协议》
-附件一《Yi系列模型商用登记表》（“登记表”）并将填写完毕的登记表发送至 yi@01.ai 
-邮箱完成登记即可获得商用许可。若您获得商用许可并将Yi系列模型及模型衍生品用作商业
-用途，您应满足许可方上述许可限制条件及《Yi系列模型商用许可协议》中的商业许可限制。
- 
+（参见：https://www.lingyiwanwu.com/yi-license）附件一《Yi系列模型商用登
+记表》（“登记表”）并将填写完毕的登记表发送至 yi@01.ai 邮箱完成登记即可获得商用
+许可。若您获得商用许可并将Yi系列模型及模型衍生品用作商业用途，您应满足许可方上述
+许可限制条件及《Yi系列模型商用许可协议》中的商业许可限制。
  
 3. 知识产权
 
