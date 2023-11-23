@@ -52,6 +52,7 @@ jobs:
           # - Yi-34B-Chat-4bits
           # - Yi-34B-Chat-8bits
     steps:
+      - uses: actions/checkout@v4
       - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || format('https://oauth2:{0}@www.wisemodel.cn/01.AI/{1}.git', secrets.WISEMODEL_TOKEN, matrix.repo))}}" >> $GITHUB_ENV
       - run: GIT_LFS_SKIP_SMUDGE=1 git clone ${{ env.REPO }}
       - name: Sync README to ${{ matrix.platform }} ${{ matrix.repo }}
