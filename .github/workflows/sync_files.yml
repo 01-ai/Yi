@@ -54,8 +54,7 @@ jobs:
       - run: GIT_LFS_SKIP_SMUDGE=1 git clone ${{ env.REPO }}
       - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform == 'huggingface'
         run: |
-          cat README/huggingface_widget_${{ contains(matrix.repo, 'Chat') && 'chat' || 'base'}}.md > ${{ matrix.repo }}/README.md
-          cat README/huggingface_header.md >> ${{ matrix.repo }}/README.md
+          cat README/huggingface_header.md > ${{ matrix.repo }}/README.md
           csplit README.md '/## Introduction/'
           cat xx01 >> ${{ matrix.repo }}/README.md
       - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform != 'huggingface'
