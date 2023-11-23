@@ -55,11 +55,10 @@ You can try some of them interactively at:
 
 - [HuggingFace](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
 - [Replicate](https://replicate.com/01-ai)
-
 </details>
 
 <details>
-<summary>🔔 <b>2023/11/15</b>: The commercial licensing agreement for the Yi series models <a href="https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2">is set to be updated</a>.</summary>
+<summary>🔔 <b>2023/11/23</b>: The commercial licensing agreement for the Yi series models is updated to v2.1.</summary>
 </details>
 
 <details>
