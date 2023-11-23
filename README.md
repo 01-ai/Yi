@@ -30,10 +30,15 @@ developers at [01.AI](https://01.ai/).
 ## News
 
 <details open>
+<summary>🎯 <b>2023/11/23</b>: The chat model of <code>Yi-6B-Chat</code>, <code>Yi-34B-Chat</code>, <code>Yi-6B-Chat-8bits</code>, <code>Yi-34B-Chat-8bits</code>, <code>Yi-6B-Chat-4bits</code>, <code>Yi-34B-Chat-4bits</code>.</summary>
+This release contains two chat models based on previous released base models, two 8-bits models quntinized by GPTQ, two 4-bits models quantinized by AWQ.
+</details>
+
+<details>
 <summary>🔔 <b>2023/11/15</b>: The commercial licensing agreement for the Yi series models <a href="https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2">is set to be updated</a>.</summary>
 </details>
 
-<details open>
+<details>
 <summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
 
 Application form:
@@ -62,6 +67,7 @@ sequence length and can be extended to 32K during inference time.
 
 ## Model Performance
 
+### Base Model Performance
 
 | Model         |   MMLU   |  CMMLU   |  C-Eval  |  GAOKAO  |   BBH    | Common-sense Reasoning | Reading Comprehension | Math & Code |
 | :------------ | :------: | :------: | :------: | :------: | :------: | :--------------------: | :-------------------: | :---------: |
@@ -101,6 +107,57 @@ to technical constraints, we did not test Falcon-180 on QuAC and OBQA; the score
 is derived by averaging the scores on the remaining tasks. Since the scores for
 these two tasks are generally lower than the average, we believe that
 Falcon-180B's performance was not underestimated.
+
+### Chat Model Performance
+
+| Model                   | MMLU      | MMLU      | CMMLU     | CMMLU     | C-Eval(val)<sup>*</sup> | C-Eval(val)<sup>*</sup> | Truthful QA | BBH       | BBH       | GSM8k     | GSM8k     |
+| ----------------------- | --------- | --------- | --------- | --------- | ----------------------- | ----------------------- | ----------- | --------- | --------- | --------- | --------- |
+|                         | 0-shot    | 5-shot    | 0-shot    | 5-shot    | 0-shot                  | 5-shot                  | 0-shot      | 0-shot    | 3-shot    | 0-shot    | 4-shot    |
+| LLaMA2-13B-Chat         | 50.88     | 47.33     | 27.47     | 35.08     | 27.93                   | 35.88                   | 36.84       | 32.90     | 58.22     | 36.85     | 2.73      |
+| LLaMA2-70B-Chat         | 59.42     | 59.86     | 36.10     | 40.99     | 34.99                   | 41.31                   | 53.95       | 42.36     | 58.53     | 47.08     | 58.68     |
+| Baichuan2-13B-Chat      | 55.09     | 50.14     | 58.64     | 59.47     | 56.02                   | 54.75                   | 48.98       | 38.81     | 47.15     | 45.72     | 23.28     |
+| Qwen-14B-Chat           | 63.99     | 64.98     | 67.73     | 70.57     | 66.12                   | 70.06                   | 52.49       | 49.65     | 54.98     | 59.51     | 61.18     |
+| InternLM-Chat-20B       | 55.55     | 57.42     | 53.55     | 53.75     | 51.19                   | 53.57                   | 51.75       | 42.41     | 36.68     | 15.69     | 43.44     |
+| AquilaChat2-34B v1.2    | 65.15     | 66.70     | 67.51     | 70.02     | **82.99**               | **89.38**               | **64.33**   | 20.12     | 34.28     | 11.52     | 48.45     |
+| Yi-6B-Chat              | 58.24     | 60.99     | 69.44     | 74.71     | 68.80                   | 74.22                   | 50.58       | 39.70     | 47.15     | 38.44     | 44.88     |
+| Yi-6B-Chat-8bits(GPTQ)  | 58.29     | 60.96     | 69.21     | 74.69     | 69.17                   | 73.85                   | 49.85       | 40.35     | 47.26     | 39.42     | 44.88     |
+| Yi-6B-Chat-4bits(AWQ)   | 56.78     | 59.89     | 67.70     | 73.29     | 67.53                   | 72.29                   | 50.29       | 37.74     | 43.62     | 35.71     | 38.36     |
+| Yi-34B-Chat             | **67.62** | 73.46     | **79.11** | **81.34** | 77.04                   | 78.53                   | 62.43       | 51.41     | **71.74** | **71.65** | **75.97** |
+| Yi-34B-Chat-8bits(GPTQ) | 66.24     | **73.69** | 79.05     | 81.23     | 76.82                   | 78.97                   | 61.84       | **52.08** | 70.97     | 70.74     | 75.74     |
+| Yi-34B-Chat-4bits(AWQ)  | 65.77     | 72.42     | 78.21     | 80.50     | 75.71                   | 77.27                   | 61.84       | 48.30     | 69.39     | 70.51     | 74.00     |
+
+We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA. Generally, the zero-shot approach is more common in chat models. Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text. Some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results. 
+
+<strong>*</strong>: C-Eval results are evaluated on the validation datasets
+
+### Quantized Chat Model Performance
+
+We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have negligible losses. Additionally, they reduce the memory footprint size. After testing different configurations of prompts and generation lengths, we highly recommend following the guidelines in the memory footprint table below when selecting a device to run our models.
+
+|                | batch=1 | batch=4 | batch=16 | batch=32 |
+| -------------- | ------- | ------- | -------- | -------- |
+| 34b-bfloat16   | 65GiB   | 68GiB   | 76GiB    | >80GiB   |
+| 34b-8bits-gptq | 35GiB   | 37GiB   | 46GiB    | 58GiB    |
+| 34b-4bits-awq  | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
+| 6b-bfloat16    | 12GiB   | 13GiB   | 15GiB    | 18GiB    |
+| 6b-8bits-gptq  | 7GiB    | 8GiB    | 10GiB    | 14GiB    |
+| 6b-4bits-awq   | 4GiB    | 5GiB    | 7GiB     | 10GiB    |
+
+Note: All the numbers in the table represent the minimum recommended memory for running models of the corresponding size.
+
+### Limitations of Chat Model
+
+The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
+
+However, this higher diversity might amplify certain existing issues, including:
+
+- **Hallucination**: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.
+- **Non-determinism in re-generation**: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.
+- **Cumulative Error**: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.
+
+To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as`temperature`,`top_p`, or`top_k`. These adjustments can help in the balance between creativity and coherence in the model's outputs.
+
+
 
 ## Usage
 
@@ -143,7 +200,36 @@ can also download them manually from the following places:
 
 ### 3. Examples
 
-#### 3.1 Use the base model
+#### 3.1 Use the chat model
+
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_path = '01-ai/Yi-34b-Chat'
+
+tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+
+# Since transformers 4.35.0, the GPT-Q/AWQ model can be loaded using AutoModelForCausalLM.
+model = AutoModelForCausalLM.from_pretrained(
+    model_path,
+    device_map="auto",
+    torch_dtype='auto'
+).eval()
+
+# Prompt content: "hi"
+messages = [
+    {"role": "user", "content": "hi"}
+]
+
+input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
+output_ids = model.generate(input_ids.to('cuda'))
+response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
+
+# Model response: "Hello! How can I assist you today?"
+print(response)
+```
+
+#### 3.2 Use the base model
 
 ```bash
 python demo/text_generation.py
@@ -200,7 +286,7 @@ The Arctic is a place of great beauty. The ice and snow are a
 For more advanced usage, please refer to the
 [doc](https://github.com/01-ai/Yi/tree/main/demo).
 
-#### 3.2 Finetuning from the base model:
+#### 3.3 Finetuning from the base model:
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
@@ -215,7 +301,7 @@ bash finetune/scripts/run_eval.sh
 For more advanced usage like fine-tuning based on your custom data, please refer
 the [doc](https://github.com/01-ai/Yi/tree/main/finetune).
 
-#### 3.3 Quantization
+#### 3.4 Quantization
 
 ##### GPT-Q
 ```bash
@@ -267,10 +353,6 @@ the Yi series models.
   - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
 
 ## FAQ
-
-1. **Will you release the chat version?**
-
-    Yes, the chat version will be released around the end of November 2023.
 
 1. **What dataset was this trained with?**
 
