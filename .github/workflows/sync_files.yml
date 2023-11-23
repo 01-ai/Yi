@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request_target:
+    branches:
+      - main
 
 jobs:
   detect-changes:
@@ -28,7 +31,7 @@ jobs:
           license:
             - MODEL_LICENSE_AGREEMENT.txt
   sync-readme:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.platform == 'huggingface' && 'ubuntu-latest' || 'public' }}
     needs: detect-changes
     if: needs.detect-changes.outputs.is_readme_changed == 'true' || needs.detect-changes.outputs.is_license_changed == 'true'
     strategy:
@@ -36,13 +39,20 @@ jobs:
         platform:
           - huggingface
           - modelscope
+          - wisemodel
         repo:
-          - Yi-6B
-          - Yi-34B
-          - Yi-6B-200K
-          - Yi-34B-200K
+          # - Yi-6B
+          # - Yi-6B-200K
+          # - Yi-6B-Chat
+          - Yi-6B-Chat-4bits
+          # - Yi-6B-Chat-8bits
+          # - Yi-34B
+          # - Yi-34B-200K
+          # - Yi-34B-Chat
+          # - Yi-34B-Chat-4bits
+          # - Yi-34B-Chat-8bits
     steps:
-      - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || '')}}" >> $GITHUB_ENV
+      - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || format('https://oauth2:{0}@www.wisemodel.cn/01.AI/{1}.git', secrets.WISEMODEL_TOKEN, matrix.repo))}}" >> $GITHUB_ENV
       - run: GIT_LFS_SKIP_SMUDGE=1 git clone ${{ env.REPO }}
       - name: Sync README to ${{ matrix.platform }} ${{ matrix.repo }}
         if: needs.detect-changes.outputs.is_readme_changed == 'true'
