@@ -1,12 +1,12 @@
-                    Yi Series Models License Agreement
-                            Version: 2.0
-                    Date of Release: November 4, 2023
+                 Yi Series Models Community License Agreement
+                                 Version: 2.1
+                       Date of Release: November 23, 2023
  
 1. Definition
 
-“Agreement” refers to the terms and conditions defined in this Yi Series Models
-License Agreement for the use, reproduction and distribution of Yi Series
-Models.
+“Agreement” refers to the terms and conditions defined in this Yi Series Models 
+Community License Agreement for the use, reproduction and distribution of Yi 
+Series Models.
  
 “Model” refers to associated components (including checkpoints) developed based
 on machine learning, including learned weights and parameters (including the
@@ -28,10 +28,10 @@ synthetic data based on Yi Series Models to train other models.
 by this Agreement and/or uses the Yi Series Models for any purpose and in any
 field of use.
  
-“Third Party” refers to any individuals, legal entities or non-legal
+“Third Party” refers to any individuals, legal entities or non-legal 
 organizations other than you.
  
-“Distribute” refers to transmitting, copying, publishing, or otherwise sharing
+“Distribute” refers to transmitting, copying, publishing, or otherwise sharing 
 the Yi Series Models with third parties, including providing the Yi Series
 Models through electronic or other remote means (such as any SaaS software or
 PaaS software accessed via API or web access).
@@ -51,9 +51,7 @@ excluding information that has been anonymized.
 “Logo” refers to any trademark, service mark, trade name, domain name, website
 name, or other distinctive branding marks.
  
-
 2. License and License Restrictions
-
 The Licensor hereby grants you a non-exclusive, global, non-transferable,
 non-sub-licensable, revocable, and royalty-free copyright license. You must
 adhere to the following license restrictions:
@@ -89,16 +87,18 @@ violate the license restrictions of this Agreement. You shall not enable,
 assist, or in any way facilitate Third Parties to violate the license
 restrictions of this Agreement.
  
-If you plan to use the Yi Series Models and Derivatives for Commercial Purposes,
-you should contact the Licensor in advance as specified in Section 7 of this
-Agreement named "Updates to the Agreement and Contact Information" and obtain
-written authorization from the Licensor. When you obtain authorization from the
-Licensor to use the Yi Series Models and Derivatives for Commercial Purposes,
-you must comply with the afore-mentioned license restrictions.
+If you plan to use the Yi Series Models and Derivatives for Commercial Purposes, 
+please refer to the Registration Form of Yi Series Models for Commercial Purposes 
+(“Registration Form”), as provided in Attachment 1 of the Yi Series Models 
+Commercial License Agreement and send completed Registration Form to the email: 
+yi@01.ai to complete the registration and obtain the license for Commercial 
+Purposes. If you obtained the license for Commercial Purposes and use the Yi 
+Series Models and Derivatives for Commercial Purposes, you must comply with the 
+afore-mentioned license restrictions and restrictions specified under the Yi 
+Series Models Commercial License Agreement.
  
  
 3. Intellectual Property
-
 The ownership of the Yi Series Models and their related intellectual property
 rights is solely held by the Licensor.
  
@@ -190,27 +190,28 @@ For any questions related to licensing and copyright, please contact the
 Licensor at yi@01.ai.
 
 
-                      Yi系列模型许可协议
-                        版本: 2.0
-                    发布日期: 2023年11月4日 
+
+                     Yi系列模型社区许可协议
+                          版本: 2.1
+                    发布日期: 2023年11月23日
  
 1. 定义
 
 “协议”是指本协议中定义Yi系列模型使用、复制和分发的条款和条件。
- 
-“模型”是指任何附带的基于机器学习的组件(包括检查点)，包括学习的权重、参数(包括优
-化器状态)。
- 
+
+“模型”是指任何附带的基于机器学习的组件(包括检查点)，包括学习的权重、参数（包括优
+化器状态）。
+
 “Yi系列模型”是指许可方开源的以Yi命名的不同规格、不同能力的模型，包括
 Yi-6B、Yi-34B等。
- 
+
 “模型衍生品”是指对Yi系列模型的所有修改、基于Yi系列模型的工作，或通过将Yi系列模型
 的权重、参数、激活或输出模式转移到其他模型而创建或初始化的任何其他模型，以使其他
 模型的性能与Yi系列模型类似，包括但不限于需要使用中间数据表示的提取方法或基于Yi系
 列模型生成合成数据来训练其他模型的方法。
- 
+
 “许可方”是指北京零一万物信息技术有限公司。
- 
+
 “您”是指行使本协议授予的权限和/或出于任何目的和在任何使用领域使用Yi系列模型的个
 人或法人实体。
  
@@ -218,7 +219,7 @@ Yi-6B、Yi-34B等。
  
 “分发”是指向第三方传输、复制、发布或以其他方式共享Yi系列模型，包括将Yi系列模型作
 为通过电子或其他远程方式（例如基于 API 或 Web 访问的任何 SaaS 软件或 PaaS 软
-件）。
+件）提供。
  
 “商业用途”是指使用Yi系列模型，直接或间接为实体或个人进行运营、推广或产生收入，或
 用于任何其他盈利目的。
@@ -229,14 +230,13 @@ Yi-6B、Yi-34B等。
 “个人信息”是指以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，
 不包括匿名化处理后的信息。
  
-“标识” 是指任何商标、服务标记、商号、域名、网站名称或其他带有显著品牌特征的标
-记。
+“标识” 是指任何商标、服务标记、商号、域名、网站名称或其他带有显著品牌特征的标记。
  
  
 2. 许可及许可限制
 
-许可方特此授予您非排他性、全球性、不可转让、不可再许可、可撤销、免版税的版权许
-可。您必须满足如下许可限制条件：
+许可方特此授予您非排他性、全球性、不可转让、不可再许可、可撤销、免版税的版权许可。
+您必须满足如下许可限制条件：
  
 1) 您对Yi系列模型的使用应遵守法律法规以及其他国家/地区适用的法律要求、尊重社会公
 德和伦理道德。包括但不限于您不得将Yi系列模型用作危害国家安全、宣扬恐怖主义、极端
@@ -244,7 +244,7 @@ Yi-6B、Yi-34B等。
 家/地区适用的法律要求禁止的目的。
  
 2) 您不得出于军事或非法目的，或以法律法规以及其他国家/地区适用的法律要求所不允许
-的方式a) 使用、复制、或分发Yi系列模型; 或b) 创建Yi系列模型的全部或部分衍生品。
+的方式 a) 使用、复制、或分发Yi系列模型; 或 b) 创建Yi系列模型的全部或部分衍生品。
  
 3) 您对Yi系列模型的使用（包括使用Yi系列模型的输出）以及模型衍生品的创建不得侵犯
 任何第三方的合法权益，包括但不限于他人肖像权、名誉权、隐私权等人格权，著作权、专
@@ -257,9 +257,10 @@ Yi-6B、Yi-34B等。
 改不得违反本协议的许可限制条件，也不能允许、协助或以其他方式使得第三方违反本协议
 中的许可限制条件。
  
-如果您计划将 Yi系列模型及模型衍生品用作商业用途，您应当事先通过第7款“协议更新及
-联系方式”中的方式联系许可方进行登记并获得许可方的书面授权。若您取得许可方授权将
-Yi系列模型及模型衍生品用作商业用途时，您应满足许可方上述许可限制条件。
+如果您计划将Yi系列模型及模型衍生品用作商业用途，请参见《Yi系列模型商用许可协议》
+附件一《Yi系列模型商用登记表》（“登记表”）并将填写完毕的登记表发送至 yi@01.ai 
+邮箱完成登记即可获得商用许可。若您获得商用许可并将Yi系列模型及模型衍生品用作商业
+用途，您应满足许可方上述许可限制条件及《Yi系列模型商用许可协议》中的商业许可限制。
  
  
 3. 知识产权
@@ -319,5 +320,5 @@ Yi系列模型按“原样”提供。许可方不对Yi系列模型提供任何�
  
 7. 协议更新及联系方式
 
-许可方有权对协议进行不时更新。许可方将通过https://01.ai公布协议最新版本。有关许
-可和版权的任何问题，请通过yi@01.ai 与许可方联系。
+许可方有权对协议进行不时更新。许可方将通过 https://01.ai 公布协议最新版本。有关
+许可和版权的任何问题，请通过 yi@01.ai 与许可方联系。
