@@ -15,6 +15,12 @@
 <a href="https://www.modelscope.cn/organization/01ai/">
   <img src="https://img.shields.io/badge/ModelScope-01--ai-blue">
 </a>
+<a href="https://wisemodel.cn/organization/01.AI">
+  <img src="https://img.shields.io/badge/WiseModel-01--ai-blue">
+</a>
+<a href="https://replicate.com/01-ai">
+  <img src="https://img.shields.io/badge/Replicate-01--ai-blue?logo=data:image/svg%2bxml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBjbGFzcz0ibG9nbyIgZmlsbD0iY3VycmVudENvbG9yIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICA8Zz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCw0MjcuNiAxMDAwLDU0MC42IDYwMy40LDU0MC42IDYwMy40LDEwMDAgNDc3LDEwMDAgNDc3LDQyNy42IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwyMTMuOCAxMDAwLDMyNyAzNjQuOCwzMjcgMzY0LjgsMTAwMCAyMzguNCwxMDAwIDIzOC40LDIxMy44IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwwIDEwMDAsMTEzLjIgMTI2LjQsMTEzLjIgMTI2LjQsMTAwMCAwLDEwMDAgMCwwIAkiPjwvcG9seWdvbj4KICA8L2c+Cjwvc3ZnPg==">
+</a>
 <a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
@@ -33,13 +39,26 @@ developers at [01.AI](https://01.ai/).
 
 ## News
 
-<details>
-<summary>🔔 <b>2023/11/23</b>: The commercial licensing agreement for the Yi series models is updated to v2.1.</summary>
+<details open>
+<summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
+
+This release contains two chat models based on previous released base models, two 8-bits models quntinized by GPTQ, two 4-bits models quantinized by AWQ.
+
+- `Yi-34B-Chat`
+- `Yi-34B-Chat-4bits`
+- `Yi-34B-Chat-8bits`
+- `Yi-6B-Chat`
+- `Yi-6B-Chat-4bits`
+- `Yi-6B-Chat-8bits`
+
+You can try some of them interactively at:
+
+- [HuggingFace](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+- [Replicate](https://replicate.com/01-ai)
 </details>
 
-<details open>
-<summary>🎯 <b>2023/11/23</b>: The chat model of <code>Yi-6B-Chat</code>, <code>Yi-34B-Chat</code>, <code>Yi-6B-Chat-8bits</code>, <code>Yi-34B-Chat-8bits</code>, <code>Yi-6B-Chat-4bits</code>, <code>Yi-34B-Chat-4bits</code>.</summary>
-This release contains two chat models based on previous released base models, two 8-bits models quantized by GPTQ, two 4-bits models quantized by AWQ.
+<details>
+<summary>🔔 <b>2023/11/23</b>: The commercial licensing agreement for the Yi series models is updated to v2.1.</summary>
 </details>
 
 <details>
@@ -195,12 +214,7 @@ By default, the model weights and tokenizer will be downloaded from
 can also download them manually from the following places:
 
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
-- [WiseModel](https://wisemodel.cn/models) (Search for `Yi`)
-- Mirror site (remember to extract the content with `tar`)
-  - [Yi-6B.tar](https://storage.lingyiwanwu.com/yi/models/Yi-6B.tar)
-  - [Yi-6B-200K.tar](https://storage.lingyiwanwu.com/yi/models/Yi-6B-200K.tar)
-  - [Yi-34B.tar](https://storage.lingyiwanwu.com/yi/models/Yi-34B.tar)
-  - [Yi-34B-200K.tar](https://storage.lingyiwanwu.com/yi/models/Yi-34B-200K.tar)
+- [WiseModel](https://wisemodel.cn/organization/01.AI)
 
 ### 3. Examples
 
