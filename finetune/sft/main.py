@@ -37,6 +37,7 @@ from utils.utils import (
     load_hf_tokenizer,
     print_rank_0,
     save_hf_format,
+    save_zero_three_model,
     to_device,
 )
 
@@ -402,6 +403,12 @@ def main():
 
         if args.global_rank == 0:
             save_hf_format(model, tokenizer, args)
+
+        if args.zero_stage == 3:
+            # For zero stage 3, each gpu only has a part of the model, so we need a special save function
+            save_zero_three_model(
+                model, args.global_rank, args.output_dir, zero_stage=args.zero_stage
+            )
 
 
 if __name__ == "__main__":
