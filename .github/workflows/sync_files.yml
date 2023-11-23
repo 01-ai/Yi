@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 jobs:
   detect-changes:
@@ -41,15 +38,15 @@ jobs:
           - modelscope
           - wisemodel
         repo:
-          # - Yi-6B
-          # - Yi-6B-200K
-          # - Yi-6B-Chat
-          # - Yi-6B-Chat-4bits
-          # - Yi-6B-Chat-8bits
-          # - Yi-34B
-          # - Yi-34B-200K
-          # - Yi-34B-Chat
-          # - Yi-34B-Chat-4bits
+          - Yi-6B
+          - Yi-6B-200K
+          - Yi-6B-Chat
+          - Yi-6B-Chat-4bits
+          - Yi-6B-Chat-8bits
+          - Yi-34B
+          - Yi-34B-200K
+          - Yi-34B-Chat
+          - Yi-34B-Chat-4bits
           - Yi-34B-Chat-8bits
     steps:
       - uses: actions/checkout@v4
