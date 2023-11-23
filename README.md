@@ -138,7 +138,7 @@ We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Eval
 | ----------------------- | ------- | ------- | -------- | -------- |
 | Yi-34B-Chat             | 65GiB   | 68GiB   | 76GiB    | >80GiB   |
 | Yi-34B-Chat-8bits(GPTQ) | 35GiB   | 37GiB   | 46GiB    | 58GiB    |
-| Yi-6B-Chat-4bits(AWQ)   | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
+| Yi-34B-Chat-4bits(AWQ)  | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
 | Yi-6B-Chat              | 12GiB   | 13GiB   | 15GiB    | 18GiB    |
 | Yi-6B-Chat-8bits(GPTQ)  | 7GiB    | 8GiB    | 10GiB    | 14GiB    |
 | Yi-6B-Chat-4bits(AWQ)   | 4GiB    | 5GiB    | 7GiB     | 10GiB    |
