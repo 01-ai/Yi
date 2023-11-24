@@ -42,7 +42,7 @@ developers at [01.AI](https://01.ai/).
 <details open>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
 
-This release contains two chat models based on previous released base models, two 8-bits models quntinized by GPTQ, two 4-bits models quantinized by AWQ.
+This release contains two chat models based on previous released base models, two 8-bits models quantized by GPTQ, two 4-bits models quantized by AWQ.
 
 - `Yi-34B-Chat`
 - `Yi-34B-Chat-4bits`
@@ -347,7 +347,7 @@ python quantization/awq/quant_autoawq.py \
   --trust_remote_code
 ```
 
-Once finished, you can then evaluate the resulted model as follows:
+Once finished, you can then evaluate the resulting model as follows:
 
 ```bash
 python quantization/awq/eval_quantized_model.py \
