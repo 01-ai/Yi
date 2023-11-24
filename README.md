@@ -276,8 +276,8 @@ Or if you'd like to get your hands dirty:
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34B", device_map="auto", torch_dtype="auto", trust_remote_code=True)
-tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34B", trust_remote_code=True)
+model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34B", device_map="auto", torch_dtype="auto")
+tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34B")
 inputs = tokenizer("There's a place where time stands still. A place of breath taking wonder, but also", return_tensors="pt")
 max_length = 256
 
