@@ -247,6 +247,17 @@ response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tok
 print(response)
 ```
 
+
+To construct the prompt template manually, you can refer the `chat_template` field in the `tokenizer_config.json` [file](https://huggingface.co/01-ai/Yi-34B-Chat/blob/main/tokenizer_config.json#L60).
+
+```
+<|im_start|>system
+{system_message}<|im_end|>
+<|im_start|>user
+{prompt}<|im_end|>
+<|im_start|>assistant
+```
+
 #### 3.2 Use the base model
 
 ```bash
@@ -283,8 +294,6 @@ outputs = model.generate(
 )
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
-
-To construct the prompt template manually, you can refer the `chat_template` field in the `tokenizer_config.json` [file](https://huggingface.co/01-ai/Yi-34B-Chat/blob/main/tokenizer_config.json#L60)
 
 <details>
 
