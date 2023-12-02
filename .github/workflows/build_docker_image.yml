@@ -107,5 +107,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
-          cache-to: ${{ github.event_name == 'push' && format('type=registry,image-manifest=true,ref={0}:buildcache,mode=max', steps.more-meta.outputs.PRIMARY_TAG_SHORT) || '' }}
-  
+          cache-to: ${{ github.event_name == 'pull_request_target' && '' || format('type=registry,image-manifest=true,ref={0}:buildcache,mode=max', steps.more-meta.outputs.PRIMARY_TAG_SHORT) }}
