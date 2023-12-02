@@ -32,6 +32,7 @@ def create_hf_model(
             from_tf=bool(".ckpt" in model_name_or_path),
             config=model_config,
             trust_remote_code=True,
+            use_flash_attention_2=True,
         )
     else:
         model = model_class.from_pretrained(
