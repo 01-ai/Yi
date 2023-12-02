@@ -1,6 +1,5 @@
 import json
 import os
-from shutil import copy
 
 import deepspeed
 import torch
