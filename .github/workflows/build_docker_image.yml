@@ -104,7 +104,6 @@ jobs:
             HTTPS_PROXY=${{ env.https_proxy }}
             NO_PROXY=${{ env.no_proxy }}
           push: true
-          context: .
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
