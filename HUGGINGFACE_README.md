@@ -27,6 +27,7 @@ and [`Yi-34B-200K`](https://huggingface.co/01-ai/Yi-34B-200K) are base model wit
 
 ## News
 
+- 🔔 **2023/11/15**: The commercial licensing agreement for the **Yi** series models [is set to be updated](https://huggingface.co/01-ai/Yi-34B/discussions/28#65546af9198da1df586baaf2).
 - 🎯 **2023/11/06**: The base model of [`Yi-6B-200K`](https://huggingface.co/01-ai/Yi-6B-200K) 
 and [`Yi-34B-200K`](https://huggingface.co/01-ai/Yi-34B-200K) with 200K context length.
 - 🎯 **2023/11/02**: The base model of [`Yi-6B`](https://huggingface.co/01-ai/Yi-6B) and 
