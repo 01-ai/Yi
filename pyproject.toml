@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yi-models"
-version = "0.1.0"
+version = "0.1.1-dev"
 description = ""
 authors = ["Yi Team <yi@01.ai>"]
 license = "Apache 2.0"
