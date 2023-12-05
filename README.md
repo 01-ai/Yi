@@ -1,7 +1,13 @@
 <div align="center">
-<p align="center">
-<img src="https://github.com/01-ai/Yi/raw/main/assets/img/Yi.svg?sanitize=true" width="200px">
-</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/01-ai/Yi/tree/main/assets/img/Yi_logo_icon_dark.svg" width="200px">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/01-ai/Yi/tree/main/assets/img/Yi_logo_icon_light.svg" width="200px"> 
+  <img alt="specify theme context for images" src="https://raw.githubusercontent.com/01-ai/Yi/tree/main/assets/img/Yi_logo_icon_light.svg">
+</picture>
+
+</br>
+</br>
 
 <a href="https://github.com/01-ai/Yi/issues">
   <img src="https://img.shields.io/github/issues/01-ai/Yi?logo=github">
