@@ -45,6 +45,14 @@ developers at [01.AI](https://01.ai/).
 
 ## News
 
+<details>
+
+<summary>🔥 <b>2023/12/05</b>: The fine-tuned variant of <code>Yi-34B</code> achieves SoTA performance.</summary>
+
+[SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B/) ranks first among all models below 70B and has outperformed the twice larger [deepseek-llm-67b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat). You can check the result in [🤗 Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+
+</details>
+
 <details open>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
 
@@ -386,6 +394,7 @@ the Yi series models.
   - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
 - Finetuning
   - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
+  - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)
 
 ## FAQ
 
