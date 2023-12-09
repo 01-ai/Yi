@@ -106,9 +106,9 @@ the Yi series models.
   - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
 - Finetuning
   - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
-  - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B):
-    [SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B/) ranks first
-    among all models below 70B and has outperformed the twice larger
+  - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B): This
+    model ranks first among all models below 70B and has outperformed the twice
+    larger
     [deepseek-llm-67b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat).
     You can check the result in [🤗 Open LLM
     Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
