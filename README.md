@@ -94,6 +94,25 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
+## Ecosystem
+
+🤗 You are encouraged to create a PR and share your awesome work built on top of
+the Yi series models.
+
+- Serving
+  - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): Efficiently run Yi models locally.
+- Quantization
+  - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
+  - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
+- Finetuning
+  - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
+  - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B): This
+    model ranks first among all models below 70B and has outperformed the twice
+    larger
+    [deepseek-llm-67b-chat](https://huggingface.co/deepseek-ai/deepseek-llm-67b-chat).
+    You can check the result in [🤗 Open LLM
+    Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+
 ## Model Performance
 
 ### Base Model Performance
@@ -373,19 +392,6 @@ python quantization/awq/eval_quantized_model.py \
 ```
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
-
-## Ecosystem
-
-🤗 You are encouraged to create a PR and share your awesome work built on top of
-the Yi series models.
-
-- Serving
-  - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): Efficiently run Yi models locally.
-- Quantization
-  - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
-  - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
-- Finetuning
-  - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)
 
 ## FAQ
 
