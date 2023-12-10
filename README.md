@@ -59,7 +59,7 @@ This release contains two chat models based on previous released base models, tw
 
 You can try some of them interactively at:
 
-- [HuggingFace](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
 - [Replicate](https://replicate.com/01-ai)
 </details>
 
@@ -235,7 +235,7 @@ To install the dependencies, please follow these steps:
 ### 2. Download the model (optional)
 
 By default, the model weights and tokenizer will be downloaded from
-[HuggingFace](https://huggingface.co/01-ai) automatically in the next step. You
+[Hugging Face](https://huggingface.co/01-ai) automatically in the next step. You
 can also download them manually from the following places:
 
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
