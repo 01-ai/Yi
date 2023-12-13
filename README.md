@@ -36,70 +36,25 @@
 
 ---
 
-#### What is xx?
-
-<div style="background:red;width:50%;border-bottom:solid 1px"></div>
-
-<table style="border:0px">
-  <tr>
-    <td style='width:20px;border:0px'> <a href="#introduction-📌"> Introduction </a > </td>
-    <td style='width:50px'>toc2</td>
-    <td style='width:50px'>toc3</td>
-  <tr>
-</table>
-
----
-
 <details open>
-<summary>Table of Contents</summary>
+<summary><b>Table of Contents<b></summary>
 
-| What is Yi |  |  |  |
-|---|---|---|---|
-| [Introduction](#introduction-📌) | Capabilities (WIP) | Models (WIP) | [News](#)
+#### What is Yi?
 
-| Why Yi? | | | |
-|---|---|---|---
-|Use cases (WIP)|[Ecosystem](#ecosystem)|[Benchmarks](#benchmarks)
+📌 [Introduction](#introduction)    📌 Introduction    📌 Introduction  📌 Introduction
 
-| Who can use Yi? |
-|---|
-|Everyone|
 
-|How to use Yi| |
-|---|---|
-|[Download]|[Quick start]|
+#### Why Yi?
 
-</details>
+📌 Introduction    📌 Introduction    📌 Introduction  📌 Introduction
 
-<details open>
-<summary>Table of Contents</summary>
 
-#### What is Yi 
 
-- [Introduction](#introduction-📌) 
-- Capabilities (WIP)
--  Models (WIP) 
--  [News](#)
-
-#### Why Yi? 
-
-- Use cases (WIP)
-- [Ecosystem](#ecosystem
-- [Benchmarks](#benchmarks)
-
-#### Who can use Yi? 
-
-- Everyone
-
-#### How to use Yi
-
-- [Download]and [Quick start]|
 
 </details>
 
 
-
-## Introduction 📌
+## Introduction 
 
 - Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
