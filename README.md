@@ -39,16 +39,16 @@
 <details open>
 <summary>TOC</summary>
 
-- What is Yi?
-  - [Introduction](README.md/#introduction-📌)
-  - Capabilities (WIP) 
-  - Models (WIP)
-  - [News](#)
+### What is Yi?
+- [Introduction](#Introduction-📌)
+- Capabilities (WIP) 
+- Models (WIP)
+- [News](#)
 
-- Why Yi?
-  - Use cases (WIP)
-  - [Ecosystem](#ecosystem)
-  - [Benchmarks](#benchmarks)
+#### Why Yi?
+- Use cases (WIP)
+- [Ecosystem](#ecosystem)
+- [Benchmarks](#benchmarks)
 
 - Who can use Yi?
 
