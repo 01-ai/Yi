@@ -39,32 +39,10 @@
 </div>
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary> Table of Contents</summary>
-  <li>
-    <li><a href="#-introduction-📌">Introduction</a></li>
-    <li><a href="#-quickstart">Quickstart</a></li>
-    <li>
-      <a href="#-create-your-own-mlops-platform">Create your own MLOps Platform</a>
-      <ul>
-        <li><a href="##-1-deploy-zenml">Deploy ZenML</a></li>
-        <li><a href="#-2-deploy-stack-components">Deploy Stack Components</a></li>
-        <li><a href="#-3-create-a-pipeline">Create a Pipeline</a></li>
-        <li><a href="#-4-start-the-dashboard">Start the Dashboard</a></li>
-      </ul>
-    </li>
-    <li><a href="#-roadmap">Roadmap</a></li>
-    <li><a href="#-contributing-and-community">Contributing and Community</a></li>
-    <li><a href="#-getting-help">Getting Help</a></li>
-    <li><a href="#-license">License</a></li>
-  </li>
-</details>
-
 ### Table of Contents
 
 - What is Yi?
-  - [Introduction](#introduction-📌)
+  - [Introduction](/#introduction-📌)
   - Capabilities (WIP) 
   - Models (WIP)
   - [News](#)
