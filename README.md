@@ -42,7 +42,7 @@
 ### Table of Contents
 
 - What is Yi?
-  - [Introduction](/#introduction-📌)
+  - [Introduction](README.md/#introduction-📌)
   - Capabilities (WIP) 
   - Models (WIP)
   - [News](#)
