@@ -38,6 +38,11 @@
 </a>
 </div>
 
+<div align="center">
+  <h3 align="center">Building the next generation of open-source and bilingual LLMs</h3>
+</div>
+
+---
 
 ### Table of Contents
 
