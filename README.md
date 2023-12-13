@@ -9,24 +9,8 @@
 </br>
 </br>
 
-<a href="https://github.com/01-ai/Yi/issues">
-  <img src="https://img.shields.io/github/issues/01-ai/Yi?logo=github">
-</a>
 <a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
   <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
-</a>
-<a href="https://huggingface.co/01-ai">
-  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-01--ai-blue">
-</a>
-<a href="https://www.modelscope.cn/organization/01ai/">
-  <img src="https://img.shields.io/badge/ModelScope-01--ai-blue">
-</a>
-<a href="https://wisemodel.cn/organization/01.AI">
-  <img src="https://img.shields.io/badge/WiseModel-01--ai-blue">
-</a>
-<a href="https://replicate.com/01-ai">
-  <img src="https://img.shields.io/badge/Replicate-01--ai-blue?logo=data:image/svg%2bxml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBjbGFzcz0ibG9nbyIgZmlsbD0iY3VycmVudENvbG9yIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICA8Zz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCw0MjcuNiAxMDAwLDU0MC42IDYwMy40LDU0MC42IDYwMy40LDEwMDAgNDc3LDEwMDAgNDc3LDQyNy42IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwyMTMuOCAxMDAwLDMyNyAzNjQuOCwzMjcgMzY0LjgsMTAwMCAyMzguNCwxMDAwIDIzOC40LDIxMy44IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwwIDEwMDAsMTEzLjIgMTI2LjQsMTEzLjIgMTI2LjQsMTAwMCAwLDEwMDAgMCwwIAkiPjwvcG9seWdvbj4KICA8L2c+Cjwvc3ZnPg==">
-</a>
 <a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
@@ -39,10 +23,40 @@
 </div>
 
 <div align="center">
-  <h3 align="center">Building the next generation of open-source and bilingual LLMs</h3>
+  <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
 
+<p align="center">
+🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
+</p> 
+
+<p align="center">
+    👋 Join our <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">Slack</a> and <a href="resources/WECHAT.md" target="_blank">WeChat</a>
+</p>
+
 ---
+
+<details open>
+<summary>TOC</summary>
+
+- What is Yi?
+  - [Introduction](README.md/#introduction-📌)
+  - Capabilities (WIP) 
+  - Models (WIP)
+  - [News](#)
+
+- Why Yi?
+  - Use cases (WIP)
+  - [Ecosystem](#ecosystem)
+  - [Benchmarks](#benchmarks)
+
+- Who can use Yi?
+
+- How to use Yi? 
+  - [Download]
+  - [Quick start]
+</details>
+
 
 ### Table of Contents
 
