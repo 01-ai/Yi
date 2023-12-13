@@ -38,7 +38,7 @@
 </a>
 </div>
 
-ToC
+Table of Contents
 
 - What is Yi?
   - [Introduction](#introduction)
@@ -54,16 +54,26 @@ ToC
 - Who can use Yi?
 
 - How to use Yi? 
+  - [Download]
+  - [Quick start]
 
-# What is Yi?
+# What is Yi? 
 
-## Introduction
+## Introduction 📌
 
-- Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
+Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
-- (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see Yi's relation with LLaMA.
+- As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
 
-## News
+- Targeted as a bilingual language model and trained on 3T multilingual corpus, Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
+
+  - For English language capability, Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
+  
+  - For Chinese language capability, Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
+
+- (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
+
+## News 📌
 
 <details open>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
@@ -114,9 +124,9 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
-# Why Yi?
+# Why Yi? 
 
-## Ecosystem
+## Ecosystem 📌
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
 
@@ -179,13 +189,9 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
-## Benchmarks
+## Benchmarks 📌
 
-Targeted as a bilingual language model and trained on 3T multilingual corpus, Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
-  - For English language capability, Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
-  
-  - For Chinese language capability, Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
 
 
 # Who can use Yi?
