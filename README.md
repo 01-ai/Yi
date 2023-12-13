@@ -37,50 +37,25 @@
 ---
 
 <details open>
-<summary>TOC</summary>
+<summary>Table of Contents</summary>
 
-### What is Yi?
-- [Introduction](#Introduction-📌)
-- Capabilities (WIP) 
-- Models (WIP)
-- [News](#)
+| What is Yi |  |  |  |
+|---|---|---|---|
+| [Introduction](#Introduction-📌) | Capabilities (WIP) | Models (WIP) | [News](#)
 
-#### Why Yi?
-- Use cases (WIP)
-- [Ecosystem](#ecosystem)
-- [Benchmarks](#benchmarks)
+| Why Yi? | | | |
+|---|---|---|---
+|Use cases (WIP)|[Ecosystem](#ecosystem)|[Benchmarks](#benchmarks)
 
-- Who can use Yi?
+| Who can use Yi? |
+|---|
+||
 
-- How to use Yi? 
-  - [Download]
-  - [Quick start]
+|How to use Yi| |
+|---|---|
+|[Download]|[Quick start]|
+
 </details>
-
-
-### Table of Contents
-
-- What is Yi?
-  - [Introduction](README.md/#introduction-📌)
-  - Capabilities (WIP) 
-  - Models (WIP)
-  - [News](#)
-
-- Why Yi?
-  - Use cases (WIP)
-  - [Ecosystem](#ecosystem)
-  - [Benchmarks](#benchmarks)
-
-- Who can use Yi?
-
-- How to use Yi? 
-  - [Download]
-  - [Quick start]
-
-# What is Yi? 
-
-  - [Introduction](README.md#introduction)
-  - [News](README.md#news-📌)
 
 ## Introduction 📌
 
