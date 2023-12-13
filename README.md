@@ -42,8 +42,8 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary> Table of Contents</summary>
-  <ol>
-    <li><a href="#-introduction">Introduction</a></li>
+  <li>
+    <li><a href="#-Introduction">Introduction</a></li>
     <li><a href="#-quickstart">Quickstart</a></li>
     <li>
       <a href="#-create-your-own-mlops-platform">Create your own MLOps Platform</a>
@@ -58,10 +58,10 @@
     <li><a href="#-contributing-and-community">Contributing and Community</a></li>
     <li><a href="#-getting-help">Getting Help</a></li>
     <li><a href="#-license">License</a></li>
-  </ol>
+  </li>
 </details>
 
-# Table of Contents
+### Table of Contents
 
 - What is Yi?
   - [Introduction](README.md#introduction)
