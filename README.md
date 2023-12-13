@@ -36,16 +36,13 @@
 
 ---
 
-<table>
-  <tr>
-    <th>header</th>
-  <tr>
-</table>
+#### What is xx?
+
 <div style="background:red;width:50%;border-bottom:solid 1px"></div>
 
-<table style="border:1px">
+<table style="border:0px">
   <tr>
-    <td style='width:20px'> <a href="#introduction-📌"> Introduction </a > </td>
+    <td style='width:20px;border:0px'> <a href="#introduction-📌"> Introduction </a > </td>
     <td style='width:50px'>toc2</td>
     <td style='width:50px'>toc3</td>
   <tr>
