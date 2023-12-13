@@ -36,12 +36,29 @@
 
 ---
 
+<table>
+  <tr>
+    <th>header</th>
+  <tr>
+</table>
+<div style="background:red;width:50%;border-bottom:solid 1px"></div>
+
+<table style="border:1px">
+  <tr>
+    <td style='width:20px'> <a href="#introduction-📌"> Introduction </a > </td>
+    <td style='width:50px'>toc2</td>
+    <td style='width:50px'>toc3</td>
+  <tr>
+</table>
+
+---
+
 <details open>
 <summary>Table of Contents</summary>
 
 | What is Yi |  |  |  |
 |---|---|---|---|
-| [Introduction](#Introduction-📌) | Capabilities (WIP) | Models (WIP) | [News](#)
+| [Introduction](#introduction-📌) | Capabilities (WIP) | Models (WIP) | [News](#)
 
 | Why Yi? | | | |
 |---|---|---|---
@@ -49,7 +66,7 @@
 
 | Who can use Yi? |
 |---|
-||
+|Everyone|
 
 |How to use Yi| |
 |---|---|
@@ -57,9 +74,37 @@
 
 </details>
 
+<details open>
+<summary>Table of Contents</summary>
+
+#### What is Yi 
+
+- [Introduction](#introduction-📌) 
+- Capabilities (WIP)
+-  Models (WIP) 
+-  [News](#)
+
+#### Why Yi? 
+
+- Use cases (WIP)
+- [Ecosystem](#ecosystem
+- [Benchmarks](#benchmarks)
+
+#### Who can use Yi? 
+
+- Everyone
+
+#### How to use Yi
+
+- [Download]and [Quick start]|
+
+</details>
+
+
+
 ## Introduction 📌
 
-Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
+- Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
 - As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
 
