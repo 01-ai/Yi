@@ -43,7 +43,7 @@
 <details>
   <summary> Table of Contents</summary>
   <li>
-    <li><a href="#-Introduction">Introduction</a></li>
+    <li><a href="#-introduction-📌">Introduction</a></li>
     <li><a href="#-quickstart">Quickstart</a></li>
     <li>
       <a href="#-create-your-own-mlops-platform">Create your own MLOps Platform</a>
@@ -64,7 +64,7 @@
 ### Table of Contents
 
 - What is Yi?
-  - [Introduction](README.md#introduction)
+  - [Introduction](#introduction-📌)
   - Capabilities (WIP) 
   - Models (WIP)
   - [News](#)
@@ -81,6 +81,9 @@
   - [Quick start]
 
 # What is Yi? 
+
+  - [Introduction](README.md#introduction)
+  - [News](README.md#news-📌)
 
 ## Introduction 📌
 
