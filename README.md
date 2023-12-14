@@ -39,9 +39,9 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-|  What is Yi | Why Yi| Who can use Yi?|How to use Yi?|Misc
+|  ✅ What is Yi? | ✅ Why Yi?| ✅ Who can use Yi?|✅ How to use Yi?|✅ Misc.
 |---|---|---|---|---
-📌 [Introduction](#📌-introduction) <br>📌 Capabilities (WIP)   <br>📌 Models (WIP)  <br>📌 [News](#📌-news) |📌 Use cases (WIP)    <br>📌 [Ecosystem](#📌-ecosystem)    <br>📌 [Benchmarks](#📌-benchmarks)  |📌 [Every one](#📌-who-can-use-yi)|📌 [Quick start](#📌-how-to-use-yi)|📌 [Disclaimer](#📌-disclaimer)   <br>📌 [License](#📌-license)
+📌 [Introduction](#📌-introduction) <br><br>📌 Capabilities (WIP) <br><br>📌 Models (WIP)  <br><br>📌 [News](#📌-news) |📌 Use cases (WIP)    <br><br>📌 [Ecosystem](#📌-ecosystem)   <br><br>📌 [Benchmarks](#📌-benchmarks)  |📌 [Every one](#📌-who-can-use-yi)|📌 [Quick start](#📌-how-to-use-yi)|📌 [Disclaimer](#📌-disclaimer)  <br><br>📌 [License](#📌-license)
 
 </details>
 
@@ -80,9 +80,9 @@
 
 - 🤖 Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
-- As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
+- 💬 As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
 
-- Targeted as a bilingual language model and trained on 3T multilingual corpus, Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
+- 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
   - For English language capability, Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
