@@ -41,15 +41,24 @@
 
 #### What is Yi?
 
-📌 [Introduction](#introduction)    📌 Introduction    📌 Introduction  📌 Introduction
+📌 [Introduction](#📌-introduction)    📌 Capabilities (WIP)   📌 Models (WIP)  📌 [News](#📌-news)
 
 
 #### Why Yi?
 
-📌 Introduction    📌 Introduction    📌 Introduction  📌 Introduction
+📌 Use cases (WIP)    📌 [Ecosystem](#📌-ecosystem)    📌 [Benchmarks](#📌-benchmarks)  
 
-####
+#### Who can use Yi?
 
+📌 [Get free commericial license permission](#📌-who-can-use-yi)
+
+#### How to use Yi?
+
+📌 [Quick start](#📌-how-to-use-yi)
+
+#### Misc.
+
+📌 [Disclaimer](#📌-disclaimer)    📌 [License](#📌-license)
 
 </details>
 
@@ -68,7 +77,11 @@
 
 - (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
-## News 📌
+<div align="right">[ <a href="#table-of-contents">⬆️ Back to top </a> ]</div>
+
+<div align="right"> <a href="#table-of-contents">⬆️ Back to top </a> </div>
+
+## 📌 News 
 
 <details>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
@@ -119,9 +132,7 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
-<div align="right">[ <a href="#table-of-contents">⬆️ Back to top ↑</a> ]</div>
 
-<div align="right"> <a href="#table-of-contents">⬆️ Back to top ↑</a> </div>
 
 # Why Yi? 
 
@@ -189,8 +200,6 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
 ## 📌 Benchmarks 
-
-## Model Performance
 
 ### Base Model Performance
 
@@ -282,14 +291,13 @@ However, this higher diversity might amplify certain existing issues, including:
 
 To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as`temperature`,`top_p`, or`top_k`. These adjustments can help in the balance between creativity and coherence in the model's outputs.
 
-
-# Who can use Yi?
+# 📌 Who can use Yi?
 
 - Yi series models are free for personal usage, academic purposes, and commercial use. 
   
 - For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
-# How to use Yi?
+# 📌 How to use Yi?
 
 ### 1. Prepare development environment
 
@@ -472,15 +480,7 @@ python quantization/awq/eval_quantized_model.py \
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
 
-## FAQ
-
-1. **What dataset was this trained with?**
-
-    The dataset we use contains Chinese & English only. We used approximately 3T
-    tokens. The detailed number and its construction will be described in the
-    upcoming technical report.
-
-## Disclaimer
+## 📌 Disclaimer
 
 We use data compliance checking algorithms during the training process, to
 ensure the compliance of the trained model to the best of our ability. Due to
@@ -491,7 +491,7 @@ problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
-## License
+## 📌 License
 
 The source code in this repo is licensed under the [Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models
