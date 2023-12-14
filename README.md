@@ -41,16 +41,21 @@
 
 #### What is Yi?
 
-📌 [Introduction](#📌-introduction)    📌 Capabilities (WIP)   📌 Models (WIP)  📌 [News](#📌-news)
+📌 [Introduction](#📌-introduction)    
+📌 Capabilities (WIP)   
+📌 Models (WIP)  
+📌 [News](#📌-news)
 
 
 #### Why Yi?
 
-📌 Use cases (WIP)    📌 [Ecosystem](#📌-ecosystem)    📌 [Benchmarks](#📌-benchmarks)  
+📌 Use cases (WIP)    
+📌 [Ecosystem](#📌-ecosystem)    
+📌 [Benchmarks](#📌-benchmarks)  
 
 #### Who can use Yi?
 
-📌 [Get free commericial license permission](#📌-who-can-use-yi)
+📌 [Every one](#📌-who-can-use-yi)
 
 #### How to use Yi?
 
@@ -58,10 +63,10 @@
 
 #### Misc.
 
-📌 [Disclaimer](#📌-disclaimer)    📌 [License](#📌-license)
+📌 [Disclaimer](#📌-disclaimer)    
+📌 [License](#📌-license)
 
 </details>
-
 
 ## 📌 Introduction 
 
