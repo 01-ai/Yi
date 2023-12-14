@@ -31,7 +31,7 @@
 </p> 
 
 <p align="center">
-    Join our <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">👋 Slack</a> and <a href="resources/WECHAT.md" target="_blank">💬 WeChat</a>
+    Join our 👋 <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">Slack</a> and 💬 <a href="resources/WECHAT.md" target="_blank"> WeChat</a>!
 </p>
 
 ---
@@ -44,15 +44,15 @@
   - [📌 News](#-news)
 - [✅ Why Yi?](#-why-yi)
   - [📌 Ecosystem](#-ecosystem)
-    - [Yi's upstream](#yis-upstream)
-    - [Yi's downstream](#yis-downstream)
+    - [🌊 Upstream](#-upstream)
+    - [🌊 Downstream](#-downstream)
       - [Serving](#serving)
       - [Quantitation](#quantitation)
       - [Fine-tuning](#fine-tuning)
   - [📌 Benchmarks](#-benchmarks)
-    - [Base model performance](#base-model-performance)
-    - [Chat model performance](#chat-model-performance)
-    - [Quantized chat model performance](#quantized-chat-model-performance)
+    - [📊 Base model performance](#-base-model-performance)
+    - [📊 Chat model performance](#-chat-model-performance)
+    - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
     - [Limitations of chat model](#limitations-of-chat-model)
 - [✅ Who can use Yi?](#-who-can-use-yi)
 - [✅ How to use Yi?](#-how-to-use-yi)
@@ -67,8 +67,9 @@
       - [3.4 Quantization](#34-quantization)
         - [GPT-Q](#gpt-q)
         - [AWQ](#awq)
-  - [📌 Disclaimer](#-disclaimer)
-  - [📌 License](#-license)
+- [✅ Misc.](#-misc)
+    - [📌 Disclaimer](#-disclaimer)
+    - [📌 License](#-license)
 
 </details>
 
@@ -90,9 +91,16 @@
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-<div align="right"> <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> </div>
-
 ## 📌 News 
+
+<details>
+<summary>🔥 <b>2023/12/12</b>Test invitation: Expericing Yi's powerful APIs! </summary>
+
+We're thrilled to invite you to participate in our beta testing phase for Yi's exceptional LLM APIs! 
+
+To get started and gain access to Yi's APIs, simply drop an email to yi@01.ai. 
+
+</details>
 
 <details>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
@@ -143,7 +151,8 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
 
 # ✅ Why Yi? 
  
@@ -151,7 +160,7 @@ sequence length and can be extended to 32K during inference time.
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
 
-### Yi's upstream
+### 🌊 Upstream
 
 The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
@@ -165,7 +174,7 @@ tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34b", use_fast=False)
 model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ```
 
-### Yi's downstream
+### 🌊 Downstream
 
 > 💡 Tip
 > 
@@ -210,11 +219,12 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
 
 ## 📌 Benchmarks 
 
-### Base model performance
+### 📊 Base model performance
 
 | Model         |   MMLU   |  CMMLU   |  C-Eval  |  GAOKAO  |   BBH    | Common-sense Reasoning | Reading Comprehension | Math & Code |
 | :------------ | :------: | :------: | :------: | :------: | :------: | :--------------------: | :-------------------: | :---------: |
@@ -255,7 +265,7 @@ is derived by averaging the scores on the remaining tasks. Since the scores for
 these two tasks are generally lower than the average, we believe that
 Falcon-180B's performance was not underestimated.
 
-### Chat model performance
+### 📊 Chat model performance
 
 | Model                   | MMLU      | MMLU      | CMMLU     | CMMLU     | C-Eval(val)<sup>*</sup> | C-Eval(val)<sup>*</sup> | Truthful QA | BBH       | BBH       | GSM8k     | GSM8k     |
 | ----------------------- | --------- | --------- | --------- | --------- | ----------------------- | ----------------------- | ----------- | --------- | --------- | --------- | --------- |
@@ -277,7 +287,7 @@ We evaluated various benchmarks using both zero-shot and few-shot methods, excep
 
 <strong>*</strong>: C-Eval results are evaluated on the validation datasets
 
-### Quantized chat model performance
+### 📊 Quantized chat model performance
 
 We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have negligible losses. Additionally, they reduce the memory footprint size. After testing different configurations of prompts and generation lengths, we highly recommend following the guidelines in the memory footprint table below when selecting a device to run our models.
 
@@ -304,7 +314,8 @@ However, this higher diversity might amplify certain existing issues, including:
 
 To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as`temperature`,`top_p`, or`top_k`. These adjustments can help in the balance between creativity and coherence in the model's outputs.
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
 
 # ✅ Who can use Yi?
 
@@ -312,7 +323,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
   
 - For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # ✅ How to use Yi?
 
@@ -497,9 +508,11 @@ python quantization/awq/eval_quantized_model.py \
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📌 Disclaimer
+# ✅ Misc.
+
+### 📌 Disclaimer
 
 We use data compliance checking algorithms during the training process, to
 ensure the compliance of the trained model to the best of our ability. Due to
@@ -510,9 +523,10 @@ problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📌 License
+
+### 📌 License
 
 The source code in this repo is licensed under the [Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models
@@ -520,4 +534,4 @@ are fully open for academic research and free commercial usage with permission
 via applications. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
 For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
