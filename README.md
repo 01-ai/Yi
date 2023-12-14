@@ -26,6 +26,8 @@
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
 
+  <h3 align="center">haha</h3>
+
 <p align="center">
 🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
 </p> 
@@ -39,10 +41,10 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- [What is Yi?](#what-is-yi)
+- [✅ What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
   - [📌 News](#-news)
-- [Why Yi?](#why-yi)
+- [✅ Why Yi?](#-why-yi)
   - [📌 Ecosystem](#-ecosystem)
     - [Yi's upstream](#yis-upstream)
     - [Yi's downstream](#yis-downstream)
@@ -54,8 +56,8 @@
     - [Chat model performance](#chat-model-performance)
     - [Quantized chat model performance](#quantized-chat-model-performance)
     - [Limitations of chat model](#limitations-of-chat-model)
-- [📌 Who can use Yi?](#-who-can-use-yi-1)
-- [📌 How to use Yi?](#-how-to-use-yi-1)
+- [✅ Who can use Yi?](#-who-can-use-yi)
+- [✅ How to use Yi?](#-how-to-use-yi)
     - [1. Prepare development environment](#1-prepare-development-environment)
       - [1.1 Docker](#11-docker)
       - [1.2 Local development environment](#12-local-development-environment)
@@ -72,53 +74,7 @@
 
 </details>
 
-<details open>
-<summary></b>📕 Table of Contents</b></summary>
-
-|  ✅ What is Yi? | ✅ Why Yi?| ✅ Who can use Yi?|✅ How to use Yi?|✅ Misc.
-|---|---|---|---|---
-📌 [Introduction](#📌-introduction) <br><br>📌 Capabilities (WIP) <br><br>📌 Models (WIP)  <br><br>📌 [News](#📌-news) |📌 Use cases (WIP)    <br><br>📌 [Ecosystem](#📌-ecosystem)   <br><br>📌 [Benchmarks](#📌-benchmarks)  |📌 [Every one](#📌-who-can-use-yi)|📌 [Quick start](#📌-how-to-use-yi)|📌 [Disclaimer](#📌-disclaimer)  <br><br>📌 [License](#📌-license)
-
-</details>
-
-<details open>
-<summary></b>📕 Table of Contents</b></summary>
-
-#### ✅ What is Yi?
-
-📌 [Introduction](#📌-introduction)    
-📌 Capabilities (WIP)   
-📌 Models (WIP)  
-📌 [News](#📌-news)
-
-#### ✅ Why Yi?
-
-📌 Use cases (WIP)    
-📌 [Ecosystem](#📌-ecosystem)<br>
-    [Yi's upstream](#yis-upstream)
-    [Yi's downstream]
-        [Serving]
-        [Quantitation]
-        [Fine-tuning]    
-📌 [Benchmarks](#📌-benchmarks)  
-
-#### ✅ Who can use Yi?
-
-📌 [Every one](#📌-who-can-use-yi)
-
-#### ✅ How to use Yi?
-
-📌 [Quick start](#📌-how-to-use-yi)
-
-####✅ Misc.
-
-📌 [Disclaimer](#📌-disclaimer)    
-📌 [License](#📌-license)
-
-</details>
-
-
-# What is Yi?
+# ✅ What is Yi?
 
 ## 📌 Introduction 
 
@@ -134,7 +90,10 @@
 
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
-<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+
+<div align="right"> [ <a href="#haha">Back to top ⬆️ </a> ] </div>
+
+<div align="right"> [ <a href="#Building-the-Next-Generation-of-Open-Source-and-Bilingual-LLMs">Back to top ⬆️ </a> ] </div>
 
 ## 📌 News 
 
@@ -189,7 +148,7 @@ sequence length and can be extended to 32K during inference time.
 
 <div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
-# Why Yi? 
+# ✅ Why Yi? 
  
 ## 📌 Ecosystem
 
@@ -350,7 +309,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 <div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
-# 📌 Who can use Yi?
+# ✅ Who can use Yi?
 
 - Yi series models are free for personal usage, academic purposes, and commercial use. 
   
@@ -358,7 +317,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 <div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
-# 📌 How to use Yi?
+# ✅ How to use Yi?
 
 ### 1. Prepare development environment
 
