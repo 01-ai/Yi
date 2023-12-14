@@ -39,10 +39,10 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- [✅ What is Yi?](#-what-is-yi)
+- [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
   - [🎉 News](#-news)
-- [✅ Why Yi?](#-why-yi)
+- [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
     - [💦 Upstream](#-upstream)
     - [🌊 Downstream](#-downstream)
@@ -54,8 +54,8 @@
     - [📊 Chat model performance](#-chat-model-performance)
     - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
     - [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
-- [✅ Who can use Yi?](#-who-can-use-yi)
-- [✅ How to use Yi?](#-how-to-use-yi)
+- [🟢 Who can use Yi?](#-who-can-use-yi)
+- [🟢 How to use Yi?](#-how-to-use-yi)
     - [1. Prepare development environment](#1-prepare-development-environment)
       - [1.1 Docker](#11-docker)
       - [1.2 Local development environment](#12-local-development-environment)
@@ -73,7 +73,7 @@
 
 </details>
 
-# ✅ What is Yi?
+# 🟢 What is Yi?
 
 ## 📌 Introduction 
 
@@ -94,7 +94,9 @@
 ## 🎉 News 
 
 <details>
-<summary>🙌 <b>2023/12/12</b>Test invitation: Expericing Yi's powerful APIs! </summary>
+<summary>🙌 <b>2023/12/12</b> Test invitation: Expericing Yi's powerful APIs! </summary>
+
+<br>
 
 We're thrilled to invite you to participate in our beta testing phase for Yi's exceptional LLM APIs! 
 
@@ -154,11 +156,17 @@ sequence length and can be extended to 32K during inference time.
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 
-# ✅ Why Yi? 
+# 🟢 Why Yi? 
  
 ## 🌎 Ecosystem
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
+
+- [💦 Upstream](#-upstream)
+- [🌊 Downstream](#-downstream)
+  - [🔗 Serving](#-serving)
+  - [⚙️ Quantitation](#️-quantitation)
+  - [🛠️ Fine-tuning](#️-fine-tuning)
 
 ### 💦 Upstream
 
@@ -198,9 +206,9 @@ If you have limited computational capabilities, you can use Yi's quantized model
 
 These quantized models have reduced precision and but offer increased efficiency, such as faster inference speed and smaller RAM usage.
 
-- TheBloke/Yi-34B-GPTQ 
-- TheBloke/Yi-34B-GGUF
-- TheBloke/Yi-34B-AWQ
+- [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ) 
+- [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
+- [TheBloke/Yi-34B-AWQ](https://huggingface.co/TheBloke/Yi-34B-AWQ)
   
 #### 🛠️ Fine-tuning
 
@@ -223,6 +231,11 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 
 ## 📌 Benchmarks 
+
+- [📊 Base model performance](#-base-model-performance)
+- [📊 Chat model performance](#-chat-model-performance)
+- [📊 Quantized chat model performance](#-quantized-chat-model-performance)
+- [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
 
 ### 📊 Base model performance
 
@@ -317,7 +330,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 
-# ✅ Who can use Yi?
+# 🟢 Who can use Yi?
 
 - The Yi series models are free for personal usage, academic purposes, and commercial use. 
   
@@ -325,7 +338,10 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-# ✅ How to use Yi?
+# 🟢 How to use Yi?
+
+ <!-- omit in toc --> 
+
 
 ### 1. Prepare development environment
 
