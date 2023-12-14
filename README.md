@@ -94,7 +94,7 @@
 ## 🎉 News 
 
 <details>
-<summary>🙌 <b>2023/12/12</b> Test invitation: Expericing Yi's powerful APIs! </summary>
+<summary>🙌 <b>2023/12/12</b>: Test invitation: Expericing Yi's powerful APIs! </summary>
 
 <br>
 
@@ -339,9 +339,6 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
-
- <!-- omit in toc --> 
-
 
 ### 1. Prepare development environment
 
