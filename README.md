@@ -26,8 +26,6 @@
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
 
-  <h3 align="center">haha</h3>
-
 <p align="center">
 🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
 </p> 
@@ -90,10 +88,9 @@
 
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-<div align="right"> [ <a href="#haha">Back to top ⬆️ </a> ] </div>
-
-<div align="right"> [ <a href="#Building-the-Next-Generation-of-Open-Source-and-Bilingual-LLMs">Back to top ⬆️ </a> ] </div>
+<div align="right"> <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> </div>
 
 ## 📌 News 
 
