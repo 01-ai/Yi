@@ -41,19 +41,19 @@
 
 - [✅ What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
-  - [📌 News](#-news)
+  - [🎉 News](#-news)
 - [✅ Why Yi?](#-why-yi)
-  - [📌 Ecosystem](#-ecosystem)
-    - [🌊 Upstream](#-upstream)
+  - [🌎 Ecosystem](#-ecosystem)
+    - [💦 Upstream](#-upstream)
     - [🌊 Downstream](#-downstream)
-      - [Serving](#serving)
-      - [Quantitation](#quantitation)
-      - [Fine-tuning](#fine-tuning)
+      - [🔗 Serving](#-serving)
+      - [⚙️ Quantitation](#️-quantitation)
+      - [🛠️ Fine-tuning](#️-fine-tuning)
   - [📌 Benchmarks](#-benchmarks)
     - [📊 Base model performance](#-base-model-performance)
     - [📊 Chat model performance](#-chat-model-performance)
     - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-    - [Limitations of chat model](#limitations-of-chat-model)
+    - [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
 - [✅ Who can use Yi?](#-who-can-use-yi)
 - [✅ How to use Yi?](#-how-to-use-yi)
     - [1. Prepare development environment](#1-prepare-development-environment)
@@ -68,8 +68,8 @@
         - [GPT-Q](#gpt-q)
         - [AWQ](#awq)
 - [✅ Misc.](#-misc)
-    - [📌 Disclaimer](#-disclaimer)
-    - [📌 License](#-license)
+    - [📡 Disclaimer](#-disclaimer)
+    - [🪪 License](#-license)
 
 </details>
 
@@ -91,10 +91,10 @@
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📌 News 
+## 🎉 News 
 
 <details>
-<summary>🔥 <b>2023/12/12</b>Test invitation: Expericing Yi's powerful APIs! </summary>
+<summary>🙌 <b>2023/12/12</b>Test invitation: Expericing Yi's powerful APIs! </summary>
 
 We're thrilled to invite you to participate in our beta testing phase for Yi's exceptional LLM APIs! 
 
@@ -156,11 +156,11 @@ sequence length and can be extended to 32K during inference time.
 
 # ✅ Why Yi? 
  
-## 📌 Ecosystem
+## 🌎 Ecosystem
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
 
-### 🌊 Upstream
+### 💦 Upstream
 
 The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
@@ -182,7 +182,7 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 >
 > - To help others quickly understand your work, it is recommended to use the format of `<model-name>: <model-intro> + <model-highlights>`.
 
-#### Serving 
+#### 🔗 Serving 
 
 If you want to get up with Yi in a few minutes, you can use the following services built upon Yi.
 
@@ -192,7 +192,7 @@ If you want to get up with Yi in a few minutes, you can use the following servic
   
 - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): you can use this service to run Yi models locally with added flexibility and customization.
   
-#### Quantitation
+#### ⚙️ Quantitation
 
 If you have limited computational capabilities, you can use Yi's quantized models as follows. 
 
@@ -202,7 +202,7 @@ These quantized models have reduced precision and but offer increased efficiency
 - TheBloke/Yi-34B-GGUF
 - TheBloke/Yi-34B-AWQ
   
-#### Fine-tuning
+#### 🛠️ Fine-tuning
 
 If you're seeking to explore the diverse capabilities within Yi's thriving family, you can delve into Yi's fine-tuned models as below.
 
@@ -302,7 +302,7 @@ We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Eval
 
 Note: All the numbers in the table represent the minimum recommended memory for running models of the corresponding size.
 
-### Limitations of chat model
+### ⛔️ Limitations of chat model
 
 The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
@@ -512,7 +512,7 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 
 # ✅ Misc.
 
-### 📌 Disclaimer
+### 📡 Disclaimer
 
 We use data compliance checking algorithms during the training process, to
 ensure the compliance of the trained model to the best of our ability. Due to
@@ -526,7 +526,7 @@ as well as any associated data security concerns.
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 
-### 📌 License
+### 🪪 License
 
 The source code in this repo is licensed under the [Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models
