@@ -31,37 +31,45 @@
 </p> 
 
 <p align="center">
-    👋 Join our <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">Slack</a> and <a href="resources/WECHAT.md" target="_blank">WeChat</a>
+    Join our <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">👋 Slack</a> and <a href="resources/WECHAT.md" target="_blank">💬 WeChat</a>
 </p>
 
 ---
 
 <details open>
-<summary><b>📕 Table of Contents</b></summary>
+<summary></b>📕 Table of Contents</b></summary>
 
-#### What is Yi?
+|  What is Yi | Why Yi| Who can use Yi?|How to use Yi?|Misc
+|---|---|---|---|---
+📌 [Introduction](#📌-introduction) <br>📌 Capabilities (WIP)   <br>📌 Models (WIP)  <br>📌 [News](#📌-news) |📌 Use cases (WIP)    <br>📌 [Ecosystem](#📌-ecosystem)    <br>📌 [Benchmarks](#📌-benchmarks)  |📌 [Every one](#📌-who-can-use-yi)|📌 [Quick start](#📌-how-to-use-yi)|📌 [Disclaimer](#📌-disclaimer)   <br>📌 [License](#📌-license)
+
+</details>
+
+<details open>
+<summary></b>📕 Table of Contents</b></summary>
+
+### What is Yi?
 
 📌 [Introduction](#📌-introduction)    
 📌 Capabilities (WIP)   
 📌 Models (WIP)  
 📌 [News](#📌-news)
 
-
-#### Why Yi?
+### Why Yi?
 
 📌 Use cases (WIP)    
 📌 [Ecosystem](#📌-ecosystem)    
 📌 [Benchmarks](#📌-benchmarks)  
 
-#### Who can use Yi?
+### Who can use Yi?
 
 📌 [Every one](#📌-who-can-use-yi)
 
-#### How to use Yi?
+### How to use Yi?
 
 📌 [Quick start](#📌-how-to-use-yi)
 
-#### Misc.
+### Misc.
 
 📌 [Disclaimer](#📌-disclaimer)    
 📌 [License](#📌-license)
@@ -70,7 +78,7 @@
 
 ## 📌 Introduction 
 
-- Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
+- 🤖 Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
 - As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
 
@@ -80,11 +88,9 @@
   
   - For Chinese language capability, Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
 
-- (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
+- 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
-<div align="right">[ <a href="#table-of-contents">⬆️ Back to top </a> ]</div>
-
-<div align="right"> <a href="#table-of-contents">⬆️ Back to top </a> </div>
+<div align="right">[ <a href="#what-is-yi">Back to top ⬆️ </a> ]</div>
 
 ## 📌 News 
 
