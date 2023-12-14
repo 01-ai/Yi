@@ -39,6 +39,42 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
+- [What is Yi?](#what-is-yi)
+  - [📌 Introduction](#-introduction)
+  - [📌 News](#-news)
+- [Why Yi?](#why-yi)
+  - [📌 Ecosystem](#-ecosystem)
+    - [Yi's upstream](#yis-upstream)
+    - [Yi's downstream](#yis-downstream)
+      - [Serving](#serving)
+      - [Quantitation](#quantitation)
+      - [Fine-tuning](#fine-tuning)
+  - [📌 Benchmarks](#-benchmarks)
+    - [Base model performance](#base-model-performance)
+    - [Chat model performance](#chat-model-performance)
+    - [Quantized chat model performance](#quantized-chat-model-performance)
+    - [Limitations of chat model](#limitations-of-chat-model)
+- [📌 Who can use Yi?](#-who-can-use-yi-1)
+- [📌 How to use Yi?](#-how-to-use-yi-1)
+    - [1. Prepare development environment](#1-prepare-development-environment)
+      - [1.1 Docker](#11-docker)
+      - [1.2 Local development environment](#12-local-development-environment)
+    - [2. Download the model (optional)](#2-download-the-model-optional)
+    - [3. Examples](#3-examples)
+      - [3.1 Use the chat model](#31-use-the-chat-model)
+      - [3.2 Use the base model](#32-use-the-base-model)
+      - [3.3 Finetune from the base model](#33-finetune-from-the-base-model)
+      - [3.4 Quantization](#34-quantization)
+        - [GPT-Q](#gpt-q)
+        - [AWQ](#awq)
+  - [📌 Disclaimer](#-disclaimer)
+  - [📌 License](#-license)
+
+</details>
+
+<details open>
+<summary></b>📕 Table of Contents</b></summary>
+
 |  ✅ What is Yi? | ✅ Why Yi?| ✅ Who can use Yi?|✅ How to use Yi?|✅ Misc.
 |---|---|---|---|---
 📌 [Introduction](#📌-introduction) <br><br>📌 Capabilities (WIP) <br><br>📌 Models (WIP)  <br><br>📌 [News](#📌-news) |📌 Use cases (WIP)    <br><br>📌 [Ecosystem](#📌-ecosystem)   <br><br>📌 [Benchmarks](#📌-benchmarks)  |📌 [Every one](#📌-who-can-use-yi)|📌 [Quick start](#📌-how-to-use-yi)|📌 [Disclaimer](#📌-disclaimer)  <br><br>📌 [License](#📌-license)
@@ -48,33 +84,41 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-### What is Yi?
+#### ✅ What is Yi?
 
 📌 [Introduction](#📌-introduction)    
 📌 Capabilities (WIP)   
 📌 Models (WIP)  
 📌 [News](#📌-news)
 
-### Why Yi?
+#### ✅ Why Yi?
 
 📌 Use cases (WIP)    
-📌 [Ecosystem](#📌-ecosystem)    
+📌 [Ecosystem](#📌-ecosystem)<br>
+    [Yi's upstream](#yis-upstream)
+    [Yi's downstream]
+        [Serving]
+        [Quantitation]
+        [Fine-tuning]    
 📌 [Benchmarks](#📌-benchmarks)  
 
-### Who can use Yi?
+#### ✅ Who can use Yi?
 
 📌 [Every one](#📌-who-can-use-yi)
 
-### How to use Yi?
+#### ✅ How to use Yi?
 
 📌 [Quick start](#📌-how-to-use-yi)
 
-### Misc.
+####✅ Misc.
 
 📌 [Disclaimer](#📌-disclaimer)    
 📌 [License](#📌-license)
 
 </details>
+
+
+# What is Yi?
 
 ## 📌 Introduction 
 
@@ -90,7 +134,7 @@
 
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
-<div align="right">[ <a href="#what-is-yi">Back to top ⬆️ </a> ]</div>
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
 ## 📌 News 
 
@@ -143,10 +187,10 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
-
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
 # Why Yi? 
-
+ 
 ## 📌 Ecosystem
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
@@ -183,7 +227,7 @@ If you want to get up with Yi in a few minutes, you can use the following servic
   
 - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): you can use this service to run Yi models locally with added flexibility and customization.
   
-#### Quantation
+#### Quantitation
 
 If you have limited computational capabilities, you can use Yi's quantized models as follows. 
 
@@ -210,9 +254,11 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+
 ## 📌 Benchmarks 
 
-### Base Model Performance
+### Base model performance
 
 | Model         |   MMLU   |  CMMLU   |  C-Eval  |  GAOKAO  |   BBH    | Common-sense Reasoning | Reading Comprehension | Math & Code |
 | :------------ | :------: | :------: | :------: | :------: | :------: | :--------------------: | :-------------------: | :---------: |
@@ -253,7 +299,7 @@ is derived by averaging the scores on the remaining tasks. Since the scores for
 these two tasks are generally lower than the average, we believe that
 Falcon-180B's performance was not underestimated.
 
-### Chat Model Performance
+### Chat model performance
 
 | Model                   | MMLU      | MMLU      | CMMLU     | CMMLU     | C-Eval(val)<sup>*</sup> | C-Eval(val)<sup>*</sup> | Truthful QA | BBH       | BBH       | GSM8k     | GSM8k     |
 | ----------------------- | --------- | --------- | --------- | --------- | ----------------------- | ----------------------- | ----------- | --------- | --------- | --------- | --------- |
@@ -275,7 +321,7 @@ We evaluated various benchmarks using both zero-shot and few-shot methods, excep
 
 <strong>*</strong>: C-Eval results are evaluated on the validation datasets
 
-### Quantized Chat Model Performance
+### Quantized chat model performance
 
 We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have negligible losses. Additionally, they reduce the memory footprint size. After testing different configurations of prompts and generation lengths, we highly recommend following the guidelines in the memory footprint table below when selecting a device to run our models.
 
@@ -290,7 +336,7 @@ We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Eval
 
 Note: All the numbers in the table represent the minimum recommended memory for running models of the corresponding size.
 
-### Limitations of Chat Model
+### Limitations of chat model
 
 The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
@@ -302,11 +348,15 @@ However, this higher diversity might amplify certain existing issues, including:
 
 To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as`temperature`,`top_p`, or`top_k`. These adjustments can help in the balance between creativity and coherence in the model's outputs.
 
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+
 # 📌 Who can use Yi?
 
 - Yi series models are free for personal usage, academic purposes, and commercial use. 
   
 - For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
+
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
 
 # 📌 How to use Yi?
 
@@ -438,7 +488,7 @@ The Arctic is a place of great beauty. The ice and snow are a
 For more advanced usage, please refer to the
 [doc](https://github.com/01-ai/Yi/tree/main/demo).
 
-#### 3.3 Finetuning from the base model:
+#### 3.3 Finetune from the base model
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
@@ -491,6 +541,8 @@ python quantization/awq/eval_quantized_model.py \
 
 For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
 
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+
 ## 📌 Disclaimer
 
 We use data compliance checking algorithms during the training process, to
@@ -502,6 +554,8 @@ problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
+
 ## 📌 License
 
 The source code in this repo is licensed under the [Apache 2.0
@@ -509,3 +563,5 @@ license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models
 are fully open for academic research and free commercial usage with permission
 via applications. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
 For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
+
+<div align="right"> [ <a href="#what-is-yi">Back to top ⬆️ </a> ] </div>
