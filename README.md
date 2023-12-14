@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
 <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightpurple">
+  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightblue">
 </a>
 <a href="mailto:oss@01.ai">
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
@@ -94,17 +94,6 @@
 ## 🎉 News 
 
 <details>
-<summary>🙌 <b>2023/12/12</b>: Test invitation: Expericing Yi's powerful APIs! </summary>
-
-<br>
-
-We're thrilled to invite you to participate in our beta testing phase for Yi's exceptional LLM APIs! 
-
-To get started and gain access to Yi's APIs, simply drop an email to yi@01.ai. 
-
-</details>
-
-<details>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
 
 This release contains two chat models based on previous released base models, two 8-bits models quantized by GPTQ, two 4-bits models quantized by AWQ.
@@ -126,7 +115,7 @@ You can try some of them interactively at:
 <summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to v2.1.</summary>
 </details>
 
-<details>
+<details> 
 <summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
 
 Application form:
@@ -332,7 +321,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 # 🟢 Who can use Yi?
 
-Everyone! 🙌
+Everyone! 🙌 ✅
 
 - The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
