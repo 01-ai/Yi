@@ -67,7 +67,7 @@
       - [3.4 Quantization](#34-quantization)
         - [GPT-Q](#gpt-q)
         - [AWQ](#awq)
-- [✅ Misc.](#-misc)
+- [🟢 Misc.](#-misc)
     - [📡 Disclaimer](#-disclaimer)
     - [🪪 License](#-license)
 
@@ -340,6 +340,10 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 # 🟢 How to use Yi?
 
+[1. Prepare development environment](#1-prepare-development-environment)
+<br>[2. Download the model](#2-download-the-model-optional)
+<br>[3. Examples](#3-examples)
+
 ### 1. Prepare development environment
 
 #### 1.1 Docker
@@ -523,7 +527,7 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-# ✅ Misc.
+# 🟢 Misc.
 
 ### 📡 Disclaimer
 
