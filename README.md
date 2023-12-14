@@ -77,15 +77,15 @@
 
 ## 📌 Introduction 
 
-- 🤖 Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
+- 🤖 The Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
-- 💬 As general-purpose language models, Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
+- 💬 As general-purpose language models, the Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
 
-- 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
+- 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
-  - For English language capability, Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
+  - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
-  - For Chinese language capability, Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
+  - For Chinese language capability, the Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
 
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
@@ -319,7 +319,7 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 # ✅ Who can use Yi?
 
-- Yi series models are free for personal usage, academic purposes, and commercial use. 
+- The Yi series models are free for personal usage, academic purposes, and commercial use. 
   
 - For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
