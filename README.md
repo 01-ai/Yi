@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
 <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Model_Agreement-lightblue">
+  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightpurple">
 </a>
 <a href="mailto:oss@01.ai">
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
@@ -31,8 +31,8 @@
 </p> 
 
 <p align="center">
-    Join our 👋 <a href="https://join.slack.com/t/chatglm/shared_invite/zt-1y7pqoloy-9b1g6T6JjA8J0KxvUjbwJw" target="_blank">Slack</a> and 💬 <a href="resources/WECHAT.md" target="_blank"> WeChat</a>!
-</p>
+    👋 Join us </a> 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+</p> 
 
 ---
 
@@ -172,7 +172,7 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 
 The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
-For example, the Yi series models are saved in the format of the LLaMA model. You can directly use LLaMAForCausalLM and LLaMATokenizer to load the model.
+For example, the Yi series models are saved in the format of the LLaMA model. You can directly use LLaMAForCausalLM and LLaMATokenizer to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
 
 ```
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -332,7 +332,9 @@ To achieve more coherent and consistent responses, it is advisable to adjust gen
 
 # 🟢 Who can use Yi?
 
-- The Yi series models are free for personal usage, academic purposes, and commercial use. 
+Everyone! 🙌
+
+- The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
 - For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
