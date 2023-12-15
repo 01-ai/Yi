@@ -323,7 +323,7 @@ Everyone! 🙌 ✅
 
 - The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get official commercial permission.
+- For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get Yi Model Commercial License.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
