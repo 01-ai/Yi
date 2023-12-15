@@ -11,6 +11,7 @@
 
 <a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
   <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
+</a>
 <a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
   <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
@@ -20,6 +21,7 @@
 <a href="mailto:oss@01.ai">
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
+
 </div>
 
 <div align="center">
@@ -31,8 +33,11 @@
 </p> 
 
 <p align="center">
-    👋 Join us </a> 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+    👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
 </p> 
+
+
+<!-- DO NOT REMOVE ME -->
 
 ---
 

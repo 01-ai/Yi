@@ -55,7 +55,7 @@ jobs:
       - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform == 'huggingface'
         run: |
           cat README/huggingface_header.md > ${{ matrix.repo }}/README.md
-          csplit README.md '/## Introduction/'
+          csplit README.md '/<!-- DO NOT REMOVE ME -->/'
           cat xx01 >> ${{ matrix.repo }}/README.md
       - if: needs.detect-changes.outputs.is_readme_changed == 'true' && matrix.platform != 'huggingface'
         run: |

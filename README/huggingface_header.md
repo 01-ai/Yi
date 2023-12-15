@@ -26,52 +26,38 @@ pipeline_tag: text-generation
 </br>
 
 <div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
-<img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg" style="margin: 0 0;">
+<a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
+  <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
 </a>
 </div>
 
 <div style="display: inline-block;">
-<a href="https://huggingface.co/01-ai">
-  <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-01--ai-blue" style="margin: 0 0;">
+<a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
 </a>
 </div>
 
 <div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://www.modelscope.cn/organization/01ai/">
-  <img src="https://img.shields.io/badge/ModelScope-01--ai-blue" style="margin: 0 0;">
+<a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
+  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightblue">
 </a>
 </div>
 
 <div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://wisemodel.cn/organization/01.AI">
-  <img src="https://img.shields.io/badge/WiseModel-01--ai-blue" style="margin: 0 0;">
+<a href="mailto:oss@01.ai">
+  <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
 </div>
 
-<div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://replicate.com/01-ai">
-  <img src="https://img.shields.io/badge/Replicate-01--ai-blue?logo=data:image/svg%2bxml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBjbGFzcz0ibG9nbyIgZmlsbD0iY3VycmVudENvbG9yIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KICA8Zz4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCw0MjcuNiAxMDAwLDU0MC42IDYwMy40LDU0MC42IDYwMy40LDEwMDAgNDc3LDEwMDAgNDc3LDQyNy42IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwyMTMuOCAxMDAwLDMyNyAzNjQuOCwzMjcgMzY0LjgsMTAwMCAyMzguNCwxMDAwIDIzOC40LDIxMy44IAkiPjwvcG9seWdvbj4KICAgIDxwb2x5Z29uIHBvaW50cz0iMTAwMCwwIDEwMDAsMTEzLjIgMTI2LjQsMTEzLjIgMTI2LjQsMTAwMCAwLDEwMDAgMCwwIAkiPjwvcG9seWdvbj4KICA8L2c+Cjwvc3ZnPg=="  style="margin: 0 0;">
-</a>
+<div align="center">
+  <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
 
-<div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://github.com/01-ai/Yi/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue" style="margin: 0 0;">
-</a>
-</div>
+<p align="center">
+🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
+</p> 
 
-<div style="display: inline-block;">
-<a rel="noopener nofollow" href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Model_Agreement-lightblue" style="margin: 0 0;">
-</a>
-</div>
-
-<div style="display: inline-block;">
-<a rel="noopener nofollow" href="mailto:oss@01.ai">
-  <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B" style="margin: 0 0;">
-</a>
-</div>
-
-</div>
+<p align="center">
+    👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+</p> 
 
