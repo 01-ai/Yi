@@ -79,8 +79,6 @@
 
 - 🤖 The Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
 
-- 💬 As general-purpose language models, the Yi series models excel in handling various tasks, including natural language generation, assistant-like chat, and more.
-
 - 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
@@ -161,9 +159,9 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 
 The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
-For example, the Yi series models are saved in the format of the LLaMA model. You can directly use LLaMAForCausalLM and LLaMATokenizer to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
+For example, the Yi series models are saved in the format of the LLaMA model. You can directly use `LLaMAForCausalLM`` and `LLaMATokenizer`` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
 
-```
+```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34b", use_fast=False)
@@ -325,7 +323,7 @@ Everyone! 🙌 ✅
 
 - The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
+- For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get official commercial permission.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
