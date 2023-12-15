@@ -159,7 +159,7 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 
 The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
-For example, the Yi series models are saved in the format of the LLaMA model. You can directly use `LLaMAForCausalLM`` and `LLaMATokenizer`` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
+For example, the Yi series models are saved in the format of the LLaMA model. You can directly use `LLaMAForCausalLM` and `LLaMATokenizer` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
