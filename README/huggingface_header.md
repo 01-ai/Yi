@@ -49,6 +49,8 @@ pipeline_tag: text-generation
 </a>
 </div>
 
+</div>
+
 <div align="center">
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
@@ -60,4 +62,5 @@ pipeline_tag: text-generation
 <p align="center">
     👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
 </p> 
+
 
