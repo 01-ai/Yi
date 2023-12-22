@@ -33,6 +33,10 @@
 </p> 
 
 <p align="center">
+    👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>!
+</p> 
+
+<p align="center">
     👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
 </p> 
 
@@ -46,6 +50,7 @@
 
 - [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
+  - [🎯 Models](#-models)
   - [🎉 News](#-news)
 - [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
@@ -78,6 +83,8 @@
 
 </details>
 
+<hr>
+
 # 🟢 What is Yi?
 
 ## 📌 Introduction 
@@ -93,6 +100,108 @@
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](./docs/yi_relation_llama.md).
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
+## 🎯 Models
+
+Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
+
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Model</th>
+            <th>Description</th>
+            <th>Context window</th>
+            <th>Pretrained tokens</th>
+            <th>Training data</th>
+            <th>Publish date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4>Base models</td>
+            <td> Yi-6B</td>
+            <td> It's suitable for personal and academic use.</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/2</td>
+        </tr>
+        <tr>
+            <td>Yi-6B-200K</td>
+            <td> It's an enhanced model of Yi-6B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.</td>
+            <td> 200k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/5</td>
+        </tr>
+        <tr>
+            <td>Yi-34B</td>c
+            <td> - It's suitable for academic and commercial (particularly for small and medium-sized enterprises) purposes. <br><br> - It's a cost-effective solution that's affordable and equipped with emergent ability.</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/2</td>
+        </tr>
+        <tr>
+            <td>Yi-34B-200K</td>
+            <td> It's an enhanced model of Yi-34B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.</td>
+            <td> 200k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/5</td>
+        </tr>
+        <tr>
+            <td rowspan=6>Chat models</td>
+            <td> Yi-6B-Chat</td>
+            <td> It's suitable for personal and academic use.</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+        <tr>
+            <td>Yi-6B-Chat-4bits</td>
+            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+        <tr>
+            <td>Yi-6B-Chat-8bits</td>
+            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+        <tr>
+            <td>Yi-34B-Chat</td>
+            <td> It's suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. </td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+        <tr>
+            <td>Yi-34B-Chat-4bits</td>
+            <td> - It's quantized by AWQ.<br><br> It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+        <tr>
+            <td>Yi-34B-Chat-8bits</td>
+            <td> - It's quantized by GPTQ.<br><br> It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> 4k tokens</td>
+            <td> 3T</td>
+            <td> Up to June 2023</td>
+            <td> 2023/11/23</td>
+        </tr>
+    </tbody>
+</table>
 
 ## 🎉 News 
 
