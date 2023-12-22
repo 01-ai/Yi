@@ -87,6 +87,14 @@
 
 # 🟢 What is Yi?
 
+||Letter|Typesetting|Result|
+|-|-|-|-|
+|<td rowspan=4>a |Normal|a
+||Italic|*a*|
+||Bold|**a**|
+||Math|$a$
+
+
 ## 📌 Introduction 
 
 - 🤖 The Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
