@@ -103,6 +103,7 @@
 
 ## 🎯 Models
 
+Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
 <table>
     <thead>
@@ -119,7 +120,7 @@
     <tbody>
         <tr>
             <td rowspan=4>Base models</td>
-            <td> Yi-6B</td>
+            <td> Yi-6B </td>
             <td> It's suitable for personal and academic use.</td>
             <td> 4k tokens</td>
             <td> 3T</td>
@@ -185,7 +186,7 @@
         </tr>
         <tr>
             <td>Yi-34B-Chat-4bits</td>
-            <td> - It's quantized by AWQ.<br><br> It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
@@ -193,7 +194,7 @@
         </tr>
         <tr>
             <td>Yi-34B-Chat-8bits</td>
-            <td> - It's quantized by GPTQ.<br><br> It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
@@ -201,6 +202,8 @@
         </tr>
     </tbody>
 </table>
+
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 ## 🎉 News 
 
