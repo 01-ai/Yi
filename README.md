@@ -112,12 +112,12 @@ Yi models come in multiple sizes and cater to different use cases. You can also 
 
 | Model | Download  
 |---|---
-Yi-6B-Chat| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)
-Yi-6B-Chat-4bits |	[🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)
-Yi-6B-Chat-8bits	|  [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
-Yi-34B-Chat	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)
-Yi-34B-Chat-4bits	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
-Yi-34B-Chat-8bits | [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)
+Yi-6B-Chat| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)
+Yi-6B-Chat-4bits |	• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)
+Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
+Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)
+Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
+Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)
 
 <sub><sup> - 4 bits series models are quantized by AWQ. <br> - 8 bits series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</sup></sub>
 
@@ -125,10 +125,10 @@ Yi-34B-Chat-8bits | [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat
 
 | Model | Download | 
 |---|---|
-Yi-6B| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
-Yi-6B-200K	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
-Yi-34B| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
-Yi-34B-200K|[🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
+Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
+Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
+Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
+Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
 
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  </sup></sub>
 
