@@ -103,7 +103,6 @@
 
 ## 🎯 Models
 
-Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
 <table>
     <thead>
@@ -162,7 +161,7 @@ Yi models come in multiple sizes and cater to different use cases. You can also 
         </tr>
         <tr>
             <td>Yi-6B-Chat-4bits</td>
-            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
@@ -170,7 +169,7 @@ Yi models come in multiple sizes and cater to different use cases. You can also 
         </tr>
         <tr>
             <td>Yi-6B-Chat-8bits</td>
-            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
@@ -186,7 +185,7 @@ Yi models come in multiple sizes and cater to different use cases. You can also 
         </tr>
         <tr>
             <td>Yi-34B-Chat-4bits</td>
-            <td> - It's quantized by AWQ.<br><br> It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by AWQ.<br><br> It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
@@ -194,7 +193,7 @@ Yi models come in multiple sizes and cater to different use cases. You can also 
         </tr>
         <tr>
             <td>Yi-34B-Chat-8bits</td>
-            <td> - It's quantized by GPTQ.<br><br> It has a low barrier to use since it can be deployed on consumer GPUs (e.g., 3090, 4090).</td>
+            <td> - It's quantized by GPTQ.<br><br> It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
             <td> 4k tokens</td>
             <td> 3T</td>
             <td> Up to June 2023</td>
