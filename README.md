@@ -51,8 +51,9 @@
 - [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
   - [🎯 Models](#-models)
-    - [Base models](#base-models)
     - [Chat models](#chat-models)
+    - [Base models](#base-models)
+    - [Other info](#other-info)
   - [🎉 News](#-news)
 - [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
@@ -107,37 +108,43 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-For based models and chat models:
+### Chat models
 
-- The default **context window** is 4k tokens.
-  
-- The **pretrained tokens** are 3T.
-  
-- The **training data** are up to June 2023.	
+| Model | Download  
+|---|---
+Yi-6B-Chat| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)
+Yi-6B-Chat-4bits |	[🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)
+Yi-6B-Chat-8bits	|  [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
+Yi-34B-Chat	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)
+Yi-34B-Chat-4bits	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
+Yi-34B-Chat-8bits | [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)
+
+<sub><sup> - 4 bits series models are quantized by AWQ. <br> - 8 bits series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</sup></sub>
 
 ### Base models
 
-| Model | Description | Publish data
-|---|---|---
-Yi-6B|It's suitable for personal and academic use.|2023/11/2
-Yi-6B-200K	| It's an enhanced model of Yi-6B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters. |2023/11/5
-Yi-34B|- It's suitable for academic and commercial (particularly for small and medium-sized enterprises) purposes. <br> <br> - It's a cost-effective solution that's affordable and equipped with emergent ability.|2023/11/2
-Yi-34B-200K|It's an enhanced model of Yi-34B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.|2023/11/5
+| Model | Download | 
+|---|---|
+Yi-6B| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
+Yi-6B-200K	| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
+Yi-34B| [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
+Yi-34B-200K|[🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
 
-### Chat models
+<sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  </sup></sub>
 
-- All chat models were published on 2023/11/23.
+### Other info
+
+For chat models and base models:
+
+- 6B series models are suitable for personal and academic use.
+
+- 34B series models suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.
+
+- The **default context window** is **4k tokens**.
   
-- All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090).
-
-| Model | Description 
-|---|---
-Yi-6B-Chat| It's suitable for personal and academic use.
-Yi-6B-Chat-4bits |	It's quantized by AWQ. | 
-Yi-6B-Chat-8bits	| It's quantized by GPTQ. 
-Yi-34B-Chat	| It's suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes.
-Yi-34B-Chat-4bits	|It's quantized by AWQ. 
-Yi-34B-Chat-8bits |	It's quantized by GPTQ.
+- The pretrained tokens are 3T.
+  
+- The training data are up to June 2023.	
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
