@@ -51,6 +51,8 @@
 - [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
   - [🎯 Models](#-models)
+    - [Base models](#base-models)
+    - [Chat models](#chat-models)
   - [🎉 News](#-news)
 - [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
@@ -87,14 +89,6 @@
 
 # 🟢 What is Yi?
 
-||Letter|Typesetting|Result|
-|-|-|-|-|
-|<td rowspan=4>a |Normal|a
-||Italic|*a*|
-||Bold|**a**|
-||Math|$a$
-
-
 ## 📌 Introduction 
 
 - 🤖 The Yi series models are the next generation of open source large language models trained from strach by [01.AI](https://01.ai/).
@@ -113,103 +107,37 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-<table>
-    <thead>
-        <tr>
-            <th>Type</th>
-            <th>Model</th>
-            <th>Description</th>
-            <th>Context window</th>
-            <th>Pretrained tokens</th>
-            <th>Training data</th>
-            <th>Publish date</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=4>Base models</td>
-            <td> Yi-6B </td>
-            <td> It's suitable for personal and academic use.</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/2</td>
-        </tr>
-        <tr>
-            <td>Yi-6B-200K</td>
-            <td> It's an enhanced model of Yi-6B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.</td>
-            <td> 200k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/5</td>
-        </tr>
-        <tr>
-            <td>Yi-34B</td>c
-            <td> - It's suitable for academic and commercial (particularly for small and medium-sized enterprises) purposes. <br><br> - It's a cost-effective solution that's affordable and equipped with emergent ability.</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/2</td>
-        </tr>
-        <tr>
-            <td>Yi-34B-200K</td>
-            <td> It's an enhanced model of Yi-34B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.</td>
-            <td> 200k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/5</td>
-        </tr>
-        <tr>
-            <td rowspan=6>Chat models</td>
-            <td> Yi-6B-Chat</td>
-            <td> It's suitable for personal and academic use.</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-        <tr>
-            <td>Yi-6B-Chat-4bits</td>
-            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-        <tr>
-            <td>Yi-6B-Chat-8bits</td>
-            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-        <tr>
-            <td>Yi-34B-Chat</td>
-            <td> It's suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. </td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-        <tr>
-            <td>Yi-34B-Chat-4bits</td>
-            <td> - It's quantized by AWQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-        <tr>
-            <td>Yi-34B-Chat-8bits</td>
-            <td> - It's quantized by GPTQ.<br><br> - It has a low barrier to use since it can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</td>
-            <td> 4k tokens</td>
-            <td> 3T</td>
-            <td> Up to June 2023</td>
-            <td> 2023/11/23</td>
-        </tr>
-    </tbody>
-</table>
+For based models and chat models:
+
+- The default **context window** is 4k tokens.
+  
+- The **pretrained tokens** are 3T.
+  
+- The **training data** are up to June 2023.	
+
+### Base models
+
+| Model | Description | Publish data
+|---|---|---
+Yi-6B|It's suitable for personal and academic use.|2023/11/2
+Yi-6B-200K	| It's an enhanced model of Yi-6B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters. |2023/11/5
+Yi-34B|- It's suitable for academic and commercial (particularly for small and medium-sized enterprises) purposes. <br> <br> - It's a cost-effective solution that's affordable and equipped with emergent ability.|2023/11/2
+Yi-34B-200K|It's an enhanced model of Yi-34B, featuring context windows extended to 200K, which is roughly equivalent to 400,000 Chinese characters.|2023/11/5
+
+### Chat models
+
+- All chat models were published on 2023/11/23.
+  
+- All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090).
+
+| Model | Description 
+|---|---
+Yi-6B-Chat| It's suitable for personal and academic use.
+Yi-6B-Chat-4bits |	It's quantized by AWQ. | 
+Yi-6B-Chat-8bits	| It's quantized by GPTQ. 
+Yi-34B-Chat	| It's suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes.
+Yi-34B-Chat-4bits	|It's quantized by AWQ. 
+Yi-34B-Chat-8bits |	It's quantized by GPTQ.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
