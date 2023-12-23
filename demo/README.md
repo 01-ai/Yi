@@ -1,6 +1,6 @@
 # Text Generation Task
 
-## 1. Development Environment Setup
+To run text generation task in the streaming mode:
 
 ```shell
 python text_generation.py \
