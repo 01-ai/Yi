@@ -1,6 +1,6 @@
-# Learning Hub
+# Learning hub
 
-Welcome to the Yi Learning Hub! 
+Welcome to the Yi learning hub! 
 
 Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.  
 
@@ -10,7 +10,7 @@ At the same time, we also warmly invite you to join our collaborative effort by 
 
 With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
 
-## Tutorial
+## Tutorials
 
 | Type        | Deliverable                                            | Author                  |
 |-------------|--------------------------------------------------------|-------------------------|

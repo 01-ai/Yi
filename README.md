@@ -37,7 +37,11 @@
 </p> 
 
 <p align="center">
-    👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+    👋 Join us on 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+</p> 
+
+<p align="center">
+    📚 Grow at <a href="TBD-absolute-url"> Yi Learning Hub </a>!
 </p> 
 
 
@@ -69,17 +73,9 @@
     - [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
 - [🟢 Who can use Yi?](#-who-can-use-yi)
 - [🟢 How to use Yi?](#-how-to-use-yi)
-    - [1. Prepare development environment](#1-prepare-development-environment)
-      - [1.1 Docker](#11-docker)
-      - [1.2 Local development environment](#12-local-development-environment)
-    - [2. Download the model (optional)](#2-download-the-model-optional)
-    - [3. Examples](#3-examples)
-      - [3.1 Use the chat model](#31-use-the-chat-model)
-      - [3.2 Use the base model](#32-use-the-base-model)
-      - [3.3 Finetune from the base model](#33-finetune-from-the-base-model)
-      - [3.4 Quantization](#34-quantization)
-        - [GPT-Q](#gpt-q)
-        - [AWQ](#awq)
+  - [Quick start](#quick-start)
+  - [Deployment](TBD-absolute-path)
+  - [Learning hub](TBD-absolute-path)
 - [🟢 Misc.](#-misc)
     - [📡 Disclaimer](#-disclaimer)
     - [🪪 License](#-license)
@@ -396,7 +392,7 @@ Everyone! 🙌 ✅
   
 - [Deployment](TBD-absolute-path)
   
-- [Learning Hub](TBD-absolute-path)
+- [Learning hub](TBD-absolute-path)
 
 ## Quick start
 
@@ -592,6 +588,8 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 ### Acknowledgments
 
 A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
+
+
 
 ### 📡 Disclaimer
 
