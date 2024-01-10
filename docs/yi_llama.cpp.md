@@ -124,9 +124,9 @@ Now you have successfully asked a question to the Yi model and got an answer! ðŸ
 
 2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar. 
    
-    ![Yi model chatbot interface - llama.cpp](/../assets/img/yi_llama_cpp1.png)
+    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
 
 
 3. Enter a question, such as "How do you feed your pet fox? Please answer this question in 6 simple steps" into the prompt window, and you will receive a corresponding answer.
 
-    ![Ask a question to Yi model](/../assets/img/yi_llama_cpp2.png)
+    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
