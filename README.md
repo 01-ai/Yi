@@ -213,6 +213,7 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
   - [🔗 Serving](#-serving)
   - [⚙️ Quantitation](#️-quantitation)
   - [🛠️ Fine-tuning](#️-fine-tuning)
+  - [Proxy](#)
 
 ### 💦 Upstream
 
@@ -273,8 +274,11 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+#### API
 
+- [amazing-openai-api](https://github.com/soulteary/amazing-openai-api): this tool converts Yi model APIs into the OpenAI API format out of the box.
+
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 ## 📌 Benchmarks 
 
@@ -387,6 +391,14 @@ Everyone! 🙌 ✅
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
+
+- [Quick start](#quick-start)
+  
+- [Deployment](TBD-absolute-path)
+  
+- [Learning Hub](TBD-absolute-path)
+
+## Quick start
 
 [1. Prepare development environment](#1-prepare-development-environment)
 <br>[2. Download the model](#2-download-the-model-optional)
@@ -576,6 +588,10 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 Misc.
+
+### Acknowledgments
+
+A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
 
 ### 📡 Disclaimer
 
