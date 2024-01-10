@@ -77,8 +77,9 @@
   - [Deployment](TBD-absolute-path)
   - [Learning hub](TBD-absolute-path)
 - [🟢 Misc.](#-misc)
-    - [📡 Disclaimer](#-disclaimer)
-    - [🪪 License](#-license)
+  - [Ackknowledgements](#acknowledgments)
+  - [📡 Disclaimer](#-disclaimer)
+  - [🪪 License](#-license)
 
 </details>
 
