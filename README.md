@@ -590,7 +590,7 @@ For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi
 
 A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
 
-
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 ### 📡 Disclaimer
 
