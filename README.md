@@ -209,7 +209,7 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
   - [🔗 Serving](#-serving)
   - [⚙️ Quantitation](#️-quantitation)
   - [🛠️ Fine-tuning](#️-fine-tuning)
-  - [Proxy](#)
+  - [API](#api)
 
 ### 💦 Upstream
 
