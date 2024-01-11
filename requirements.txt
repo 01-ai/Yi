@@ -1,0 +1,8 @@
+transformers>=4.36.2
+gradio>=4.13.0
+protobuf>=4.25.1
+torch==2.0.1
+accelerate
+sentencepiece
+deepspeed
+datasets
