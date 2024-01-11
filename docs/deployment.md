@@ -10,7 +10,7 @@ Before deploying Yi in your environment, make sure your hardware meets the follo
 | Yi-6B-Chat-4bits     | 4 GB          | RTX 3060 <br>  RTX 4060                     |
 | Yi-6B-Chat-8bits     | 8 GB          | RTX 3070 <br> RTX 4060                     |
 | Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100(40GB) |
+| Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
 | Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
 
 ## Base models
