@@ -40,12 +40,9 @@ pip install torch==2.0.1 deepspeed==0.10 tensorboard transformers datasets sente
 ```bash
 |-- $MODEL_PATH
 |   |-- config.json
-|   |-- configuration_yi.py
-|   |-- modeling_yi.py
 |   |-- pytorch_model-00001-of-00002.bin
 |   |-- pytorch_model-00002-of-00002.bin
 |   |-- pytorch_model.bin.index.json
-|   |-- tokenization_yi.py
 |   |-- tokenizer_config.json
 |   |-- tokenizer.model
 |   |-- ...
