@@ -41,7 +41,7 @@
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="TBD-absolute-url"> Yi Learning Hub </a>!
+    📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
 </p> 
 
 
@@ -74,8 +74,8 @@
 - [🟢 Who can use Yi?](#-who-can-use-yi)
 - [🟢 How to use Yi?](#-how-to-use-yi)
   - [Quick start](#quick-start)
-  - [Deployment](TBD-absolute-path)
-  - [Learning hub](TBD-absolute-path)
+  - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
+  - [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 - [🟢 Misc.](#-misc)
   - [Ackknowledgements](#acknowledgments)
   - [📡 Disclaimer](#-disclaimer)
@@ -392,9 +392,9 @@ Everyone! 🙌 ✅
 
 - [Quick start](#quick-start)
   
-- [Deployment](TBD-absolute-path)
+- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
   
-- [Learning hub](TBD-absolute-path)
+- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 
 ## Quick start
 
