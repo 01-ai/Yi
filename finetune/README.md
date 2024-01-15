@@ -1,4 +1,4 @@
-# Finetue code for Yi 6B and 34B
+# Finetune code for Yi 6B and 34B
 
 ## Preparation
 
