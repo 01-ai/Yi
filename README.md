@@ -59,6 +59,14 @@
     - [Base models](#base-models)
     - [Other info](#other-info)
   - [🎉 News](#-news)
+- [🟢 How to use Yi?](#-how-to-use-yi)
+  - [Quick start](#quick-start)
+    - [Choose your path](#choose-your-parth)
+    - [Tutorial](#tutorial)
+  - [Fine tune](#fine-tune)
+  - [Quantization](#quantization)
+  - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
+  - [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 - [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
     - [💦 Upstream](#-upstream)
@@ -66,16 +74,12 @@
       - [🔗 Serving](#-serving)
       - [⚙️ Quantitation](#️-quantitation)
       - [🛠️ Fine-tuning](#️-fine-tuning)
+      - [API](#api)
   - [📌 Benchmarks](#-benchmarks)
     - [📊 Base model performance](#-base-model-performance)
     - [📊 Chat model performance](#-chat-model-performance)
     - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-    - [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
 - [🟢 Who can use Yi?](#-who-can-use-yi)
-- [🟢 How to use Yi?](#-how-to-use-yi)
-  - [Quick start](#quick-start)
-  - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-  - [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 - [🟢 Misc.](#-misc)
   - [Ackknowledgements](#acknowledgments)
   - [📡 Disclaimer](#-disclaimer)
@@ -105,6 +109,8 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
+For detailed deployment requirements, see [hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
+
 ### Chat models
 
 | Model | Download  
@@ -116,7 +122,7 @@ Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat) 
 Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
 Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)
 
-<sub><sup> - 4-bit series models are quantized by AWQ. <br> - 8-bit series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090).</sup></sub>
+<sub><sup> - 4-bit series models are quantized by AWQ. <br> - 8-bit series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090). </sup></sub>
 
 ### Base models
 
@@ -131,17 +137,21 @@ Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  �
 
 ### Other info
 
-For chat models and base models:
+- For chat and base models:
 
-- 6B series models are suitable for personal and academic use.
+  - 6B series models are suitable for personal and academic use.
 
-- 34B series models suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.
+  - 34B series models suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.
 
-- The **default context window** is **4k tokens**.
+  - The **default context window** is **4k tokens**.
+    
+  - The pretrained tokens are 3T.
+    
+  - The training data are up to June 2023.	
+
+- For chat models:
   
-- The pretrained tokens are 3T.
-  
-- The training data are up to June 2023.	
+  - For detailed chat model limitations, see [limitations of chat model](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#limitations-of-chat-model).
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -198,8 +208,245 @@ sequence length and can be extended to 32K during inference time.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
+# 🟢 How to use Yi?
+
+- [Quick start](#quick-start)
+  - [Choose your path](#choose-your-parth)
+  - [Tutorial](#tutorial)
+
+- [Fine tune](#fine-tune)
+
+- [Quantization](#quantization)
+  
+- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
+  
+- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+
+## Quick start
+
+Getting up and running with Yi models is simple with multiple choices available. 
+
+### Choose your parth
+
+Select one of the following paths to begin your journey with Yi!
+
+ ![Quick start - Choose your path](./assets/img/quick_start_path.png)
+
+#### Deploy Yi locally
+
+If you prefer to deploy Yi models locally, 
+
+  - 🙋‍♀️ And you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
+    - [Quick start - pip](#quick-start)
+    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+    - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
+
+  - 🙋‍♀️ And you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
+
+#### Not to deploy Yi locally
+
+If you prefer not to deploy Yi models locally, you can explore Yi's capabilities using any of the following options.
+
+##### Run Yi with APIs
+
+🙋‍♀️ If you want to explore more features of Yi, you can adopt one of these methods:
+
+- Yi APIs (Yi official)
+  
+  - [Early access has been granted](https://x.com/01AI_Yi/status/1735728934560600536?s=20) to some applicants. Stay tuned for the next round of access!
+
+- [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
+
+##### Run Yi in playground
+
+🙋‍♀️ If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
+  
+  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
+  
+    - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
+  
+  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
+
+##### Chat with Yi
+
+🙋‍♀️ If you want to chat with Yi, you can use one of these online services, which offer the similar user experience:
+
+- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi official on Hugging Face)
+  - No registration is required.
+
+- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
+  
+  - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
+
+## Tutorial
+
+This tutorial guides you through every step of running Yi (Yi-34B-Chat) locally and then performing inference.
+
+### Step 0: Prerequistes
+
+- This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU. 
+  
+  - For detailed deployment requirements to run Yi models, see [hardware requirements]( https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
+ 
+- Make sure Python 3.10 or later versions is installed.
+
+### Step 1: Prepare environment 
+
+To set up the environment and install the required packages, execute the following command.
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2: Download Yi model
+
+You can download the weights and tokenizer of Yi models from the following sources:
+
+- [Hugging Face](https://huggingface.co/01-ai)
+- [ModelScope](https://www.modelscope.cn/organization/01ai/)
+- [WiseModel](https://wisemodel.cn/organization/01.AI)
+
+### Step 3: Perform inference
+
+Clone the Yi GitHub repo.
+
+```bash
+git clone https://github.com/01-ai/Yi.git
+cd yi
+```
+
+#### Run Yi chat model
+
+1. Create a file named  `quick_start.py` and copy the following content to it.
+
+    ```python
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    model_path = '<your-model-path>'
+
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+
+    # Since transformers 4.35.0, the GPT-Q/AWQ model can be loaded using AutoModelForCausalLM.
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        device_map="auto",
+        torch_dtype='auto'
+    ).eval()
+
+    # Prompt content: "hi"
+    messages = [
+        {"role": "user", "content": "hi"}
+    ]
+
+    input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
+    output_ids = model.generate(input_ids.to('cuda'))
+    response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
+
+    # Model response: "Hello! How can I assist you today?"
+    print(response)
+    ```
+
+2. Run `quick_start.py`.
+
+    ```bash
+    python quick_start.py
+    ```
+
+    Then you can see an output similar to the one below. 🥳
+
+    ```bash
+    Hello! How can I assist you today?
+    ```
+
+#### Run Yi base model
+
+The steps are similar to [Run Yi chat model](#run-yi-chat-model).
+
+You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
+
+```bash
+python demo/text_generation.py  --model <your-model-path>
+```
+
+Then you can see an output similar to the one below. 🥳
+
+<details>
+
+<summary>Output</summary>
+
+**Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
+
+**Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone ,I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
+
+</details>
+
+### Finetuning
+
+```bash
+bash finetune/scripts/run_sft_Yi_6b.sh
+```
+
+Once finished, you can compare the finetuned model and the base model with the following command:
+
+```bash
+bash finetune/scripts/run_eval.sh
+```
+
+For advanced usage (like fine-tuning based on your custom data), see [fine-tune code for Yi 6B and 34B](https://github.com/01-ai/Yi/tree/main/finetune).
+
+### Quantization
+
+#### GPT-Q
+```bash
+python quantization/gptq/quant_autogptq.py \
+  --model /base_model                      \
+  --output_dir /quantized_model            \
+  --trust_remote_code
+```
+
+Once finished, you can then evaluate the resulting model as follows:
+
+```bash
+python quantization/gptq/eval_quantized_model.py \
+  --model /quantized_model                       \
+  --trust_remote_code
+```
+
+For a more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq)
+
+#### AWQ
+```bash
+python quantization/awq/quant_autoawq.py \
+  --model /base_model                      \
+  --output_dir /quantized_model            \
+  --trust_remote_code
+```
+
+Once finished, you can then evaluate the resulting model as follows:
+
+```bash
+python quantization/awq/eval_quantized_model.py \
+  --model /quantized_model                       \
+  --trust_remote_code
+```
+
+For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
+
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 Why Yi? 
+
+  - [🌎 Ecosystem](#-ecosystem)
+    - [💦 Upstream](#-upstream)
+    - [🌊 Downstream](#-downstream)
+      - [🔗 Serving](#-serving)
+      - [⚙️ Quantitation](#️-quantitation)
+      - [🛠️ Fine-tuning](#️-fine-tuning)
+      - [API](#api)
+  - [📌 Benchmarks](#-benchmarks)
+    - [📊 Base model performance](#-base-model-performance)
+    - [📊 Chat model performance](#-chat-model-performance)
+    - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
  
 ## 🌎 Ecosystem
 
@@ -238,7 +485,9 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 
 If you want to get up with Yi in a few minutes, you can use the following services built upon Yi.
 
-- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta): you can chat with it. **Note** that currently it's available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)) and experience it firsthand!
+- Yi-34B-Chat: you can chat with Yi using one of the following platforms:
+  - [Yi-34B-Chat | Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+  - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/): **Note** that currently it's available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)) and experience it firsthand!
   
 - [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai): you can use this model with more options by setting additional parameters and calling APIs.
   
@@ -283,7 +532,6 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 - [📊 Base model performance](#-base-model-performance)
 - [📊 Chat model performance](#-chat-model-performance)
 - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-- [⛔️ Limitations of chat model](#️-limitations-of-chat-model)
 
 ### 📊 Base model performance
 
@@ -350,33 +598,7 @@ We evaluated various benchmarks using both zero-shot and few-shot methods, excep
 
 ### 📊 Quantized chat model performance
 
-We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have negligible losses. Additionally, they reduce the memory footprint size. After testing different configurations of prompts and generation lengths, we highly recommend following the guidelines in the memory footprint table below when selecting a device to run our models.
-
-|                         | batch=1 | batch=4 | batch=16 | batch=32 |
-| ----------------------- | ------- | ------- | -------- | -------- |
-| Yi-34B-Chat             | 65GiB   | 68GiB   | 76GiB    | >80GiB   |
-| Yi-34B-Chat-8bits(GPTQ) | 35GiB   | 37GiB   | 46GiB    | 58GiB    |
-| Yi-34B-Chat-4bits(AWQ)  | 19GiB   | 20GiB   | 30GiB    | 40GiB    |
-| Yi-6B-Chat              | 12GiB   | 13GiB   | 15GiB    | 18GiB    |
-| Yi-6B-Chat-8bits(GPTQ)  | 7GiB    | 8GiB    | 10GiB    | 14GiB    |
-| Yi-6B-Chat-4bits(AWQ)   | 4GiB    | 5GiB    | 7GiB     | 10GiB    |
-
-Note: All the numbers in the table represent the minimum recommended memory for running models of the corresponding size.
-
-### ⛔️ Limitations of chat model
-
-The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
-
-However, this higher diversity might amplify certain existing issues, including:
-
-- **Hallucination**: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.
-- **Non-determinism in re-generation**: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.
-- **Cumulative Error**: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.
-
-To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as`temperature`,`top_p`, or`top_k`. These adjustments can help in the balance between creativity and coherence in the model's outputs.
-
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-
+We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have **negligible**losses. Additionally, they reduce the memory footprint size. 
 
 # 🟢 Who can use Yi?
 
@@ -385,203 +607,6 @@ Everyone! 🙌 ✅
 - The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
 - For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
-
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-
-# 🟢 How to use Yi?
-
-- [Quick start](#quick-start)
-  
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-  
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
-
-## Quick start
-
-[1. Prepare development environment](#1-prepare-development-environment)
-<br>[2. Download the model](#2-download-the-model-optional)
-<br>[3. Examples](#3-examples)
-
-### 1. Prepare development environment
-
-#### 1.1 Docker
-The best approach to try the **Yi** series models is through Docker with GPUs. We
-provide the following docker images to help you get started.
-
-- `registry.lingyiwanwu.com/ci/01-ai/yi:latest`
-- `ghcr.io/01-ai/yi:latest`
-
-Note that the `latest` tag always points to the latest code in the `main`
-branch. To test a stable version, please replace it with a specific
-[tag](https://github.com/01-ai/Yi/tags).
-
-#### 1.2 Local development environment
-We use [`conda-lock`](https://github.com/conda/conda-lock) to generate fully reproducible lock files for conda environments. You can refer to [conda-lock.yml](./conda-lock.yml) for the exact versions of the dependencies. Additionally, we utilize [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) for installing these dependencies.
-
-To install the dependencies, please follow these steps:
-1. Install `micromamba` by following the instructions available [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html).
-2. Execute `micromamba install -y -n yi -f conda-lock.yml` to create a conda environment named `yi` and install the necessary dependencies.
-
-### 2. Download the model (optional)
-
-By default, the model weights and tokenizer will be downloaded from
-[Hugging Face](https://huggingface.co/01-ai) automatically in the next step. You
-can also download them manually from the following places:
-
-- [ModelScope](https://www.modelscope.cn/organization/01ai/)
-- [WiseModel](https://wisemodel.cn/organization/01.AI)
-
-### 3. Examples
-
-#### 3.1 Use the chat model
-
-```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-model_path = '01-ai/Yi-34b-Chat'
-
-tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-
-# Since transformers 4.35.0, the GPT-Q/AWQ model can be loaded using AutoModelForCausalLM.
-model = AutoModelForCausalLM.from_pretrained(
-    model_path,
-    device_map="auto",
-    torch_dtype='auto'
-).eval()
-
-# Prompt content: "hi"
-messages = [
-    {"role": "user", "content": "hi"}
-]
-
-input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
-output_ids = model.generate(input_ids.to('cuda'))
-response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
-
-# Model response: "Hello! How can I assist you today?"
-print(response)
-```
-
-
-To construct the prompt template manually, you can refer the `chat_template` field in the `tokenizer_config.json` [file](https://huggingface.co/01-ai/Yi-34B-Chat/blob/main/tokenizer_config.json#L60).
-
-```
-<|im_start|>system
-{system_message}<|im_end|>
-<|im_start|>user
-{prompt}<|im_end|>
-<|im_start|>assistant
-```
-
-#### 3.2 Use the base model
-
-```bash
-python demo/text_generation.py
-```
-
-To reuse the downloaded models in the previous step, you can provide the extra
-`--model` argument:
-
-```bash
-python demo/text_generation.py  --model /path/to/model
-```
-
-Or if you'd like to get your hands dirty:
-
-```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
-
-model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34B", device_map="auto", torch_dtype="auto")
-tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34B")
-inputs = tokenizer("There's a place where time stands still. A place of breath taking wonder, but also", return_tensors="pt")
-max_length = 256
-
-outputs = model.generate(
-    inputs.input_ids.cuda(),
-    max_length=max_length,
-    eos_token_id=tokenizer.eos_token_id,
-    do_sample=True,
-    repetition_penalty=1.3,
-    no_repeat_ngram_size=5,
-    temperature=0.7,
-    top_k=40,
-    top_p=0.8,
-)
-print(tokenizer.decode(outputs[0], skip_special_tokens=True))
-```
-
-<details>
-
-<summary>Output</summary>
-
-**Prompt**: There's a place where time stands still. A place of breath taking wonder, but also
-
-**Generation**: There's a place where time stands still. A place of breath taking wonder, but also of great danger. A place where the very air you breathe could kill you. A place where the only way to survive is to be prepared.
-The place is called the Arctic.
-The Arctic is a vast, frozen wilderness. It is a place of extremes. The temperatures can drop to -40 degrees Celsius. The winds can reach speeds of 100 kilometers per hour. The sun can shine for 24 hours a day, or not at all for weeks on end.
-The Arctic is also a place of great beauty. The ice and snow are a pristine white. The sky is a deep blue. The sunsets are spectacular.
-But the Arctic is also a place of great danger. The ice can be treacherous. The winds can be deadly. The sun can be blinding.
-The Arctic is a place where the only way to survive is to be prepared.
-The Arctic is a place of extremes. The temperatures can drop to -40 degrees Celsius. The winds can reach speeds of 100 kilometers per hour. The sun can shine for 24 hours a day, or not at all for weeks on end.
-The Arctic is a place of great beauty. The ice and snow are a
-
-</details>
-
-For more advanced usage, please refer to the
-[doc](https://github.com/01-ai/Yi/tree/main/demo).
-
-#### 3.3 Finetune from the base model
-
-```bash
-bash finetune/scripts/run_sft_Yi_6b.sh
-```
-
-Once finished, you can compare the finetuned model and the base model with the following command:
-
-```bash
-bash finetune/scripts/run_eval.sh
-```
-
-For more advanced usage like fine-tuning based on your custom data, please refer
-the [doc](https://github.com/01-ai/Yi/tree/main/finetune).
-
-#### 3.4 Quantization
-
-##### GPT-Q
-```bash
-python quantization/gptq/quant_autogptq.py \
-  --model /base_model                      \
-  --output_dir /quantized_model            \
-  --trust_remote_code
-```
-
-Once finished, you can then evaluate the resulting model as follows:
-
-```bash
-python quantization/gptq/eval_quantized_model.py \
-  --model /quantized_model                       \
-  --trust_remote_code
-```
-
-For a more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/gptq)
-
-##### AWQ
-```bash
-python quantization/awq/quant_autoawq.py \
-  --model /base_model                      \
-  --output_dir /quantized_model            \
-  --trust_remote_code
-```
-
-Once finished, you can then evaluate the resulting model as follows:
-
-```bash
-python quantization/awq/eval_quantized_model.py \
-  --model /quantized_model                       \
-  --trust_remote_code
-```
-
-For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -641,7 +666,6 @@ resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-
 
 ### 🪪 License
 
