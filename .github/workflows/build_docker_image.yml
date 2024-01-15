@@ -1,12 +1,12 @@
 name: Build Docker Image
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
-  pull_request_target:
-    branches:
-      - main
+      - 'main'
+    tags:
+      - '*.*.*'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
