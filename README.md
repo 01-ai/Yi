@@ -233,7 +233,7 @@ Select one of the following paths to begin your journey with Yi!
 If you prefer to deploy Yi models locally, 
 
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
-    - [pip](#quick-start)
+    - [pip](#tutorial)
     - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
@@ -248,7 +248,6 @@ If you prefer not to deploy Yi models locally, you can explore Yi's capabilities
 If you want to explore more features of Yi, you can adopt one of these methods:
 
 - Yi APIs (Yi official)
-  
   - [Early access has been granted](https://x.com/01AI_Yi/status/1735728934560600536?s=20) to some applicants. Stay tuned for the next round of access!
 
 - [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
@@ -258,7 +257,6 @@ If you want to explore more features of Yi, you can adopt one of these methods:
 If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
   
   - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
-  
     - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
   
   - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
@@ -271,7 +269,6 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
   - No registration is required.
 
 - [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
-  
   - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
 
 ## Tutorial
@@ -281,7 +278,6 @@ This tutorial guides you through every step of running Yi (Yi-34B-Chat) locally 
 ### Step 0: Prerequistes
 
 - This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU. 
-  
   - For detailed deployment requirements to run Yi models, see [hardware requirements]( https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
  
 - Make sure Python 3.10 or later version is installed.
@@ -366,6 +362,8 @@ Then you can see an output similar to the one below. 🥳
 <details>
 
 <summary>Output</summary>
+
+<br>
 
 **Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
 
