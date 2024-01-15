@@ -93,7 +93,7 @@
 
 ## 📌 Introduction 
 
-- 🤖 The Yi series models are the next generation of open source large language models trained from scratch by [01.AI](https://01.ai/).
+- 🤖 The Yi series models are the next generation of open-source large language models trained from scratch by [01.AI](https://01.ai/).
 
 - 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
@@ -213,43 +213,39 @@ sequence length and can be extended to 32K during inference time.
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
   - [Tutorial](#tutorial)
-
 - [Fine tune](#fine-tune)
-
 - [Quantization](#quantization)
-  
 - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-  
 - [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 
 ## Quick start
 
 Getting up and running with Yi models is simple with multiple choices available. 
 
-### Choose your parth
+### Choose your path
 
 Select one of the following paths to begin your journey with Yi!
 
  ![Quick start - Choose your path](./assets/img/quick_start_path.png)
 
-#### Deploy Yi locally
+#### 🎯 Deploy Yi locally
 
 If you prefer to deploy Yi models locally, 
 
-  - 🙋‍♀️ And you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
-    - [Quick start - pip](#quick-start)
+  - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
+    - [pip](#quick-start)
     - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
-  - 🙋‍♀️ And you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
+  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
 
-#### Not to deploy Yi locally
+#### 🎯 Not to deploy Yi locally
 
 If you prefer not to deploy Yi models locally, you can explore Yi's capabilities using any of the following options.
 
-##### Run Yi with APIs
+##### 🙋‍♀️ Run Yi with APIs
 
-🙋‍♀️ If you want to explore more features of Yi, you can adopt one of these methods:
+If you want to explore more features of Yi, you can adopt one of these methods:
 
 - Yi APIs (Yi official)
   
@@ -257,9 +253,9 @@ If you prefer not to deploy Yi models locally, you can explore Yi's capabilities
 
 - [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
 
-##### Run Yi in playground
+##### 🙋‍♀️ Run Yi in playground
 
-🙋‍♀️ If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
+If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
   
   - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
   
@@ -267,9 +263,9 @@ If you prefer not to deploy Yi models locally, you can explore Yi's capabilities
   
   - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
 
-##### Chat with Yi
+##### 🙋‍♀️ Chat with Yi
 
-🙋‍♀️ If you want to chat with Yi, you can use one of these online services, which offer the similar user experience:
+ If you want to chat with Yi, you can use one of these online services, which offer a similar user experience:
 
 - [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi official on Hugging Face)
   - No registration is required.
@@ -288,13 +284,15 @@ This tutorial guides you through every step of running Yi (Yi-34B-Chat) locally 
   
   - For detailed deployment requirements to run Yi models, see [hardware requirements]( https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
  
-- Make sure Python 3.10 or later versions is installed.
+- Make sure Python 3.10 or later version is installed.
 
 ### Step 1: Prepare environment 
 
 To set up the environment and install the required packages, execute the following command.
 
 ```bash
+git clone https://github.com/01-ai/Yi.git
+cd yi
 pip install -r requirements.txt
 ```
 
@@ -308,14 +306,9 @@ You can download the weights and tokenizer of Yi models from the following sourc
 
 ### Step 3: Perform inference
 
-Clone the Yi GitHub repo.
+You can perform inference with Yi chat or base models as below.
 
-```bash
-git clone https://github.com/01-ai/Yi.git
-cd yi
-```
-
-#### Run Yi chat model
+#### Perform inference with Yi chat model
 
 1. Create a file named  `quick_start.py` and copy the following content to it.
 
@@ -358,7 +351,7 @@ cd yi
     Hello! How can I assist you today?
     ```
 
-#### Run Yi base model
+#### Perform inference with Yi base model
 
 The steps are similar to [Run Yi chat model](#run-yi-chat-model).
 
@@ -376,7 +369,7 @@ Then you can see an output similar to the one below. 🥳
 
 **Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
 
-**Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone ,I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
+**Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
 
 </details>
 
@@ -430,7 +423,7 @@ python quantization/awq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-For more detailed explanation, please read the [doc](https://github.com/01-ai/Yi/tree/main/quantization/awq)
+For detailed explanations, see [AWQ quantization](https://github.com/01-ai/Yi/tree/main/quantization/awq).
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -497,7 +490,7 @@ If you want to get up with Yi in a few minutes, you can use the following servic
 
 If you have limited computational capabilities, you can use Yi's quantized models as follows. 
 
-These quantized models have reduced precision and but offer increased efficiency, such as faster inference speed and smaller RAM usage.
+These quantized models have reduced precision but offer increased efficiency, such as faster inference speed and smaller RAM usage.
 
 - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ) 
 - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
@@ -592,13 +585,13 @@ Falcon-180B's performance was not underestimated.
 | Yi-34B-Chat-8bits(GPTQ) | 66.24     | **73.69** | 79.05     | 81.23     | 76.82                   | 78.97                   | 61.84       | **52.08** | 70.97     | 70.74     | 75.74     |
 | Yi-34B-Chat-4bits(AWQ)  | 65.77     | 72.42     | 78.21     | 80.50     | 75.71                   | 77.27                   | 61.84       | 48.30     | 69.39     | 70.51     | 74.00     |
 
-We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA. Generally, the zero-shot approach is more common in chat models. Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text. Some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results. 
+We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA. Generally, the zero-shot approach is more common in chat models. Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text. Some models are not well-suited to produce output in the specific format required by instructions in a few datasets, which leads to suboptimal results. 
 
 <strong>*</strong>: C-Eval results are evaluated on the validation datasets
 
 ### 📊 Quantized chat model performance
 
-We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have **negligible**losses. Additionally, they reduce the memory footprint size. 
+We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have **negligible** losses. Additionally, they reduce the memory footprint size. 
 
 # 🟢 Who can use Yi?
 
