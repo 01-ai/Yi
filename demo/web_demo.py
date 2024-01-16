@@ -209,7 +209,10 @@ if __name__ == "__main__":
         device_map = "auto"
 
     model = AutoModelForCausalLM.from_pretrained(
-        args.checkpoint_path, device_map=device_map, torch_dtype="auto", trust_remote_code=True
+        args.checkpoint_path,
+        device_map=device_map,
+        torch_dtype="auto",
+        trust_remote_code=True,
     ).eval()
 
     main(args)
