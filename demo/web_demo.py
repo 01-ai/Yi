@@ -110,19 +110,9 @@ def main(args):
         gr.Markdown(
             """\
 <center><font size=4>
-Yi-6B-Chat <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-6B-Chat">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary">🤖</a>&nbsp ｜ 
-Yi-6B-Chat-4bits  <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-6B-Chat-4bits">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary">🤖</a>&nbsp ｜ 
-Yi-6B-Chat-8bits <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-6B-Chat-8bits">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary">🤖</a>&nbsp ｜ 
-Yi-34B-Chat <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-34B-Chat">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary">🤖</a>&nbsp ｜ 
-Yi-34B-Chat-4bits  <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-34B-Chat-4bits">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary">🤖</a>&nbsp ｜ 
-Yi-34B-Chat-8bits <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-34B-Chat-8bits">🤗</a> | 
-<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary">🤖</a>&nbsp ｜ 
-&nbsp<a style="text-decoration: none" href="https://github.com/01-ai/Yi">Github</a></center>"""
+Yi-34B-Chat <a style="text-decoration: none" href="https://huggingface.co/01-ai/Yi-34B-Chat">🤗</a> 
+<a style="text-decoration: none" href="https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary">🤖</a>&nbsp  
+&nbsp<a style="text-decoration: none" href="https://github.com/01-ai/Yi">Yi GitHub</a></center>"""
         )
 
         chatbot = gr.Chatbot()
@@ -219,7 +209,7 @@ if __name__ == "__main__":
         device_map = "auto"
 
     model = AutoModelForCausalLM.from_pretrained(
-        args.checkpoint_path, device_map=device_map, trust_remote_code=True
+        args.checkpoint_path, device_map=device_map, torch_dtype="auto", trust_remote_code=True
     ).eval()
 
     main(args)
