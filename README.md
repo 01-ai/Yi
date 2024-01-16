@@ -62,7 +62,9 @@
 - [🟢 How to use Yi?](#-how-to-use-yi)
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
-    - [Tutorial](#tutorial)
+    - [pip](#pip)
+    - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+    - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
   - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
@@ -212,7 +214,9 @@ sequence length and can be extended to 32K during inference time.
 
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
-  - [Tutorial](#tutorial)
+  - [pip](#pip)
+  - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+  - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
 - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
@@ -271,18 +275,18 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
 - [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
   - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
 
-## Tutorial
+### pip
 
 This tutorial guides you through every step of running Yi (Yi-34B-Chat) locally and then performing inference.
 
-### Step 0: Prerequistes
+#### Step 0: Prerequistes
 
 - This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU. 
   - For detailed deployment requirements to run Yi models, see [hardware requirements]( https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
  
 - Make sure Python 3.10 or later version is installed.
 
-### Step 1: Prepare environment 
+#### Step 1: Prepare your environment 
 
 To set up the environment and install the required packages, execute the following command.
 
@@ -292,7 +296,7 @@ cd yi
 pip install -r requirements.txt
 ```
 
-### Step 2: Download Yi model
+#### Step 2: Download the Yi model
 
 You can download the weights and tokenizer of Yi models from the following sources:
 
@@ -300,11 +304,11 @@ You can download the weights and tokenizer of Yi models from the following sourc
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
 - [WiseModel](https://wisemodel.cn/organization/01.AI)
 
-### Step 3: Perform inference
+#### Step 3: Perform inference
 
 You can perform inference with Yi chat or base models as below.
 
-#### Perform inference with Yi chat model
+##### Perform inference with Yi chat model
 
 1. Create a file named  `quick_start.py` and copy the following content to it.
 
@@ -347,7 +351,7 @@ You can perform inference with Yi chat or base models as below.
     Hello! How can I assist you today?
     ```
 
-#### Perform inference with Yi base model
+##### Perform inference with Yi base model
 
 The steps are similar to [Run Yi chat model](#run-yi-chat-model).
 
@@ -370,6 +374,30 @@ Then you can see an output similar to the one below. 🥳
 **Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
 
 </details>
+
+### Run Yi with llama.cpp
+
+If you have limited resources, you can try [llama.cpp](https://github.com/ggerganov/llama.cpp) or [ollama.cpp](https://ollama.ai/) (especially for Chinese users) to run Yi models in a few minutes locally.
+
+For a step-by-step tutorial,, see [Run Yi with llama.cpp](https://github.com/01-ai/Yi/edit/main/docs/yi_llama.cpp.md).
+
+### Web demo
+
+You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
+
+[Step 1: Prepare your environment](#step-1-prepare-your-environment). 
+
+[Step 2: Download the Yi model](#step-2-download-the-yi-model).
+
+Step 3. To start a web service locally, run the following command.
+
+```bash
+python demo/web_demo.py --checkpoint-path <your-model-path>
+```
+
+You can access the web UI by entering the address provided in the console into your browser. 
+
+ ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
