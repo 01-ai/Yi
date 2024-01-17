@@ -1,3 +1,13 @@
+# Software requirements
+
+Before using Yi quantized models, make sure you've installed the correct software listed below.
+
+| Model | Software
+|---|---
+Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
+Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
+
+
 # Hardware requirements
 
 Before deploying Yi in your environment, make sure your hardware meets the following requirements.

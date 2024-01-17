@@ -101,7 +101,7 @@
 
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
-  - For Chinese language capability, the Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
+  - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
 
 - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](https://github.com/01-ai/Yi/blob/main/docs/yi_relation_llama.md).
 
@@ -111,7 +111,7 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-For detailed deployment requirements, see [hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
+For deployment details, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
 
 ### Chat models
 
@@ -277,14 +277,13 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
 
 ### pip
 
-This tutorial guides you through every step of running Yi (Yi-34B-Chat) locally and then performing inference.
+This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
 
 #### Step 0: Prerequistes
-
-- This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU. 
-  - For detailed deployment requirements to run Yi models, see [hardware requirements]( https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
  
 - Make sure Python 3.10 or later version is installed.
+
+- If you want to use other Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
 
 #### Step 1: Prepare your environment 
 
@@ -353,7 +352,7 @@ You can perform inference with Yi chat or base models as below.
 
 ##### Perform inference with Yi base model
 
-The steps are similar to [Run Yi chat model](#run-yi-chat-model).
+The steps are similar to [pip - Perform inference with Yi base model](#pe).
 
 You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
 
@@ -375,11 +374,45 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
+### Docker
+
+This tutorial guides you through every step of running **Yi-34B-Chat on an A800 GPU** locally and then performing inference.
+
+#### Step 0: Prerequistes
+
+- Make sure you've installed [Docker](https://docs.docker.com/engine/install/?open_in_browser=true) and [nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+
+#### Step 1: Start Docker
+
+```bash
+docker run -it --gpus all \
+    -v <your-model-path>: /models
+    ghcr.io/01-ai/yi:latest 
+```
+
+Alternatively, you can pull the Yi Docker image from `registry.lingyiwanwu.com/ci/01-ai/yi:latest`.
+
+#### Step 2: Perform inference
+
+You can perform inference with Yi chat or base models as below.
+   
+##### Perform inference with Yi chat model
+
+The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
+
+Note that the only difference is to set `model_path = '<your-model-mount-path>'` instead of `model_path = '<your-model-path>'`.
+
+##### Perform inference with Yi base model
+
+The steps are similar to [pip - Perform inference with Yi base model](#perform-inference-with-yi-base-model).
+
+Note that the only difference is set `--model <your-model-mount-path>'` instead of  `model <your-model-path>`.
+
 ### Run Yi with llama.cpp
 
 If you have limited resources, you can try [llama.cpp](https://github.com/ggerganov/llama.cpp) or [ollama.cpp](https://ollama.ai/) (especially for Chinese users) to run Yi models in a few minutes locally.
 
-For a step-by-step tutorial,, see [Run Yi with llama.cpp](https://github.com/01-ai/Yi/edit/main/docs/yi_llama.cpp.md).
+For a step-by-step tutorial, see [Run Yi with llama.cpp](https://github.com/01-ai/Yi/edit/main/docs/yi_llama.cpp.md).
 
 ### Web demo
 
@@ -392,7 +425,7 @@ You can build a web UI demo for Yi **chat** models (note that Yi base models are
 Step 3. To start a web service locally, run the following command.
 
 ```bash
-python demo/web_demo.py --checkpoint-path <your-model-path>
+python demo/web_demo.py -c <your-model-path>
 ```
 
 You can access the web UI by entering the address provided in the console into your browser. 
