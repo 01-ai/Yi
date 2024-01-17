@@ -111,7 +111,7 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-For deployment details, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
+If you want to deploy Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
 
 ### Chat models
 
@@ -283,7 +283,7 @@ This tutorial guides you through every step of running **Yi-34B-Chat locally on 
  
 - Make sure Python 3.10 or later version is installed.
 
-- If you want to use other Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
+- If you want to run other Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
 
 #### Step 1: Prepare your environment 
 
@@ -352,7 +352,7 @@ You can perform inference with Yi chat or base models as below.
 
 ##### Perform inference with Yi base model
 
-The steps are similar to [pip - Perform inference with Yi base model](#pe).
+The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
 
 You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
 
@@ -400,13 +400,13 @@ You can perform inference with Yi chat or base models as below.
 
 The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
 
-Note that the only difference is to set `model_path = '<your-model-mount-path>'` instead of `model_path = '<your-model-path>'`.
+**Note** that the only difference is to set `model_path = '<your-model-mount-path>'` instead of `model_path = '<your-model-path>'`.
 
 ##### Perform inference with Yi base model
 
 The steps are similar to [pip - Perform inference with Yi base model](#perform-inference-with-yi-base-model).
 
-Note that the only difference is set `--model <your-model-mount-path>'` instead of  `model <your-model-path>`.
+**Note** that the only difference is to set `--model <your-model-mount-path>'` instead of  `model <your-model-path>`.
 
 ### Run Yi with llama.cpp
 
