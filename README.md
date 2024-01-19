@@ -67,8 +67,8 @@
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
-  - [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-  - [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+  - [Deployment](#deployment)
+  - [Learning hub](#learning-hub)
 - [🟢 Why Yi?](#-why-yi)
   - [🌎 Ecosystem](#-ecosystem)
     - [💦 Upstream](#-upstream)
@@ -80,7 +80,6 @@
   - [📌 Benchmarks](#-benchmarks)
     - [📊 Base model performance](#-base-model-performance)
     - [📊 Chat model performance](#-chat-model-performance)
-    - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
 - [🟢 Who can use Yi?](#-who-can-use-yi)
 - [🟢 Misc.](#-misc)
   - [Ackknowledgements](#acknowledgments)
@@ -103,7 +102,29 @@
   
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
 
-- 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem. If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see [Yi's relation with LLaMA](https://github.com/01-ai/Yi/blob/main/docs/yi_relation_llama.md).
+- 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see Yi's relation with LLaMA ⬇️</summary> <ul>
+### Yi's relation with LLaMA
+
+> 💡 TL;DR
+> 
+> The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
+
+- Both Yi and LLaMA are all based on the Transformer structure, which has been the standard architecture for large language models since 2018.
+
+- Grounded in the Transformer architecture, LLaMA has become a new cornerstone for the majority of state-of-the-art open-source models due to its excellent stability, reliable convergence, and robust compatibility. This positions LLaMA as the recognized foundational framework for models including Yi.
+
+- Thanks to the Transformer and LLaMA architectures, other models can leverage their power, reducing the effort required to build from scratch and enabling the utilization of the same tools within their ecosystems.
+
+- However, the Yi series models are NOT derivatives of LLaMA, as they do not use LLaMA's weights.
+
+  - As LLaMA's structure is employed by the majority of open-source models, the key factors of determining model performance are training datasets, training pipelines, and training infrastructure.
+
+  - Developing in a unique and proprietary way, Yi has independently created its own high-quality training datasets, efficient training pipelines, and robust training infrastructure entirely from the ground up. This effort has led to excellent performance with Yi series models ranking just behind GPT4 and surpassing LLaMA on the [Alpaca Leaderboard in Dec 2023](https://tatsu-lab.github.io/alpaca_eval/). 
+</ul>
+</details>
+
+
+
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -111,7 +132,7 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-If you want to deploy Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md#hardware-requirements).
+If you want to deploy Yi models, see [software and hardware requirements](#deployment)
 
 ### Chat models
 
@@ -154,13 +175,15 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat models:
   
-  <details style="display: inline;"><summary>For chat model limitations, see ⬇️</summary> <ul>
-  The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
-  <br>However, this higher diversity might amplify certain existing issues, including:
-  <li>Hallucination: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.</li>
-  <li>Non-determinism in re-generation: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.</li>
-  <li>Cumulative Error: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.</li>
-  <li>To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.</li>
+  <details style="display: inline;"><summary>For chat model limitations, see ⬇️</summary>
+   <ul>
+    <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
+
+    <br>However, this higher diversity might amplify certain existing issues, including:
+      <li>Hallucination: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.</li>
+      <li>Non-determinism in re-generation: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.</li>
+      <li>Cumulative Error: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.</li>
+      <li>To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.</li>
 </ul>
 </details>
 
@@ -250,7 +273,7 @@ If you prefer to deploy Yi models locally,
     - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
-  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
+  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
 
 #### 🎯 Not to deploy Yi locally
 
@@ -292,7 +315,7 @@ This tutorial guides you through every step of running **Yi-34B-Chat locally on 
  
 - Make sure Python 3.10 or later version is installed.
 
-- If you want to run other Yi models, see [software and hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
+- If you want to run other Yi models, see [software and hardware requirements](#deployment)
 
 #### Step 1: Prepare your environment 
 
@@ -385,7 +408,7 @@ Then you can see an output similar to the one below. 🥳
 
 ### Quick start - Docker 
 <details>
-<summary> Running Yi-34B-Chat locally with Docker: A Step-by-Step Guide ⬇️</summary> 
+<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide ⬇️</summary> 
 <br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
  <h4>Step 0: Prerequisites</h4>
 <p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
@@ -412,8 +435,8 @@ ghcr.io/01-ai/yi:latest
 
 ### Quick start - llama.cpp
 <details>
-<summary> Running Yi-chat-6B-2bits locally with llama.cpp: A Step-by-Step Guide ⬇️</summary> 
-<br>This tutorial guides you through every step of running a quantized model ([Yi-chat-6B-2bits](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main)) locally and then performing inference.
+<summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide ⬇️</summary> 
+<br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
 
 - [Step 0: Prerequisites](#step-0-prerequisites)
 - [Step 1: Download llama.cpp](#step-1-download-llamacpp)
@@ -793,7 +816,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 ### Deployment
 <details>
-<summary> For more information, see ⬇️</summary> 
+<summary> Software and hardware that are required for deploying Yi quantized models ⬇️</summary> 
 
 #### Software requirements
 
@@ -844,7 +867,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 
 ### Learning hub
 <details>
-<summary> For more information, see ⬇️</summary> 
+<summary> Learning materials of Yi ⬇️</summary> 
 
 #### Learning hub
 
@@ -881,9 +904,8 @@ With all these resources at your fingertips, you're ready to start your exciting
       - [🛠️ Fine-tuning](#️-fine-tuning)
       - [API](#api)
   - [📌 Benchmarks](#-benchmarks)
-    - [📊 Base model performance](#-base-model-performance)
     - [📊 Chat model performance](#-chat-model-performance)
-    - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
+    - [📊 Base model performance](#-base-model-performance)
  
 ## 🌎 Ecosystem
 
@@ -966,47 +988,46 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 ## 📌 Benchmarks 
 
-- [📊 Base model performance](#-base-model-performance)
 - [📊 Chat model performance](#-chat-model-performance)
-- [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-
-🎯 Performance Evaluation
-- Yi-34B stands out as the top performer among the big models, beating others like LLaMA2-70B and Falcon-180B in most tests.
-- Yi-34B ranks first in MMLU, CMMLU, BBH, and common-sense reasoning.
-- Yi-34B-200K ranks first C-Eval, GAOKAO, and reading comprehension.
-
-![Base model performance_heat map](images/1.png)
-
-<details>
-<summary>🎯 Evaluation Methods </summary>
-
-- **Disparity in Results**: While benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
-- **Investigation Findings**: A deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
-- **Uniform Benchmarking Process**: Our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
-- **Efforts to Retrieve Unreported Scores**: For scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-- **Extensive Model Evaluation**: To evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
-- **Special Configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-- **Falcon-180B Caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
-</details>
+- [📊 Base model performance](#-base-model-performance)
 
 ### 📊 Chat model performance
-🎯 Performance Evaluation
+🎯 Performance evaluation
 - Yi-34B-chat stands out, doing better than most big models in almost all tests. 
 - Both Yi-34B-chat and its variant, Yi-34B-Chat-8bits (GPTQ), take the top spots in tests including MMLU, CMMLU, BBH, and GSM8k.
 
-![Base model performance_heat map](images/2.png)
+![Chat model performance](./assets/img/benchmark_chat.png) 
 
 <details>
-<summary>🎯 Evaluation Methods and challenges </summary>
+<summary>🎯 Evaluation methods and challenges ⬇️ </summary>
 
-- **Evaluation Methods**: We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
-- **Zero-Shot vs. Few-Shot**: In chat models, the zero-shot approach is more commonly employed.
-- **Evaluation Strategy**: Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
-- **Challenges Faced**: Some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
+- **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
+- **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
+- **Evaluation strategy**: our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
+- **Challenges faced**: some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
 
 <strong>*</strong>: C-Eval results are evaluated on the validation datasets
 </details>
 
+### 📊 Base model performance
+🎯 Performance evaluation
+- Yi-34B stands out as the top performer among the big models, beating others like LLaMA2-70B and Falcon-180B in most tests.
+- Yi-34B ranks first in MMLU, CMMLU, BBH, and common-sense reasoning.
+- Yi-34B-200K ranks first C-Eval, GAOKAO, and reading comprehension.
+
+![Base model performance](./assets/img/benchmark_base.png)
+
+<details>
+<summary>🎯 Evaluation methods ⬇️</summary>
+
+- **Disparity in Results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
+- **Investigation Findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
+- **Uniform Benchmarking Process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
+- **Efforts to Retrieve Unreported Scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
+- **Extensive Model Evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
+- **Special Configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
+- **Falcon-180B Caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
+</details>
 
 # 🟢 Who can use Yi?
 
