@@ -101,9 +101,11 @@
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
+  
+  - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA</span> ⬇️</summary> <ul></p>
 
-- 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see Yi's relation with LLaMA ⬇️</summary> <ul>
-### Yi's relation with LLaMA
+ 
+ <br>
 
 > 💡 TL;DR
 > 
@@ -816,7 +818,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 ### Deployment
 <details>
-<summary> Software and hardware that are required for deploying Yi quantized models ⬇️</summary> 
+<summary> Software and hardware requirements of deploying Yi models ⬇️</summary> 
 
 #### Software requirements
 
@@ -868,9 +870,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 ### Learning hub
 <details>
 <summary> Learning materials of Yi ⬇️</summary> 
-
-#### Learning hub
-
+<br> 
 Welcome to the Yi learning hub! 
 
 Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.  
