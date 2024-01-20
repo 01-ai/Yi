@@ -1006,7 +1006,7 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 ### 📊 Base model performance
 
-Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excel in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
+The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
 ![Base model performance](./assets/img/benchmark_base.png)
 
