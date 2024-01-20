@@ -131,7 +131,7 @@
 
 Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
-If you want to deploy Yi models, see [software and hardware requirements](#deployment)
+If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#deployment).
 
 ### Chat models
 
@@ -312,7 +312,7 @@ This tutorial guides you through every step of running **Yi-34B-Chat locally on 
 
 #### Step 0: Prerequistes
  
-- Make sure Python 3.10 or later version is installed.
+- Make sure Python 3.10 or a later version is installed.
 
 - If you want to run other Yi models, see [software and hardware requirements](#deployment)
 
@@ -814,8 +814,8 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 ### Deployment
-<details>
-<summary> Software and hardware requirements of deploying Yi models ⬇️</summary> 
+
+If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
 
 #### Software requirements
 
@@ -825,7 +825,6 @@ Before using Yi quantized models, make sure you've installed the correct softwar
 |---|---
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
-
 
 #### Hardware requirements
 
@@ -862,12 +861,12 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
-</details>
-
 ### Learning hub
+
 <details>
-<summary> Learning materials of Yi ⬇️</summary> 
+<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here ⬇️</summary> 
 <br> 
+  
 Welcome to the Yi learning hub! 
 
 Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.  
@@ -878,7 +877,7 @@ At the same time, we also warmly invite you to join our collaborative effort by 
 
 With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
 
-##### Tutorials
+#### Tutorials
 
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
@@ -989,14 +988,13 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 - [📊 Base model performance](#-base-model-performance)
 
 ### 📊 Chat model performance
-🎯 Performance evaluation
-- Yi-34B-chat stands out, doing better than most big models in almost all tests. 
-- Both Yi-34B-chat and its variant, Yi-34B-Chat-8bits (GPTQ), take the top spots in tests including MMLU, CMMLU, BBH, and GSM8k.
+
+Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
 ![Chat model performance](./assets/img/benchmark_chat.png) 
 
 <details>
-<summary>🎯 Evaluation methods and challenges ⬇️ </summary>
+<summary> Evaluation methods and challenges ⬇️ </summary>
 
 - **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
 - **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
@@ -1007,15 +1005,13 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 </details>
 
 ### 📊 Base model performance
-🎯 Performance evaluation
-- Yi-34B stands out as the top performer among the big models, beating others like LLaMA2-70B and Falcon-180B in most tests.
-- Yi-34B ranks first in MMLU, CMMLU, BBH, and common-sense reasoning.
-- Yi-34B-200K ranks first C-Eval, GAOKAO, and reading comprehension.
+
+The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
 ![Base model performance](./assets/img/benchmark_base.png)
 
 <details>
-<summary>🎯 Evaluation methods ⬇️</summary>
+<summary> Evaluation methods ⬇️</summary>
 
 - **Disparity in Results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
 - **Investigation Findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
