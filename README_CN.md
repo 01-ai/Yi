@@ -1006,7 +1006,7 @@ Yi-34B-Chat 模型在包括 MMLU、CMMLU、BBH、GSM8k 等在内的所有现有�
 <details>
 <summary> 评估方法与挑战 ⬇️ </summary>
 
-- **评估方式**: 我们使用零样本（zero-shot）和少样本(few-shot)方法对各种基准进行了评估，但 TruthfulQA 除外。
+- **评估方式**: 我们使用零样本（zero-shot）和少样本（few-shot）方法对各种基准进行了评估，但 TruthfulQA 除外。
 - **零样本与少样本**: 在大部分聊天模型中，更常采用零样本方法。
 - **评估策略**: 我们的评估策略涉及在明确或隐含地遵循指令（例如使用少量样本示例）的同时生成回应。然后我们从生成的文本中提取相关答案。
 - **面临的挑战**: 一些模型不适合按照少数数据集中的指令所要求的特定格式产生输出，这会导致不理想的结果。
@@ -1037,7 +1037,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 - Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)获得Yi系列模型的商业许可证。
+- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)来获得Yi系列模型的商业许可证。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
@@ -1091,10 +1091,10 @@ change the height and width for each of the contributors from 80 to 50 at ref in
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
-### 🪪 执照
+### 🪪 许可证
 
-该仓库中的源代码采用[Apache 2.0
-license](https://github.com/01-ai/Yi/blob/main/LICENSE)授权. Yi 系列模型完全开放供学术研究使用，也允许免费的商业用途，只需在申请后自动
+该仓库中的源代码采用 [Apache 2.0
+许可证](https://github.com/01-ai/Yi/blob/main/LICENSE) 授权. Yi 系列模型完全开放供学术研究使用，也允许免费的商业用途，只需在申请后自动
 获得许可。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)。
 对于免费商业用途，您只需要发送电子邮件[以获得官方商业许可](https://www.lingyiwanwu.com/yi-license)。
 
