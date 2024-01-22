@@ -596,7 +596,7 @@ Once finished, you can compare the finetuned model and the base model with the f
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️ .</summary> <ul>
 
 ### Finetune code for Yi 6B and 34B
 
@@ -728,7 +728,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️ .</summary> <ul>
 
 #### GPT-Q quantization
 
@@ -779,7 +779,7 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For detailed explanations, see ⬇️ .</summary> <ul>
 
 #### AWQ quantization
 
@@ -994,7 +994,7 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 ![Chat model performance](./assets/img/benchmark_chat.png) 
 
 <details>
-<summary> Evaluation methods and challenges ⬇️ </summary>
+<summary> Evaluation methods and challenges. ⬇️ </summary>
 
 - **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
 - **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
@@ -1011,7 +1011,7 @@ The Yi-34B and Yi-34B-200K models stand out as the top performers among open-sou
 ![Base model performance](./assets/img/benchmark_base.png)
 
 <details>
-<summary> Evaluation methods ⬇️</summary>
+<summary> Evaluation methods. ⬇️</summary>
 
 - **Disparity in results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
 - **Investigation findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
