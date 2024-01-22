@@ -1,23 +1,22 @@
 # 运行 Yi 模型，从 llama.cpp 开始
 
-如果你的资源有限，但又想快速体验 Yi 模型的魅力，那么你可以尝试使用 [llama.cpp](https://github.com/ggerganov/llama.cpp) 或者 [ollama.cpp](https://ollama.ai/)（特别推荐给中国用户）。这些工具可以帮助你在一小时内，甚至在你的笔记本电脑上，完成 Yi 模型的本地部署和运行。
+如果你很想快速体验 Yi 模型的魅力，但是受限于资源有限，比如只有一台笔记本电脑。可以尝试使用 [llama.cpp](https://github.com/ggerganov/llama.cpp) 或者 [ollama.cpp](https://ollama.ai/) 这类实用的高性能推理工具。它们可以帮助我们在一小时内，甚至就是在一台笔记本电脑上，完成 Yi 模型的本地部署和运行。
 
-本教程将一步步指导你如何下载、量化并运行一个 Yi 模型([yi-chat-6B-2bits](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main)) ，以及如何进行推理。
+本教程将一步步指导你来完成 “模型下载”、“模型量化”，“将 Yi 模型 [yi-chat-6B-2bits](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main)运行”起来，并进行问答演示。
 
-- [第 0 步：准备环境](#step-0-prerequisites)
-- [第 1 步：下载 llama.cpp](#step-1-download-llamacpp)
-- [第 2 步：下载 Yi 模型](#step-2-download-yi-model)
-- [第 3 步：开始推理](#step-3-perform-inference)
+- [第 0 步：环境准备](#step-0-prerequisites)
+- [第 1 步：下载 llama.cpp 代码](#step-1-download-llamacpp)
+- [第 2 步：模型下载](#step-2-download-yi-model)
+- [第 3 步：开始体验](#step-3-perform-inference)
 
-# 第 0 步：准备环境
+# 第 0 步：环境准备
 
-- 本教程假设你使用的是配备 16GB 内存和 Apple M2 Pro 芯片的 MacBook Pro。
-
-- 确保你的机器上已经安装了 [`git-lfs`](https://git-lfs.com/)。
+- 本教程使用的是配备 16GB 内存和 Apple M2 Pro 芯片的 MacBook Pro 笔记本，如果你有更充裕的资源体验将会更好。
+- 我们需要确保你的机器上已经安装好了 [`git-lfs`](https://git-lfs.com/)。
   
-# 第 1 步：下载 `llama.cpp`
+# 第 1 步：下载 `llama.cpp` 代码
 
-要克隆 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库，请运行以下命令。
+我们需要使用下面的命令，完成 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库代码的下载：
 
 ```bash
 git clone git@github.com:ggerganov/llama.cpp.git
@@ -25,7 +24,7 @@ git clone git@github.com:ggerganov/llama.cpp.git
 
 现在，你已经准备好开始下载 Yi 模型并体验即时问答的乐趣了！
 
-## 第二步：下载 Yi 模型
+## 第二步：模型下载
 
 2.1 想要快速克隆 [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) 到本地，只需要运行以下命令：
 
@@ -40,9 +39,9 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
 ```
 
-## 第三步：执行推理
+## 第三步：开始体验
 
-想要使用 Yi 模型进行推理，你可以选择以下任意一种方法。
+想要体验 Yi 模型（进行模型推理），我们可以选择以下任意一种方法。
 
 - [方法 1：在终端中执行推理](#method-1-perform-inference-in-terminal)
   
