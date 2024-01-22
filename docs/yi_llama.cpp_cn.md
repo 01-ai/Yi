@@ -1,61 +1,63 @@
-# Run Yi with llama.cpp
+# 运行 Yi 模型，从 llama.cpp 开始
 
-If you have limited resources, you can try [llama.cpp](https://github.com/ggerganov/llama.cpp) or [ollama.cpp](https://ollama.ai/) (especially for Chinese users) to run Yi models in a few minutes locally.
+如果你的资源有限，但又想快速体验 Yi 模型的魅力，那么你可以尝试使用 [llama.cpp](https://github.com/ggerganov/llama.cpp) 或者 [ollama.cpp](https://ollama.ai/)（特别推荐给中国用户）。这些工具可以帮助你在一小时内，甚至在你的笔记本电脑上，完成 Yi 模型的本地部署和运行。
 
-This tutorial guides you through every step of running a quantized model ([yi-chat-6B-2bits](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main)) locally and then performing inference.
+本教程将一步步指导你如何下载、量化并运行一个 Yi 模型([yi-chat-6B-2bits](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main)) ，以及如何进行推理。
 
-- [Step 0: Prerequisites](#step-0-prerequisites)
-- [Step 1: Download llama.cpp](#step-1-download-llamacpp)
-- [Step 2: Download Yi model](#step-2-download-yi-model)
-- [Step 3: Perform inference](#step-3-perform-inference)
+- [第 0 步：准备环境](#step-0-prerequisites)
+- [第 1 步：下载 llama.cpp](#step-1-download-llamacpp)
+- [第 2 步：下载 Yi 模型](#step-2-download-yi-model)
+- [第 3 步：开始推理](#step-3-perform-inference)
 
-## Step 0: Prerequisites 
+# 第 0 步：准备环境
 
-- This tutorial assumes you use a MacBook Pro with 16GB of memory and an Apple M2 Pro chip.
+- 本教程假设你使用的是配备 16GB 内存和 Apple M2 Pro 芯片的 MacBook Pro。
+
+- 确保你的机器上已经安装了 [`git-lfs`](https://git-lfs.com/)。
   
-- Make sure [`git-lfs`](https://git-lfs.com/) is installed on your machine.
-  
-## Step 1: Download `llama.cpp`
+# 第 1 步：下载 `llama.cpp`
 
-To clone the [`llama.cpp`](https://github.com/ggerganov/llama.cpp) repository, run the following command.
+要克隆 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库，请运行以下命令。
 
 ```bash
 git clone git@github.com:ggerganov/llama.cpp.git
 ```
 
-## Step 2: Download Yi model
+现在，你已经准备好开始下载 Yi 模型并体验即时问答的乐趣了！
 
-2.1 To clone [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) with just pointers, run the following command.
+## 第二步：下载 Yi 模型
+
+2.1 想要快速克隆 [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) 到本地，只需要运行以下命令：
+
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 ```
 
-2.2 To download a quantized Yi model ([yi-chat-6b.Q2_K.gguf](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/blob/main/yi-chat-6b.Q2_K.gguf)), run the following command.
+2.2 如果你想要下载一个量化的 Yi 模型 ([yi-chat-6b.Q2_K.gguf](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/blob/main/yi-chat-6b.Q2_K.gguf))，可以运行以下命令：
 
 ```bash
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
 ```
 
-## Step 3: Perform inference
+## 第三步：执行推理
 
-To perform inference with the Yi model, you can use one of the following methods.
+想要使用 Yi 模型进行推理，你可以选择以下任意一种方法。
 
-- [Method 1: Perform inference in terminal](#method-1-perform-inference-in-terminal)
+- [方法 1：在终端中执行推理](#method-1-perform-inference-in-terminal)
   
-- [Method 2: Perform inference in web](#method-2-perform-inference-in-web)
+- [方法 2：在网页上执行推理](#method-2-perform-inference-in-web)
 
-### Method 1: Perform inference in terminal
+### 方法一：在终端中执行推理
 
-To compile `llama.cpp` using 4 threads and then conduct inference, navigate to the `llama.cpp` directory, and run the following command.
+要使用4个线程编译 `llama.cpp` 并随后进行推理，请导航到 `llama.cpp` 所在的目录，并运行以下命令。
 
-> ### Tips
-> 
-> - Replace `/Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf` with the actual path of your model.
+> ### 提示
 >
-> - By default, the model operates in completion mode.
-> 
-> - For additional output customization options (for example, system prompt, temperature, repetition penalty, etc.), run `./main -h` to check detailed descriptions and usage.
+> - 将 `/Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf` 替换为你的模型的实际路径。
+>
+> - 默认情况下，模型处于完成模式。
+> - 要查看更多输出自定义选项的详细描述和使用方法（例如系统提示、温度、重复惩罚等），运行 `./main -h` 进行检查。
 
 ```bash
 make -j4 && ./main -m /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf -p "How do you feed your pet fox? Please answer this question in 6 simple steps:\nStep 1:" -n 384 -e
@@ -80,18 +82,18 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ```
 
-Now you have successfully asked a question to the Yi model and got an answer! 🥳
+恭喜你！你已经成功地向Yi模型提出了问题并得到了回答！🥳
 
-### Method 2: Perform inference in web
+### 方法二：在网页上进行推理
 
-1. To initialize a lightweight and swift chatbot, navigate to the `llama.cpp` directory, and run the following command.
+1. 要初始化一个轻量级、快速的聊天机器人，请导航到 `llama.cpp` 目录，并运行以下命令。
+
 
     ```bash
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
     ```
 
-    Then you can get an output like this:
-
+    然后，你将看到以下类似的输出：
 
     ```bash
     ...
@@ -122,11 +124,10 @@ Now you have successfully asked a question to the Yi model and got an answer! �
     llama server listening at http://0.0.0.0:8080
     ```
 
-2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar. 
-   
-    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
+2. 要访问聊天机器人界面，打开你的网络浏览器，并在地址栏中输入 `http://0.0.0.0:8080`。
 
+    ![Yi模型聊天机器人界面 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
 
-3. Enter a question, such as "How do you feed your pet fox? Please answer this question in 6 simple steps" into the prompt window, and you will receive a corresponding answer.
+3. 在提示窗口中输入一个问题，比如“你如何喂养你的宠物狐狸？请用6个简单的步骤回答这个问题”，你将会收到一个相应的答案。
 
-    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
+    ![向Yi模型提问 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
