@@ -43,6 +43,12 @@
 <p align="center">
     📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
 </p> 
+<hr>
+🙌 本文由 Yi 和志愿者共同翻译完成，感谢每一位传递知识的火炬手。
+
+<br> 🤗 欢迎大家[加入我们](https://github.com/01-ai/Yi/discussions/314)，开启知识之火旅程，共绘技术内容图谱。
+<br>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅 <a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。
+
 
 
 <!-- DO NOT REMOVE ME -->
@@ -51,6 +57,7 @@
 
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
+
 
 - [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
