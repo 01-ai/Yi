@@ -1031,22 +1031,22 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 - **Falcon-180B 注意事项**: 由于技术限制，Falcon-180B 没有在 QuAC 和 OBQA 上进行测试。其性能分数是从其他任务中得出的平均值，并且考虑到这两个任务通常的分数较低，Falcon-180B 的能力很可能没有被低估。
 </details>
 
-# 🟢 Who can use Yi?
+# 🟢 谁可以使用 Yi？
 
-Everyone! 🙌 ✅
+答案是所有人! 🙌 ✅
 
-- The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
+- 
+Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
+- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
-# 🟢 Misc.
+# 🟢 杂项
 
-### Acknowledgments
+### 致谢
 
-A heartfelt thank you to each of you who have made contributions to the Yi community! You have helped Yi not just a project, but a vibrant, growing home for innovation.
-
+对于每一位为Yi社区做出贡献的您，我们由衷地表示感谢！您不仅帮助了Yi成为一个项目，还让它成为了一个充满活力、不断发展的创新家园。
 <!---
 ref https://github.com/ngryman/contributor-faces
 npx contributor-faces --exclude "*bot*" --limit 70 --repo "https://github.com/01-ai/Yi"
