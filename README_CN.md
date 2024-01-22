@@ -78,15 +78,15 @@
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
-  - [Deployment](#deployment)
-  - [Learning hub](#learning-hub)
-- [🟢 Why Yi?](#-why-yi)
-  - [🌎 Ecosystem](#-ecosystem)
-    - [💦 Upstream](#-upstream)
-    - [🌊 Downstream](#-downstream)
-      - [🔗 Serving](#-serving)
-      - [⚙️ Quantitation](#️-quantitation)
-      - [🛠️ Fine-tuning](#️-fine-tuning)
+  - [部署](#deployment)
+  - [学习中心](#learning-hub)
+- [🟢 为什么选择易（Yi）？](#-为什么选择易)
+  - [🌎 生态系统](#-生态系统)
+    - [💦 上游](#-上游)
+    - [🌊 下游](#-下游)
+      - [🔗 服务](#-服务)
+      - [⚙️ 量化](#️-量化)
+      - [🛠️ 微调](#️-微调)
       - [API](#api)
   - [📌 Benchmarks](#-benchmarks)
     - [📊 Base model performance](#-base-model-performance)
@@ -824,27 +824,27 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </details>
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-### Deployment
+### 部署
 
-If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
+如果您想部署Yi模型，请确保满足以下软件和硬件要求。
 
-#### Software requirements
+#### 软件要求
 
-Before using Yi quantized models, make sure you've installed the correct software listed below.
+在使用Yi量化模型之前，请确保您已安装以下列出的软件。
 
-| Model | Software
-|---|---
+| 模型 | 软件 |
+|:---|:---|
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
 
-#### Hardware requirements
+#### 硬件要求
 
-Before deploying Yi in your environment, make sure your hardware meets the following requirements.
+在您的环境中部署Yi之前，请确保您的硬件满足以下要求。
 
-##### Chat models
+##### 聊天模型
 
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
+| 模型                 | 最低显存      | 推荐GPU示例                             |
+|:----------------------|:--------------|:-------------------------------------:|
 | Yi-6B-Chat           | 15 GB         | RTX 3090 <br> RTX 4090 <br>  A10 <br> A30             |
 | Yi-6B-Chat-4bits     | 4 GB          | RTX 3060 <br>  RTX 4060                     |
 | Yi-6B-Chat-8bits     | 8 GB          | RTX 3070 <br> RTX 4060                     |
@@ -852,10 +852,10 @@ Before deploying Yi in your environment, make sure your hardware meets the follo
 | Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
 | Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
 
-Below are detailed minimum VRAM requirements under different batch use cases.
+以下是不同批量使用情况下的详细最低显存要求。
 
-|  Model                  | batch=1 | batch=4 | batch=16 | batch=32 |
-| ----------------------- | ------- | ------- | -------- | -------- |
+|  模型                  | batch=1 | batch=4 | batch=16 | batch=32 |
+| :----------------------- | :------- | :------- | :-------- | :-------- |
 | Yi-6B-Chat              | 12 GB   | 13 GB   | 15 GB    | 18 GB    |
 | Yi-6B-Chat-4bits  | 4 GB    | 5 GB    | 7 GB     | 10 GB    |
 | Yi-6B-Chat-8bits  | 7 GB    | 8 GB    | 10 GB    | 14 GB    |
@@ -863,73 +863,74 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
 | Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
 
-##### Base models
+##### 基础模型
 
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
+|模型                   |最低显存      |        推荐GPU示例                     |
+|:----------------------|:--------------|:-------------------------------------:|
 | Yi-6B                | 15 GB         | RTX3090 <br> RTX4090 <br> A10 <br> A30               |
 | Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
-### Learning hub
+### 学习中心
 
 <details>
-<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here ⬇️</summary> 
-<br> 
-  
-Welcome to the Yi learning hub! 
+<summary> 如果你想学习Yi，你可以在这里找到丰富的有用教育资源 ⬇️</summary>
+<br>
 
-Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.  
+欢迎来到Yi学习中心！
 
-The content you find here has been generously contributed by knowledgeable Yi experts and passionate enthusiasts. We extend our heartfelt gratitude for your invaluable contributions! 
+无论你是经验丰富的开发者还是新手，你都可以找到丰富的有用教育资源，以提高你对Yi模型的理解和技能，包括深入的博客文章、全面的视频教程、实践指南等等。
 
-At the same time, we also warmly invite you to join our collaborative effort by contributing to Yi. If you have already made contributions to Yi, please don't hesitate to showcase your remarkable work in the table below.
+这里的内容是由知识渊博的Yi专家和热情的爱好者慷慨贡献的。我们对您宝贵的贡献表示衷心的感谢！
 
-With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
+同时，我们也热烈邀请您加入我们的协作努力，为Yi做出贡献。如果您已经对Yi做出了贡献，请不要犹豫，在下面的表格中展示您杰出的工作。
 
-#### Tutorials
+有了这些资源，您就准备好开始与Yi的激动人心的旅程了。祝学习愉快！🥳
 
-| Type        | Deliverable                                            |      Date      |     Author     |
+#### 教程
+
+
+| 类型        | 教程地址                                            |      日期      |     作者     |
 |-------------|--------------------------------------------------------|----------------|----------------|
-| Blog        | [本地运行零一万物 34B 大模型，使用 Llama.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
-| Blog        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
-| Blog        | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
-| Blog        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
-| Video       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  漆妮妮  |
-| Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
+| 博客        | [本地运行零一万物 34B 大模型，使用 Llama.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
+| 博客        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
+| 博客       | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
+| 博客        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
+| 视频       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  漆妮妮  |
+| 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
 </details>
 
 
-# 🟢 Why Yi? 
+# 🟢 为什么选择Yi？
 
-  - [🌎 Ecosystem](#-ecosystem)
-    - [💦 Upstream](#-upstream)
-    - [🌊 Downstream](#-downstream)
-      - [🔗 Serving](#-serving)
-      - [⚙️ Quantitation](#️-quantitation)
-      - [🛠️ Fine-tuning](#️-fine-tuning)
+  - [🌎 生态系统](#-生态系统)
+    - [💦 上游](#-上游)
+    - [🌊 下游](#-下游)
+      - [🔗 服务](#-服务)
+      - [⚙️ 量化](#️-量化)
+      - [🛠️ 微调](#️-微调)
       - [API](#api)
-  - [📌 Benchmarks](#-benchmarks)
-    - [📊 Chat model performance](#-chat-model-performance)
-    - [📊 Base model performance](#-base-model-performance)
- 
-## 🌎 Ecosystem
+  - [📌 基准测试](#-基准测试)
+    - [📊 聊天模型性能](#-聊天模型性能)
+    - [📊 基础模型性能](#-基础模型性能)
 
-Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
+## 🌎 生态系统
 
-- [💦 Upstream](#-upstream)
-- [🌊 Downstream](#-downstream)
-  - [🔗 Serving](#-serving)
-  - [⚙️ Quantitation](#️-quantitation)
-  - [🛠️ Fine-tuning](#️-fine-tuning)
+Yi拥有一个全面的生态系统，提供一系列工具、服务和模型，以丰富您的体验并最大化生产力。
+
+- [💦 上游](#-上游)
+- [🌊 下游](#-下游)
+  - [🔗 服务](#-服务)
+  - [⚙️ 量化](#️-量化)
+  - [🛠️ 微调](#️-微调)
   - [API](#api)
 
-### 💦 Upstream
+### 💦 上游
 
-The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
+Yi系列模型遵循与LLaMA相同的模型架构。选择Yi，您可以利用LLaMA生态系统中现有的工具、库和资源，无需创建新工具，提高开发效率。
 
-For example, the Yi series models are saved in the format of the LLaMA model. You can directly use `LLaMAForCausalLM` and `LLaMATokenizer` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
+例如，Yi系列模型以LLaMA模型的格式保存。您可以直接使用`LLaMAForCausalLM`和`LLaMATokenizer`加载模型。更多信息，请见[使用聊天模型](#31-使用聊天模型)。
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -939,59 +940,59 @@ tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34b", use_fast=False)
 model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ```
 
-### 🌊 Downstream
+### 🌊 下游
 
-> 💡 Tip
+> 💡 提示
 > 
-> - Feel free to create a PR and share the fantastic work you've built using the Yi series models.
+> - 随时创建PR并分享您使用易（Yi）系列模型构建的出色作品。
 >
-> - To help others quickly understand your work, it is recommended to use the format of `<model-name>: <model-intro> + <model-highlights>`.
+> - 为了帮助他人快速理解您的工作，建议使用`<模型名称>: <模型简介> + <模型亮点>`的格式。
 
-#### 🔗 Serving 
+#### 🔗 服务
 
-If you want to get up with Yi in a few minutes, you can use the following services built upon Yi.
+如果您想在几分钟内开始使用Yi，您可以使用以下基于Yi构建的服务。
 
-- Yi-34B-Chat: you can chat with Yi using one of the following platforms:
+- Yi-34B-Chat：您可以通过以下平台与Yi进行聊天：
   - [Yi-34B-Chat | Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
-  - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/): **Note** that currently it's available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)) and experience it firsthand!
-  
-- [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai): you can use this model with more options by setting additional parameters and calling APIs.
-  
-- [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): you can use this service to run Yi models locally with added flexibility and customization.
-  
-#### ⚙️ Quantitation
+  - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/)：**注意**目前仅通过白名单提供。欢迎申请（填写[英文](https://cn.mikecrm.com/l91ODJf)或[中文](https://cn.mikecrm.com/gnEZjiQ)表格）并亲身体验！
 
-If you have limited computational capabilities, you can use Yi's quantized models as follows. 
+- [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai)：您可以通过设置额外参数和调用APIs，以更多选项使用此模型。
 
-These quantized models have reduced precision but offer increased efficiency, such as faster inference speed and smaller RAM usage.
+- [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models)：您可以使用此服务在本地运行Yi模型，增加灵活性和定制性。
 
-- [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ) 
+#### ⚙️ 量化
+
+如果您的计算能力有限，您可以使用Yi的量化模型，如下所示。
+
+这些量化模型虽然精度降低，但提供了更高的效率，例如更快的推理速度和更小的RAM使用量。
+
+- [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
 - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
 - [TheBloke/Yi-34B-AWQ](https://huggingface.co/TheBloke/Yi-34B-AWQ)
-  
-#### 🛠️ Fine-tuning
 
-If you're seeking to explore the diverse capabilities within Yi's thriving family, you can delve into Yi's fine-tuned models as below.
+#### 🛠️ 微调
 
-- [TheBloke Models](https://huggingface.co/TheBloke): this site hosts numerous fine-tuned models derived from various LLMs including Yi. 
+如果您希望探索Yi兴旺家族中的多样化能力，您可以深入了解下面的Yi微调模型。
+
+- [TheBloke 模型](https://huggingface.co/TheBloke)：这个网站托管了许多从包括Yi在内的各种大型语言模型（LLMs）派生的微调模型。
   
-  This is not an exhaustive list for Yi, but to name a few sorted on downloads:
+  这不是Yi的详尽列表，但以下是基于下载量排序的几个例子：
   - [TheBloke/dolphin-2_2-yi-34b-AWQ](https://huggingface.co/TheBloke/dolphin-2_2-yi-34b-AWQ)
   - [TheBloke/Yi-34B-Chat-AWQ](https://huggingface.co/TheBloke/Yi-34B-Chat-AWQ)
   - [TheBloke/Yi-34B-Chat-GPTQ](https://huggingface.co/TheBloke/Yi-34B-Chat-GPTQ)
   
-- [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B): this model ranked first among all models below 70B and outperformed the twice larger deepseek-llm-67b-chat. You can check the result on the [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
+- [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)：这个模型在所有70B以下的模型中排名第一，并且超越了体量是其两倍的deepseek-llm-67b-chat。您可以在[开放LLM排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)上查看结果。
   
-- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama): this model excelled beyond other models (such as GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat) in C-Eval and CMMLU evaluations on the [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm). 
+- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：这个模型在C-Eval和CMMLU评估中超越了其他模型（如GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat）, 在[OpenCompass LLM 排行榜](https://opencompass.org.cn/leaderboard-llm)上表现出色。
   
-- [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
+- [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)：这个模型在Capybara数据集上使用200K上下文长度和3个训练周期进行训练。
 
 #### API
 
-- [amazing-openai-api](https://github.com/soulteary/amazing-openai-api): this tool converts Yi model APIs into the OpenAI API format out of the box.
-- [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model): this tool builds an OpenAI-compatible API server for Yi-34B-Chat using a portable Wasm (WebAssembly) file, powered by Rust.
+- [amazing-openai-api](https://github.com/soulteary/amazing-openai-api)：这个工具可以将Yi模型API转换成OpenAI API格式。
+- [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：这个工具使用可移植的Wasm（WebAssembly）文件构建了一个与OpenAI兼容的API服务器，用于Yi-34B-Chat，由Rust驱动。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 ## 📌 Benchmarks 
 
