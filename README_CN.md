@@ -995,7 +995,7 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 ## 📌 基准测试 
 
-- [📊 Chat模型性能](#-聊天模型性能)
+- [📊 Chat模型性能](#-Chat模型性能)
 - [📊 基座模型性能](#-基座模型性能)
 
 ### 📊 Chat模型性能
