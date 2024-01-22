@@ -214,16 +214,15 @@ encounter any problem when using the **Yi** series models.
 
 ### 1. Prepare development environment
 
-#### 1.1 Docker
-The best approach to try the **Yi** series models is through Docker with GPUs. We
-provide the following docker images to help you get started.
+#### 1. 准备开发环境
+
+想要尝试零一万物的 **Yi** 系列模型，最佳方式是通过装有 GPU 的 Docker 环境。我们提供了以下 Docker 镜像来帮助你快速上手。
+
 
 - `registry.lingyiwanwu.com/ci/01-ai/yi:latest`
 - `ghcr.io/01-ai/yi:latest`
 
-Note that the `latest` tag always points to the latest code in the `main`
-branch. To test a stable version, please replace it with a specific
-[tag](https://github.com/01-ai/Yi/tags).
+请注意，`latest` 标签始终指向main分支的最新代码。如果你想测试一个稳定版本，请用具体的[标签](https://github.com/01-ai/Yi/tags)来替换它。
 
 #### 1.2 Local development environment
 We use [`conda-lock`](https://github.com/conda/conda-lock) to generate fully reproducible lock files for conda environments. You can refer to [conda-lock.yml](./conda-lock.yml) for the exact versions of the dependencies. Additionally, we utilize [`micromamba`](https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html) for installing these dependencies.
