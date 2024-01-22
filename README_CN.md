@@ -73,9 +73,10 @@
 - [🟢 How to use Yi?](#-how-to-use-yi)
   - [快速上手](#quick-start)
     - [选择你的游玩路线](#choose-your-path)
-    - [pip](#pip)
-    - [llama.cpp](./docs/yi_llama.cpp_cn.md)
+    - [使用 PyPi（pip install）](#pip)
+    - [使用 llama.cpp 量化运行](./docs/yi_llama.cpp_cn.md)
     - [网页版演示应用（Web Demo）](#网页版演示应用web-demo)
+    - [使用 Docker 容器](#quick-start---docker)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
@@ -280,7 +281,7 @@ If you prefer to deploy Yi models locally,
 
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
-    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+    - [Docker](./docs/README_legacy_cn.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
@@ -416,7 +417,7 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
-### Quick start - Docker 
+### Quick start - Docker
 <details>
 <summary> Run Yi-34B-chat locally with Docker: a step-by-step guide ⬇️</summary> 
 <br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
