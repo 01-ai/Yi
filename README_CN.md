@@ -75,7 +75,7 @@
     - [选择你的游玩路线](#choose-your-parth)
     - [pip](#pip)
     - [llama.cpp](./docs/yi_llama.cpp_cn.md)
-    - [Web demo](#web-demo)
+    - [网页版演示应用（Web Demo）](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
@@ -578,23 +578,21 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### 网页版演示
+### 网页版演示应用（Web Demo）
 
-现在，你可以为Yi的聊天模型打造一个炫酷的网页版用户界面演示（请注意，Yi的基础模型在这个场景中并不适用）。
+我们可以使用 Yi 的**聊天模型**（Yi-34B-Chat）打造一个炫酷的网页版演示。需要注意不要使用错模型，Yi 的基础模型（Yi-34B）并不适合聊天场景使用。
 
-[第一步：准备你的环境](#step-1-prepare-your-environment).
+[第一步：环境准备](#step-1-prepare-your-environment)
 
-[第二步：下载Yi模型](#step-2-download-the-yi-model).
+[第二步：下载模型](#step-2-download-the-yi-model)
 
-第三步：启动本地网页服务
-
-要开始在本地运行网页服务，请运行以下命令：
+第三步：使用下面的命令，启动网页服务：
 
 ```bash
 python demo/web_demo.py -c <你的模型路径>
 ```
 
-运行完毕后，你可以在浏览器中输入控制台提供的网址来访问这个网页版演示。
+命令运行完毕后，我们可以在浏览器中输入控制台显示的网址，来使用这个网页版演示应用。
 
  ![快速上手 - 网页版演示](./assets/img/yi_34b_chat_web_demo.gif)
 
