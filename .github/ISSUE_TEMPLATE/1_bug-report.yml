@@ -1,0 +1,69 @@
+name:🐞 Bug report
+description: Problems encountered while utilizing Yi model
+title: "[Bug] "
+labels: ["type/bug-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you very much for your feedback!
+
+        For suggestions or help, please consider:
+        [Github Discussion](https://github.com/01-ai/Yi/discussions).
+  - type: checkboxes
+    attributes:
+      label: Search before asking
+      description: >
+        Please search [issues](https://github.com/01-ai/Yi/issues) to check if your issue has already been reported.
+      options:
+        - label: >
+            I searched in the [issues](https://github.com/01-ai/Yi/issues) and found nothing similar.
+          required: true
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Python**: 3.8
+        - **PyTorch**: 1.12
+        - **CUDA**: 11.4
+    value: |
+        - OS:
+        - Python:
+        - PyTorch:
+        - CUDA:
+    render: markdown
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: | 
+      A concise description of what you're experiencing, with screenshot attached if possible.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+    placeholder: |
+      1. In this environment...
+      2. With this config...
+      3. Run '...'
+      4. See error...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+  validations:
+    required: false

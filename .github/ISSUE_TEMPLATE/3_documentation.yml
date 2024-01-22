@@ -1,0 +1,49 @@
+name: Document
+description: Suggest document changes
+title: "[Doc] "
+labels: ["doc-required"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you very much for your suggestion!
+
+        For suggestions or help, please consider:
+        [Github Discussion]().
+
+        Otherwise, please answer the following questions before submitting a doc issue.
+  - type: checkboxes
+    attributes:
+      label: Search before asking
+      description: >
+        Please search [issues](https://github.com/01-ai/Yi/discussions) to check if your issue has already been reported.
+      options:
+        - label: >
+            I searched in the [issues](https://github.com/01-ai/Yi/discussions) and found nothing similar.
+          required: true
+  - type: textarea
+    attributes:
+      label: What issue do you find in Yi docs?
+      description: For example, something missing, inaccurate, incomplete, hard to use/understand/find, etc.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What is your suggestion?
+      description: For example, add explanations, correct descriptions, delete information, etc.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Any reference?
+      description: (For example, website links, etc)?
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: >
+        We look forward to the community of developers or users helping improve Yi document together. If you are willing to submit a PR, please check the box.
+      options:
+        - label: I'm willing to submit a PR!
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"
