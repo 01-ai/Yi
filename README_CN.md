@@ -52,8 +52,8 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- [🟢 Yi是什么?](#🟢-yi是什么)
-  - [📌 介绍](#📌-介绍)
+- [🟢 Yi是什么?](#-yi是什么)
+  - [📌 介绍](#-介绍)
   - [🎯 Models](#-models)
     - [Chat models](#chat-models)
     - [Base models](#base-models)
