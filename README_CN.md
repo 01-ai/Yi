@@ -417,29 +417,29 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
-### Quick start - Docker
-<details>
-<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide ⬇️</summary> 
-<br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
- <h4>Step 0: Prerequisites</h4>
-<p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
+### 快速入门 - Docker
 
-<h4> Step 1: Start Docker </h4>
+<details>
+<summary> 🚀 使用 Docker 在本地运行 Yi-34B-Chat 模型的一步步指导来啦！👇</summary>
+<br>这个教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并执行推理。
+<h4>步骤0: 准备工作</h4>
+<p>确保你已经安装了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>。</p>
+<h4>步骤1: 启动Docker</h4>
 <pre><code>docker run -it --gpus all \
 -v &lt;your-model-path&gt;: /models
 ghcr.io/01-ai/yi:latest
 </code></pre>
-<p>Alternatively, you can pull the Yi Docker image from <code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code>.</p>
+<p>或者，你可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code>拉取Yi的Docker镜像。</p>
 
-<h4>Step 2: Perform inference</h4>
-    <p>You can perform inference with Yi chat or base models as below.</p>
+<h4>步骤2: 执行推理</h4>
+    <p>你可以像下面这样使用Yi的聊天模型或基础模型执行推理。</p>
     
-<h5>Perform inference with Yi chat model</h5>
-    <p>The steps are similar to <a href="#perform-inference-with-yi-chat-model">pip - Perform inference with Yi chat model</a>.</p>
-    <p><strong>Note</strong> that the only difference is to set <code>model_path = '&lt;your-model-mount-path&gt;'</code> instead of <code>model_path = '&lt;your-model-path&gt;'</code>.</p>
-<h5>Perform inference with Yi base model</h5>
-    <p>The steps are similar to <a href="#perform-inference-with-yi-base-model">pip - Perform inference with Yi base model</a>.</p>
-    <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
+<h5>使用Yi聊天模型执行推理</h5>
+    <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+    <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 来替换 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
+<h5>使用Yi基础模型执行推理</h5>
+    <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+    <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>--model &lt;your-model-mount-path&gt;'</code> 来替换 <code>model &lt;your-model-path&gt;</code>。</p>
 </details>
 
 
