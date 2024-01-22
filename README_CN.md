@@ -1011,7 +1011,7 @@ Yi-34B-Chat 模型在包括 MMLU、CMMLU、BBH、GSM8k 等在内的所有现有�
 - **评估策略**: 我们的评估策略涉及在明确或隐含地遵循指令（例如使用少量样本示例）的同时生成回应。然后我们从生成的文本中提取相关答案。
 - **面临的挑战**: 一些模型不适合按照少数数据集中的指令所要求的特定格式产生输出，这会导致不理想的结果。
 
-<strong>*</strong>: C-Eval 结果是在验证数据集上进行评估的。
+<strong>*</strong>: C-Eval 是在验证数据集上的结果。
 </details>
 
 ### 📊 基座模型性能
@@ -1083,25 +1083,21 @@ change the height and width for each of the contributors from 80 to 50 at ref in
 
 [//]: contributor-faces
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
-### 📡 Disclaimer
+### 📡 免责声明
 
-We use data compliance checking algorithms during the training process, to
-ensure the compliance of the trained model to the best of our ability. Due to
-complex data and the diversity of language model usage scenarios, we cannot
-guarantee that the model will generate correct, and reasonable output in all
-scenarios. Please be aware that there is still a risk of the model producing
-problematic outputs. We will not be responsible for any risks and issues
-resulting from misuse, misguidance, illegal usage, and related misinformation,
-as well as any associated data security concerns.
+我们在训练过程中使用数据合规性检查算法，尽力确保训练出的模型在我们的能力范围内合规。由于数据的复杂性和语言模型的多样化使用场景，我们无法保证模型在所有情况下都会生成正确并合理的输出。请注意，模型仍然存在生成有问题输出的风险。对于因误用、误导、非法使用、相关错误信息以及与之相关的数据安全问题而导致的任何风险和问题，我们将不承担责任。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-### 🪪 License
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
-The source code in this repo is licensed under the [Apache 2.0
-license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use, with automatic permission granted upon application. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
-For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
+### 🪪 执照
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
+这个仓库中的源代码采用[Apache 2.0
+license](https://github.com/01-ai/Yi/blob/main/LICENSE)授权. Yi 系列模型完全开放供学术研究使用，也允许免费的商业用途，只需在申请后自动
+获得许可。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)。
+对于免费商业用途，您只需要发送电子邮件[以获得官方商业许可](https://www.lingyiwanwu.com/yi-license)。
+
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
