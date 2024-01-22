@@ -75,7 +75,7 @@
     - [选择你的游玩路线](#choose-your-path)
     - [pip](#pip)
     - [llama.cpp](./docs/yi_llama.cpp_cn.md)
-    - [网页版演示应用（Web Demo）](#web-demo)
+    - [网页版演示应用（Web Demo）](#网页版演示应用web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
