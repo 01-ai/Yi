@@ -578,23 +578,25 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### Web demo
+### 网页版演示
 
-You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
+现在，你可以为Yi的聊天模型打造一个炫酷的网页版用户界面演示（请注意，Yi的基础模型在这个场景中并不适用）。
 
-[Step 1: Prepare your environment](#step-1-prepare-your-environment). 
+[第一步：准备你的环境](#step-1-prepare-your-environment).
 
-[Step 2: Download the Yi model](#step-2-download-the-yi-model).
+[第二步：下载Yi模型](#step-2-download-the-yi-model).
 
-Step 3. To start a web service locally, run the following command.
+第三步：启动本地网页服务
+
+要开始在本地运行网页服务，请运行以下命令：
 
 ```bash
-python demo/web_demo.py -c <your-model-path>
+python demo/web_demo.py -c <你的模型路径>
 ```
 
-You can access the web UI by entering the address provided in the console into your browser. 
+运行完毕后，你可以在浏览器中输入控制台提供的网址来访问这个网页版演示。
 
- ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
+ ![快速上手 - 网页版演示](./assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
