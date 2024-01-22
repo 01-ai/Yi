@@ -52,8 +52,8 @@
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
 
-- [🟢 What is Yi?](#-what-is-yi)
-  - [📌 Introduction](#-introduction)
+- [🟢 Yi是什么?](#🟢-yi是什么)
+  - [📌 介绍](#📌-介绍)
   - [🎯 Models](#-models)
     - [Chat models](#chat-models)
     - [Base models](#base-models)
@@ -90,13 +90,14 @@
 
 <hr>
 
-# 🟢 What is Yi?
+# 🟢 Yi是什么?
 
-## 📌 Introduction 
+## 📌 介绍
 
-- 🤖 The Yi series models are the next generation of open-source large language models trained from scratch by [01.AI](https://01.ai/).
+- 🤖 Yi 系列模型是 01.AI 从零训练的新一代开源大语言模型。
 
-- 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
+- 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大型语言模型之一。Yi 系列模型在语言理解、常识推理、阅读理解等方面展现出巨大的潜力。例如，
+
 
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
