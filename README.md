@@ -583,7 +583,7 @@ python demo/web_demo.py -c <your-model-path>
 
 You can access the web UI by entering the address provided in the console into your browser. 
 
- ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
+ ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
@@ -991,7 +991,7 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
-![Chat model performance](./assets/img/benchmark_chat.png) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png) 
 
 <details>
 <summary> Evaluation methods and challenges. ⬇️ </summary>
@@ -1008,7 +1008,7 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
-![Base model performance](./assets/img/benchmark_base.png)
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png)
 
 <details>
 <summary> Evaluation methods. ⬇️</summary>
