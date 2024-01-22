@@ -993,44 +993,42 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📌 Benchmarks 
+## 📌 基准测试 
 
-- [📊 Chat model performance](#-chat-model-performance)
-- [📊 Base model performance](#-base-model-performance)
+- [📊 Chat模型性能](#-聊天模型性能)
+- [📊 基座模型性能](#-基座模型性能)
 
-### 📊 Chat model performance
+### 📊 Chat模型性能
 
-Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
-
+Yi-34B-Chat 模型在包括 MMLU、CMMLU、BBH、GSM8k 等在内的所有现有开源模型的基准测试中表现出色，排名第一。
 ![Chat model performance](./assets/img/benchmark_chat.png) 
 
 <details>
-<summary> Evaluation methods and challenges ⬇️ </summary>
+<summary> 评估方法与挑战 ⬇️ </summary>
 
-- **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
-- **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
-- **Evaluation strategy**: our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
-- **Challenges faced**: some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
+- **评估方式**: 我们使用零样本（zero-shot）和少样本(few-shot)方法对各种基准进行了评估，但 TruthfulQA 除外。
+- **零样本与少样本**: 在大部分聊天模型中，更常采用零样本方法。
+- **评估策略**: 我们的评估策略涉及在明确或隐含地遵循指令（例如使用少量样本示例）的同时生成回应。然后我们从生成的文本中提取相关答案。
+- **面临的挑战**: 一些模型不适合按照少数数据集中的指令所要求的特定格式产生输出，这会导致不理想的结果。
 
-<strong>*</strong>: C-Eval results are evaluated on the validation datasets
+<strong>*</strong>: C-Eval 结果是在验证数据集上进行评估的。
 </details>
 
-### 📊 Base model performance
+### 📊 基座模型性能
 
-The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
-
+Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤其在 MMLU、CMML、常识推理、阅读理解等方面表现卓越。
 ![Base model performance](./assets/img/benchmark_base.png)
 
 <details>
-<summary> Evaluation methods ⬇️</summary>
+<summary> 评估方法 ⬇️</summary>
 
-- **Disparity in Results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
-- **Investigation Findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
-- **Uniform Benchmarking Process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
-- **Efforts to Retrieve Unreported Scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-- **Extensive Model Evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
-- **Special Configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-- **Falcon-180B Caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
+- **结果差异**: 在基准测试开源模型时，我们的流程与公共来源（如 OpenCompass）报告的结果之间存在差异。
+- **调查结果**: 深入调查显示，各种模型在提示语、后处理策略和采样技术上的变化可能导致显著的结果差异。
+- **统一的基准测试过程**: 我们的方法论与原始基准一致——使用一致的提示语和后处理策略，并在评估时应用贪心解码（greedy decoding），不对生成内容进行任何后处理。
+- **努力检索未报告的评分**: 对于原始作者未报告的分数（包括以不同设置报告的分数），我们尝试使用我们的流程获取结果。
+- **广泛的模型评估**: 为了全面评估模型的能力，我们采用了在 Llama2 中概述的方法论。具体来说，我们包括了 PIQA、SIQA、HellaSwag、WinoGrande、ARC、OBQA 和 CSQA 来评估常识推理。SquAD、QuAC 和 BoolQ 被纳入以评估阅读理解。
+- **特殊配置**: CSQA 专门使用7-样本（7-shot）设置进行测试，而所有其他测试都使用0-样本（0-shot）配置进行。此外，我们在“数学和编码”类别下引入了 GSM8K（8-shot@1）、MATH（4-shot@1）、HumanEval（0-shot@1）和 MBPP（3-shot@1）。
+- **Falcon-180B 注意事项**: 由于技术限制，Falcon-180B 没有在 QuAC 和 OBQA 上进行测试。其性能分数是从其他任务中得出的平均值，并且考虑到这两个任务通常的分数较低，Falcon-180B 的能力很可能没有被低估。
 </details>
 
 # 🟢 Who can use Yi?
