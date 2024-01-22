@@ -1037,7 +1037,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 - Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
+- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)获得Yi系列模型的商业许可证。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
