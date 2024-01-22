@@ -174,7 +174,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat models:
   
-  <details style="display: inline;"><summary>For chat model limitations, see ⬇️ .</summary>
+  <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
    <ul>
     <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
@@ -596,7 +596,7 @@ Once finished, you can compare the finetuned model and the base model with the f
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️ .</summary> <ul>
+<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see the explanations below. ⬇️ </summary> <ul>
 
 ### Finetune code for Yi 6B and 34B
 
@@ -728,7 +728,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️ .</summary> <ul>
+<details style="display: inline;"><summary>For a more detailed explanation, see the explanations below. ⬇️</summary> <ul>
 
 #### GPT-Q quantization
 
@@ -779,7 +779,7 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see ⬇️ .</summary> <ul>
+<details style="display: inline;"><summary>For detailed explanations, see the explanations below. ⬇️</summary> <ul>
 
 #### AWQ quantization
 
