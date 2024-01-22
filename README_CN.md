@@ -1023,20 +1023,19 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 <summary> 评估方法 ⬇️</summary>
 
 - **结果差异**: 在基准测试开源模型时，我们的流程与公共来源（如 OpenCompass）报告的结果之间存在差异。
-- **调查结果**: 深入调查显示，各种模型在提示语、后处理策略和采样技术上的变化可能导致显著的结果差异。
+- **调查发现**: 深入调查显示，各种模型在提示语、后处理策略和采样技术上的变化可能导致显著的结果差异。
 - **统一的基准测试过程**: 我们的方法论与原始基准一致——使用一致的提示语和后处理策略，并在评估时应用贪心解码（greedy decoding），不对生成内容进行任何后处理。
 - **努力检索未报告的评分**: 对于原始作者未报告的分数（包括以不同设置报告的分数），我们尝试使用我们的流程获取结果。
 - **广泛的模型评估**: 为了全面评估模型的能力，我们采用了在 Llama2 中概述的方法论。具体来说，我们包括了 PIQA、SIQA、HellaSwag、WinoGrande、ARC、OBQA 和 CSQA 来评估常识推理。SquAD、QuAC 和 BoolQ 被纳入以评估阅读理解。
 - **特殊配置**: CSQA 专门使用7-样本（7-shot）设置进行测试，而所有其他测试都使用0-样本（0-shot）配置进行。此外，我们在“数学和编码”类别下引入了 GSM8K（8-shot@1）、MATH（4-shot@1）、HumanEval（0-shot@1）和 MBPP（3-shot@1）。
-- **Falcon-180B 注意事项**: 由于技术限制，Falcon-180B 没有在 QuAC 和 OBQA 上进行测试。其性能分数是从其他任务中得出的平均值，并且考虑到这两个任务通常的分数较低，Falcon-180B 的能力很可能没有被低估。
+- **Falcon-180B 注意事项**: 由于技术限制，Falcon-180B 没有在 QuAC 和 OBQA 上进行测试。其性能分数是从其他任务中得出的平均值，并且考虑到这两个任务通常的分数较低，Falcon-180B 的能力大概率不会被低估。
 </details>
 
 # 🟢 谁可以使用 Yi？
 
 答案是所有人! 🙌 ✅
 
-- 
-Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
+- Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
 - 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
@@ -1094,8 +1093,7 @@ change the height and width for each of the contributors from 80 to 50 at ref in
 
 ### 🪪 执照
 
-
-这个仓库中的源代码采用[Apache 2.0
+该仓库中的源代码采用[Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE)授权. Yi 系列模型完全开放供学术研究使用，也允许免费的商业用途，只需在申请后自动
 获得许可。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)。
 对于免费商业用途，您只需要发送电子邮件[以获得官方商业许可](https://www.lingyiwanwu.com/yi-license)。
