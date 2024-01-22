@@ -1,4 +1,4 @@
-name:🐞 Bug report
+name: 🐞 Bug report
 description: "Problems encountered while utilizing Yi model"
 title: "[Bug] "
 labels: ["type/bug-report"]
