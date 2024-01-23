@@ -468,7 +468,7 @@ ghcr.io/01-ai/yi:latest
 git clone git@github.com:ggerganov/llama.cpp.git
 ```
 
-#### 步骤 2: 克隆 Yi 模型
+#### 步骤 2: 下载 Yi 模型
 
 步骤 2.1: 运行以下命令，从 [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) 克隆仅包含代码的仓库：
 
