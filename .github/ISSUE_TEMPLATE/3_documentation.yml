@@ -1,6 +1,6 @@
 name: 📚 Document
 description: Suggest document changes
-title: "[Doc] "
+title: "Doc "
 labels: ["doc-required"]
 body:
   - type: markdown

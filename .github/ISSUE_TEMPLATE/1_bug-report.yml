@@ -1,6 +1,6 @@
 name: 🐞 Bug report
 description: "Problems encountered while utilizing Yi model"
-title: "[Bug] "
+title: "Title "
 labels: ["type/bug-report"]
 body:
   - type: markdown

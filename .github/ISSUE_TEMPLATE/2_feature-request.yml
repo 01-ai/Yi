@@ -1,6 +1,6 @@
 name: 🚀 Feature request
 description: "Add new feature, improve code, and more"
-title: "[Features] "
+title: "Features "
 labels: ["type/feature-request"]
 body:
   - type: markdown
