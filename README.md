@@ -517,9 +517,10 @@ Now you have successfully asked a question to the Yi model and got an answer! ðŸ
 
 ##### Method 2: Perform inference in web
 
-1. To initialize a lightweight and swift chatbot, navigate to the `llama.cpp` directory, and run the following command.
+1. To initialize a lightweight and swift chatbot, run the following command.
 
     ```bash
+    cd llama.cpp
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
     ```
 
