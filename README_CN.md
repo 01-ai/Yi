@@ -470,7 +470,7 @@ git clone git@github.com:ggerganov/llama.cpp.git
 
 #### 步骤 2: 下载 Yi 模型
 
-步骤 2.1: 运行以下命令，从 [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) 克隆仅包含代码的仓库：
+步骤 2.1：仅下载 [XeIaso/yi-chat-6B-GGUF](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main) 仓库的 pointers，运行以下命令。
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
