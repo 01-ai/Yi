@@ -63,7 +63,7 @@
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
-    - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+    - [llama.cpp](#quick-start---llamacpp)
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
@@ -246,12 +246,12 @@ sequence length and can be extended to 32K during inference time.
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
-  - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+  - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+- [Deployment](#deployment)
+- [Learning hub](#learning-hub)
 
 ## Quick start
 
@@ -269,7 +269,7 @@ If you prefer to deploy Yi models locally,
 
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
-    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+    - [Docker](#quick-start---docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
@@ -558,12 +558,12 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar. 
    
-    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
+    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png?raw=true)
 
 
 3. Enter a question, such as "How do you feed your pet fox? Please answer this question in 6 simple steps" into the prompt window, and you will receive a corresponding answer.
 
-    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
+    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png?raw=true)
 
 </ul>
 </details>
