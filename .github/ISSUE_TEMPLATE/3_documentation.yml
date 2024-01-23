@@ -39,6 +39,3 @@ body:
         We look forward to the community of developers or users helping improve Yi document together. If you are willing to submit a PR, please check the box.
       options:
         - label: I'm willing to submit a PR!
-  - type: markdown
-    attributes:
-      value: "Thanks for completing our form!"
