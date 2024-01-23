@@ -498,7 +498,7 @@ git-lfs pull --include yi-chat-6b.Q2_K.gguf
 >
 > - 将 `/Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf` 替换为你的模型的实际路径。
 >
-> - 默认情况下，模型处于完成模式。
+> - 默认情况下，模型是续写模式。
 > - 要查看更多输出自定义选项的详细描述和使用方法（例如系统提示、温度、重复惩罚等），运行 `./main -h` 进行检查。
 
 ```bash
