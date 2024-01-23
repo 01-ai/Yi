@@ -565,7 +565,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
     llama server listening at http://0.0.0.0:8080
     ```
 
-2. 要访问聊天机器人界面，打开你的网络浏览器，并在地址栏中输入 `http://0.0.0.0:8080`。
+2. 访问聊天机器人界面，打开你的网络浏览器，在地址栏中输入 `http://0.0.0.0:8080`。
 
     ![Yi模型聊天机器人界面 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
 
