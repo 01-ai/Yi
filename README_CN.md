@@ -432,7 +432,7 @@ ghcr.io/01-ai/yi:latest
 <p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
 <h4>步骤2: 执行推理</h4>
-    <p>我们可以像下面这样，使用“Yi 的聊天模型”或“基础模型”来执行推理。</p>
+    <p>你可以使用Yi 的聊天模型或基础模型来执行推理。</p>
     
 <h5>使用 Yi 聊天模型执行推理</h5>
     <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
