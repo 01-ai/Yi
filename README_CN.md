@@ -60,7 +60,7 @@
 <hr>
 
 <details open>
-<summary></b>📕 Table of Contents</b></summary>
+<summary></b>📕 目录</b></summary>
 
 
 - [🟢 Yi 是什么?](#-yi是什么)
@@ -137,7 +137,7 @@
 
 
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 ## 🎯 模型
 Yi模型有多种尺寸，适用于不同的使用场景。你还可以对Yi模型进行微调，满足你特定的需求。
@@ -194,7 +194,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 ## 🎉 最新动态
 
@@ -243,7 +243,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
 
