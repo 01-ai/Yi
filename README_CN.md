@@ -462,7 +462,7 @@ ghcr.io/01-ai/yi:latest
   
 #### 步骤 1: 下载 `llama.cpp`
 
-要克隆 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库，请运行以下命令：
+克隆 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库，请运行以下命令：
 
 ```bash
 git clone git@github.com:ggerganov/llama.cpp.git
