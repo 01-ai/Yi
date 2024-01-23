@@ -436,7 +436,7 @@ ghcr.io/01-ai/yi:latest
     
 <h5>使用 Yi 聊天模型执行推理</h5>
     <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
-    <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 来替换 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
+    <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 而不是 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
 <h5>使用 Yi 基础模型执行推理</h5>
     <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
     <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>--model &lt;your-model-mount-path&gt;'</code> 来替换 <code>model &lt;your-model-path&gt;</code>。</p>
