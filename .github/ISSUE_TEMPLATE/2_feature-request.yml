@@ -7,14 +7,14 @@ body:
     attributes:
       value: |
         Thank you very much for your ideas!
-  - type: checkboxes
+- type: checkboxes
     attributes:
-      label: Search before asking
+      label: Reminder
       description: >
-        Please search [issues](https://github.com/01-ai/Yi/discussions) to check if your issue has already been reported.
+        "Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions) "
       options:
         - label: >
-            I searched in the [issues](https://github.com/01-ai/Yi/discussions) and found nothing similar.
+          "I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions)."
           required: true
   - type: textarea
     attributes:
@@ -37,9 +37,6 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        We look forward to the community of developers or users helping solve Pulsar problems together. If you are willing to submit a PR to implement the enhancement, please check the box.
+        We look forward to the community of developers or users helping solve Yi problems together. If you are willing to submit a PR to implement the enhancement, please check the box.
       options:
         - label: I'm willing to submit a PR!
-  - type: markdown
-    attributes:
-      value: "Thanks for completing our form!"

@@ -7,16 +7,14 @@ body:
     attributes:
       value: |
         Thank you very much for your feedback!
-
-        For suggestions or help, please consider:
-        [Github Discussion](https://github.com/01-ai/Yi/discussions).
   - type: checkboxes
     attributes:
-      label: Search before asking
+      label: Reminder
       description: >
-        Please search [issues](https://github.com/01-ai/Yi/issues) to check if your issue has already been reported.
+        "Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions) "
       options:
-        - label: "I searched in the [issues](https://github.com/01-ai/Yi/issues) and found nothing similar."
+        - label: >
+          "I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions)."
           required: true
   - type: textarea
     attributes:
@@ -24,9 +22,9 @@ body:
       description: |
         examples:
           - **OS**: Ubuntu 20.04
-          - **Python**: 3.8
-          - **PyTorch**: 1.12
-          - **CUDA**: 11.4
+          - **Python**: 3.10
+          - **PyTorch**: 2.0.1
+          - **CUDA**: 11.8
       value: |
         - OS:
         - Python:

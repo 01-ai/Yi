@@ -6,20 +6,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you very much for your suggestion!
-
-        For suggestions or help, please consider:
-        [Github Discussion]().
-
-        Otherwise, please answer the following questions before submitting a doc issue.
+        Thank you very much for your ideas!
   - type: checkboxes
     attributes:
-      label: Search before asking
+      label: Reminder
       description: >
-        Please search [issues](https://github.com/01-ai/Yi/discussions) to check if your issue has already been reported.
+        "Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions) "
       options:
         - label: >
-            I searched in the [issues](https://github.com/01-ai/Yi/discussions) and found nothing similar.
+          "I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions)."
           required: true
   - type: textarea
     attributes:
