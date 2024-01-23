@@ -454,7 +454,7 @@ ghcr.io/01-ai/yi:latest
 - [Step 2: Download Yi model](#step-2-download-yi-model)
 - [Step 3: Perform inference](#step-3-perform-inference)
 
-#### 步骤 0: 必备条件
+#### 步骤 0: 前提条件
 
 - 首先，你需要一台装备了 16GB 内存和 Apple M2 Pro 芯片的 MacBook Pro。
 
