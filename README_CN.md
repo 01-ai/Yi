@@ -476,7 +476,7 @@ git clone git@github.com:ggerganov/llama.cpp.git
 GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 ```
 
-步骤 2.2: 要下载一个量化后的 Yi 模型 [yi-chat-6b.Q2_K.gguf](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/blob/main/yi-chat-6b.Q2_K.gguf)，执行以下命令：
+步骤 2.2：下载量化后的 Yi 模型 [yi-chat-6b.Q2_K.gguf](https://huggingface.co/XeIaso/yi-chat-6B-GGUF/blob/main/yi-chat-6b.Q2_K.gguf)，运行以下命令：
 
 ```bash
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
