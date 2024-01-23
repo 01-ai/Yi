@@ -63,7 +63,7 @@
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
-    - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+    - [llama.cpp](#quick-start---llamacpp)
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
@@ -246,12 +246,12 @@ sequence length and can be extended to 32K during inference time.
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
-  - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+  - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+- [Deployment](#deployment)
+- [Learning hub](#learning-hub)
 
 ## Quick start
 
@@ -261,7 +261,7 @@ Getting up and running with Yi models is simple with multiple choices available.
 
 Select one of the following paths to begin your journey with Yi!
 
- ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
+ ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png?raw=true)
 
 #### 🎯 Deploy Yi locally
 
@@ -269,7 +269,7 @@ If you prefer to deploy Yi models locally,
 
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
-    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+    - [Docker](#quick-start---docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
@@ -408,7 +408,7 @@ Then you can see an output similar to the one below. 🥳
 ### Quick start - Docker 
 <details>
 <summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
-<br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
+<br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> or <strong>4*4090</strong> locally and then performing inference.
  <h4>Step 0: Prerequisites</h4>
 <p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
 
@@ -517,9 +517,10 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 ##### Method 2: Perform inference in web
 
-1. To initialize a lightweight and swift chatbot, navigate to the `llama.cpp` directory, and run the following command.
+1. To initialize a lightweight and swift chatbot, run the following command.
 
     ```bash
+    cd llama.cpp
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
     ```
 
@@ -557,12 +558,12 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar. 
    
-    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
+    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png?raw=true)
 
 
 3. Enter a question, such as "How do you feed your pet fox? Please answer this question in 6 simple steps" into the prompt window, and you will receive a corresponding answer.
 
-    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
+    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png?raw=true)
 
 </ul>
 </details>
@@ -583,7 +584,7 @@ python demo/web_demo.py -c <your-model-path>
 
 You can access the web UI by entering the address provided in the console into your browser. 
 
- ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif)
+ ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 ### Finetuning
 
@@ -991,7 +992,7 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
-![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
 
 <details>
 <summary> Evaluation methods and challenges. ⬇️ </summary>
@@ -1008,7 +1009,7 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
-![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png)
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
 
 <details>
 <summary> Evaluation methods. ⬇️</summary>
