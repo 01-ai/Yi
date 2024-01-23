@@ -37,6 +37,6 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        We look forward to the community of developers or users helping solve Yi problems together. If you are willing to submit a PR to implement the enhancement, please check the box.
+       We look forward to your contribution to making Yi better. If you are willing to submit a PR to implement this enhancement, please check the box.
       options:
         - label: I'm willing to submit a PR!
