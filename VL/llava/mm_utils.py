@@ -5,11 +5,11 @@ import base64
 import torch
 from transformers import StoppingCriteria
 from llava.model.constants import IMAGE_TOKEN_INDEX
-
-import soundfile as sf
+from PIL import Image
+from transformers import StoppingCriteria
 from transformers import AutoTokenizer
 from llava.model import *
-    
+
 def load_image_from_base64(image):
     return Image.open(BytesIO(base64.b64decode(image)))
 
