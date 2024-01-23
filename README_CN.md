@@ -590,7 +590,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 python demo/web_demo.py -c <你的模型路径>
 ```
 
-命令运行完毕后，我们可以在浏览器中输入控制台显示的网址，来使用这个网页版演示应用。
+命令运行完毕后，你可以在浏览器中输入控制台提供的网址，来使用 Web Demo。
 
  ![快速上手 - Web Demo](./assets/img/yi_34b_chat_web_demo.gif)
 
