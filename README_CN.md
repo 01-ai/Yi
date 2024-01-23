@@ -944,7 +944,7 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 
 > 💡 提示
 > 
-> - 随时创建PR并分享您使用易（Yi）系列模型构建的出色作品。
+> - 随时创建PR并分享您使用Yi系列模型构建的出色作品。
 >
 > - 为了帮助他人快速理解您的工作，建议使用`<模型名称>: <模型简介> + <模型亮点>`的格式。
 
