@@ -584,7 +584,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 [第二步：下载模型](#step-2-download-the-yi-model)
 
-第三步：使用下面的命令，启动网页服务：
+第三步：启动网页服务，运行以下命令。
 
 ```bash
 python demo/web_demo.py -c <你的模型路径>
