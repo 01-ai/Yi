@@ -423,7 +423,7 @@ Then you can see an output similar to the one below. 🥳
 <summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程 👇</summary>
 <br>这个教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并执行推理。
 <h4>步骤0: 准备工作</h4>
-<p>确保你已经完成了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a> 的安装。</p>
+<p>确保你已经安装了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>。</p>
 <h4>步骤1: 启动 Docker 容器</h4>
 <pre><code>docker run -it --gpus all \
 -v &lt;your-model-path&gt;: /models
