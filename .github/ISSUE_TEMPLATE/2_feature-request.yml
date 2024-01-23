@@ -7,14 +7,14 @@ body:
     attributes:
       value: |
         Thank you very much for your ideas!
- - type: checkboxes
+- type: checkboxes
     attributes:
       label: Reminder
       description: >
-        "Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions)."
+        Please ensure you have read the README carefully and searched the existing issues.
       options:
         - label: >
-            "I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions)."
+            I have read the README and searched the existing issues.
           required: true
   - type: textarea
     attributes:

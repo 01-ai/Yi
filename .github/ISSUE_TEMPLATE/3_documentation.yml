@@ -11,10 +11,10 @@ body:
     attributes:
       label: Reminder
       description: >
-        Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions).
+        Please ensure you have read the README carefully and searched the existing issues.
       options:
-        - discription: >
-            I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions).
+        - label: >
+            I have read the README and searched the existing issues.
           required: true
   - type: textarea
     attributes:
