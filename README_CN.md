@@ -88,14 +88,14 @@
       - [⚙️ Quantitation](#️-quantitation)
       - [🛠️ Fine-tuning](#️-fine-tuning)
       - [API](#api)
-  - [📌 Benchmarks](#-benchmarks)
-    - [📊 Base model performance](#-base-model-performance)
-    - [📊 Chat model performance](#-chat-model-performance)
-- [🟢 Who can use Yi?](#-who-can-use-yi)
-- [🟢 Misc.](#-misc)
-  - [Ackknowledgements](#acknowledgments)
-  - [📡 Disclaimer](#-disclaimer)
-  - [🪪 License](#-license)
+  - [📌 基准测试](#-基准测试)
+    - [📊 基础模型性能](#-基础模型性能)
+    - [📊 Chat模型性能](#-Chat模型性能)
+- [🟢 谁可以使用 Yi？](#-谁可以使用 Yi？)
+- [🟢 杂项](#-杂项)
+  - [致谢](#致谢)
+  - [📡 免责声明](#-免责声明)
+  - [🪪 许可证](#-许可证)
 
 </details>
 
@@ -1014,7 +1014,7 @@ Yi-34B-Chat 模型在包括 MMLU、CMMLU、BBH、GSM8k 等在内的所有现有�
 <strong>*</strong>: C-Eval 是在验证数据集上的结果。
 </details>
 
-### 📊 基座模型性能
+### 📊 基础模型性能
 
 Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤其在 MMLU、CMML、常识推理、阅读理解等方面表现卓越。
 ![Base model performance](./assets/img/benchmark_base.png)
