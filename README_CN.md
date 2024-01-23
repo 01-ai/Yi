@@ -592,7 +592,7 @@ python demo/web_demo.py -c <你的模型路径>
 
 命令运行完毕后，我们可以在浏览器中输入控制台显示的网址，来使用这个网页版演示应用。
 
- ![快速上手 - 网页版演示](./assets/img/yi_34b_chat_web_demo.gif)
+ ![快速上手 - Web Demo](./assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
