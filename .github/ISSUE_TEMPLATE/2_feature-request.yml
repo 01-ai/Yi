@@ -14,7 +14,7 @@ body:
         Please ensure you have read the README carefully and searched the existing [issues](https://github.com/01-ai/Yi/discussions).
       options:
         - label: >
-          I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions).
+            I have read the README and searched the existing [issues](https://github.com/01-ai/Yi/discussions).
           required: true
   - type: textarea
     attributes:
