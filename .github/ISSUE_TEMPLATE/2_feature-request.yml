@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thank you very much for your ideas!
-- type: checkboxes
+  - type: checkboxes
     attributes:
       label: Reminder
       description: >
