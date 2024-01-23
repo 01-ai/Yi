@@ -578,7 +578,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ### 网页版演示应用（Web Demo）
 
-我们可以使用 Yi 的**聊天模型**（Yi-34B-Chat）打造一个炫酷的网页版演示。需要注意不要使用错模型，Yi 的基础模型（Yi-34B）并不适合聊天场景使用。
+你可以使用 Yi **聊天模型**（Yi-34B-Chat）打造一个 Web Demo。注意：Yi 基础模型（Yi-34B）不支持该功能。
 
 [第一步：环境准备](#step-1-prepare-your-environment)
 
