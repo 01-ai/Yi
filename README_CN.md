@@ -569,7 +569,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
     ![Yi模型聊天机器人界面 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
 
-3. 在提示窗口中输入一个问题，比如“你如何喂养你的宠物狐狸？请用6个简单的步骤回答这个问题”，你将会收到一个相应的答案。
+3. 在提示窗口中输入一个问题，例如，“如何喂养你的宠物狐狸？请用 6 个简单的步骤回答”，你将会收到一个答案。
 
     ![向 Yi 模型提问 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
 
