@@ -3,11 +3,11 @@ description: "Problems encountered while utilizing Yi model"
 title: "Title "
 labels: ["type/bug-report"]
 body:
-   - type: markdown
+  - type: markdown
     attributes:
       value: |
         Thank you very much for your contribution!
-   - type: checkboxes
+  - type: checkboxes
     attributes:
       label: Reminder
       description: >
