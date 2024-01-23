@@ -528,7 +528,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ### 方法二：在网页上进行推理
 
-1. 要初始化一个轻量级、快速的聊天机器人，请导航到 `llama.cpp` 目录，并运行以下命令。
+1. 初始化一个轻量级、快速的聊天机器人，运行以下命令。
 
     ```bash
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
