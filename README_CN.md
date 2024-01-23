@@ -492,7 +492,7 @@ git-lfs pull --include yi-chat-6b.Q2_K.gguf
 
 ### 方法一：在终端中执行推理
 
-要使用4个线程编译 `llama.cpp` 并随后进行推理，请导航到 `llama.cpp` 所在的目录，并运行以下命令。
+本文使用 4 个线程编译 `llama.cpp` ，之后进行推理。在 `llama.cpp` 所在的目录，运行以下命令。
 
 > ### 提示
 >
