@@ -29,28 +29,6 @@ question: Describe the cats and what they are doing in detail.
 outputs: In the image, there are three cats situated on a stone floor. The first cat, with a mix of black, orange, and white fur, is actively eating from a metal bowl. The second cat, which is entirely black, is also engaged in eating from a separate metal bowl. The third cat, a mix of gray and white, is not eating but is instead looking off to the side, seemingly distracted from the food. The bowls are positioned close to each other, and the cats are all within a similar proximity to the bowls. The scene captures a typical moment of feline behavior, with some cats enjoying their meal while others appear indifferent or distracted.
 ----------
 ```
-5. To evaluate [MMMU](https://mmmu-benchmark.github.io) benchmark, download the [benchmark](https://huggingface.co/datasets/MMMU/MMMU) and execute the following command.
-```
-python llava/eval/01_eval_mmmu.py \
---exp_name "mmmu" \
---config_path llava/eval/mmmu_configs/yi.yaml \
---data_path MMMU-data-path \
---model_path yi-vl-model-path \
---conv_mode mm_default \
---categories ALL \
---results_dir .
-```
-6. To evaluate [CMMMU](https://cmmmu-benchmark.github.io) benchmark, download the [benchmark](https://github.com/CMMMU-Benchmark/CMMMU) and execute the following command.
-```
-python llava/eval/01_eval_cmmmu.py \
---exp_name "cmmmu" \
---config_path llava/eval/cmmmu_configs/yi.yaml \
---data_path cmmmu-data-path \
---model_path yi-vl-model-path \
---conv_mode mm_default \
---categories ALL \
---results_dir .
-```
 
 ## Major difference with LLaVA
 1. We change the image token from ```<image>``` to ```<image_placeholder>```. The system prompt is modified to:

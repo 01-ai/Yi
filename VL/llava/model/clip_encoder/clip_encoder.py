@@ -24,8 +24,7 @@ class CLIPVisionTower(nn.Module):
         )
         self.vision_tower = CLIPVisionModel.from_pretrained(
             self.vision_tower_name, ignore_mismatched_sizes=True
-        )  # , torch_dtype=torch.float32)
-        # self.vision_tower.requires_grad_(False)
+        )
 
         self.is_loaded = True
 

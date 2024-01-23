@@ -98,8 +98,8 @@ def single_infer(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, default="01-ai/Yi-VL-6B")
-    parser.add_argument("--image-file", type=str, default="images/kobe.jpg")
-    parser.add_argument("--question", type=str, default="Who is the man in the image?")
+    parser.add_argument("--image-file", type=str, default="images/cats.jpg")
+    parser.add_argument("--question", type=str, default="Describe the cats and what they are doing in detail.")
     parser.add_argument("--model-base", type=str, default=None)
     parser.add_argument("--conv-mode", type=str, default="mm_default")
     parser.add_argument("--temperature", type=float, default=0.2)

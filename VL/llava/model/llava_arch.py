@@ -32,7 +32,6 @@ class LlavaMetaModel:
                 key_info["model_path"], config.mm_vision_tower.replace("./", "")
             )
             self.vision_tower = build_vision_tower(config, delay_load=True)
-            # self.vision_tower = build_vision_tower(config, delay_load=False)
             self.mm_projector = build_vision_projector(config)
 
     def get_vision_tower(self):
