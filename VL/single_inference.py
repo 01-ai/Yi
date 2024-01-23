@@ -7,15 +7,11 @@ from llava.mm_utils import (
     KeywordsStoppingCriteria,
     expand2square,
     get_model_name_from_path,
+    load_pretrained_model,
     tokenizer_image_token,
 )
-from llava.model import LlavaLlamaForCausalLM
 from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
 from PIL import Image
-from transformers import AutoTokenizer
-from llava.model import *
-from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria
-from llava.mm_utils import expand2square, load_pretrained_model
 
 
 def disable_torch_init():
@@ -31,10 +27,10 @@ def disable_torch_init():
 def single_infer(args):
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
-    key_info['model_path'] = model_path
-    model_name = get_model_name_from_path(model_path)
+    key_info["model_path"] = model_path
+    get_model_name_from_path(model_path)
     tokenizer, model, image_processor, context_len = load_pretrained_model(model_path)
-    
+
     image_file = args.image_file
     qs = args.question
     qs = DEFAULT_IMAGE_TOKEN + "\n" + qs
@@ -99,7 +95,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, default="01-ai/Yi-VL-6B")
     parser.add_argument("--image-file", type=str, default="images/cats.jpg")
-    parser.add_argument("--question", type=str, default="Describe the cats and what they are doing in detail.")
+    parser.add_argument(
+        "--question",
+        type=str,
+        default="Describe the cats and what they are doing in detail.",
+    )
     parser.add_argument("--model-base", type=str, default=None)
     parser.add_argument("--conv-mode", type=str, default="mm_default")
     parser.add_argument("--temperature", type=float, default=0.2)
