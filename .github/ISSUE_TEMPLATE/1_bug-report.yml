@@ -6,15 +6,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you very much for your contributon!
-  - type: checkboxes
+        Thank you very much for your contribution!
+   - type: checkboxes
     attributes:
       label: Reminder
       description: >
-        Please ensure you have read the README carefully and searched the existing issues.
+        Please search [Github Discussion](https://github.com/01-ai/Yi/discussions) and [issues](https://github.com/01-ai/Yi/issues) carefully.
       options:
         - label: >
-            I have read the README and searched the existing issues.
+            I have searched the Github Discussion and issues and have not found anything similar to this.
           required: true
   - type: textarea
     attributes:
@@ -23,7 +23,7 @@ body:
         examples:
           - **OS**: Ubuntu 20.04
           - **Python**: 3.10
-          - **PyTorch**: 2.0.1
+          - **PyTorch**: 2.0.1+cu118
           - **CUDA**: 11.8
       value: |
         - OS:
@@ -48,7 +48,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Steps To Reproduce
+      label: Steps to Reproduce
       description: Steps to reproduce the behavior.
       placeholder: |
         1. In this environment...
@@ -59,7 +59,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Anything else?
+      label: Anything Else?
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
     validations:

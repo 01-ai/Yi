@@ -6,15 +6,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you very much for your ideas!
-  - type: checkboxes
+        Thank you very much for your contribution!
+    - type: checkboxes
     attributes:
       label: Reminder
       description: >
-        Please ensure you have read the README carefully and searched the existing issues.
+        Please search [Github Discussion](https://github.com/01-ai/Yi/discussions) and [issues](https://github.com/01-ai/Yi/issues) carefully.
       options:
         - label: >
-            I have read the README and searched the existing issues.
+            I have searched the Github Discussion and issues and have not found anything similar to this.
           required: true
   - type: textarea
     attributes:
@@ -36,6 +36,6 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        We look forward to the community of developers or users helping improve Yi document together. If you are willing to submit a PR, please check the box.
+        We look forward to your contribution to making Yi better. If you are willing to submit a PR, please check the box.
       options:
         - label: I'm willing to submit a PR!
