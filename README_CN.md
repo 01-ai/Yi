@@ -524,7 +524,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ```
 
-恭喜你！你已经成功地向Yi模型提出了问题并得到了回答！🥳
+恭喜你！你已经成功地向 Yi 模型提出了问题并得到了回答！🥳
 
 ### 方法二：在网页上进行推理
 
