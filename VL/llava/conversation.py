@@ -1,18 +1,18 @@
 import dataclasses
-from enum import auto, Enum
-from typing import List, Tuple
-import librosa
-import numpy as np
-import soundfile
+from enum import Enum, auto
+from typing import List
+
 
 class SeparatorStyle(Enum):
     """Different separator style."""
+
     SINGLE = auto()
 
 
 @dataclasses.dataclass
 class Conversation:
     """A class that keeps all conversation history."""
+
     system: str
     roles: List[str]
     messages: List[List[str]]
@@ -30,9 +30,11 @@ class Conversation:
             messages = self.messages.copy()
             init_role, init_msg = messages[0].copy()
             init_msg = init_msg[0].replace("<image_placeholder>", "").strip()
-            if 'mmtag' in self.version:
+            if "mmtag" in self.version:
                 messages[0] = (init_role, init_msg)
-                messages.insert(0, (self.roles[0], "<Image><image_placeholder></Image>"))
+                messages.insert(
+                    0, (self.roles[0], "<Image><image_placeholder></Image>")
+                )
                 messages.insert(1, (self.roles[1], "Received."))
             else:
                 messages[0] = (init_role, "<image_placeholder>\n" + init_msg)
@@ -56,33 +58,43 @@ class Conversation:
 
     def get_images(self, return_pil=False):
         images = []
-        for i, (role, msg) in enumerate(self.messages[self.offset:]):
+        for i, (role, msg) in enumerate(self.messages[self.offset :]):
             if i % 2 == 0:
                 if type(msg) is tuple:
                     import base64
                     from io import BytesIO
+
                     from PIL import Image
+
                     msg, image, image_process_mode = msg
                     if image_process_mode == "Pad":
+
                         def expand2square(pil_img, background_color=(122, 116, 104)):
                             width, height = pil_img.size
                             if width == height:
                                 return pil_img
                             elif width > height:
-                                result = Image.new(pil_img.mode, (width, width), background_color)
+                                result = Image.new(
+                                    pil_img.mode, (width, width), background_color
+                                )
                                 result.paste(pil_img, (0, (width - height) // 2))
                                 return result
                             else:
-                                result = Image.new(pil_img.mode, (height, height), background_color)
+                                result = Image.new(
+                                    pil_img.mode, (height, height), background_color
+                                )
                                 result.paste(pil_img, ((height - width) // 2, 0))
                                 return result
+
                         image = expand2square(image)
                     elif image_process_mode == "Crop":
                         pass
                     elif image_process_mode == "Resize":
                         image = image.resize((336, 336))
                     else:
-                        raise ValueError(f"Invalid image_process_mode: {image_process_mode}")
+                        raise ValueError(
+                            f"Invalid image_process_mode: {image_process_mode}"
+                        )
                     max_hw, min_hw = max(image.size), min(image.size)
                     aspect_ratio = max_hw / min_hw
                     max_len, min_len = 800, 400
@@ -103,7 +115,6 @@ class Conversation:
                         images.append(img_b64_str)
         return images
 
-
     def copy(self):
         return Conversation(
             system=self.system,
@@ -113,14 +124,17 @@ class Conversation:
             sep_style=self.sep_style,
             sep=self.sep,
             sep2=self.sep2,
-            version=self.version)
+            version=self.version,
+        )
 
     def dict(self):
         if len(self.get_images()) > 0:
             return {
                 "system": self.system,
                 "roles": self.roles,
-                "messages": [[x, y[0] if type(y) is tuple else y] for x, y in self.messages],
+                "messages": [
+                    [x, y[0] if type(y) is tuple else y] for x, y in self.messages
+                ],
                 "offset": self.offset,
                 "sep": self.sep,
                 "sep2": self.sep2,
@@ -137,17 +151,16 @@ class Conversation:
 
 mm_default_conv = Conversation(
     system="This is a chat between an inquisitive human and an AI assistant. "
-           "Assume the role of the AI assistant. "
-           "Read all the images carefully, and respond to the human's questions with informative, helpful, detailed and polite answers. "
-           "这是一个好奇的人类和一个人工智能助手之间的对话。"
-           "假设你扮演这个AI助手的角色。仔细阅读所有的图像，并对人类的问题做出信息丰富、有帮助、详细的和礼貌的回答。",
+    "Assume the role of the AI assistant. "
+    "Read all the images carefully, and respond to the human's questions with informative, helpful, detailed and polite answers. "
+    "这是一个好奇的人类和一个人工智能助手之间的对话。"
+    "假设你扮演这个AI助手的角色。仔细阅读所有的图像，并对人类的问题做出信息丰富、有帮助、详细的和礼貌的回答。",
     roles=("Human", "Assistant"),
     messages=(),
     offset=2,
     sep_style=SeparatorStyle.SINGLE,
     sep="###",
 )
-
 
 
 default_conversation = mm_default_conv
