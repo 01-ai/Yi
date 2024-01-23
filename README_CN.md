@@ -456,7 +456,7 @@ ghcr.io/01-ai/yi:latest
 
 #### 步骤 0: 前提条件
 
-- 首先，你需要一台装备了 16GB 内存和 Apple M2 Pro 芯片的 MacBook Pro。
+- 该教程在 MacBook Pro（16GB 内存和 Apple M2 Pro 芯片）上运行 。
 
 - 确保你的电脑上安装了 [`git-lfs`](https://git-lfs.com/) 。
   
