@@ -72,7 +72,7 @@
   - [🎉 News](#-news)
 - [🟢 How to use Yi?](#-how-to-use-yi)
   - [快速上手](#quick-start)
-    - [选择你的游玩路线](#choose-your-path)
+    - [选择你的学习路径](#choose-your-path)
     - [使用 PyPi（pip install）](#pip)
     - [使用 llama.cpp 量化运行](#llamacpp-快速入门)
     - [网页版演示应用（Web Demo）](#网页版演示应用web-demo)
