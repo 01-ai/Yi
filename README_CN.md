@@ -534,7 +534,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
     ```
 
-    然后，你将看到以下类似的输出：
+    你将会看到类似的输出：
 
     ```bash
     ...
