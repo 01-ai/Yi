@@ -449,7 +449,7 @@ ghcr.io/01-ai/yi:latest
 <summary> 🚀 以下是使用 llama.cpp 在本地运行 Yi-chat-6B-2bits 模型的详细教程👇 </summary> 
 <br>该教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
 
-- [步骤 0: 必备条件](#step-0-prerequisites)
+- [步骤 0: 前提条件](#step-0-prerequisites)
 - [Step 1: Download llama.cpp](#step-1-download-llamacpp)
 - [Step 2: Download Yi model](#step-2-download-yi-model)
 - [Step 3: Perform inference](#step-3-perform-inference)
