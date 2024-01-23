@@ -30,19 +30,30 @@
 
 <p align="center">
 🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
-</p>
+</p> 
 
 <p align="center">
     👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>!
-</p>
+</p> 
 
 <p align="center">
     👋 Join us on 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
-</p>
+</p> 
 
 <p align="center">
     📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
-</p>
+</p> 
+<hr>
+
+<ul>
+  <li>🙌 本文由 Yi 和志愿者共同翻译完成，感谢每一位传递知识的火炬手。</li>
+
+  <li>🤗 欢迎大家 <a href="https://github.com/01-ai/Yi/discussions/314">加入我们</a>，开启知识之火旅程，共绘技术内容图谱。</li>
+  
+  <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅 <a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
+</ul>
+
+
 
 <!-- DO NOT REMOVE ME -->
 
@@ -50,6 +61,7 @@
 
 <details open>
 <summary></b>📕 Table of Contents</b></summary>
+
 
 - [🟢 What is Yi?](#-what-is-yi)
   - [📌 Introduction](#-introduction)
@@ -91,22 +103,18 @@
 
 # 🟢 What is Yi?
 
-## 📌 Introduction
+## 📌 Introduction 
 
 - 🤖 The Yi series models are the next generation of open-source large language models trained from scratch by [01.AI](https://01.ai/).
 
 - 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
-
-
-  - For Chinese language capability, the Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
-
   
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
   
   - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
-  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
+  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA</span> ⬇️</summary> <ul> <br>
 > 💡 TL;DR
 > 
 > The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
@@ -128,26 +136,15 @@
 
 
 
-
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 ## 🎯 Models
 
-Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements.
+Yi models come in multiple sizes and cater to different use cases. You can also fine-tune Yi models to meet your specific requirements. 
 
 If you want to deploy Yi models, make sure you meet the [software and hardware requirements](#deployment).
 
 ### Chat models
-
-
-| Model             | Download                                                                                                                                               |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Yi-6B-Chat        | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)               |
-| Yi-6B-Chat-4bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)   |
-| Yi-6B-Chat-8bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)   |
-| Yi-34B-Chat       | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)             |
-| Yi-34B-Chat-4bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary) |
-| Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary) |
 
 | Model | Download  
 |---|---
@@ -163,14 +160,6 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 
 ### Base models
 
-
-| Model       | Download                                                                                                                                   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Yi-6B       | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)             |
-| Yi-6B-200K  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)   |
-| Yi-34B      | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)           |
-| Yi-34B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary) |
-
 | Model | Download | 
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
@@ -178,8 +167,7 @@ Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  �
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
-
-<sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters. </sup></sub>
+<sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  </sup></sub>
 
 ### Other info
 
@@ -190,16 +178,14 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - 34B series models suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.
 
   - The **default context window** is **4k tokens**.
+    
   - The pretrained tokens are 3T.
-  - The training data are up to June 2023.
+    
+  - The training data are up to June 2023.	
 
 - For chat models:
-
-
-  - For detailed chat model limitations, see [limitations of chat model](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#limitations-of-chat-model).
-
   
-  <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
+  <details style="display: inline;"><summary>For chat model limitations, see ⬇️</summary>
    <ul>
     <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
@@ -211,10 +197,9 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </ul>
 </details>
 
-
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 🎉 News
+## 🎉 News 
 
 <details>
 <summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
@@ -260,7 +245,7 @@ release, except that the context window is extended to 200K.
 <summary>🎯 <b>2023/11/02</b>: The base model of <code>Yi-6B</code> and <code>Yi-34B</code>.</summary>
 
 The first public release contains two bilingual (English/Chinese) base models
-with the parameter sizes of 6B and 34B. Both of them are trained with 4K
+with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
 sequence length and can be extended to 32K during inference time.
 
 </details>
@@ -281,32 +266,24 @@ sequence length and can be extended to 32K during inference time.
 
 ## Quick start
 
-Getting up and running with Yi models is simple with multiple choices available.
+Getting up and running with Yi models is simple with multiple choices available. 
 
 ### Choose your path
 
 Select one of the following paths to begin your journey with Yi!
 
-
-![Quick start - Choose your path](./assets/img/quick_start_path.png)
-
  ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
 
 #### 🎯 Deploy Yi locally
 
-If you prefer to deploy Yi models locally,
+If you prefer to deploy Yi models locally, 
 
-- 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
-
-
-  - [pip](#pip)
-  - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
-  - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
-
-- 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
+  - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
+    - [pip](#pip)
+    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+    - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
-
 
 #### 🎯 Not to deploy Yi locally
 
@@ -317,7 +294,6 @@ If you prefer not to deploy Yi models locally, you can explore Yi's capabilities
 If you want to explore more features of Yi, you can adopt one of these methods:
 
 - Yi APIs (Yi official)
-
   - [Early access has been granted](https://x.com/01AI_Yi/status/1735728934560600536?s=20) to some applicants. Stay tuned for the next round of access!
 
 - [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
@@ -325,19 +301,17 @@ If you want to explore more features of Yi, you can adopt one of these methods:
 ##### 🙋‍♀️ Run Yi in playground
 
 If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
-
-- [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
-
-  - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
-
-- [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate)
+  
+  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
+    - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
+  
+  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
 
 ##### 🙋‍♀️ Chat with Yi
 
-If you want to chat with Yi, you can use one of these online services, which offer a similar user experience:
+ If you want to chat with Yi, you can use one of these online services, which offer a similar user experience:
 
 - [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi official on Hugging Face)
-
   - No registration is required.
 
 - [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
@@ -348,20 +322,12 @@ If you want to chat with Yi, you can use one of these online services, which off
 This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
 
 #### Step 0: Prerequistes
-
-- This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU.
-
-  - For detailed deployment requirements to run Yi models, see [hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
-
-- Make sure Python 3.10 or later version is installed.
-
  
 - Make sure Python 3.10 or a later version is installed.
 
 - If you want to run other Yi models, see [software and hardware requirements](#deployment)
 
-
-#### Step 1: Prepare your environment
+#### Step 1: Prepare your environment 
 
 To set up the environment and install the required packages, execute the following command.
 
@@ -385,46 +351,46 @@ You can perform inference with Yi chat or base models as below.
 
 ##### Perform inference with Yi chat model
 
-1. Create a file named `quick_start.py` and copy the following content to it.
+1. Create a file named  `quick_start.py` and copy the following content to it.
 
-   ```python
-   from transformers import AutoModelForCausalLM, AutoTokenizer
+    ```python
+    from transformers import AutoModelForCausalLM, AutoTokenizer
 
-   model_path = '<your-model-path>'
+    model_path = '<your-model-path>'
 
-   tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
 
-   # Since transformers 4.35.0, the GPT-Q/AWQ model can be loaded using AutoModelForCausalLM.
-   model = AutoModelForCausalLM.from_pretrained(
-       model_path,
-       device_map="auto",
-       torch_dtype='auto'
-   ).eval()
+    # Since transformers 4.35.0, the GPT-Q/AWQ model can be loaded using AutoModelForCausalLM.
+    model = AutoModelForCausalLM.from_pretrained(
+        model_path,
+        device_map="auto",
+        torch_dtype='auto'
+    ).eval()
 
-   # Prompt content: "hi"
-   messages = [
-       {"role": "user", "content": "hi"}
-   ]
+    # Prompt content: "hi"
+    messages = [
+        {"role": "user", "content": "hi"}
+    ]
 
-   input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
-   output_ids = model.generate(input_ids.to('cuda'))
-   response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
+    input_ids = tokenizer.apply_chat_template(conversation=messages, tokenize=True, add_generation_prompt=True, return_tensors='pt')
+    output_ids = model.generate(input_ids.to('cuda'))
+    response = tokenizer.decode(output_ids[0][input_ids.shape[1]:], skip_special_tokens=True)
 
-   # Model response: "Hello! How can I assist you today?"
-   print(response)
-   ```
+    # Model response: "Hello! How can I assist you today?"
+    print(response)
+    ```
 
 2. Run `quick_start.py`.
 
-   ```bash
-   python quick_start.py
-   ```
+    ```bash
+    python quick_start.py
+    ```
 
-   Then you can see an output similar to the one below. 🥳
+    Then you can see an output similar to the one below. 🥳
 
-   ```bash
-   Hello! How can I assist you today?
-   ```
+    ```bash
+    Hello! How can I assist you today?
+    ```
 
 ##### Perform inference with Yi base model
 
@@ -440,7 +406,7 @@ Then you can see an output similar to the one below. 🥳
 
 <details>
 
-<summary>Output. ⬇️ </summary>
+<summary>Output ⬇️ </summary>
 
 <br>
 
@@ -452,7 +418,7 @@ Then you can see an output similar to the one below. 🥳
 
 ### Quick start - Docker 
 <details>
-<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
+<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide ⬇️</summary> 
 <br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
  <h4>Step 0: Prerequisites</h4>
 <p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
@@ -479,7 +445,7 @@ ghcr.io/01-ai/yi:latest
 
 ### Quick start - llama.cpp
 <details>
-<summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide. ⬇️</summary> 
+<summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide ⬇️</summary> 
 <br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
 
 - [Step 0: Prerequisites](#step-0-prerequisites)
@@ -616,7 +582,7 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
 
-[Step 1: Prepare your environment](#step-1-prepare-your-environment).
+[Step 1: Prepare your environment](#step-1-prepare-your-environment). 
 
 [Step 2: Download the Yi model](#step-2-download-the-yi-model).
 
@@ -626,13 +592,9 @@ Step 3. To start a web service locally, run the following command.
 python demo/web_demo.py -c <your-model-path>
 ```
 
-You can access the web UI by entering the address provided in the console into your browser.
+You can access the web UI by entering the address provided in the console into your browser. 
 
-
-![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
-
- ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif)
-
+ ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
@@ -645,7 +607,7 @@ Once finished, you can compare the finetuned model and the base model with the f
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see the explanations below. ⬇️ </summary> <ul>
+<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️</summary> <ul>
 
 ### Finetune code for Yi 6B and 34B
 
@@ -762,7 +724,6 @@ Then you'll see the answer from both the base model and the finetuned model
 ### Quantization
 
 #### GPT-Q
-
 ```bash
 python quantization/gptq/quant_autogptq.py \
   --model /base_model                      \
@@ -778,7 +739,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see the explanations below. ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️</summary> <ul>
 
 #### GPT-Q quantization
 
@@ -815,7 +776,6 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </details>
 
 #### AWQ
-
 ```bash
 python quantization/awq/quant_autoawq.py \
   --model /base_model                      \
@@ -830,7 +790,7 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see the explanations below. ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For detailed explanations, see ⬇️</summary> <ul>
 
 #### AWQ quantization
 
@@ -863,22 +823,6 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </ul>
 </details>
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-
-
-# 🟢 Why Yi?
-
-- [🌎 Ecosystem](#-ecosystem)
-  - [💦 Upstream](#-upstream)
-  - [🌊 Downstream](#-downstream)
-    - [🔗 Serving](#-serving)
-    - [⚙️ Quantitation](#️-quantitation)
-    - [🛠️ Fine-tuning](#️-fine-tuning)
-    - [API](#api)
-- [📌 Benchmarks](#-benchmarks)
-  - [📊 Base model performance](#-base-model-performance)
-  - [📊 Chat model performance](#-chat-model-performance)
-  - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-
 
 ### Deployment
 
@@ -931,7 +875,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 ### Learning hub
 
 <details>
-<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here. ⬇️</summary> 
+<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here ⬇️</summary> 
 <br> 
   
 Welcome to the Yi learning hub! 
@@ -970,7 +914,6 @@ With all these resources at your fingertips, you're ready to start your exciting
     - [📊 Chat model performance](#-chat-model-performance)
     - [📊 Base model performance](#-base-model-performance)
  
-
 ## 🌎 Ecosystem
 
 Yi has a comprehensive ecosystem, offering a range of tools, services, and models to enrich your experiences and maximize productivity.
@@ -999,46 +942,49 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ### 🌊 Downstream
 
 > 💡 Tip
->
+> 
 > - Feel free to create a PR and share the fantastic work you've built using the Yi series models.
 >
 > - To help others quickly understand your work, it is recommended to use the format of `<model-name>: <model-intro> + <model-highlights>`.
 
-#### 🔗 Serving
+#### 🔗 Serving 
 
 If you want to get up with Yi in a few minutes, you can use the following services built upon Yi.
 
 - Yi-34B-Chat: you can chat with Yi using one of the following platforms:
   - [Yi-34B-Chat | Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
   - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/): **Note** that currently it's available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)) and experience it firsthand!
+  
 - [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai): you can use this model with more options by setting additional parameters and calling APIs.
+  
 - [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models): you can use this service to run Yi models locally with added flexibility and customization.
-
+  
 #### ⚙️ Quantitation
 
-If you have limited computational capabilities, you can use Yi's quantized models as follows.
+If you have limited computational capabilities, you can use Yi's quantized models as follows. 
 
 These quantized models have reduced precision but offer increased efficiency, such as faster inference speed and smaller RAM usage.
 
-- [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
+- [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ) 
 - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
 - [TheBloke/Yi-34B-AWQ](https://huggingface.co/TheBloke/Yi-34B-AWQ)
-
+  
 #### 🛠️ Fine-tuning
 
 If you're seeking to explore the diverse capabilities within Yi's thriving family, you can delve into Yi's fine-tuned models as below.
 
-- [TheBloke Models](https://huggingface.co/TheBloke): this site hosts numerous fine-tuned models derived from various LLMs including Yi.
-
+- [TheBloke Models](https://huggingface.co/TheBloke): this site hosts numerous fine-tuned models derived from various LLMs including Yi. 
+  
   This is not an exhaustive list for Yi, but to name a few sorted on downloads:
-
   - [TheBloke/dolphin-2_2-yi-34b-AWQ](https://huggingface.co/TheBloke/dolphin-2_2-yi-34b-AWQ)
   - [TheBloke/Yi-34B-Chat-AWQ](https://huggingface.co/TheBloke/Yi-34B-Chat-AWQ)
   - [TheBloke/Yi-34B-Chat-GPTQ](https://huggingface.co/TheBloke/Yi-34B-Chat-GPTQ)
-
+  
 - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B): this model ranked first among all models below 70B and outperformed the twice larger deepseek-llm-67b-chat. You can check the result on the [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).
-- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama): this model excelled beyond other models (such as GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat) in C-Eval and CMMLU evaluations on the [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm).
-- [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset.
+  
+- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama): this model excelled beyond other models (such as GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat) in C-Eval and CMMLU evaluations on the [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm). 
+  
+- [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B): this model is trained with 200K context length and 3 epochs on the Capybara dataset. 
 
 #### API
 
@@ -1047,116 +993,7 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📊 Performance
-
-- [Base model performance](#-base-model-performance)
-- [Chat model performance](#-chat-model-performance)
-- [Quantized chat model performance](#-quantized-chat-model-performance)
-
-### Base model performance
-
-
-#### Objective evaluation
-
-- Yi-34B has surpassed all open-source models globally on the [C-Eval](https://cevalbenchmark.com/static/leaderboard.html) authoritative leaderboard. When compared to the benchmark GPT-4, Yi-34B demonstrates an absolute advantage in three major Chinese metrics: CMMLU, E-Eval, and Gaokao.
-
-| #   | Model                  | Creator           | Access       | Submission Date | Avg      | Avg(Hard) | STEM     | Social Science | Humanities | Others   |
-| --- | ---------------------- | ----------------- | ------------ | --------------- | -------- | --------- | -------- | -------------- | ---------- | -------- |
-| 0   | Qwen-72B               | Alibaba Cloud     | Weight       | 2023/11/30      | 82.8     | 64.7      | 77.1     | 91.7           | 84.7       | 82.9     |
-| 1   | **Yi-34B**             | **零一万物**      | **Weight**   | **2023/11/2**   | **81.4** | **58.7**  | **73.7** | **89.6**       | **84.6**   | **84.9** |
-| 2   | PCI-TransGPT           | 佳都科技          | API, Web     | 2024/1/4        | 80.4     | 62.5      | 75.4     | 89.2           | 81.7       | 80.3     |
-| 3   | OrionStar-Yi-34B-Chat  | OrionStarAI       | Weight       | 2023/11/22      | 78.1     | 55.8      | 70.1     | 88.0           | 80.7       | 80.9     |
-| 4   | YAYI2-30B              | 中科闻歌          | Weight       | 2023/12/18      | 75.3     | 53.1      | 67.2     | 83.8           | 80.6       | 76.8     |
-| 5   | xDAN-L2-Chat-lite-v1.0 | xDAN-AI           | API, Private | 2023/12/17      | 74.3     | 50.7      | 66.5     | 84.8           | 78.1       | 75.3     |
-| 6   | BlueLM-7B              | vivo              | Weight       | 2023/11/7       | 73.3     | 48.9      | 64.3     | 83.3           | 76.5       | 77.1     |
-| 7   | XVERSE-65B-2           | XVERSE Technology | Weight       | 2023/12/8       | 72.4     | 50.8      | 65.7     | 85.0           | 74.0       | 71.8     |
-| 8   | Qwen-14B               | Alibaba Cloud     | Weight       | 2023/9/22       | 72.1     | 53.7      | 65.7     | 85.4           | 75.3       | 68.4     |
-
-> According to the released performance of 2024-01-17.
-
-From a broader evaluation perspective, Yi-34B has also demonstrated outstanding performance in globally recognised evaluations such as MMLU (Massive Multitask Language Understanding) and BBH, which reflect the overall ability of models. It has outperformed other models in several metrics, including general ability, knowledge reasoning and reading comprehension.
-
-![base_fig](assets/img/yi_readme_base.png)
-
-| Model         |   MMLU   |  CMMLU   |  C-Eval  |  GAOKAO  |   BBH    | Common-sense Reasoning | Reading Comprehension | Math & Code |
-| :------------ | :------: | :------: | :------: | :------: | :------: | :--------------------: | :-------------------: | :---------: |
-|               |  5-shot  |  5-shot  |  5-shot  |  0-shot  | 3-shot@1 |           -            |           -           |      -      |
-| LLaMA2-34B    |   62.6   |    -     |    -     |    -     |   44.1   |          69.9          |         68.0          |    26.0     |
-| LLaMA2-70B    |   68.9   |   53.3   |    -     |   49.8   |   51.2   |          71.9          |         69.4          |    36.8     |
-| Baichuan2-13B |   59.2   |   62.0   |   58.1   |   54.3   |   48.8   |          64.3          |         62.4          |    23.0     |
-| Qwen-14B      |   66.3   |   71.0   |   72.1   |   62.5   |   53.4   |          73.3          |         72.5          |    39.8     |
-| Skywork-13B   |   62.1   |   61.8   |   60.6   |   68.1   |   41.7   |          72.4          |         61.4          |    24.9     |
-| InternLM-20B  |   62.1   |   59.0   |   58.8   |   45.5   |   52.5   |          78.3          |           -           |    30.4     |
-| Aquila-34B    |   67.8   |   71.4   |   63.1   |    -     |    -     |           -            |           -           |      -      |
-| Falcon-180B   |   70.4   |   58.0   |   57.8   |   59.0   |   54.0   |          77.3          |         68.8          |    34.0     |
-| Yi-6B         |   63.2   |   75.5   |   72.0   |   72.2   |   42.8   |          72.3          |         68.7          |    19.8     |
-| Yi-6B-200K    |   64.0   |   75.3   |   73.5   |   73.9   |   42.0   |          72.0          |         69.1          |    19.0     |
-| **Yi-34B**    | **76.3** | **83.7** |   81.4   |   82.8   | **54.3** |        **80.1**        |         76.4          |    37.1     |
-| Yi-34B-200K   |   76.1   |   83.6   | **81.9** | **83.4** |   52.7   |          79.7          |       **76.6**        |    36.3     |
-
-> - Our prompt and post-processing strategy remains consistent with the original benchmark, and greedy decoding is employed during evaluation without any post-processing for the generated content. For scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-> - To assess common sense reasoning, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA.
-> - SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.(CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration.)
-> - We introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-
-### Chat model performance
-
-#### Evaluation strategy
-
-Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text. Some models are not well-suited to produce output in the specific format required by instructions in a few datasets, which leads to suboptimal results.
-
-#### Objective Evaluation
-
-- The Yi-34B-Chat model performed exceptionally well in the [SuperCLUE](https://www.superclueai.com/) Chinese Large-scale Model Benchmark Evaluation.
-
-![chat_fig](assets/img/yi_readme_chat.png)
-
-| Model                   | MMLU      | MMLU      | CMMLU     | CMMLU     | C-Eval(val)<sup>\*</sup> | C-Eval(val)<sup>\*</sup> | Truthful QA | BBH       | BBH       | GSM8k     | GSM8k     |
-| ----------------------- | --------- | --------- | --------- | --------- | ------------------------ | ------------------------ | ----------- | --------- | --------- | --------- | --------- |
-|                         | 0-shot    | 5-shot    | 0-shot    | 5-shot    | 0-shot                   | 5-shot                   | 0-shot      | 0-shot    | 3-shot    | 0-shot    | 4-shot    |
-| LLaMA2-13B-Chat         | 50.88     | 47.33     | 27.47     | 35.08     | 27.93                    | 35.88                    | 36.84       | 32.90     | 58.22     | 36.85     | 2.73      |
-| LLaMA2-70B-Chat         | 59.42     | 59.86     | 36.10     | 40.99     | 34.99                    | 41.31                    | 53.95       | 42.36     | 58.53     | 47.08     | 58.68     |
-| Baichuan2-13B-Chat      | 55.09     | 50.14     | 58.64     | 59.47     | 56.02                    | 54.75                    | 48.98       | 38.81     | 47.15     | 45.72     | 23.28     |
-| Qwen-14B-Chat           | 63.99     | 64.98     | 67.73     | 70.57     | 66.12                    | 70.06                    | 52.49       | 49.65     | 54.98     | 59.51     | 61.18     |
-| InternLM-Chat-20B       | 55.55     | 57.42     | 53.55     | 53.75     | 51.19                    | 53.57                    | 51.75       | 42.41     | 36.68     | 15.69     | 43.44     |
-| AquilaChat2-34B v1.2    | 65.15     | 66.70     | 67.51     | 70.02     | 82.99                    | 89.38                    | 64.33       | 20.12     | 34.28     | 11.52     | 48.45     |
-| Yi-6B-Chat              | 58.24     | 60.99     | 69.44     | 74.71     | 68.80                    | 74.22                    | 50.58       | 39.70     | 47.15     | 38.44     | 44.88     |
-| Yi-6B-Chat-8bits(GPTQ)  | 58.29     | 60.96     | 69.21     | 74.69     | 69.17                    | 73.85                    | 49.85       | 40.35     | 47.26     | 39.42     | 44.88     |
-| Yi-6B-Chat-4bits(AWQ)   | 56.78     | 59.89     | 67.70     | 73.29     | 67.53                    | 72.29                    | 50.29       | 37.74     | 43.62     | 35.71     | 38.36     |
-| Yi-34B-Chat             | **67.62** | 73.46     | **79.11** | **81.34** | 77.04                    | 78.53                    | 62.43       | 51.41     | **71.74** | **71.65** | **75.97** |
-| Yi-34B-Chat-8bits(GPTQ) | 66.24     | **73.69** | 79.05     | 81.23     | 76.82                    | 78.97                    | 61.84       | **52.08** | 70.97     | 70.74     | 75.74     |
-| Yi-34B-Chat-4bits(AWQ)  | 65.77     | 72.42     | 78.21     | 80.50     | 75.71                    | 77.27                    | 61.84       | 48.30     | 69.39     | 70.51     | 74.00     |
-
-> We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA
->
-> .<strong>\*</strong>: C-Eval results are evaluated on the validation datasets
-
-#### Alignment Evaluation
-
-- We have evaluated our model on [AlpacaEval 2.0](https://tatsu-lab.github.io/alpaca_eval/) and Yi-34B-Chat surpass GPT-4(0314) and GPT-4.
-
-| Model Name                         | Win Rate | Length |
-| ---------------------------------- | -------- | ------ |
-| GPT-4 Turbo                        | 50.00%   | 2049   |
-| Yi 34B Chat                        | 29.66%   | 2123   |
-| GPT-4                              | 23.58%   | 1365   |
-| GPT-4 0314                         | 22.07%   | 1371   |
-| Mistral Medium                     | 21.86%   | 1500   |
-| XwinLM 70b V0.1                    | 21.81%   | 1775   |
-| InternLM2 Chat 20B                 | 21.75%   | 2373   |
-| Evo v2 7B                          | 20.83%   | 1754   |
-| PairRM+Tulu 2+DPO 70B (best-of-16) | 18.64%   | 1607   |
-| Mixtral 8x7B v0.1                  | 18.26%   | 1465   |
-| XwinLM 13b V0.1                    | 17.43%   | 1894   |
-| Claude 2                           | 17.19%   | 1069   |
-| Claude                             | 16.99%   | 1082   |
-| Gemini Pro                         | 16.85%   | 1315   |
-
-> According to the released performance of 2024-01-17.
-
-### Quantized chat model performance
-
-We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have **negligible** losses. Additionally, they reduce the memory footprint size.
+## 📌 Benchmarks 
 
 - [📊 Chat model performance](#-chat-model-performance)
 - [📊 Base model performance](#-base-model-performance)
@@ -1165,10 +1002,10 @@ We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Eval
 
 Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
-![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png) 
+![Chat model performance](./assets/img/benchmark_chat.png) 
 
 <details>
-<summary> Evaluation methods and challenges. ⬇️ </summary>
+<summary> Evaluation methods and challenges ⬇️ </summary>
 
 - **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
 - **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
@@ -1182,26 +1019,26 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
-![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png)
+![Base model performance](./assets/img/benchmark_base.png)
 
 <details>
-<summary> Evaluation methods. ⬇️</summary>
+<summary> Evaluation methods ⬇️</summary>
 
-- **Disparity in results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
-- **Investigation findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
-- **Uniform benchmarking process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
-- **Efforts to retrieve unreported scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-- **Extensive model evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
-- **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-- **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
+- **Disparity in Results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
+- **Investigation Findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
+- **Uniform Benchmarking Process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
+- **Efforts to Retrieve Unreported Scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
+- **Extensive Model Evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
+- **Special Configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
+- **Falcon-180B Caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
 </details>
-
 
 # 🟢 Who can use Yi?
 
 Everyone! 🙌 ✅
 
 - The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
+  
 - For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
@@ -1220,7 +1057,6 @@ change the height and width for each of the contributors from 80 to 50 at ref in
 --->
 
 [//]: contributor-faces
-
 <a style="display:inline-block;width=50px;height=50px" href="https://github.com/ZhaoFancy"><img style="margin:0" src="https://avatars.githubusercontent.com/u/139539780?v=4" title="ZhaoFancy" width="50" height="50"></a>
 <a style="display:inline-block;width=50px;height=50px" href="https://github.com/Anonymitaet"><img style="margin:0" src="https://avatars.githubusercontent.com/u/50226895?v=4" title="Anonymitaet" width="50" height="50"></a>
 <a style="display:inline-block;width=50px;height=50px" href="https://github.com/findmyway"><img style="margin:0" src="https://avatars.githubusercontent.com/u/5612003?v=4" title="findmyway" width="50" height="50"></a>
@@ -1271,4 +1107,3 @@ license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models ar
 For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-```
