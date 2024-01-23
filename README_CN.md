@@ -484,7 +484,7 @@ git-lfs pull --include yi-chat-6b.Q2_K.gguf
 
 #### 步骤 3: 执行推理
 
-想要体验 Yi 模型（进行模型推理），我们可以选择以下任意一种方法。
+如需体验 Yi 模型（进行模型推理），你可以选择以下任意一种方法。
 
 - [方法 1：在终端中执行推理](#method-1-perform-inference-in-terminal)
   
