@@ -3,7 +3,7 @@ description: Suggest document changes
 title: "Doc"
 labels: ["doc-required"]
 body:
-  - type: markdown
+    - type: markdown
     attributes:
       value: |
         Thank you very much for your contribution!
