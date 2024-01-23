@@ -103,7 +103,7 @@
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
   
   - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
-  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA</span> ⬇️</summary> <ul> <br>
+  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
 > 💡 TL;DR
 > 
 > The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
@@ -174,7 +174,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat models:
   
-  <details style="display: inline;"><summary>For chat model limitations, see ⬇️</summary>
+  <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
    <ul>
     <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
@@ -395,7 +395,7 @@ Then you can see an output similar to the one below. 🥳
 
 <details>
 
-<summary>Output ⬇️ </summary>
+<summary>Output. ⬇️ </summary>
 
 <br>
 
@@ -407,7 +407,7 @@ Then you can see an output similar to the one below. 🥳
 
 ### Quick start - Docker 
 <details>
-<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide ⬇️</summary> 
+<summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
 <br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
  <h4>Step 0: Prerequisites</h4>
 <p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
@@ -434,7 +434,7 @@ ghcr.io/01-ai/yi:latest
 
 ### Quick start - llama.cpp
 <details>
-<summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide ⬇️</summary> 
+<summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide. ⬇️</summary> 
 <br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
 
 - [Step 0: Prerequisites](#step-0-prerequisites)
@@ -583,7 +583,7 @@ python demo/web_demo.py -c <your-model-path>
 
 You can access the web UI by entering the address provided in the console into your browser. 
 
- ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
+ ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif)
 
 ### Finetuning
 
@@ -596,7 +596,7 @@ Once finished, you can compare the finetuned model and the base model with the f
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see the explanations below. ⬇️ </summary> <ul>
 
 ### Finetune code for Yi 6B and 34B
 
@@ -728,7 +728,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For a more detailed explanation, see the explanations below. ⬇️</summary> <ul>
 
 #### GPT-Q quantization
 
@@ -779,7 +779,7 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For detailed explanations, see the explanations below. ⬇️</summary> <ul>
 
 #### AWQ quantization
 
@@ -864,7 +864,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 ### Learning hub
 
 <details>
-<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here ⬇️</summary> 
+<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here. ⬇️</summary> 
 <br> 
   
 Welcome to the Yi learning hub! 
@@ -991,10 +991,10 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
-![Chat model performance](./assets/img/benchmark_chat.png) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png) 
 
 <details>
-<summary> Evaluation methods and challenges ⬇️ </summary>
+<summary> Evaluation methods and challenges. ⬇️ </summary>
 
 - **Evaluation methods**: we evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA.
 - **Zero-shot vs. few-shot**: in chat models, the zero-shot approach is more commonly employed.
@@ -1008,18 +1008,18 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
-![Base model performance](./assets/img/benchmark_base.png)
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png)
 
 <details>
-<summary> Evaluation methods ⬇️</summary>
+<summary> Evaluation methods. ⬇️</summary>
 
-- **Disparity in Results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
-- **Investigation Findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
-- **Uniform Benchmarking Process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
-- **Efforts to Retrieve Unreported Scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-- **Extensive Model Evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
-- **Special Configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-- **Falcon-180B Caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
+- **Disparity in results**: while benchmarking open-source models, a disparity has been noted between results from our pipeline and those reported by public sources like OpenCompass.
+- **Investigation findings**: a deeper investigation reveals that variations in prompts, post-processing strategies, and sampling techniques across models may lead to significant outcome differences.
+- **Uniform benchmarking process**: our methodology aligns with the original benchmarks—consistent prompts and post-processing strategies are used, and greedy decoding is applied during evaluations without any post-processing for the generated content.
+- **Efforts to retrieve unreported scores**: for scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
+- **Extensive model evaluation**: to evaluate the model’s capability extensively, we adopted the methodology outlined in Llama2. Specifically, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA to assess common sense reasoning. SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.
+- **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
+- **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
 </details>
 
 # 🟢 Who can use Yi?
