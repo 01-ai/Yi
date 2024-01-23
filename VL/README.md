@@ -6,15 +6,14 @@ Model |       Download
 Yi-VL-34B |• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-VL-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-VL-34B/summary)
 Yi-VL-6B | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-VL-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-VL-6B/summary)
 
-2. Set the parameter `mm_vision_tower` in `config.json` to the local ViT path. 
-3. To set up the environment and install the required packages, execute the following command.
+2. To set up the environment and install the required packages, execute the following command.
 ```
 git clone https://github.com/01-ai/Yi.git
 cd Yi/VL
 export PYTHONPATH=$PYTHONPATH:$(pwd)
 pip install -r requirements.txt
 ```
-4. To perform inference of Yi-VL, execute the following command.
+3. To perform inference of Yi-VL, execute the following command.
 ```python
 python single_inference.py --model-path path-to-yi-vl-model --image-file path-to-image --question question-content
 ```
