@@ -62,7 +62,7 @@
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
-    - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+    - [llama.cpp](#quick-start---llamacpp)
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
@@ -99,17 +99,13 @@
 
   - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
 
-
-  - For Chinese language capability, the Yi series models landed in 2nd place (following GPT4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
-
-  
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
-  
-  - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
-  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
-> 💡 TL;DR
-> 
-> The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
+
+  - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.
+    <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
+  > 💡 TL;DR
+  > 
+  > The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
 
 - Both Yi and LLaMA are all based on the Transformer structure, which has been the standard architecture for large language models since 2018.
 
@@ -121,13 +117,9 @@
 
   - As LLaMA's structure is employed by the majority of open-source models, the key factors of determining model performance are training datasets, training pipelines, and training infrastructure.
 
-  - Developing in a unique and proprietary way, Yi has independently created its own high-quality training datasets, efficient training pipelines, and robust training infrastructure entirely from the ground up. This effort has led to excellent performance with Yi series models ranking just behind GPT4 and surpassing LLaMA on the [Alpaca Leaderboard in Dec 2023](https://tatsu-lab.github.io/alpaca_eval/). 
-</ul>
-</details>
-
-
-
-
+  - Developing in a unique and proprietary way, Yi has independently created its own high-quality training datasets, efficient training pipelines, and robust training infrastructure entirely from the ground up. This effort has led to excellent performance with Yi series models ranking just behind GPT4 and surpassing LLaMA on the [Alpaca Leaderboard in Dec 2023](https://tatsu-lab.github.io/alpaca_eval/).
+  </ul>
+  </details>
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -139,45 +131,25 @@ If you want to deploy Yi models, make sure you meet the [software and hardware r
 
 ### Chat models
 
-
 | Model             | Download                                                                                                                                               |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Yi-6B-Chat        | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)               |
-| Yi-6B-Chat-4bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)   |
-| Yi-6B-Chat-8bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)   |
 | Yi-34B-Chat       | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)             |
 | Yi-34B-Chat-4bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary) |
 | Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary) |
-
-| Model | Download  
-|---|---
-Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)
-Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
-Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)
-Yi-6B-Chat| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)
-Yi-6B-Chat-4bits |	• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)
-Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
-
+| Yi-6B-Chat        | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)               |
+| Yi-6B-Chat-4bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)   |
+| Yi-6B-Chat-8bits  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)   |
 
 <sub><sup> - 4-bit series models are quantized by AWQ. <br> - 8-bit series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090). </sup></sub>
 
 ### Base models
 
-
 | Model       | Download                                                                                                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Yi-6B       | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)             |
-| Yi-6B-200K  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)   |
 | Yi-34B      | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)           |
 | Yi-34B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary) |
-
-| Model | Download | 
-|---|---|
-Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
-Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
-Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
-Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
-
+| Yi-6B       | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)             |
+| Yi-6B-200K  | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)   |
 
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters. </sup></sub>
 
@@ -195,22 +167,18 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat models:
 
+    <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
+     <ul>
+      <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
 
-  - For detailed chat model limitations, see [limitations of chat model](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#limitations-of-chat-model).
+      <br>However, this higher diversity might amplify certain existing issues, including:
+        <li>Hallucination: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.</li>
+        <li>Non-determinism in re-generation: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.</li>
+        <li>Cumulative Error: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.</li>
+        <li>To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.</li>
 
-  
-  <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
-   <ul>
-    <br>The released chat model has undergone exclusive training using Supervised Fine-Tuning (SFT). Compared to other standard chat models, our model produces more diverse responses, making it suitable for various downstream tasks, such as creative scenarios. Furthermore, this diversity is expected to enhance the likelihood of generating higher quality responses, which will be advantageous for subsequent Reinforcement Learning (RL) training.
-
-    <br>However, this higher diversity might amplify certain existing issues, including:
-      <li>Hallucination: This refers to the model generating factually incorrect or nonsensical information. With the model's responses being more varied, there's a higher chance of hallucination that are not based on accurate data or logical reasoning.</li>
-      <li>Non-determinism in re-generation: When attempting to regenerate or sample responses, inconsistencies in the outcomes may occur. The increased diversity can lead to varying results even under similar input conditions.</li>
-      <li>Cumulative Error: This occurs when errors in the model's responses compound over time. As the model generates more diverse responses, the likelihood of small inaccuracies building up into larger errors increases, especially in complex tasks like extended reasoning, mathematical problem-solving, etc.</li>
-      <li>To achieve more coherent and consistent responses, it is advisable to adjust generation configuration parameters such as temperature, top_p, or top_k. These adjustments can help in the balance between creativity and coherence in the model's outputs.</li>
-</ul>
-</details>
-
+  </ul>
+  </details>
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -272,12 +240,12 @@ sequence length and can be extended to 32K during inference time.
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
-  - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+  - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+- [Deployment](#deployment)
+- [Learning hub](#learning-hub)
 
 ## Quick start
 
@@ -287,10 +255,7 @@ Getting up and running with Yi models is simple with multiple choices available.
 
 Select one of the following paths to begin your journey with Yi!
 
-
-![Quick start - Choose your path](./assets/img/quick_start_path.png)
-
- ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
+![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png?raw=true)
 
 #### 🎯 Deploy Yi locally
 
@@ -298,15 +263,11 @@ If you prefer to deploy Yi models locally,
 
 - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
 
-
   - [pip](#pip)
-  - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
+  - [Docker](#quick-start---docker)
   - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
-- 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md).
-
-  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
-
+- 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
 
 #### 🎯 Not to deploy Yi locally
 
@@ -349,17 +310,9 @@ This tutorial guides you through every step of running **Yi-34B-Chat locally on 
 
 #### Step 0: Prerequistes
 
-- This tutorial assumes you are running the **Yi-34B-Chat** with an **A800 (80G)** GPU.
-
-  - For detailed deployment requirements to run Yi models, see [hardware requirements](https://github.com/01-ai/Yi/blob/main/docs/deployment.md).
-
-- Make sure Python 3.10 or later version is installed.
-
- 
 - Make sure Python 3.10 or a later version is installed.
 
 - If you want to run other Yi models, see [software and hardware requirements](#deployment)
-
 
 #### Step 1: Prepare your environment
 
@@ -450,10 +403,11 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
-### Quick start - Docker 
+### Quick start - Docker
+
 <details>
 <summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
-<br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> locally and then performing inference.
+<br>This tutorial guides you through every step of running <strong>Yi-34B-Chat on an A800 GPU</strong> or <strong>4*4090</strong> locally and then performing inference.
  <h4>Step 0: Prerequisites</h4>
 <p>Make sure you've installed <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> and <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>.</p>
 
@@ -475,9 +429,8 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
-
-
 ### Quick start - llama.cpp
+
 <details>
 <summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide. ⬇️</summary> 
 <br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
@@ -487,12 +440,11 @@ ghcr.io/01-ai/yi:latest
 - [Step 2: Download Yi model](#step-2-download-yi-model)
 - [Step 3: Perform inference](#step-3-perform-inference)
 
-#### Step 0: Prerequisites 
+#### Step 0: Prerequisites
 
 - This tutorial assumes you use a MacBook Pro with 16GB of memory and an Apple M2 Pro chip.
-  
 - Make sure [`git-lfs`](https://git-lfs.com/) is installed on your machine.
-  
+
 #### Step 1: Download `llama.cpp`
 
 To clone the [`llama.cpp`](https://github.com/ggerganov/llama.cpp) repository, run the following command.
@@ -520,7 +472,6 @@ git-lfs pull --include yi-chat-6b.Q2_K.gguf
 To perform inference with the Yi model, you can use one of the following methods.
 
 - [Method 1: Perform inference in terminal](#method-1-perform-inference-in-terminal)
-  
 - [Method 2: Perform inference in web](#method-2-perform-inference-in-web)
 
 ##### Method 1: Perform inference in terminal
@@ -528,11 +479,11 @@ To perform inference with the Yi model, you can use one of the following methods
 To compile `llama.cpp` using 4 threads and then conduct inference, navigate to the `llama.cpp` directory, and run the following command.
 
 > ##### Tips
-> 
+>
 > - Replace `/Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf` with the actual path of your model.
 >
 > - By default, the model operates in completion mode.
-> 
+>
 > - For additional output customization options (for example, system prompt, temperature, repetition penalty, etc.), run `./main -h` to check detailed descriptions and usage.
 
 ```bash
@@ -562,52 +513,51 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 
 ##### Method 2: Perform inference in web
 
-1. To initialize a lightweight and swift chatbot, navigate to the `llama.cpp` directory, and run the following command.
+1. To initialize a lightweight and swift chatbot, run the following command.
 
-    ```bash
-    ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
-    ```
+   ```bash
+   cd llama.cpp
+   ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
+   ```
 
-    Then you can get an output like this:
+   Then you can get an output like this:
 
+   ```bash
+   ...
 
-    ```bash
-    ...
+   llama_new_context_with_model: n_ctx      = 2048
+   llama_new_context_with_model: freq_base  = 5000000.0
+   llama_new_context_with_model: freq_scale = 1
+   ggml_metal_init: allocating
+   ggml_metal_init: found device: Apple M2 Pro
+   ggml_metal_init: picking default device: Apple M2 Pro
+   ggml_metal_init: ggml.metallib not found, loading from source
+   ggml_metal_init: GGML_METAL_PATH_RESOURCES = nil
+   ggml_metal_init: loading '/Users/yu/llama.cpp/ggml-metal.metal'
+   ggml_metal_init: GPU name:   Apple M2 Pro
+   ggml_metal_init: GPU family: MTLGPUFamilyApple8 (1008)
+   ggml_metal_init: hasUnifiedMemory              = true
+   ggml_metal_init: recommendedMaxWorkingSetSize  = 11453.25 MB
+   ggml_metal_init: maxTransferRate               = built-in GPU
+   ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =   128.00 MiB, ( 2629.44 / 10922.67)
+   llama_new_context_with_model: KV self size  =  128.00 MiB, K (f16):   64.00 MiB, V (f16):   64.00 MiB
+   ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =     0.02 MiB, ( 2629.45 / 10922.67)
+   llama_build_graph: non-view tensors processed: 676/676
+   llama_new_context_with_model: compute buffer total size = 159.19 MiB
+   ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =   156.02 MiB, ( 2785.45 / 10922.67)
+   Available slots:
+   -> Slot 0 - max context: 2048
 
-    llama_new_context_with_model: n_ctx      = 2048
-    llama_new_context_with_model: freq_base  = 5000000.0
-    llama_new_context_with_model: freq_scale = 1
-    ggml_metal_init: allocating
-    ggml_metal_init: found device: Apple M2 Pro
-    ggml_metal_init: picking default device: Apple M2 Pro
-    ggml_metal_init: ggml.metallib not found, loading from source
-    ggml_metal_init: GGML_METAL_PATH_RESOURCES = nil
-    ggml_metal_init: loading '/Users/yu/llama.cpp/ggml-metal.metal'
-    ggml_metal_init: GPU name:   Apple M2 Pro
-    ggml_metal_init: GPU family: MTLGPUFamilyApple8 (1008)
-    ggml_metal_init: hasUnifiedMemory              = true
-    ggml_metal_init: recommendedMaxWorkingSetSize  = 11453.25 MB
-    ggml_metal_init: maxTransferRate               = built-in GPU
-    ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =   128.00 MiB, ( 2629.44 / 10922.67)
-    llama_new_context_with_model: KV self size  =  128.00 MiB, K (f16):   64.00 MiB, V (f16):   64.00 MiB
-    ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =     0.02 MiB, ( 2629.45 / 10922.67)
-    llama_build_graph: non-view tensors processed: 676/676
-    llama_new_context_with_model: compute buffer total size = 159.19 MiB
-    ggml_backend_metal_buffer_type_alloc_buffer: allocated buffer, size =   156.02 MiB, ( 2785.45 / 10922.67)
-    Available slots:
-    -> Slot 0 - max context: 2048
+   llama server listening at http://0.0.0.0:8080
+   ```
 
-    llama server listening at http://0.0.0.0:8080
-    ```
+2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar.
 
-2. To access the chatbot interface, open your web browser and enter `http://0.0.0.0:8080` into the address bar. 
-   
-    ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
-
+   ![Yi model chatbot interface - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png?raw=true)
 
 3. Enter a question, such as "How do you feed your pet fox? Please answer this question in 6 simple steps" into the prompt window, and you will receive a corresponding answer.
 
-    ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
+   ![Ask a question to Yi model - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png?raw=true)
 
 </ul>
 </details>
@@ -628,11 +578,7 @@ python demo/web_demo.py -c <your-model-path>
 
 You can access the web UI by entering the address provided in the console into your browser.
 
-
-![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
-
- ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif)
-
+![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 ### Finetuning
 
@@ -645,6 +591,7 @@ Once finished, you can compare the finetuned model and the base model with the f
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
+
 <details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see the explanations below. ⬇️ </summary> <ul>
 
 ### Finetune code for Yi 6B and 34B
@@ -756,6 +703,7 @@ bash run_eval.sh
 ```
 
 Then you'll see the answer from both the base model and the finetuned model
+
 </ul>
 </details>
 
@@ -784,9 +732,9 @@ python quantization/gptq/eval_quantized_model.py \
 
 [GPT-Q](https://github.com/IST-DASLab/gptq) is a PTQ(Post-Training Quantization)
 method. It's memory saving and provides potential speedups while retaining the accuracy
-of the model. 
+of the model.
 
-Yi models can be GPT-Q quantized without a lot of efforts. 
+Yi models can be GPT-Q quantized without a lot of efforts.
 We provide a step-by-step tutorial below.
 
 To run GPT-Q, we will use [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) and
@@ -803,7 +751,6 @@ python quant_autogptq.py --model /base_model \
     --output_dir /quantized_model --bits 4 --group_size 128 --trust_remote_code
 ```
 
-
 ##### Run Quantized Model
 
 You can run a quantized model using the `eval_quantized_model.py`:
@@ -811,6 +758,7 @@ You can run a quantized model using the `eval_quantized_model.py`:
 ```bash
 python eval_quantized_model.py --model /quantized_model --trust_remote_code
 ```
+
 </ul>
 </details>
 
@@ -830,6 +778,7 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
+
 <details style="display: inline;"><summary>For detailed explanations, see the explanations below. ⬇️</summary> <ul>
 
 #### AWQ quantization
@@ -837,7 +786,7 @@ python quantization/awq/eval_quantized_model.py \
 [AWQ](https://github.com/mit-han-lab/llm-awq) is a PTQ(Post-Training Quantization)
 method. It's an efficient and accurate low-bit weight quantization (INT3/4) for LLMs.
 
-Yi models can be AWQ quantized without a lot of efforts. 
+Yi models can be AWQ quantized without a lot of efforts.
 We provide a step-by-step tutorial below.
 
 To run AWQ, we will use [AutoAWQ](https://github.com/casper-hansen/AutoAWQ).
@@ -859,11 +808,86 @@ You can run a quantized model using the `eval_quantized_model.py`:
 python eval_quantized_model.py --model /quantized_model --trust_remote_code
 ```
 
-
 </ul>
 </details>
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
+### Deployment
+
+If you want to deploy Yi models, make sure you meet the software and hardware requirements.
+
+#### Software requirements
+
+Before using Yi quantized models, make sure you've installed the correct software listed below.
+
+| Model                     | Software                                                                                      |
+| ------------------------- | --------------------------------------------------------------------------------------------- |
+| Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi) |
+| Yi 8-bit quantized models | [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)   |
+
+#### Hardware requirements
+
+Before deploying Yi in your environment, make sure your hardware meets the following requirements.
+
+##### Chat models
+
+| Model             | Minimum VRAM |                  Recommended GPU Example                  |
+| ----------------- | ------------ | :-------------------------------------------------------: |
+| Yi-6B-Chat        | 15 GB        |         RTX 3090 <br> RTX 4090 <br> A10 <br> A30          |
+| Yi-6B-Chat-4bits  | 4 GB         |                  RTX 3060 <br> RTX 4060                   |
+| Yi-6B-Chat-8bits  | 8 GB         |                  RTX 3070 <br> RTX 4060                   |
+| Yi-34B-Chat       | 72 GB        |               4 x RTX 4090 <br> A800 (80GB)               |
+| Yi-34B-Chat-4bits | 20 GB        | RTX 3090 <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
+| Yi-34B-Chat-8bits | 38 GB        |      2 x RTX 3090 <br> 2 x RTX 4090 <br> A800 (40GB)      |
+
+Below are detailed minimum VRAM requirements under different batch use cases.
+
+| Model             | batch=1 | batch=4 | batch=16 | batch=32 |
+| ----------------- | ------- | ------- | -------- | -------- |
+| Yi-6B-Chat        | 12 GB   | 13 GB   | 15 GB    | 18 GB    |
+| Yi-6B-Chat-4bits  | 4 GB    | 5 GB    | 7 GB     | 10 GB    |
+| Yi-6B-Chat-8bits  | 7 GB    | 8 GB    | 10 GB    | 14 GB    |
+| Yi-34B-Chat       | 65 GB   | 68 GB   | 76 GB    | > 80 GB  |
+| Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
+| Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
+
+##### Base models
+
+| Model       | Minimum VRAM |        Recommended GPU Example         |
+| ----------- | ------------ | :------------------------------------: |
+| Yi-6B       | 15 GB        | RTX3090 <br> RTX4090 <br> A10 <br> A30 |
+| Yi-6B-200K  | 50 GB        |              A800 (80 GB)              |
+| Yi-34B      | 72 GB        |     4 x RTX 4090 <br> A800 (80 GB)     |
+| Yi-34B-200K | 200 GB       |            4 x A800 (80 GB)            |
+
+### Learning hub
+
+<details>
+<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here. ⬇️</summary> 
+<br> 
+  
+Welcome to the Yi learning hub!
+
+Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.
+
+The content you find here has been generously contributed by knowledgeable Yi experts and passionate enthusiasts. We extend our heartfelt gratitude for your invaluable contributions!
+
+At the same time, we also warmly invite you to join our collaborative effort by contributing to Yi. If you have already made contributions to Yi, please don't hesitate to showcase your remarkable work in the table below.
+
+With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
+
+#### Tutorials
+
+| Type  | Deliverable                                                                                                  | Date       | Author                                          |
+| ----- | ------------------------------------------------------------------------------------------------------------ | ---------- | ----------------------------------------------- |
+| Blog  | [本地运行零一万物 34B 大模型，使用 Llama.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)             | 2023-11-26 | [苏洋](https://github.com/soulteary)            |
+| Blog  | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   | 2023-11-30 | [Second State](https://github.com/second-state) |
+| Blog  | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                     | 2023-12-10 | [苏洋](https://github.com/soulteary)            |
+| Blog  | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)          | 2023-12-12 | [苏洋](https://github.com/soulteary)            |
+| Video | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)          | 2023-12-28 | 漆妮妮                                          |
+| Video | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05 | Fahd Mirza                                      |
+
+</details>
 
 # 🟢 Why Yi?
 
@@ -875,101 +899,8 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
     - [🛠️ Fine-tuning](#️-fine-tuning)
     - [API](#api)
 - [📌 Benchmarks](#-benchmarks)
-  - [📊 Base model performance](#-base-model-performance)
   - [📊 Chat model performance](#-chat-model-performance)
-  - [📊 Quantized chat model performance](#-quantized-chat-model-performance)
-
-
-### Deployment
-
-If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
-
-#### Software requirements
-
-Before using Yi quantized models, make sure you've installed the correct software listed below.
-
-| Model | Software
-|---|---
-Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
-Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
-
-#### Hardware requirements
-
-Before deploying Yi in your environment, make sure your hardware meets the following requirements.
-
-##### Chat models
-
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | RTX 3090 <br> RTX 4090 <br>  A10 <br> A30             |
-| Yi-6B-Chat-4bits     | 4 GB          | RTX 3060 <br>  RTX 4060                     |
-| Yi-6B-Chat-8bits     | 8 GB          | RTX 3070 <br> RTX 4060                     |
-| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
-| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
-
-Below are detailed minimum VRAM requirements under different batch use cases.
-
-|  Model                  | batch=1 | batch=4 | batch=16 | batch=32 |
-| ----------------------- | ------- | ------- | -------- | -------- |
-| Yi-6B-Chat              | 12 GB   | 13 GB   | 15 GB    | 18 GB    |
-| Yi-6B-Chat-4bits  | 4 GB    | 5 GB    | 7 GB     | 10 GB    |
-| Yi-6B-Chat-8bits  | 7 GB    | 8 GB    | 10 GB    | 14 GB    |
-| Yi-34B-Chat       | 65 GB   | 68 GB   | 76 GB    | > 80 GB   |
-| Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
-| Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
-
-##### Base models
-
-| Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | RTX3090 <br> RTX4090 <br> A10 <br> A30               |
-| Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
-| Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
-| Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
-
-### Learning hub
-
-<details>
-<summary> If you want to learn Yi, you can find a wealth of helpful educational resources here. ⬇️</summary> 
-<br> 
-  
-Welcome to the Yi learning hub! 
-
-Whether you're a seasoned developer or a newcomer, you can find a wealth of helpful educational resources to enhance your understanding and skills with Yi models, including insightful blog posts, comprehensive video tutorials, hands-on guides, and more.  
-
-The content you find here has been generously contributed by knowledgeable Yi experts and passionate enthusiasts. We extend our heartfelt gratitude for your invaluable contributions! 
-
-At the same time, we also warmly invite you to join our collaborative effort by contributing to Yi. If you have already made contributions to Yi, please don't hesitate to showcase your remarkable work in the table below.
-
-With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
-
-#### Tutorials
-
-| Type        | Deliverable                                            |      Date      |     Author     |
-|-------------|--------------------------------------------------------|----------------|----------------|
-| Blog        | [本地运行零一万物 34B 大模型，使用 Llama.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
-| Blog        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
-| Blog        | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
-| Blog        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
-| Video       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  漆妮妮  |
-| Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
-</details>
-
-
-# 🟢 Why Yi? 
-
-  - [🌎 Ecosystem](#-ecosystem)
-    - [💦 Upstream](#-upstream)
-    - [🌊 Downstream](#-downstream)
-      - [🔗 Serving](#-serving)
-      - [⚙️ Quantitation](#️-quantitation)
-      - [🛠️ Fine-tuning](#️-fine-tuning)
-      - [API](#api)
-  - [📌 Benchmarks](#-benchmarks)
-    - [📊 Chat model performance](#-chat-model-performance)
-    - [📊 Base model performance](#-base-model-performance)
- 
+  - [📊 Base model performance](#-base-model-performance)
 
 ## 🌎 Ecosystem
 
@@ -1047,116 +978,7 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 📊 Performance
-
-- [Base model performance](#-base-model-performance)
-- [Chat model performance](#-chat-model-performance)
-- [Quantized chat model performance](#-quantized-chat-model-performance)
-
-### Base model performance
-
-
-#### Objective evaluation
-
-- Yi-34B has surpassed all open-source models globally on the [C-Eval](https://cevalbenchmark.com/static/leaderboard.html) authoritative leaderboard. When compared to the benchmark GPT-4, Yi-34B demonstrates an absolute advantage in three major Chinese metrics: CMMLU, E-Eval, and Gaokao.
-
-| #   | Model                  | Creator           | Access       | Submission Date | Avg      | Avg(Hard) | STEM     | Social Science | Humanities | Others   |
-| --- | ---------------------- | ----------------- | ------------ | --------------- | -------- | --------- | -------- | -------------- | ---------- | -------- |
-| 0   | Qwen-72B               | Alibaba Cloud     | Weight       | 2023/11/30      | 82.8     | 64.7      | 77.1     | 91.7           | 84.7       | 82.9     |
-| 1   | **Yi-34B**             | **零一万物**      | **Weight**   | **2023/11/2**   | **81.4** | **58.7**  | **73.7** | **89.6**       | **84.6**   | **84.9** |
-| 2   | PCI-TransGPT           | 佳都科技          | API, Web     | 2024/1/4        | 80.4     | 62.5      | 75.4     | 89.2           | 81.7       | 80.3     |
-| 3   | OrionStar-Yi-34B-Chat  | OrionStarAI       | Weight       | 2023/11/22      | 78.1     | 55.8      | 70.1     | 88.0           | 80.7       | 80.9     |
-| 4   | YAYI2-30B              | 中科闻歌          | Weight       | 2023/12/18      | 75.3     | 53.1      | 67.2     | 83.8           | 80.6       | 76.8     |
-| 5   | xDAN-L2-Chat-lite-v1.0 | xDAN-AI           | API, Private | 2023/12/17      | 74.3     | 50.7      | 66.5     | 84.8           | 78.1       | 75.3     |
-| 6   | BlueLM-7B              | vivo              | Weight       | 2023/11/7       | 73.3     | 48.9      | 64.3     | 83.3           | 76.5       | 77.1     |
-| 7   | XVERSE-65B-2           | XVERSE Technology | Weight       | 2023/12/8       | 72.4     | 50.8      | 65.7     | 85.0           | 74.0       | 71.8     |
-| 8   | Qwen-14B               | Alibaba Cloud     | Weight       | 2023/9/22       | 72.1     | 53.7      | 65.7     | 85.4           | 75.3       | 68.4     |
-
-> According to the released performance of 2024-01-17.
-
-From a broader evaluation perspective, Yi-34B has also demonstrated outstanding performance in globally recognised evaluations such as MMLU (Massive Multitask Language Understanding) and BBH, which reflect the overall ability of models. It has outperformed other models in several metrics, including general ability, knowledge reasoning and reading comprehension.
-
-![base_fig](assets/img/yi_readme_base.png)
-
-| Model         |   MMLU   |  CMMLU   |  C-Eval  |  GAOKAO  |   BBH    | Common-sense Reasoning | Reading Comprehension | Math & Code |
-| :------------ | :------: | :------: | :------: | :------: | :------: | :--------------------: | :-------------------: | :---------: |
-|               |  5-shot  |  5-shot  |  5-shot  |  0-shot  | 3-shot@1 |           -            |           -           |      -      |
-| LLaMA2-34B    |   62.6   |    -     |    -     |    -     |   44.1   |          69.9          |         68.0          |    26.0     |
-| LLaMA2-70B    |   68.9   |   53.3   |    -     |   49.8   |   51.2   |          71.9          |         69.4          |    36.8     |
-| Baichuan2-13B |   59.2   |   62.0   |   58.1   |   54.3   |   48.8   |          64.3          |         62.4          |    23.0     |
-| Qwen-14B      |   66.3   |   71.0   |   72.1   |   62.5   |   53.4   |          73.3          |         72.5          |    39.8     |
-| Skywork-13B   |   62.1   |   61.8   |   60.6   |   68.1   |   41.7   |          72.4          |         61.4          |    24.9     |
-| InternLM-20B  |   62.1   |   59.0   |   58.8   |   45.5   |   52.5   |          78.3          |           -           |    30.4     |
-| Aquila-34B    |   67.8   |   71.4   |   63.1   |    -     |    -     |           -            |           -           |      -      |
-| Falcon-180B   |   70.4   |   58.0   |   57.8   |   59.0   |   54.0   |          77.3          |         68.8          |    34.0     |
-| Yi-6B         |   63.2   |   75.5   |   72.0   |   72.2   |   42.8   |          72.3          |         68.7          |    19.8     |
-| Yi-6B-200K    |   64.0   |   75.3   |   73.5   |   73.9   |   42.0   |          72.0          |         69.1          |    19.0     |
-| **Yi-34B**    | **76.3** | **83.7** |   81.4   |   82.8   | **54.3** |        **80.1**        |         76.4          |    37.1     |
-| Yi-34B-200K   |   76.1   |   83.6   | **81.9** | **83.4** |   52.7   |          79.7          |       **76.6**        |    36.3     |
-
-> - Our prompt and post-processing strategy remains consistent with the original benchmark, and greedy decoding is employed during evaluation without any post-processing for the generated content. For scores that were not reported by the original authors (including scores reported with different settings), we try to get results with our pipeline.
-> - To assess common sense reasoning, we included PIQA, SIQA, HellaSwag, WinoGrande, ARC, OBQA, and CSQA.
-> - SquAD, QuAC, and BoolQ were incorporated to evaluate reading comprehension.(CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration.)
-> - We introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
-
-### Chat model performance
-
-#### Evaluation strategy
-
-Our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text. Some models are not well-suited to produce output in the specific format required by instructions in a few datasets, which leads to suboptimal results.
-
-#### Objective Evaluation
-
-- The Yi-34B-Chat model performed exceptionally well in the [SuperCLUE](https://www.superclueai.com/) Chinese Large-scale Model Benchmark Evaluation.
-
-![chat_fig](assets/img/yi_readme_chat.png)
-
-| Model                   | MMLU      | MMLU      | CMMLU     | CMMLU     | C-Eval(val)<sup>\*</sup> | C-Eval(val)<sup>\*</sup> | Truthful QA | BBH       | BBH       | GSM8k     | GSM8k     |
-| ----------------------- | --------- | --------- | --------- | --------- | ------------------------ | ------------------------ | ----------- | --------- | --------- | --------- | --------- |
-|                         | 0-shot    | 5-shot    | 0-shot    | 5-shot    | 0-shot                   | 5-shot                   | 0-shot      | 0-shot    | 3-shot    | 0-shot    | 4-shot    |
-| LLaMA2-13B-Chat         | 50.88     | 47.33     | 27.47     | 35.08     | 27.93                    | 35.88                    | 36.84       | 32.90     | 58.22     | 36.85     | 2.73      |
-| LLaMA2-70B-Chat         | 59.42     | 59.86     | 36.10     | 40.99     | 34.99                    | 41.31                    | 53.95       | 42.36     | 58.53     | 47.08     | 58.68     |
-| Baichuan2-13B-Chat      | 55.09     | 50.14     | 58.64     | 59.47     | 56.02                    | 54.75                    | 48.98       | 38.81     | 47.15     | 45.72     | 23.28     |
-| Qwen-14B-Chat           | 63.99     | 64.98     | 67.73     | 70.57     | 66.12                    | 70.06                    | 52.49       | 49.65     | 54.98     | 59.51     | 61.18     |
-| InternLM-Chat-20B       | 55.55     | 57.42     | 53.55     | 53.75     | 51.19                    | 53.57                    | 51.75       | 42.41     | 36.68     | 15.69     | 43.44     |
-| AquilaChat2-34B v1.2    | 65.15     | 66.70     | 67.51     | 70.02     | 82.99                    | 89.38                    | 64.33       | 20.12     | 34.28     | 11.52     | 48.45     |
-| Yi-6B-Chat              | 58.24     | 60.99     | 69.44     | 74.71     | 68.80                    | 74.22                    | 50.58       | 39.70     | 47.15     | 38.44     | 44.88     |
-| Yi-6B-Chat-8bits(GPTQ)  | 58.29     | 60.96     | 69.21     | 74.69     | 69.17                    | 73.85                    | 49.85       | 40.35     | 47.26     | 39.42     | 44.88     |
-| Yi-6B-Chat-4bits(AWQ)   | 56.78     | 59.89     | 67.70     | 73.29     | 67.53                    | 72.29                    | 50.29       | 37.74     | 43.62     | 35.71     | 38.36     |
-| Yi-34B-Chat             | **67.62** | 73.46     | **79.11** | **81.34** | 77.04                    | 78.53                    | 62.43       | 51.41     | **71.74** | **71.65** | **75.97** |
-| Yi-34B-Chat-8bits(GPTQ) | 66.24     | **73.69** | 79.05     | 81.23     | 76.82                    | 78.97                    | 61.84       | **52.08** | 70.97     | 70.74     | 75.74     |
-| Yi-34B-Chat-4bits(AWQ)  | 65.77     | 72.42     | 78.21     | 80.50     | 75.71                    | 77.27                    | 61.84       | 48.30     | 69.39     | 70.51     | 74.00     |
-
-> We evaluated various benchmarks using both zero-shot and few-shot methods, except for TruthfulQA
->
-> .<strong>\*</strong>: C-Eval results are evaluated on the validation datasets
-
-#### Alignment Evaluation
-
-- We have evaluated our model on [AlpacaEval 2.0](https://tatsu-lab.github.io/alpaca_eval/) and Yi-34B-Chat surpass GPT-4(0314) and GPT-4.
-
-| Model Name                         | Win Rate | Length |
-| ---------------------------------- | -------- | ------ |
-| GPT-4 Turbo                        | 50.00%   | 2049   |
-| Yi 34B Chat                        | 29.66%   | 2123   |
-| GPT-4                              | 23.58%   | 1365   |
-| GPT-4 0314                         | 22.07%   | 1371   |
-| Mistral Medium                     | 21.86%   | 1500   |
-| XwinLM 70b V0.1                    | 21.81%   | 1775   |
-| InternLM2 Chat 20B                 | 21.75%   | 2373   |
-| Evo v2 7B                          | 20.83%   | 1754   |
-| PairRM+Tulu 2+DPO 70B (best-of-16) | 18.64%   | 1607   |
-| Mixtral 8x7B v0.1                  | 18.26%   | 1465   |
-| XwinLM 13b V0.1                    | 17.43%   | 1894   |
-| Claude 2                           | 17.19%   | 1069   |
-| Claude                             | 16.99%   | 1082   |
-| Gemini Pro                         | 16.85%   | 1315   |
-
-> According to the released performance of 2024-01-17.
-
-### Quantized chat model performance
-
-We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Evaluation results on various benchmarks have shown that the quantized models have **negligible** losses. Additionally, they reduce the memory footprint size.
+## 📌 Benchmarks
 
 - [📊 Chat model performance](#-chat-model-performance)
 - [📊 Base model performance](#-base-model-performance)
@@ -1165,7 +987,7 @@ We also provide both 4-bit (AWQ) and 8-bit (GPTQ) quantized Yi chat models. Eval
 
 Yi-34B-Chat model demonstrates exceptional performance, ranking first among all existing open-source models in the benchmarks including MMLU, CMMLU, BBH, GSM8k, and more.
 
-![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true)
 
 <details>
 <summary> Evaluation methods and challenges. ⬇️ </summary>
@@ -1175,14 +997,15 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 - **Evaluation strategy**: our evaluation strategy involves generating responses while following instructions explicitly or implicitly (such as using few-shot examples). We then isolate relevant answers from the generated text.
 - **Challenges faced**: some models are not well-suited to produce output in the specific format required by instructions in few datasets, which leads to suboptimal results.
 
-<strong>*</strong>: C-Eval results are evaluated on the validation datasets
+<strong>\*</strong>: C-Eval results are evaluated on the validation datasets
+
 </details>
 
 ### 📊 Base model performance
 
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
 
-![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png)
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
 
 <details>
 <summary> Evaluation methods. ⬇️</summary>
@@ -1195,7 +1018,6 @@ The Yi-34B and Yi-34B-200K models stand out as the top performers among open-sou
 - **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
 - **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
 </details>
-
 
 # 🟢 Who can use Yi?
 
@@ -1271,4 +1093,3 @@ license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models ar
 For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
-```
