@@ -429,7 +429,7 @@ Then you can see an output similar to the one below. 🥳
 -v &lt;your-model-path&gt;: /models
 ghcr.io/01-ai/yi:latest
 </code></pre>
-<p>或者，我们也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
+<p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
 <h4>步骤2: 执行推理</h4>
     <p>我们可以像下面这样，使用“Yi 的聊天模型”或“基础模型”来执行推理。</p>
