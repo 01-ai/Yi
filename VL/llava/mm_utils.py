@@ -7,7 +7,8 @@ from transformers import StoppingCriteria
 from llava.model.constants import IMAGE_TOKEN_INDEX
 
 import soundfile as sf
-
+from transformers import AutoTokenizer
+from llava.model import *
     
 def load_image_from_base64(image):
     return Image.open(BytesIO(base64.b64decode(image)))
@@ -61,30 +62,27 @@ def get_model_name_from_path(model_path):
         return model_paths[-1]
 
 
-# class KeywordsStoppingCriteria(StoppingCriteria):
-#     def __init__(self, keywords, tokenizer, input_ids):
-#         self.keywords = keywords
-#         self.keyword_ids = []
-#         for keyword in keywords:
-#             cur_keyword_ids = tokenizer(keyword).input_ids
-#             if len(cur_keyword_ids) > 1 and cur_keyword_ids[0] == tokenizer.bos_token_id:
-#                 cur_keyword_ids = cur_keyword_ids[1:]
-#             self.keyword_ids.append(torch.tensor(cur_keyword_ids))
-#         self.tokenizer = tokenizer
-#         self.start_len = input_ids.shape[1]
+def load_pretrained_model(model_path, load_8bit=False, load_4bit=False, device_map="auto", multimodal="IMAGE"):
+    kwargs = {"device_map": device_map}
+    kwargs['torch_dtype'] = torch.bfloat16
 
-#     def __call__(self, output_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs) -> bool:
-#         assert output_ids.shape[0] == 1, "Only support batch size 1 (yet)"  # TODO
-#         offset = min(output_ids.shape[1] - self.start_len, 3)
-#         self.keyword_ids = [keyword_id.to(output_ids.device) for keyword_id in self.keyword_ids]
-#         for keyword_id in self.keyword_ids:
-#             if output_ids[0, -keyword_id.shape[0]:] == keyword_id:
-#                 return True
-#         outputs = self.tokenizer.batch_decode(output_ids[:, -offset:], skip_special_tokens=True)[0]
-#         for keyword in self.keywords:
-#             if keyword in outputs:
-#                 return True
-#         return False
+    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
+    model = LlavaLlamaForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
+    image_processor = None
+    model.resize_token_embeddings(len(tokenizer))
+    vision_tower = model.get_vision_tower()
+
+    if not vision_tower.is_loaded:
+        vision_tower.load_model()
+    vision_tower.to(device='cuda', dtype=torch.bfloat16)
+    image_processor = vision_tower.image_processor
+
+    if hasattr(model.config, "max_sequence_length"):
+        context_len = model.config.max_sequence_length
+    else:
+        context_len = 2048
+
+    return tokenizer, model, image_processor, context_len
 
 class KeywordsStoppingCriteria(StoppingCriteria):
     def __init__(self, keywords, tokenizer, input_ids):

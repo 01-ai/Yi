@@ -8,7 +8,7 @@ from llava.conversation import conv_templates, SeparatorStyle
 from transformers import AutoTokenizer
 from llava.model import *
 from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria
-from llava.mm_utils import expand2square
+from llava.mm_utils import expand2square, load_pretrained_model
 
 
 def disable_torch_init():
@@ -20,36 +20,12 @@ def disable_torch_init():
     setattr(torch.nn.LayerNorm, "reset_parameters", lambda self: None)
 
 
-def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, load_4bit=False, device_map="auto", multimodal="IMAGE"):
-    kwargs = {"device_map": device_map}
-    kwargs['torch_dtype'] = torch.float16
-
-    tokenizer = AutoTokenizer.from_pretrained(model_path, use_fast=False)
-    model = LlavaLlamaForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
-    image_processor = None
-    model.resize_token_embeddings(len(tokenizer))
-    vision_tower = model.get_vision_tower()
-
-    if not vision_tower.is_loaded:
-        vision_tower.load_model()
-    vision_tower.to(device='cuda', dtype=torch.float16)
-    image_processor = vision_tower.image_processor
-
-    if hasattr(model.config, "max_sequence_length"):
-        context_len = model.config.max_sequence_length
-    else:
-        context_len = 2048
-
-    return tokenizer, model, image_processor, context_len
-
-
 def single_infer(args):
     disable_torch_init()
     model_path = os.path.expanduser(args.model_path)
     key_info['model_path'] = model_path
-    # import pdb;pdb.set_trace()
     model_name = get_model_name_from_path(model_path)
-    tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, args.model_base, model_name)
+    tokenizer, model, image_processor, context_len = load_pretrained_model(model_path)
     
     image_file = args.image_file
     qs = args.question
