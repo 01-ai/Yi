@@ -64,6 +64,7 @@
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
     - [llama.cpp](#quick-start---llamacpp)
+    - [conda-lock](#quick-start---conda-lock)
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
@@ -251,6 +252,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 - [Quick start](#quick-start)
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
+  - [conda-lock](#quick-start---conda-lock)
   - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
@@ -275,7 +277,7 @@ If you prefer to deploy Yi models locally,
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
     - [Docker](#quick-start---docker)
-    - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
+    - [conda-lock](#quick-start---conda-lock)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
 
@@ -435,7 +437,20 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
+### Quick start - conda-lock
 
+<details>
+<summary> Conda-lock is a tool used to generate fully reproducible lock files for conda environments. ⬇️ </summary> 
+
+<br>
+You can refer to conda-lock.yml for the exact versions of the dependencies. Additionally, we utilize micromamba for installing these dependencies.
+<br>
+To install the dependencies, please follow these steps:
+
+- Install micromamba by following the instructions available here.
+
+- Execute micromamba install -y -n yi -f conda-lock.yml to create a conda environment named yi and install the necessary dependencies.
+</details>
 
 ### Quick start - llama.cpp
 <details>
