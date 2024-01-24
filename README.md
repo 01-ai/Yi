@@ -82,7 +82,7 @@
     - [📊 Chat model performance](#-chat-model-performance)
 - [🟢 Who can use Yi?](#-who-can-use-yi)
 - [🟢 Misc.](#-misc)
-  - [Ackknowledgements](#acknowledgments)
+  - [Acknowledgements](#acknowledgments)
   - [📡 Disclaimer](#-disclaimer)
   - [🪪 License](#-license)
 
