@@ -107,24 +107,24 @@
 
 - 🤖 Yi 系列模型是 [01.AI](https://01.ai/) 从零训练的新一代开源大语言模型。
 
-- 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大型语言模型之一。Yi 系列模型在语言理解、常识推理、阅读理解等方面展现出巨大的潜力。例如，
+- 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大型语言模型之一。本系列模型在语言认知、常识推理、阅读理解等方面展现出巨大的潜力。例如，
 
   - 英语语言能力方面，Yi系列模型在2023年12月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型（LLM），如 LLaMA2-chat-70B、Claude 2 和 ChatGPT。
 
-  - 中文语言能力方面，Yi系列模型在2023年10月的 [SuperCLUE](https://www.superclueai.com/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型，如百度的 ERNIE、Qwen 和 Baichuan。
-  - 🙏 （感谢 LLaMA ）感谢 Transformer 和 LLaMA 开源社区，减轻了 [01.AI](https://01.ai/) 从零开始构建大模型的压力，[01.AI](https://01.ai/) 也能够在AI生态系统内使用相同的工具。
+  - 中文语言能力方面，Yi系列模型在2023年10月的 [SuperCLUE](https://www.superclueai.com/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型，如百度ERNIE、Qwen 和 Baichuan。
+  - 🙏 （感谢 LLaMA ）感谢 Transformer 和 LLaMA 开源社区，简化了 [01.AI](https://01.ai/) 从零开始构建大模型的工作，[01.AI](https://01.ai/) 也能够在人工智能生态系统中使用相同的工具。
 
   <details style="display: inline;"><summary> 如果你对 Yi 采用LLaMA架构及其许可使用政策感兴趣，请参阅 <span style="color:  green;"> Yi 与 LLaMA 的关系</span> ⬇️</summary> <ul> <br>
 > 💡 简短总结
 > 
-> Yi系列模型采用模型架构与LLaMA相同的，但它们**不是**LLaMA的衍生品。
+> Yi系列模型采用模型架构与LLaMA相同，但它们**不是**LLaMA的衍生品。
 
 
 - Yi和LLaMA都基于Transformer结构。自2018年以来，Transformer一直是大语言模型的标准架构。
 
 - 在Transformer架构的基础上，LLaMA凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石，因此LLaMA成为Yi等模型的公认基础框架。
 
-- 得益于Transformer和LLaMA架构，其他模型可以减轻减少从零开始构建模型的压力，并能够在各自的生态系统中使用相同的工具。
+- 得益于Transformer和LLaMA架构，其他模型可以简化从零开始构建模型的工作，并能够在各自的生态系统中使用相同的工具。
 
 - 然而，Yi系列模型不是LLaMA的衍生品，因为它们不使用LLaMA的权重。
 
