@@ -63,10 +63,11 @@
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
+    - [docker](#quick-start---docker)
     - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
     - [Web demo](#web-demo)
-  - [Fine tune](#fine-tune)
+  - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
   - [Learning hub](#learning-hub)
@@ -130,14 +131,14 @@
 ## 🎉 News 
 
 <details open>
-  <summary>🎯 <b>2024/01/23</b>: The Yi-VL model, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are resources open to the public.</summary>
+  <summary>🎯 <b>2024/01/23</b>: The Yi-VL model, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are open-sourced and available to the public.</summary>
   <br>
-  <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> in English and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> in Chinese (based on data available up to January 2024).</li>
+  <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> (based on data available up to January 2024).</li>
 </details>
 
 
 <details>
-<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">Chat models</a> are resources open to the public.</summary>
+<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">Chat models</a> are open-sourced and available to the public.</summary>
 <br>This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
 
 - `Yi-34B-Chat`
@@ -166,13 +167,13 @@ You can try some of them interactively at:
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base model, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are resources open to the public.</summary>
+<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base models, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are open-sourced and available to the public.</summary>
 <br>This release contains two base models with the same parameter sizes as the previous
 release, except that the context window is extended to 200K.
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base model, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are resources open to the public.</summary>
+<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base models, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are open-sourced and available to the public.</summary>
 <br>The first public release contains two bilingual (English/Chinese) base models
 with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
 sequence length and can be extended to 32K during inference time.
@@ -246,12 +247,13 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 # 🟢 How to use Yi?
 
 - [Quick start](#quick-start)
-  - [Choose your path](#choose-your-parth)
+  - [Choose your path](#choose-your-path)
   - [pip](#pip)
+  - [docker](#quick-start---docker)
   - [conda-lock](#quick-start---conda-lock)
   - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
-- [Fine tune](#fine-tune)
+- [Fine tune](#finetuning)
 - [Quantization](#quantization)
 - [Deployment](#deployment)
 - [Learning hub](#learning-hub)
@@ -601,7 +603,7 @@ You can access the web UI by entering the address provided in the console into y
 
  ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
-### Finetuning
+### Fine-tuning
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
