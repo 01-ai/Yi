@@ -67,7 +67,7 @@
   - [📌 介绍](#-介绍)
   - [🎯 模型](#-models)
     - [聊天模型](#聊天模型)
-    - [基础模型](#基础模型)
+    - [基座模型](#基座模型)
     - [其他信息](#其他信息)
   - [🎉 最新动态](#-最新动态)
 - [🟢 How to use Yi?](#-how-to-use-yi)
@@ -105,14 +105,14 @@
 
 ## 📌 介绍
 
-- 🤖 Yi 系列模型是 01.AI 从零训练的新一代开源大语言模型。
+- 🤖 Yi 系列模型是 [01.AI](https://01.ai/) 从零训练的新一代开源大语言模型。
 
 - 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大型语言模型之一。Yi 系列模型在语言理解、常识推理、阅读理解等方面展现出巨大的潜力。例如，
 
   - 英语语言能力方面，Yi系列模型在2023年12月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型（LLM），如 LLaMA2-chat-70B、Claude 2 和 ChatGPT。
 
   - 中文语言能力方面，Yi系列模型在2023年10月的 [SuperCLUE](https://www.superclueai.com/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型，如百度的 ERNIE、Qwen 和 Baichuan。
-  - 🙏 （感谢 LLaMA ）感谢 Transformer 和 LLaMA 开源社区，减轻了 01.AI 从零开始构建大模型的压力，01.AI 也能够在AI生态系统内使用相同的工具。
+  - 🙏 （感谢 LLaMA ）感谢 Transformer 和 LLaMA 开源社区，减轻了 [01.AI](https://01.ai/) 从零开始构建大模型的压力，[01.AI](https://01.ai/) 也能够在AI生态系统内使用相同的工具。
 
   <details style="display: inline;"><summary> 如果你对 Yi 采用LLaMA架构及其许可使用政策感兴趣，请参阅 <span style="color:  green;"> Yi 与 LLaMA 的关系</span> ⬇️</summary> <ul> <br>
 > 💡 简短总结
@@ -130,7 +130,7 @@
 
   - 由于大多数开源模型都采用了LLaMA的结构，决定模型性能的关键因素是训练数据集、训练流水线和训练基础设施。
 
-  - 01.AI 用独特的方式开发了Yi，从零开始独立创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此Yi系列模型在性能上取得了卓越的成绩，在2023年12月的[Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)上排名仅次于GPT4，超过了LLaMA。
+  - [01.AI](https://01.ai/) 用独特的方式开发了Yi，从零开始独立创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此Yi系列模型在性能上取得了卓越的成绩，在2023年12月的[Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)上排名仅次于GPT4，超过了LLaMA。
 </ul>
 </details>
 
@@ -156,7 +156,7 @@ Yi-6B-Chat-4bits |	• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Ch
 Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
 
 <sub><sup> - 4-bit系列模型由AWQ量化。<br> - 8-bit系列模型由GPTQ量化。<br> - 所有量化模型都具有较低的使用门槛，因为它们可以在消费级GPU（例如3090、4090）上部署。</sup></sub>
-### 基础模型
+### 基座模型
 
 | 模型 | 下载 | 
 |---|---|
@@ -169,7 +169,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 ### 其他信息
 
-- 聊天和基础模型：
+- 聊天和基座模型：
 
   - 6B 系列的模型适合个人和学术使用。
 
@@ -185,7 +185,8 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   
   <details style="display: inline;"><summary>关于聊天模型的局限性，见以下解释。 ⬇️</summary> 
    <ul>
-   <br> 01.AI 发布的聊天模型在独家训练中采用了监督微调（SFT）技术。与其它标准聊天模型相比，01.AI 的模型生成的回复更加多样化，因此适用于各种下游任务，比如创意场景。此外，回复更加多样化，有利于提高回复的质量，对后续的强化学习（RL）训练帮助很大。
+   <br> <a href="https://01.ai/">01.AI</a> 发布的聊天模型在独家训练中采用了监督微调（SFT）技术。与其他标准聊天模型相比， <a href="https://01.ai/">01.AI</a> 的模型生成的回复更加多样化，因此适用于各种下游任务，比如创意场景。此外，回复更加多样化，有利于提高回复的质量，对后续的强化学习（RL）训练帮助很大。
+
     <br>然而，回复多样化，也可能会放大某些现有的问题，包括：
       <li>虚构：指的是模型生成了事实错误或不连贯的信息。模型的回复更加多样化，则更有可能出现虚构的现象，这些虚构的回复可能不是基于准确的数据或逻辑推理。</li>
       <li>重新生成的回复不一致：重新生成回复或者对回复进行采样，结果中可能不一致。多样性增多，即使在相似的输入条件下，结果也会有所不同。</li>
@@ -201,7 +202,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 <details>
 <summary>🎯 <b>2023/11/23</b>: 聊天模型正式向公众开放。</summary>
 
-发布了两个聊天模型，都是基于之前发布的两个基础模型，也发布了由 GPTQ 量化的两个8位模型和由 AWQ 量化的两个4位模型。
+发布了两个聊天模型，都是基于之前发布的两个基座模型，也发布了由 GPTQ 量化的两个8位模型和由 AWQ 量化的两个4位模型。
 
 - `Yi-34B-Chat`
 - `Yi-34B-Chat-4bits`
@@ -230,16 +231,16 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/05</b>: <code>Yi-6B-200K</code> 和 <code>Yi-34B-200K</code>的基础模型发布。 </summary>
+<summary>🎯 <b>2023/11/05</b>: <code>Yi-6B-200K</code> 和 <code>Yi-34B-200K</code> 的基座模型发布。 </summary>
 
-发布了两个与之前发布参数规模相同的基础模型，只是上下文窗口扩展到了200K。
+发布了两个与之前发布参数规模相同的基座模型，只是上下文窗口扩展到了200K。
 
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/02</b>: <code>Yi-6B</code> 和 <code>Yi-34B</code>的基础模型发布。</summary>
+<summary>🎯 <b>2023/11/02</b>: <code>Yi-6B</code> 和 <code>Yi-34B</code> 的基座模型发布。</summary>
 
-首次公开发布了两个双语（英语/中文）基础模型，参数规模分别为6B和34B。两者均以4K序列长度进行训练，并在推理时可扩展到32K。
+首次公开发布了两个双语（英语/中文）基座模型，参数规模分别为6B和34B。两者均以4K序列长度进行训练，并在推理时可扩展到32K。
 
 </details>
 
