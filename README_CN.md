@@ -211,7 +211,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 - `Yi-6B-Chat-4bits`
 - `Yi-6B-Chat-8bits`
 
-你可以通过以下链接，参与其中一些模型的交互式体验：
+你可以访问以下链接进行试用：
 
 - [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
 - [Replicate](https://replicate.com/01-ai)
