@@ -71,9 +71,9 @@
     - [Other info](#other-info)
   - [🎉 News](#-news)
 - [🟢 How to use Yi?](#-how-to-use-yi)
-  - [Quick start](#quick-start)
-    - [Choose your path](#choose-your-parth)
-    - [pip](#pip)
+  - [快速开始](#快速开始)
+    - [选择你的路线](#选择你的路线)
+    - [pip](#快速开始---pip)
     - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
     - [Web demo](#web-demo)
   - [Fine tune](#fine-tune)
@@ -254,9 +254,9 @@ sequence length and can be extended to 32K during inference time.
 
 # 🟢 How to use Yi?
 
-- [Quick start](#quick-start)
-  - [Choose your path](#choose-your-parth)
-  - [pip](#pip)
+- [快速开始](#快速开始)
+  - [选择你的路线](#选择你的路线)
+  - [pip](#快速开始---pip)
   - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
@@ -278,7 +278,7 @@ sequence length and can be extended to 32K during inference time.
 
 如果你更喜欢在本地部署Yi模型，
 
-  - 🙋‍♀️ 并且你有足够的资源（例如，NVIDIA A800 80GB），你可以选择以下方法之一：
+  - 🙋‍♀️ 并且你有**足够**的资源（例如，NVIDIA A800 80GB），你可以选择以下方法之一：
     - [pip](#pip)
     - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
@@ -294,7 +294,7 @@ sequence length and can be extended to 32K during inference time.
 如果你想探索Yi的更多功能，你可以采用以下方法之一：
 
 - Yi APIs (Yi官方)
-  - [早期申请](https://x.com/01AI_Yi/status/1735728934560600536?s=20)的部分申请者已经获得了访问权限。敬请期待下一轮访问申请的信息！ 
+  - [早期访问](https://x.com/01AI_Yi/status/1735728934560600536?s=20)的部分申请者已经获得了访问权限。敬请期待下一轮访问申请的信息！ 
 
 - [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
 
@@ -325,7 +325,7 @@ sequence length and can be extended to 32K during inference time.
  
 - 确保安装了Python 3.10或更高版本。
 
-- 如果你想运行其他Yi模型，请参阅[部署要求](#deployment)
+- 如果你想运行其他Yi模型，请参阅[部署要求](#部署)
 
 #### Step 1: 准备你的环境 
 
