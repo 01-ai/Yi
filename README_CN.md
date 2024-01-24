@@ -70,7 +70,7 @@
     - [Base models](#base-models)
     - [Other info](#other-info)
   - [🎉 News](#-news)
-- [🟢 How to use Yi?](#-如何使用-Yi)
+- [🟢 如何使用 Yi?](#-如何使用-Yi)
   - [快速开始](#快速开始)
     - [选择你的路线](#选择你的路线)
     - [pip](#快速开始---pip)
@@ -289,7 +289,7 @@ sequence length and can be extended to 32K during inference time.
 
 如果你不想在本地部署 Yi 模型，你可以使用以下任何一种方式来探索 Yi 的能力。
 
-##### 🙋‍♀️ 通过API来使用 Yi
+##### 🙋‍♀️ 通过 API 来使用 Yi
 
 如果你想探索 Yi 的更多功能，你可以采用以下方法之一：
 
