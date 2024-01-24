@@ -124,8 +124,63 @@
 </ul>
 </details>
 
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
+## 🎉 News 
+
+<details open>
+  <summary>🎯 <b>2024/01/23</b>: The Yi-VL Model, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are available to the public.</summary>
+  <br>
+  <ul>
+    <li>Yi Visual Language (Yi-VL) model is the open-source, multimodal version of the Yi Large Language Model (LLM) series, enabling content comprehension, recognition, and multi-round conversations about images.</li>
+    <li><code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> is the <strong>first</strong> open-source 34B vision language model worldwide and demonstrates exceptional performance.
+    <li><code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including MMMU in English and CMMMU in Chinese (based on data available up to January 2024).</li>
+  </ul>
+</details>
 
 
+<details>
+<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">The Chat models</a> are open to public.</summary>
+<br>This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
+
+- `Yi-34B-Chat`
+- `Yi-34B-Chat-4bits`
+- `Yi-34B-Chat-8bits`
+- `Yi-6B-Chat`
+- `Yi-6B-Chat-4bits`
+- `Yi-6B-Chat-8bits`
+
+You can try some of them interactively at:
+
+- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+- [Replicate](https://replicate.com/01-ai)
+</details>
+
+<details>
+  <summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">v2.1</a>.</summary>
+</details>
+
+<details> 
+<summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
+<br>Application form:
+
+- [English](https://cn.mikecrm.com/l91ODJf)
+- [Chinese](https://cn.mikecrm.com/gnEZjiQ)
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base model</a> of <code>Yi-6B-200K</code> and <code>Yi-34B-200K</code> have been released to the public.</summary>
+<br>This release contains two base models with the same parameter sizes as the previous
+release, except that the context window is extended to 200K.
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base model</a> of <code>Yi-6B</code> and <code>Yi-34B</code> are accessible to the public.</summary>
+<br>The first public release contains two bilingual (English/Chinese) base models
+with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
+sequence length and can be extended to 32K during inference time.
+
+</details>
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -190,58 +245,6 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 🎉 News 
-
-<details>
-<summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
-
-This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
-
-- `Yi-34B-Chat`
-- `Yi-34B-Chat-4bits`
-- `Yi-34B-Chat-8bits`
-- `Yi-6B-Chat`
-- `Yi-6B-Chat-4bits`
-- `Yi-6B-Chat-8bits`
-
-You can try some of them interactively at:
-
-- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
-- [Replicate](https://replicate.com/01-ai)
-</details>
-
-<details>
-<summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to v2.1.</summary>
-</details>
-
-<details> 
-<summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
-
-Application form:
-
-- [English](https://cn.mikecrm.com/l91ODJf)
-- [Chinese](https://cn.mikecrm.com/gnEZjiQ)
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/05</b>: The base model of <code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>.</summary>
-
-This release contains two base models with the same parameter sizes as the previous
-release, except that the context window is extended to 200K.
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/02</b>: The base model of <code>Yi-6B</code> and <code>Yi-34B</code>.</summary>
-
-The first public release contains two bilingual (English/Chinese) base models
-with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
-sequence length and can be extended to 32K during inference time.
-
-</details>
-
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
 
