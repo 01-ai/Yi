@@ -2501,7 +2501,7 @@ package:
   category: main
   optional: false
 - name: transformers
-  version: 4.35.0
+  version: 4.36.0
   manager: conda
   platform: linux-64
   dependencies:
