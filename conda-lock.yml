@@ -2520,7 +2520,7 @@ package:
     safetensors: '>=0.3.1'
     tokenizers: '>=0.14,<0.15'
     tqdm: '>=4.27'
-  url: https://conda.anaconda.org/conda-forge/noarch/transformers-4.35.0-pyhd8ed1ab_0.conda
+  url: https://conda.anaconda.org/conda-forge/noarch/transformers-4.36.0-pyhd8ed1ab_0.conda
   hash:
     md5: d00f8b25d116ff7c5be94e7b3cf5c3d6
     sha256: 3836d0d338ce6a713b069270deaba44e352f587f09c02015aaa62e3f2ee375b6
