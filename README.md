@@ -130,18 +130,14 @@
 ## 🎉 News 
 
 <details open>
-  <summary>🎯 <b>2024/01/23</b>: The Yi-VL Model, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are available to the public.</summary>
+  <summary>🎯 <b>2024/01/23</b>: The Yi-VL model, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are resources open to the public.</summary>
   <br>
-  <ul>
-    <li>Yi Visual Language (Yi-VL) model is the open-source, multimodal version of the Yi Large Language Model (LLM) series, enabling content comprehension, recognition, and multi-round conversations about images.</li>
-    <li><code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> is the <strong>first</strong> open-source 34B vision language model worldwide and demonstrates exceptional performance.
-    <li><code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including MMMU in English and CMMMU in Chinese (based on data available up to January 2024).</li>
-  </ul>
+  <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> in English and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> in Chinese (based on data available up to January 2024).</li>
 </details>
 
 
 <details>
-<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">The Chat models</a> are open to public.</summary>
+<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">Chat models</a> are resources open to the public.</summary>
 <br>This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
 
 - `Yi-34B-Chat`
@@ -170,13 +166,13 @@ You can try some of them interactively at:
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base model</a> of <code>Yi-6B-200K</code> and <code>Yi-34B-200K</code> have been released to the public.</summary>
+<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base model, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are resources open to the public.</summary>
 <br>This release contains two base models with the same parameter sizes as the previous
 release, except that the context window is extended to 200K.
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base model</a> of <code>Yi-6B</code> and <code>Yi-34B</code> are accessible to the public.</summary>
+<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base model, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are resources open to the public.</summary>
 <br>The first public release contains two bilingual (English/Chinese) base models
 with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
 sequence length and can be extended to 32K during inference time.
@@ -440,16 +436,15 @@ ghcr.io/01-ai/yi:latest
 ### Quick start - conda-lock
 
 <details>
-<summary> Conda-lock is a tool used to generate fully reproducible lock files for conda environments. ⬇️ </summary> 
-
+<summary>You can use <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> to generate fully reproducible lock files for conda environments. ⬇️</summary>
 <br>
-You can refer to conda-lock.yml for the exact versions of the dependencies. Additionally, we utilize micromamba for installing these dependencies.
+You can refer to <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a>  for the exact versions of the dependencies. Additionally, we utilize <code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code> for installing these dependencies.
 <br>
 To install the dependencies, please follow these steps:
 
-- Install micromamba by following the instructions available here.
+1. Install micromamba by following the instructions available <a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">here</a>.
 
-- Execute micromamba install -y -n yi -f conda-lock.yml to create a conda environment named yi and install the necessary dependencies.
+2. Execute <code>micromamba install -y -n yi -f conda-lock.yml</code> to create a conda environment named <code>yi</code> and install the necessary dependencies.
 </details>
 
 ### Quick start - llama.cpp
