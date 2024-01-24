@@ -70,7 +70,7 @@
     - [Base models](#base-models)
     - [Other info](#other-info)
   - [🎉 News](#-news)
-- [🟢 How to use Yi?](#-how-to-use-yi)
+- [🟢 How to use Yi?](#-如何使用-Yi)
   - [快速开始](#快速开始)
     - [选择你的路线](#选择你的路线)
     - [pip](#快速开始---pip)
@@ -252,84 +252,84 @@ sequence length and can be extended to 32K during inference time.
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-# 🟢 How to use Yi?
+# 🟢 如何使用 Yi?
 
 - [快速开始](#快速开始)
   - [选择你的路线](#选择你的路线)
   - [pip](#快速开始---pip)
   - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
-  - [Web demo](#web-demo)
-- [Fine tune](#fine-tune)
-- [Quantization](#quantization)
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+  - [web demo](#web-demo)
+- [微调](#微调)
+- [量化](#量化)
+- [部署](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
+- [学习中心](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 
 ## 快速开始
 
-启动并开始使用Yi模型非常简单，有多个可用的选择。
+启动并开始使用 Yi 模型非常简单，有多个可用的选择。
 
 ### 选择你的路线
 
-选择以下路线之一，开始你的Yi之旅！
+选择以下路线之一，开始你的 Yi 之旅！
 
  ![快速开始 - 选择你的路线](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
 
-#### 🎯 在本地部署Yi
+#### 🎯 在本地部署 Yi
 
-如果你更喜欢在本地部署Yi模型，
+如果你更喜欢在本地部署 Yi 模型，
 
   - 🙋‍♀️ 并且你有**足够**的资源（例如，NVIDIA A800 80GB），你可以选择以下方法之一：
-    - [pip](#pip)
+    - [pip](#快速开始---pip)
     - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
-  - 🙋‍♀️ 但是你的资源很有限（例如，一台MacBook Pro），你可以使用[llama.cpp](#quick-start---llamacpp)
+  - 🙋‍♀️ 但是你的资源很有限（例如，一台 MacBook Pro），你可以使用[llama.cpp](#快速开始---llamacpp)
 
-#### 🎯 不在本地部署Yi模型
+#### 🎯 不在本地部署 Yi 模型
 
-如果你不想在本地部署Yi模型，你可以使用以下任何一种方式来探索Yi的能力。
+如果你不想在本地部署 Yi 模型，你可以使用以下任何一种方式来探索 Yi 的能力。
 
-##### 🙋‍♀️ 通过API来使用Yi
+##### 🙋‍♀️ 通过API来使用 Yi
 
-如果你想探索Yi的更多功能，你可以采用以下方法之一：
+如果你想探索 Yi 的更多功能，你可以采用以下方法之一：
 
-- Yi APIs (Yi官方)
+- Yi APIs (Yi 官方)
   - [早期访问](https://x.com/01AI_Yi/status/1735728934560600536?s=20)的部分申请者已经获得了访问权限。敬请期待下一轮访问申请的信息！ 
 
-- [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
+- [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate，第三方网站)
 
-##### 🙋‍♀️ 在游乐场使用Yi
+##### 🙋‍♀️ 在游乐场使用 Yi
 
-如果你想要与Yi进行聊天，并且有更多可定制的选项（例如，系统提示、温度、重复惩罚等），你可以尝试以下选项之一：
+如果你想要与 Yi 进行聊天，并且有更多可定制的选项（例如，系统提示、温度、重复惩罚等），你可以尝试以下选项之一：
   
-  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi官方)
+  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi 官方)
     - 访问是通过白名单实现的。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
   
-  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
+  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate，第三方网站) 
 
-##### 🙋‍♀️ 与Yi聊天
+##### 🙋‍♀️ 与 Yi 聊天
 
-如果你想要与Yi聊天，你可以使用以下这些在线服务之一，它们提供了类似的用户体验：
+如果你想要与 Yi 聊天，你可以使用以下这些在线服务之一，它们提供了类似的用户体验：
 
-- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi在Hugging Face上的官方空间)
+- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi 在 Hugging Face 上的官方空间)
   - 不需要注册。
 
-- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi官方beta版本)
+- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi 官方 beta 版本)
   - 访问是通过白名单实现的。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
 
 ### 快速开始 - pip
 
-本教程将指导你在**A800（80G）上本地运行Yi-34B-Chat**，并执行推理。
+本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并运行推理。
 
 #### Step 0: 前提条件
  
-- 确保安装了Python 3.10或更高版本。
+- 确保安装了 Python 3.10 或更高版本。
 
-- 如果你想运行其他Yi模型，请参阅[部署要求](#部署)
+- 如果你想运行其他 Yi 模型，请参阅[部署要求](#部署)
 
 #### Step 1: 准备你的环境 
 
-请执行下面的命令设置环境和安装所需要的软件包。
+请运行下面的命令设置环境和安装所需要的软件包。
 
 ```bash
 git clone https://github.com/01-ai/Yi.git
@@ -337,19 +337,19 @@ cd yi
 pip install -r requirements.txt
 ```
 
-#### Step 2: 下载Yi模型
+#### Step 2: 下载 Yi 模型
 
-你可以从以下来源下载Yi模型的权重和tokenizer:
+你可以从以下来源下载 Yi 模型的权重和 tokenizer：
 
 - [Hugging Face](https://huggingface.co/01-ai)
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
 - [WiseModel](https://wisemodel.cn/organization/01.AI)
 
-#### Step 3: 执行推理
+#### Step 3: 运行推理
 
-你可以使用Yi chat或base模型执行推理，如下所示。
+你可以使用 Yi chat 或 base 模型运行推理，如下所示。
 
-##### 使用Yi chat模型进行推理
+##### 使用 Yi chat 模型运行推理
 
 1. 创建一个名为 `quick_start.py` 的文件，并将以下内容复制到其中。
 
@@ -392,9 +392,9 @@ pip install -r requirements.txt
     Hello! How can I assist you today?
     ```
 
-##### 使用Yi base模型进行推理
+##### 使用 Yi base 模型运行推理
 
-步骤和[使用Yi chat模型进行推理](#perform-inference-with-yi-chat-model)很相似。
+步骤和[使用 Yi chat 模型运行推理](#使用-Yi-chat-模型运行推理)很相似。
 
 你可以使用现有的文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)。
 
@@ -443,7 +443,7 @@ ghcr.io/01-ai/yi:latest
 
 
 
-### Quick start - llama.cpp
+### 快速开始 - llama.cpp
 <details>
 <summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide ⬇️</summary> 
 <br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
@@ -596,7 +596,7 @@ You can access the web UI by entering the address provided in the console into y
 
  ![Quick start - web demo](./assets/img/yi_34b_chat_web_demo.gif)
 
-### Finetuning
+### 微调
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
@@ -721,7 +721,7 @@ Then you'll see the answer from both the base model and the finetuned model
 </ul>
 </details>
 
-### Quantization
+### 量化
 
 #### GPT-Q
 ```bash
@@ -824,7 +824,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </details>
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-### Deployment
+### 部署
 
 If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
 
