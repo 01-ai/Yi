@@ -438,7 +438,7 @@ ghcr.io/01-ai/yi:latest
 <details>
 <summary>You can use <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> to generate fully reproducible lock files for conda environments. ⬇️</summary>
 <br>
-You can refer to <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a>  for the exact versions of the dependencies. Additionally, we utilize <code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code> for installing these dependencies.
+You can refer to <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a>  for the exact versions of the dependencies. Additionally, you can utilize <code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code> for installing these dependencies.
 <br>
 To install the dependencies, please follow these steps:
 
