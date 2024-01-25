@@ -6,8 +6,6 @@ from threading import Thread
 
 import gradio as gr
 import torch
-from transformers import TextIteratorStreamer
-
 from llava.conversation import conv_templates, default_conversation
 from llava.mm_utils import (
     KeywordsStoppingCriteria,
@@ -16,6 +14,7 @@ from llava.mm_utils import (
     tokenizer_image_token,
 )
 from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
+from transformers import TextIteratorStreamer
 
 no_change_btn = gr.Button()
 enable_btn = gr.Button(interactive=True)
