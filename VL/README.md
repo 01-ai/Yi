@@ -29,6 +29,12 @@ outputs: In the image, there are three cats situated on a stone floor. The first
 ----------
 ```
 
+## Web demo
+You can build a web UI demo for **Yi-VL** models
+```python
+python web_demo.py --model-path path-to-yi-vl-model
+```
+
 ## Major difference with LLaVA
 1. We change the image token from ```<image>``` to ```<image_placeholder>```. The system prompt is modified to:
 ```
