@@ -1,11 +1,13 @@
 """A simple web interactive chat demo based on gradio."""
 
+import os
 from argparse import ArgumentParser
+from threading import Thread
 
 import gradio as gr
-import os
-
 import torch
+from transformers import TextIteratorStreamer
+
 from llava.conversation import conv_templates, default_conversation
 from llava.mm_utils import (
     KeywordsStoppingCriteria,
@@ -14,9 +16,6 @@ from llava.mm_utils import (
     tokenizer_image_token,
 )
 from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
-from transformers import TextIteratorStreamer
-from threading import Thread
-
 
 no_change_btn = gr.Button()
 enable_btn = gr.Button(interactive=True)
@@ -63,15 +62,16 @@ def _parse_text(text):
     text = "".join(lines)
     return text
 
-title_markdown = ("""
+
+title_markdown = """
 # <p align="center" ><img src="https://raw.githubusercontent.com/01-ai/Yi/main/assets/img/Yi_logo_icon_light.svg" style="height: 50px"/> </p> &nbsp; Yi Vision Language Model
 [[GitHub](https://github.com/01-ai/Yi/tree/main/VL)] | [[🤗](https://huggingface.co/01-ai/Yi-VL-34B)] [[🤖](https://www.modelscope.cn/models/01ai/Yi-VL-34B/summary)] | 📚 [[MMMU](https://arxiv.org/abs/2311.16502)] [[CMMMU](https://arxiv.org/abs/2401.11944)]
-""")
+"""
 
-learn_more_markdown = ("""
+learn_more_markdown = """
 ### License
 Please refer to the acknowledgments and attributions as well as individual components, for the license of source code. The Yi series models are fully open for academic research and free for commercial use, permissions of which are automatically granted upon application. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://huggingface.co/01-ai/Yi-VL-34B/blob/main/LICENSE). For free commercial use, you only need to send an email to get official commercial permission.
-""")
+"""
 
 block_css = """
 
@@ -83,8 +83,10 @@ block_css = """
 
 
 def launch_demo(args, yi_model, tokenizer, image_processor):
-    textbox = gr.Textbox(show_label=False, placeholder="Enter text and press ENTER", container=False)
-    
+    textbox = gr.Textbox(
+        show_label=False, placeholder="Enter text and press ENTER", container=False
+    )
+
     def predict(state, temperature, top_p, max_new_tokens):
         model = yi_model
 
@@ -95,9 +97,11 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
             state = new_state
 
         prompt = state.get_prompt()
-        
+
         input_ids = (
-            tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt")
+            tokenizer_image_token(
+                prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors="pt"
+            )
             .unsqueeze(0)
             .cuda()
         )
@@ -133,11 +137,10 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
         for new_text in streamer:
             generated_text += new_text
             if generated_text.endswith(stop_str):
-                generated_text = generated_text[:-len(stop_str)]
+                generated_text = generated_text[: -len(stop_str)]
             state.messages[-1][-1] = _parse_text(generated_text)
-            
-            yield (state, state.to_gradio_chatbot()) + (enable_btn,) * 2
 
+            yield (state, state.to_gradio_chatbot()) + (enable_btn,) * 2
 
     def regenerate(state, image_process_mode):
         state.messages[-1][-1] = None
@@ -147,11 +150,9 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
         state.skip_next = False
         return (state, state.to_gradio_chatbot(), "", None) + (disable_btn,) * 2
 
-
     def clear_history():
         state = default_conversation.copy()
         return (state, state.to_gradio_chatbot(), "", None) + (disable_btn,) * 2
-
 
     def add_text(state, text, image, image_process_mode):
         text = text[:1536]  # Hard cut-off
@@ -161,14 +162,13 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
                 text = DEFAULT_IMAGE_TOKEN + "\n" + text
             text = (text, image, image_process_mode)
             state = conv_templates["mm_default"].copy()
-        
+
         state.append_message(state.roles[0], text)
         state.append_message(state.roles[1], None)
         state.skip_next = False
         return (state, state.to_gradio_chatbot(), "", None) + (disable_btn,) * 2
 
     with gr.Blocks(title="Yi-VL", theme=gr.themes.Default(), css=block_css) as demo:
-
         state = gr.State()
 
         gr.Markdown(title_markdown)
@@ -179,18 +179,50 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
                 image_process_mode = gr.Radio(
                     ["Crop", "Resize", "Pad", "Default"],
                     value="Pad",
-                    label="Preprocess for non-square image", visible=False)
+                    label="Preprocess for non-square image",
+                    visible=False,
+                )
 
                 cur_dir = os.path.dirname(os.path.abspath(__file__))
-                gr.Examples(examples=[
-                    [f"{cur_dir}/images/cats.jpg", "Describe the cats and what they are doing in detail."],
-                    [f"{cur_dir}/images/extreme_ironing.jpg", "What is unusual about this image?"],
-                ], inputs=[imagebox, textbox])
+                gr.Examples(
+                    examples=[
+                        [
+                            f"{cur_dir}/images/cats.jpg",
+                            "Describe the cats and what they are doing in detail.",
+                        ],
+                        [
+                            f"{cur_dir}/images/extreme_ironing.jpg",
+                            "What is unusual about this image?",
+                        ],
+                    ],
+                    inputs=[imagebox, textbox],
+                )
 
                 with gr.Accordion("Parameters", open=False) as parameter_row:
-                    temperature = gr.Slider(minimum=0.0, maximum=1.0, value=0.2, step=0.1, interactive=True, label="Temperature",)
-                    top_p = gr.Slider(minimum=0.0, maximum=1.0, value=0.7, step=0.1, interactive=True, label="Top P",)
-                    max_output_tokens = gr.Slider(minimum=0, maximum=1024, value=512, step=64, interactive=True, label="Max output tokens",)
+                    temperature = gr.Slider(
+                        minimum=0.0,
+                        maximum=1.0,
+                        value=0.2,
+                        step=0.1,
+                        interactive=True,
+                        label="Temperature",
+                    )
+                    top_p = gr.Slider(
+                        minimum=0.0,
+                        maximum=1.0,
+                        value=0.7,
+                        step=0.1,
+                        interactive=True,
+                        label="Top P",
+                    )
+                    max_output_tokens = gr.Slider(
+                        minimum=0,
+                        maximum=1024,
+                        value=512,
+                        step=64,
+                        interactive=True,
+                        label="Max output tokens",
+                    )
 
             with gr.Column(scale=8):
                 chatbot = gr.Chatbot(elem_id="chatbot", label="Yi-VL-Chat", height=550)
@@ -200,7 +232,7 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
                     with gr.Column(scale=1, min_width=50):
                         submit_btn = gr.Button(value="Send", variant="primary")
                 with gr.Row(elem_id="buttons") as button_row:
-                    #stop_btn = gr.Button(value="⏹️  Stop Generation", interactive=False)
+                    # stop_btn = gr.Button(value="⏹️  Stop Generation", interactive=False)
                     regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
                     clear_btn = gr.Button(value="🗑️  Clear", interactive=False)
 
@@ -212,44 +244,43 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
             clear_history,
             None,
             [state, chatbot, textbox, imagebox] + btn_list,
-            queue=False
+            queue=False,
         )
 
         regenerate_btn.click(
             regenerate,
             [state, image_process_mode],
             [state, chatbot, textbox, imagebox] + btn_list,
-            queue=False
+            queue=False,
         ).then(
             predict,
             [state, temperature, top_p, max_output_tokens],
-            [state, chatbot] + btn_list
+            [state, chatbot] + btn_list,
         )
 
         textbox.submit(
             add_text,
-            [state, textbox, imagebox, image_process_mode], 
-            [state, chatbot, textbox, imagebox] + btn_list, 
-            queue=False
+            [state, textbox, imagebox, image_process_mode],
+            [state, chatbot, textbox, imagebox] + btn_list,
+            queue=False,
         ).then(
             predict,
-            [state, temperature, top_p, max_output_tokens], 
-            [state, chatbot] + btn_list, 
-            show_progress=True
+            [state, temperature, top_p, max_output_tokens],
+            [state, chatbot] + btn_list,
+            show_progress=True,
         )
 
         submit_btn.click(
             add_text,
-            [state, textbox, imagebox, image_process_mode], 
-            [state, chatbot, textbox, imagebox] + btn_list, 
-            queue=False
+            [state, textbox, imagebox, image_process_mode],
+            [state, chatbot, textbox, imagebox] + btn_list,
+            queue=False,
         ).then(
             predict,
-            [state, temperature, top_p, max_output_tokens], 
-            [state, chatbot] + btn_list, 
-            show_progress=True
+            [state, temperature, top_p, max_output_tokens],
+            [state, chatbot] + btn_list,
+            show_progress=True,
         )
-
 
     demo.queue().launch(
         share=args.share,
@@ -260,7 +291,6 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
 
 
 def main(args):
-
     model, tokenizer, image_processor = load_model_tokenizer_processor(args)
 
     launch_demo(args, model, tokenizer, image_processor)
@@ -269,9 +299,9 @@ def main(args):
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument(
-        "--model_path",
+        "--model-path",
         type=str,
-        default="/ML-A100/public/tmp/pretrain_weights/Yi-VL-6B",
+        default="01-ai/Yi-VL-6B",
         help="model-path, default to %(default)r",
     )
     parser.add_argument(
