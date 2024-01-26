@@ -41,7 +41,7 @@
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
+    📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>!
 </p> 
 
 
