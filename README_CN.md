@@ -41,8 +41,8 @@
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
-</p> 
+    📚 Grow at <a href="#learning-hub">Yi Learning Hub</a>!
+</p>
 <hr>
 
 <ul>
@@ -135,8 +135,61 @@
 </ul>
 </details>
 
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
+## 🎉 最新动态
 
+<details open>
+  <summary>🎯 <b>2024年01月23日</b>: <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> 和 <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>的多模态语言大模型，均已开源并对公众开放。</summary>
+  <br>
+   在<a href="https://arxiv.org/abs/2311.16502">MMMU</a> 和 <a href="https://arxiv.org/abs/2401.11944">CMMMU</a>最新的基准测试中（截至2024年1月的可用数据），<code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code>荣登榜首。</li>
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/23</b>: 六大聊天模型均已开源并对公众开放。</summary>
+<br>
+发布了两个聊天模型，都是基于之前发布的两个基座模型；也发布了由 GPTQ 量化的两个8位模型和由 AWQ 量化的两个4位模型。
+
+- `Yi-34B-Chat`
+- `Yi-34B-Chat-4bits`
+- `Yi-34B-Chat-8bits`
+- `Yi-6B-Chat`
+- `Yi-6B-Chat-4bits`
+- `Yi-6B-Chat-8bits`
+
+你可以访问以下链接进行试用：
+
+- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+- [Replicate](https://replicate.com/01-ai)
+</details>
+
+<details>
+<summary>🔔 <b>2023/11/23</b>: Yi系列模型社区许可协议更新至 v2.1 版本。</summary>
+</details>
+
+<details> 
+<summary>🔥 <b>2023/11/08</b>: Yi-34B 聊天模型开始邀请测试。</summary>
+<br>
+参与测试申请表：
+
+- [英文](https://cn.mikecrm.com/l91ODJf)
+- [中文](https://cn.mikecrm.com/gnEZjiQ)
+
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/05</b>: <code>Yi-6B-200K</code> 和 <code>Yi-34B-200K</code> 的基座模型均已开源并对公众开放。 </summary>
+<br>
+发布了两个与之前发布参数规模相同的基座模型，只是上下文窗口扩展到了200K。
+
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/02</b>: <code>Yi-6B</code> 和 <code>Yi-34B</code> 的基座模型均已开源并对公众开放。</summary>
+<br>
+首次公开发布了两个双语（英语/中文）基座模型，参数规模分别为6B和34B。两者均以4K序列长度进行训练，并在推理时可扩展到32K。
+
+</details>
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
@@ -198,55 +251,6 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
-## 🎉 最新动态
-
-<details>
-<summary>🎯 <b>2023/11/23</b>: 聊天模型正式向公众开放。</summary>
-<br>
-发布了两个聊天模型，都是基于之前发布的两个基座模型，也发布了由 GPTQ 量化的两个8位模型和由 AWQ 量化的两个4位模型。
-
-- `Yi-34B-Chat`
-- `Yi-34B-Chat-4bits`
-- `Yi-34B-Chat-8bits`
-- `Yi-6B-Chat`
-- `Yi-6B-Chat-4bits`
-- `Yi-6B-Chat-8bits`
-
-你可以访问以下链接进行试用：
-
-- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
-- [Replicate](https://replicate.com/01-ai)
-</details>
-
-<details>
-<summary>🔔 <b>2023/11/23</b>: Yi系列模型社区许可协议更新至 v2.1 版本。</summary>
-</details>
-
-<details> 
-<summary>🔥 <b>2023/11/08</b>: Yi-34B 聊天模型开始邀请测试。</summary>
-<br>
-参与测试申请表：
-
-- [英文](https://cn.mikecrm.com/l91ODJf)
-- [中文](https://cn.mikecrm.com/gnEZjiQ)
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/05</b>: <code>Yi-6B-200K</code> 和 <code>Yi-34B-200K</code> 的基座模型发布。 </summary>
-<br>
-发布了两个与之前发布参数规模相同的基座模型，只是上下文窗口扩展到了200K。
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/02</b>: <code>Yi-6B</code> 和 <code>Yi-34B</code> 的基座模型发布。</summary>
-<br>
-首次公开发布了两个双语（英语/中文）基座模型，参数规模分别为6B和34B。两者均以4K序列长度进行训练，并在推理时可扩展到32K。
-
-</details>
-
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
 
