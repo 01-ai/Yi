@@ -121,15 +121,15 @@
 > Yi系列模型采用模型架构与LLaMA相同，但它们**不是**LLaMA的衍生品。
 
 
-- Yi和LLaMA都基于Transformer结构。自2018年以来，Transformer一直是大语言模型的标准架构。
+- Yi和LLaMA都是基于Transformer结构构建的。实际上，自2018年以来，Transformer一直是大语言模型的常用架构。
 
-- 在Transformer架构的基础上，LLaMA凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石，因此LLaMA成为Yi等模型的公认基础框架。
+- 在Transformer架构的基础上，LLaMA凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石。因此，LLaMA也成为Yi等模型的基础框架。
 
 - 得益于Transformer和LLaMA架构，其他模型可以简化从零开始构建模型的工作，并能够在各自的生态系统中使用相同的工具。
 
 - 然而，Yi系列模型不是LLaMA的衍生品，因为它们不使用LLaMA的权重。
 
-  - 由于大多数开源模型都采用了LLaMA的结构，决定模型性能的关键因素是训练数据集、训练流水线和训练基础设施。
+  - 虽然大多数开源模型都采用了LLaMA的结构，但决定模型表现的关键因素是训练所使用的数据集、流水线及其基础设施。
 
   - [01.AI](https://01.ai/) 用独特的方式开发了Yi，从零开始独立创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此Yi系列模型在性能上取得了卓越的成绩，在2023年12月的[Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)上排名仅次于GPT4，超过了LLaMA。
 </ul>
@@ -194,7 +194,7 @@
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 ## 🎯 模型
-Yi模型有多种尺寸，适用于不同的使用场景。你还可以对Yi模型进行微调，满足你特定的需求。
+Yi模型有多种参数规模，适用于不同的使用场景。你也可以对Yi模型进行微调，从而满足特定需求。
 
 如果你想要部署Yi模型，请确保您的软件和硬件满足[部署要求](#deployment).
 
@@ -209,7 +209,7 @@ Yi-6B-Chat| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat) •
 Yi-6B-Chat-4bits |	• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)
 Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)
 
-<sub><sup> - 4-bit系列模型由AWQ量化。<br> - 8-bit系列模型由GPTQ量化。<br> - 所有量化模型都具有较低的使用门槛，因为它们可以在消费级GPU（例如3090、4090）上部署。</sup></sub>
+<sub><sup> - 4-bit系列模型由AWQ量化。<br> - 8-bit系列模型由GPTQ量化。<br> - 所有量化模型都具有较低的使用门槛，因此它们可以在消费级GPU（例如3090、4090）上部署。</sup></sub>
 ### 基座模型
 
 | 模型 | 下载 | 
@@ -219,7 +219,7 @@ Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  �
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
-<sub><sup> - 200k 大约相当于 40 万个中文字符。</sup></sub>
+<sub><sup> - 200k 大约相当于 40 万个汉字。</sup></sub>
 
 ### 其他信息
 
@@ -241,11 +241,11 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
    <ul>
    <br> <a href="https://01.ai/">01.AI</a> 发布的聊天模型在独家训练中采用了监督微调（SFT）技术。与其他标准聊天模型相比， <a href="https://01.ai/">01.AI</a> 的模型生成的回复更加多样化，因此适用于各种下游任务，比如创意场景。此外，回复更加多样化，有利于提高回复的质量，对后续的强化学习（RL）训练帮助很大。
 
-    <br>然而，回复多样化，也可能会放大某些现有的问题，包括：
-      <li>虚构：指的是模型生成了事实错误或不连贯的信息。模型的回复更加多样化，则更有可能出现虚构的现象，这些虚构的回复可能不是基于准确的数据或逻辑推理。</li>
-      <li>重新生成的回复不一致：重新生成回复或者对回复进行采样，结果中可能不一致。多样性增多，即使在相似的输入条件下，结果也会有所不同。</li>
-      <li>累积误差：如果模型回复的错误随时间累积，就会出现累计误差的现象。模型的回复更加多样化，增加了小误差积累成大错误的可能性，常见于扩展推理、解决数学问题等复杂任务中等。</li>
-      <li>为了获得更连贯一致的回答，建议调整生成配置参数，如温度、top_p 或 top_k，这些调整有利于平衡模型回复的创造性和连贯性。</li>
+    <br>需要注意的是，回复多样化也可能会导致某些已知问题更加严重，包括：
+      <li>虚构：即模型可能会生成事实错误或不连贯的信息。模型回复多样化，更有可能出现虚构的现象，这些虚构的回复可能不是基于准确的数据或逻辑推理。</li>
+      <li>重新生成的回复不一致：重新生成回复或者对回复进行采样时，结果可能出现前后不一致。多样性增多会导致即使在相似的输入条件下，结果也会存在差异。</li>
+      <li>累积误差：当模型回复的错误随时间累积，就会出现累计误差的现象。模型回复的多样化增加了小误差积累成大错误的可能性，这种情况常见于扩展推理、解决数学问题等复杂任务中等。</li>
+      <li>为了获得更连贯一致的回答，建议调整生成配置参数，如温度、top_p 或 top_k。这些调整有利于平衡模型回复的创造性和连贯性。</li>
 </ul>
 </details>
 
