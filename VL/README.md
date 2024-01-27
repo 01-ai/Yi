@@ -35,6 +35,30 @@ You can build a web UI demo for **Yi-VL** models
 python web_demo.py --model-path path-to-yi-vl-model
 ```
 
+## Command Line Interface
+
+Perform conversational inference via the command line interface.
+
+```python
+python cli.py --model-path path-to-yi-vl-model --image path-to-image
+```
+
+A quick example:
+
+```
+CUDA_VISIBLE_DEVICES=0 python cli.py --model-path ../model/Yi-VL-34B --image-file images/cats.jpg
+
+Human: what is in this image
+Assistant: cats
+Human: what are they doing
+Assistant: eating
+Human: what are they eating
+Assistant: cat food
+```
+
+
+
+
 ## Major difference with LLaVA
 1. We change the image token from ```<image>``` to ```<image_placeholder>```. The system prompt is modified to:
 ```
