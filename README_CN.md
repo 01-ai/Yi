@@ -281,7 +281,7 @@ If you prefer to deploy Yi models locally,
 
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
-    - [Docker](./docs/README_legacy_cn.md#11-docker)
+    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy_cn.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
