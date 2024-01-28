@@ -417,7 +417,7 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
-### Docker 快速入门
+### 快速上手 - Docker
 
 <details>
 <summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程 👇</summary>
@@ -444,7 +444,7 @@ ghcr.io/01-ai/yi:latest
 
 
 
-### llama.cpp 快速入门
+### 快速上手 - llama.cpp
 <details>
 <summary> 🚀 以下是使用 llama.cpp 在本地运行 Yi-chat-6B-2bits 模型的详细教程👇 </summary> 
 <br>该教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
@@ -576,7 +576,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 </ul>
 </details>
 
-### 网页版演示应用（Web Demo）
+### 快速上手 - Web Demo
 
 你可以使用 Yi **聊天模型**（Yi-34B-Chat）打造一个 Web Demo。注意：Yi 基础模型（Yi-34B）不支持该功能。
 
