@@ -450,9 +450,9 @@ ghcr.io/01-ai/yi:latest
 <br>该教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
 
 - [步骤 0: 前提条件](#step-0-prerequisites)
-- [Step 1: Download llama.cpp](#step-1-download-llamacpp)
-- [Step 2: Download Yi model](#step-2-download-yi-model)
-- [Step 3: Perform inference](#step-3-perform-inference)
+- [步骤 1: 下载 llama.cpp](#step-1-download-llamacpp)
+- [步骤 2: 下载 Yi 模型](#step-2-download-yi-model)
+- [步骤 3: 进行推理](#step-3-perform-inference)
 
 #### 步骤 0: 前提条件
 
