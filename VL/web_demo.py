@@ -232,7 +232,9 @@ def launch_demo(args, yi_model, tokenizer, image_processor):
                         submit_btn = gr.Button(value="Send", variant="primary")
                 with gr.Row(elem_id="buttons") as button_row:
                     # stop_btn = gr.Button(value="⏹️  Stop Generation", interactive=False)
-                    regenerate_btn = gr.Button(value="🔄  Regenerate", interactive=False)
+                    regenerate_btn = gr.Button(
+                        value="🔄  Regenerate", interactive=False
+                    )
                     clear_btn = gr.Button(value="🗑️  Clear", interactive=False)
 
         gr.Markdown(learn_more_markdown)
