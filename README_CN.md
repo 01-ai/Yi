@@ -33,15 +33,15 @@
 </p> 
 
 <p align="center">
-    👩‍🚀 来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a> 提问讨论
+    👩‍🚀 欢迎你来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a> 提问讨论
 </p> 
 
 <p align="center">
-    👋 加入我们的 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>
+    👋 欢迎你加入我们的 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
 </p> 
 
 <p align="center">
-    📚 来 <a href="#learning-hub"> Yi 学习俱乐部 </a>共同进步
+    📚 欢迎你来 <a href="#learning-hub"> Yi 学习俱乐部 </a>探索新知
 </p> 
 <hr>
 
