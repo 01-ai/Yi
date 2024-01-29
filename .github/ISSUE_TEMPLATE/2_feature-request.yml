@@ -1,0 +1,42 @@
+name: 🚀 Feature request
+description: "Add new feature, improve code, and more"
+title: "Features "
+labels: ["type/feature-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you very much for your contribution!
+  - type: checkboxes
+    attributes:
+      label: Reminder
+      description: >
+        Please search [Github Discussion](https://github.com/01-ai/Yi/discussions) and [issues](https://github.com/01-ai/Yi/issues) carefully.
+      options:
+        - label: >
+            I have searched the Github Discussion and issues and have not found anything similar to this.
+          required: true
+  - type: textarea
+    attributes:
+      label: Motivation
+      description: Describe the motivations for this enhancement.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Solution
+      description: Describe the proposed solution and add related materials like links if any.
+  - type: textarea
+    attributes:
+      label: Alternatives
+      description: Describe other alternative solutions or features you considered, but rejected.
+  - type: textarea
+    attributes:
+      label: Anything Else?
+  - type: checkboxes
+    attributes:
+      label: Are you willing to submit a PR?
+      description: >
+        We look forward to your contribution to making Yi better. If you are willing to submit a PR to implement this enhancement, please check the box.
+      options:
+        - label: I'm willing to submit a PR!
