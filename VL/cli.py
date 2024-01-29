@@ -2,8 +2,6 @@ import argparse
 import os
 
 import torch
-from PIL import Image
-
 from llava.conversation import conv_templates
 from llava.mm_utils import (
     KeywordsStoppingCriteria,
@@ -13,6 +11,7 @@ from llava.mm_utils import (
     tokenizer_image_token,
 )
 from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
+from PIL import Image
 
 
 def load_image(image_file):
