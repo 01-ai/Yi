@@ -2,13 +2,17 @@ import argparse
 import os
 
 import torch
-from llava.conversation import conv_templates
-from llava.mm_utils import (KeywordsStoppingCriteria, get_model_name_from_path,
-                            load_pretrained_model, process_images,
-                            tokenizer_image_token)
-from llava.model.constants import (DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX,
-                                   key_info)
 from PIL import Image
+
+from llava.conversation import conv_templates
+from llava.mm_utils import (
+    KeywordsStoppingCriteria,
+    get_model_name_from_path,
+    load_pretrained_model,
+    process_images,
+    tokenizer_image_token,
+)
+from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
 
 
 def load_image(image_file):
