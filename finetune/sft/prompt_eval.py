@@ -166,7 +166,10 @@ def main():
             "Human: Please explain Large Language Model. Assistant:",
         ]
     elif args.language == "Chinese":
-        prompts = ["Human: 你好。 Assistant:", "Human: 请介绍一下大语言模型? Assistant:"]
+        prompts = [
+            "Human: 你好。 Assistant:",
+            "Human: 请介绍一下大语言模型? Assistant:",
+        ]
     else:
         # TODO:
         prompts = []
