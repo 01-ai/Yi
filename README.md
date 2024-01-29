@@ -41,7 +41,7 @@
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md"> Yi Learning Hub </a>!
+    📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>!
 </p> 
 
 
@@ -63,9 +63,11 @@
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-parth)
     - [pip](#pip)
+    - [docker](#quick-start---docker)
     - [llama.cpp](#quick-start---llamacpp)
+    - [conda-lock](#quick-start---conda-lock)
     - [Web demo](#web-demo)
-  - [Fine tune](#fine-tune)
+  - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
   - [Learning hub](#learning-hub)
@@ -82,7 +84,7 @@
     - [📊 Chat model performance](#-chat-model-performance)
 - [🟢 Who can use Yi?](#-who-can-use-yi)
 - [🟢 Misc.](#-misc)
-  - [Ackknowledgements](#acknowledgments)
+  - [Acknowledgements](#acknowledgments)
   - [📡 Disclaimer](#-disclaimer)
   - [🪪 License](#-license)
 
@@ -103,7 +105,9 @@
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
   
   - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
+
   <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
+  
 > 💡 TL;DR
 > 
 > The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
@@ -122,8 +126,59 @@
 </ul>
 </details>
 
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+
+## 🎉 News 
+
+<details open>
+  <summary>🎯 <b>2024/01/23</b>: The Yi-VL models, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are open-sourced and available to the public.</summary>
+  <br>
+  <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> (based on data available up to January 2024).</li>
+</details>
 
 
+<details>
+<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">Chat models</a> are open-sourced and available to the public.</summary>
+<br>This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
+
+- `Yi-34B-Chat`
+- `Yi-34B-Chat-4bits`
+- `Yi-34B-Chat-8bits`
+- `Yi-6B-Chat`
+- `Yi-6B-Chat-4bits`
+- `Yi-6B-Chat-8bits`
+
+You can try some of them interactively at:
+
+- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
+- [Replicate](https://replicate.com/01-ai)
+</details>
+
+<details>
+  <summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">v2.1</a>.</summary>
+</details>
+
+<details> 
+<summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
+<br>Application form:
+
+- [English](https://cn.mikecrm.com/l91ODJf)
+- [Chinese](https://cn.mikecrm.com/gnEZjiQ)
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base models, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are open-sourced and available to the public.</summary>
+<br>This release contains two base models with the same parameter sizes as the previous
+release, except that the context window is extended to 200K.
+</details>
+
+<details>
+<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base models, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are open-sourced and available to the public.</summary>
+<br>The first public release contains two bilingual (English/Chinese) base models
+with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
+sequence length and can be extended to 32K during inference time.
+
+</details>
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
@@ -188,67 +243,17 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
-## 🎉 News 
-
-<details>
-<summary>🎯 <b>2023/11/23</b>: The chat models are open to public.</summary>
-
-This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
-
-- `Yi-34B-Chat`
-- `Yi-34B-Chat-4bits`
-- `Yi-34B-Chat-8bits`
-- `Yi-6B-Chat`
-- `Yi-6B-Chat-4bits`
-- `Yi-6B-Chat-8bits`
-
-You can try some of them interactively at:
-
-- [Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
-- [Replicate](https://replicate.com/01-ai)
-</details>
-
-<details>
-<summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to v2.1.</summary>
-</details>
-
-<details> 
-<summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
-
-Application form:
-
-- [English](https://cn.mikecrm.com/l91ODJf)
-- [Chinese](https://cn.mikecrm.com/gnEZjiQ)
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/05</b>: The base model of <code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>.</summary>
-
-This release contains two base models with the same parameter sizes as the previous
-release, except that the context window is extended to 200K.
-
-</details>
-
-<details>
-<summary>🎯 <b>2023/11/02</b>: The base model of <code>Yi-6B</code> and <code>Yi-34B</code>.</summary>
-
-The first public release contains two bilingual (English/Chinese) base models
-with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
-sequence length and can be extended to 32K during inference time.
-
-</details>
-
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
 
 # 🟢 How to use Yi?
 
 - [Quick start](#quick-start)
-  - [Choose your path](#choose-your-parth)
+  - [Choose your path](#choose-your-path)
   - [pip](#pip)
+  - [docker](#quick-start---docker)
+  - [conda-lock](#quick-start---conda-lock)
   - [llama.cpp](#quick-start---llamacpp)
   - [Web demo](#web-demo)
-- [Fine tune](#fine-tune)
+- [Fine tune](#finetuning)
 - [Quantization](#quantization)
 - [Deployment](#deployment)
 - [Learning hub](#learning-hub)
@@ -270,7 +275,7 @@ If you prefer to deploy Yi models locally,
   - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
     - [pip](#pip)
     - [Docker](#quick-start---docker)
-    - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
+    - [conda-lock](#quick-start---conda-lock)
 
   - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
 
@@ -430,7 +435,19 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
+### Quick start - conda-lock
 
+<details>
+<summary>You can use <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> to generate fully reproducible lock files for conda environments. ⬇️</summary>
+<br>
+You can refer to <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a>  for the exact versions of the dependencies. Additionally, you can utilize <code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code> for installing these dependencies.
+<br>
+To install the dependencies, follow these steps:
+
+1. Install micromamba by following the instructions available <a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">here</a>.
+
+2. Execute <code>micromamba install -y -n yi -f conda-lock.yml</code> to create a conda environment named <code>yi</code> and install the necessary dependencies.
+</details>
 
 ### Quick start - llama.cpp
 <details>
@@ -586,7 +603,7 @@ You can access the web UI by entering the address provided in the console into y
 
  ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
-### Finetuning
+### Fine-tuning
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
