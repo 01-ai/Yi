@@ -1,4 +1,5 @@
 """A simple web interactive chat demo based on gradio."""
+
 from argparse import ArgumentParser
 from threading import Thread
 
