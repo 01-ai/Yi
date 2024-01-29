@@ -315,7 +315,7 @@ sequence length and can be extended to 32K during inference time.
   - 不需要注册。
 
 - [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi 官方 beta 版本)
-  - 访问是通过白名单实现的。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
+  - 如果你申请加入白名单，就可以使用官方的在线聊天服务。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
 
 ### 快速开始 - pip
 
