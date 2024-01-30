@@ -315,7 +315,7 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
 
 This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
 
-#### Step 0: Prerequistes
+#### Step 0: Prerequisites
  
 - Make sure Python 3.10 or a later version is installed.
 
