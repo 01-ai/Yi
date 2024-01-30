@@ -253,84 +253,84 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 
-# 🟢 How to use Yi?
+# 🟢 如何使用 Yi?
 
-- [Quick start](#quick-start)
-  - [Choose your path](#choose-your-parth)
-  - [pip](#pip)
+- [快速开始](#快速开始)
+  - [选择你的路线](#选择你的路线)
+  - [pip](#快速开始---pip)
   - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
-  - [Web demo](#web-demo)
-- [Fine tune](#fine-tune)
-- [Quantization](#quantization)
-- [Deployment](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [Learning hub](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+  - [web demo](#web-demo)
+- [微调](#微调)
+- [量化](#量化)
+- [部署](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
+- [学习中心](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 
-## Quick start
+## 快速开始
 
-Getting up and running with Yi models is simple with multiple choices available. 
+启动并开始使用 Yi 模型非常简单，有多个可用的选择。
 
-### Choose your path
+### 选择你的路线
 
-Select one of the following paths to begin your journey with Yi!
+选择以下路线之一，开始你的 Yi 之旅！
 
- ![Quick start - Choose your path](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
+ ![快速开始 - 选择你的路线](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
 
-#### 🎯 Deploy Yi locally
+#### 🎯 在本地部署 Yi
 
-If you prefer to deploy Yi models locally, 
+如果你更喜欢在本地部署 Yi 模型，
 
-  - 🙋‍♀️ and you have **sufficient** resources (for example, NVIDIA A800 80GB), you can choose one of the following methods:
-    - [pip](#pip)
-    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy_cn.md#11-docker)
+  - 🙋‍♀️ 并且你有**足够**的资源（例如，NVIDIA A800 80GB），你可以选择以下方法之一：
+    - [pip](#快速开始---pip)
+    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
     - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
 
-  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
+  - 🙋‍♀️ 但是你的资源很有限（例如，一台 MacBook Pro），你可以使用[llama.cpp](#快速开始---llamacpp)
 
-#### 🎯 Not to deploy Yi locally
+#### 🎯 不在本地部署 Yi 模型
 
-If you prefer not to deploy Yi models locally, you can explore Yi's capabilities using any of the following options.
+如果你不想在本地部署 Yi 模型，你可以使用以下任何一种方式来探索 Yi 的能力。
 
-##### 🙋‍♀️ Run Yi with APIs
+##### 🙋‍♀️ 通过 API 来使用 Yi
 
-If you want to explore more features of Yi, you can adopt one of these methods:
+如果你想探索 Yi 的更多功能，你可以采用以下方法之一：
 
-- Yi APIs (Yi official)
-  - [Early access has been granted](https://x.com/01AI_Yi/status/1735728934560600536?s=20) to some applicants. Stay tuned for the next round of access!
+- Yi APIs (Yi 官方)
+  - [早期访问](https://x.com/01AI_Yi/status/1735728934560600536?s=20)的部分申请者已经获得了访问权限。敬请期待下一轮访问申请的信息！ 
 
-- [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate)
+- [Yi APIs](https://replicate.com/01-ai/yi-34b-chat/api?tab=nodejs) (Replicate，第三方网站)
 
-##### 🙋‍♀️ Run Yi in playground
+##### 🙋‍♀️ 在交互式平台使用 Yi
 
-If you want to chat with Yi with more customizable options (e.g., system prompt, temperature, repetition penalty, etc.), you can try one of the following options:
+如果你想要与 Yi 进行聊天，并且有更多可定制的选项（例如，系统提示、温度、重复惩罚等），你可以尝试以下选项之一：
   
-  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi official)
-    - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
+  - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi 官方)
+    - 如果你申请加入白名单，就可以使用官方的交互式平台。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
   
-  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate) 
+  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate，第三方网站) 
 
-##### 🙋‍♀️ Chat with Yi
+##### 🙋‍♀️ 与 Yi 聊天
 
- If you want to chat with Yi, you can use one of these online services, which offer a similar user experience:
+下列这些在线聊天服务提供了相似的用户体验，如果你想与Yi聊天，你可以任意选用其中一项。
 
-- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi official on Hugging Face)
-  - No registration is required.
+- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi 在 Hugging Face 上的官方空间)
+  - 不需要注册。
 
-- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
-  - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
+- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi 官方 beta 版本)
+  - 如果你申请加入白名单，就可以使用官方的在线聊天服务。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
 
-### Quick start - pip
+### 快速开始 - pip
 
-This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
+本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并运行推理。
 
-#### Step 0: Prerequistes
+#### Step 0: 前提条件
  
-- Make sure Python 3.10 or a later version is installed.
+- 确保安装了 Python 3.10 或更高版本。
 
-- If you want to run other Yi models, see [software and hardware requirements](#deployment)
+- 如果你想运行其他 Yi 模型，请参阅[部署要求](#部署)
 
-#### Step 1: Prepare your environment 
+#### Step 1: 准备你的环境 
 
-To set up the environment and install the required packages, execute the following command.
+请运行下面的命令设置环境和安装所需要的软件包。
 
 ```bash
 git clone https://github.com/01-ai/Yi.git
@@ -338,21 +338,21 @@ cd yi
 pip install -r requirements.txt
 ```
 
-#### Step 2: Download the Yi model
+#### Step 2: 下载 Yi 模型
 
-You can download the weights and tokenizer of Yi models from the following sources:
+你可以从以下来源下载 Yi 模型的权重和 tokenizer：
 
 - [Hugging Face](https://huggingface.co/01-ai)
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
 - [WiseModel](https://wisemodel.cn/organization/01.AI)
 
-#### Step 3: Perform inference
+#### Step 3: 运行推理
 
-You can perform inference with Yi chat or base models as below.
+你可以使用 Yi chat 或 base 模型运行推理，如下所示。
 
-##### Perform inference with Yi chat model
+##### 使用 Yi chat 模型运行推理
 
-1. Create a file named  `quick_start.py` and copy the following content to it.
+1. 创建一个名为 `quick_start.py` 的文件，并将以下内容复制到其中。
 
     ```python
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -381,33 +381,33 @@ You can perform inference with Yi chat or base models as below.
     print(response)
     ```
 
-2. Run `quick_start.py`.
+2. 运行 `quick_start.py`.
 
     ```bash
     python quick_start.py
     ```
 
-    Then you can see an output similar to the one below. 🥳
+    然后你将看到一个类似于以下的输出。🥳
 
     ```bash
     Hello! How can I assist you today?
     ```
 
-##### Perform inference with Yi base model
+##### 使用 Yi base 模型运行推理
 
-The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
+步骤和[使用 Yi chat 模型运行推理](#使用-Yi-chat-模型运行推理)很相似。
 
-You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
+你可以使用现有的文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)。
 
 ```bash
 python demo/text_generation.py  --model <your-model-path>
 ```
 
-Then you can see an output similar to the one below. 🥳
+然后你将看到一个类似于以下的输出。🥳
 
 <details>
 
-<summary>Output ⬇️ </summary>
+<summary>输出 ⬇️ </summary>
 
 <br>
 
@@ -594,7 +594,7 @@ python demo/web_demo.py -c <你的模型路径>
 
  ![快速上手 - Web Demo](./assets/img/yi_34b_chat_web_demo.gif)
 
-### Finetuning
+### 微调
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
@@ -719,7 +719,7 @@ Then you'll see the answer from both the base model and the finetuned model
 </ul>
 </details>
 
-### Quantization
+### 量化
 
 #### GPT-Q
 ```bash
