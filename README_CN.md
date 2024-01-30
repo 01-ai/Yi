@@ -23,7 +23,6 @@
 </a>
 
 </div>
-
 <div align="center">
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
@@ -53,19 +52,15 @@
   <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅 <a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
 </ul>
 
-
-
 <!-- DO NOT REMOVE ME -->
-
+<div id="top"></div>
 <hr>
-
 <details open>
 <summary></b>📕 目录</b></summary>
 
-
-- [🟢 Yi 是什么?](#-yi是什么)
+- [🟢 Yi 是什么?](#-yi-是什么)
   - [📌 介绍](#-介绍)
-  - [🎯 模型](#-models)
+  - [🎯 模型](#模型)
     - [聊天模型](#聊天模型)
     - [基座模型](#基座模型)
     - [其他信息](#其他信息)
@@ -76,12 +71,13 @@
     - [快速上手 - 使用 pip](#快速上手---pip)
     - [快速上手 - 使用 docker](#快速上手---docker)
     - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
-    - [快速上手 - 使用 Web Demo](#快速上手---web-demo)
+    - [快速上手 - 使用 conda-lock](#快速上手---conda-lock)
+    - [快速上手 - 使用网页演示](#快速上手---使用网页演示)
   - [微调](#微调)
   - [量化](#量化)
   - [部署](#部署)
   - [学习中心](#学习中心)
-- [🟢 为什么选择Yi？](#-为什么选择Yi?)
+- [🟢 为什么选择Yi？](#-为什么选择yi)
   - [🌎 生态系统](#-生态系统)
     - [💦 上游](#-上游)
     - [🌊 下游](#-下游)
@@ -90,10 +86,10 @@
       - [🛠️ 微调](#️-微调)
       - [API](#api)
   - [📌 基准测试](#-基准测试)
+    - [📊 聊天模型性能](#-聊天模型性能)
     - [📊 基座模型性能](#-基座模型性能)
-    - [📊 Chat模型性能](#-Chat模型性能)
-- [🟢 谁可以使用 Yi？](#-谁可以使用 Yi？)
-- [🟢 杂项](#-杂项)
+- [🟢 谁可以使用 Yi？](#-谁可以使用-yi)
+- [🟢 其他内容](#-其他内容)
   - [致谢](#致谢)
   - [📡 免责声明](#-免责声明)
   - [🪪 许可证](#-许可证)
@@ -110,33 +106,40 @@
 
 - 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大型语言模型之一。本系列模型在语言认知、常识推理、阅读理解等方面展现出巨大的潜力。例如，
 
-  - 英语语言能力方面，Yi系列模型在2023年12月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型（LLM），如 LLaMA2-chat-70B、Claude 2 和 ChatGPT。
+  - 英语语言能力方面，Yi系列模型在2023年12月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型（LLM），如 Llama2-chat-70B、Claude 2 和 ChatGPT。
 
   - 中文语言能力方面，Yi系列模型在2023年10月的 [SuperCLUE](https://www.superclueai.com/)排行榜上排名第二（仅次于GPT-4），超过了其他大语言模型，如百度ERNIE、Qwen 和 Baichuan。
-  - 🙏 （感谢 LLaMA ）感谢 Transformer 和 LLaMA 开源社区，简化了 [01.AI](https://01.ai/) 从零开始构建大模型的工作，[01.AI](https://01.ai/) 也能够在人工智能生态系统中使用相同的工具。
+  - 🙏 （感谢 Llama ）感谢 Transformer 和 Llama 开源社区，简化了 [01.AI](https://01.ai/) 从零开始构建大模型的工作，[01.AI](https://01.ai/) 也能够在人工智能生态系统中使用相同的工具。
 
-  <details style="display: inline;"><summary> 如果你对 Yi 采用LLaMA架构及其许可使用政策感兴趣，请参阅 <span style="color:  green;"> Yi 与 LLaMA 的关系</span> ⬇️</summary> <ul> <br>
+  <details style="display: inline;"><summary> 如果你对 Yi 采用Llama架构及其许可使用政策感兴趣，请参阅 <span style="color:  green;"> Yi 与 Llama 的关系</span> ⬇️</summary> <ul> <br>
 
 > 💡 简短总结
 > 
-> Yi系列模型采用模型架构与LLaMA相同，但它们**不是**LLaMA的衍生品。
+> Yi 系列模型采用模型架构与Llama相同，但它们**不是**Llama的衍生品。
 
 
-- Yi和LLaMA都是基于Transformer结构构建的。实际上，自2018年以来，Transformer一直是大语言模型的常用架构。
+- Yi和Llama都是基于Transformer结构构建的。实际上，自2018年以来，Transformer一直是大语言模型的常用架构。
 
-- 在Transformer架构的基础上，LLaMA凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石。因此，LLaMA也成为Yi等模型的基础框架。
+- 在Transformer架构的基础上，Llama凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石。因此，Llama也成为Yi等模型的基础框架。
 
-- 得益于Transformer和LLaMA架构，其他模型可以简化从零开始构建模型的工作，并能够在各自的生态系统中使用相同的工具。
+- 得益于Transformer和Llama架构，其他模型可以简化从零开始构建模型的工作，并能够在各自的生态系统中使用相同的工具。
 
-- 然而，Yi系列模型不是LLaMA的衍生品，因为它们不使用LLaMA的权重。
+- 然而，Yi系列模型不是Llama的衍生品，因为它们不使用Llama的权重。
 
-  - 虽然大多数开源模型都采用了LLaMA的结构，但决定模型表现的关键因素是训练所使用的数据集、流水线及其基础设施。
+  - 虽然大多数开源模型都采用了Llama的结构，但决定模型表现的关键因素是训练所使用的数据集、流水线及其基础设施。
 
-  - [01.AI](https://01.ai/) 用独特的方式开发了Yi，从零开始独立创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此Yi系列模型在性能上取得了卓越的成绩，在2023年12月的[Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)上排名仅次于GPT4，超过了LLaMA。
+  - [01.AI](https://01.ai/) 用独特的方式开发了Yi，从零开始独立创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此Yi系列模型在性能上取得了卓越的成绩，在2023年12月的[Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/)上排名仅次于GPT4，超过了Llama。
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+
+
+<a href="#top" style="position: fixed; bottom: 80px; right: 20px;">
+   ⬆️ <span style="text-decoration: underline;"> 返回顶部</span> ⬆️
+</a>
+
+
 
 ## 🎉 最新动态
 
@@ -192,7 +195,7 @@
 
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 ## 🎯 模型
 Yi模型有多种参数规模，适用于不同的使用场景。你也可以对Yi模型进行微调，从而满足特定需求。
@@ -250,7 +253,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 
 # 🟢 如何使用 Yi?
@@ -259,7 +262,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [快速上手 - 使用 pip](#快速上手---pip)
   - [快速上手 - 使用 docker](#快速上手---docker)
   - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
-  - [快速上手 - 使用 Web Demo](#快速上手---web-demo)
+  - [快速上手 - 使用网页演示](#快速上手---网页演示)
 - [微调](#微调)
 - [量化](#量化)
 - [部署](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
@@ -568,18 +571,32 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 2. 访问聊天机器人界面，打开你的网络浏览器，在地址栏中输入 `http://0.0.0.0:8080`。
 
-    ![Yi模型聊天机器人界面 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png)
+    ![Yi模型聊天机器人界面 - LLaMA.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png?raw=true)
 
 3. 在提示窗口中输入一个问题，例如，“如何喂养你的宠物狐狸？请用 6 个简单的步骤回答”，你将会收到一个答案。
 
-    ![向 Yi 模型提问 - llama.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png)
+    ![向 Yi 模型提问 - LLaMA.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png?raw=true)
 
 </ul>
 </details>
 
-### 快速上手 - Web Demo
+### 快速上手 - conda-lock
 
-你可以使用 Yi **聊天模型**（Yi-34B-Chat）打造一个 Web Demo。注意：Yi 基座模型（Yi-34B）不支持该功能。
+<details>
+<summary>如果你想创建一个可以完全重现的 conda 环境锁定文件，你可以使用 <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> 工具。 ⬇️</summary>
+<br>
+您可以参考  <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a> 文件，该文件包含了所需依赖项的具体版本信息。此外，你还可以使用<code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code>工具来安装这些依赖项。
+<br>
+以下是安装这些依赖项的步骤：
+
+1. 根据<a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">该指南</a>安装 "micromamba"。 
+
+2. 运行命令 <code>micromamba install -y -n yi -f conda-lock.yml</code> ，创建一个名为<code>yi</code> conda 环境，并安装所需的依赖项。
+</details>
+
+### 快速上手 - 使用网页演示
+
+你可以使用 Yi **聊天模型**（Yi-34B-Chat）创建网页演示。注意：Yi 基座模型（Yi-34B）不支持该功能。
 
 [第一步：准备环境](#step-1-prepare-your-environment)
 
@@ -591,9 +608,9 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 python demo/web_demo.py -c <你的模型路径>
 ```
 
-命令运行完毕后，你可以在浏览器中输入控制台提供的网址，来使用 Web Demo。
+命令运行完毕后，你可以在浏览器中输入控制台提供的网址，来使用网页演示功能。
 
- ![快速上手 - Web Demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
+ ![快速上手 - 网页演示](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 ### 微调
 
@@ -807,7 +824,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 </ul>
 </details>
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 ### 部署
 
@@ -878,14 +895,13 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 
 | 类型        | 教程地址                                            |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
-| 博客        | [本地运行零一万物 34B 大模型，使用 Llama.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
+| 博客        | [本地运行零一万物 34B 大模型，使用 LLaMA.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
 | 博客        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
 | 博客       | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
 | 博客        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
 | 视频       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  漆妮妮  |
 | 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
 </details>
-
 
 # 🟢 为什么选择Yi？
 
@@ -913,9 +929,9 @@ Yi拥有一个全面的生态系统，提供一系列工具、服务和模型，
 
 ### 💦 上游
 
-Yi系列模型遵循与LLaMA相同的模型架构。选择Yi，您可以利用LLaMA生态系统中现有的工具、库和资源，无需创建新工具，提高开发效率。
+Yi系列模型遵循与Llama相同的模型架构。选择Yi，您可以利用Llama生态系统中现有的工具、库和资源，无需创建新工具，提高开发效率。
 
-例如，Yi系列模型以LLaMA模型的格式保存。您可以直接使用`LLaMAForCausalLM`和`LLaMATokenizer`加载模型。更多信息，请见[使用聊天模型](#31-使用聊天模型)。
+例如，Yi系列模型以Llama模型的格式保存。您可以直接使用`LlamaForCausalLM`和`LlamaTokenizer`加载模型。更多信息，请见[使用聊天模型](#31-使用聊天模型)。
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -977,23 +993,23 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 - [amazing-openai-api](https://github.com/soulteary/amazing-openai-api)：这个工具可以将Yi模型API转换成OpenAI API格式。
 - [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：这个工具使用可移植的Wasm（WebAssembly）文件构建了一个与OpenAI兼容的API服务器，用于Yi-34B-Chat，由Rust驱动。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 ## 📌 基准测试 
 
-- [📊 Chat 模型性能](#-Chat 模型性能)
+- [📊 聊天模型性能](#-聊天模型性能)
 - [📊 基座模型性能](#-基座模型性能)
 
-### 📊 Chat 模型性能
+### 📊 聊天模型性能
 
 Yi-34B-Chat 模型在 MMLU、CMMLU、BBH、GSM8k 等所有开源模型的基准测试中表现出色，排名第一。
-![Chat model performance](./assets/img/benchmark_chat.png) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
 
 <details>
 <summary> 评估方法与挑战 ⬇️ </summary>
 
 - **评估方式**: 我们使用零样本（zero-shot）和少样本（few-shot）方法评估了除 TruthfulQA 以外外的各种基准。
-- **零样本与少样本**: 大部分 Chat 模型常用零样本的方式。
+- **零样本与少样本**: 大部分聊天模型常用零样本的方式。
 - **评估策略**: 我们的评估策略是让模型在明确或隐含地遵循指令（例如使用少量样本示例）的同时生成回应，并从其生成的文本中提取相关答案。
 - **面临的挑战**: 一些模型不适用少数数据集中的指令，无法按照所要求的特定格式产生输出。这会导致结果不理想。
 
@@ -1003,7 +1019,7 @@ Yi-34B-Chat 模型在 MMLU、CMMLU、BBH、GSM8k 等所有开源模型的基准�
 ### 📊 基座模型性能
 
 Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤其在 MMLU、CMMLU、常识推理、阅读理解等方面表现卓越。
-![Base model performance](./assets/img/benchmark_base.png)
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
 
 <details>
 <summary> 评估方法 ⬇️</summary>
@@ -1023,11 +1039,11 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 - Yi 系列模型可免费用于个人使用、学术目的和商业用途。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
   
-- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)来获得Yi系列模型的商业许可证。
+- 对于免费的商业用途，您只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)，就可以获得Yi系列模型的商业许可证。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
-# 🟢 杂项
+# 🟢 其他内容
 
 ### 致谢
 
