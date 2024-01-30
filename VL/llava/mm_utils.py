@@ -1,4 +1,5 @@
 import base64
+import os
 from io import BytesIO
 
 import torch
@@ -70,7 +71,7 @@ def get_model_name_from_path(model_path):
 
 
 def load_pretrained_model(
-    model_path, load_8bit=False, load_4bit=False, device_map="auto", multimodal="IMAGE"
+    model_path, lora_path=None, load_8bit=False, load_4bit=False, device_map="auto", multimodal="IMAGE"
 ):
     kwargs = {"device_map": device_map}
     kwargs["torch_dtype"] = torch.bfloat16
@@ -79,6 +80,18 @@ def load_pretrained_model(
     model = LlavaLlamaForCausalLM.from_pretrained(
         model_path, low_cpu_mem_usage=True, **kwargs
     )
+    if lora_path is not None:
+        from peft import PeftModel
+        non_lora_trainables = torch.load(os.path.join(lora_path, 'non_lora_trainables.bin'), map_location='cpu')
+        non_lora_trainables = {(k[11:] if k.startswith('base_model.') else k): v for k, v in
+                               non_lora_trainables.items()}
+        if any(k.startswith('model.model.') for k in non_lora_trainables):
+            non_lora_trainables = {(k[6:] if k.startswith('model.') else k): v for k, v in non_lora_trainables.items()}
+        model.load_state_dict(non_lora_trainables, strict=False)
+
+        model = PeftModel.from_pretrained(model, lora_path)
+        model = model.merge_and_unload()
+
     image_processor = None
     model.resize_token_embeddings(len(tokenizer))
     vision_tower = model.get_vision_tower()
