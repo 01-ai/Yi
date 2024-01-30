@@ -70,15 +70,15 @@
     - [基座模型](#基座模型)
     - [其他信息](#其他信息)
   - [🎉 最新动态](#-最新动态)
-- [🟢 How to use Yi?](#-how-to-use-yi)
-  - [快速上手](#quick-start)
-    - [选择你的学习路径](#choose-your-path)
-    - [快速上手 - 使用 PyPi（pip install）](#pip)
-    - [快速上手 - 使用 llama.cpp 量化运行](#llamacpp-快速入门)
-    - [快速上手 - 使用 Web Demo](#网页版演示应用web-demo)
-    - [快速上手 - 使用 Docker](#docker-快速入门)
-  - [Fine tune](#fine-tune)
-  - [Quantization](#quantization)
+- [🟢 如何使用 Yi?](#-如何使用-yi)
+  - [快速上手](#快速上手)
+    - [选择路径](#选择路径)
+    - [快速上手 - 使用 pip](#快速上手---pip)
+    - [快速上手 - 使用 docker](#快速上手---docker)
+    - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
+    - [快速上手 - 使用 Web Demo](#快速上手---web-demo)
+  - [微调](#微调)
+  - [量化](#量化)
   - [部署](#部署)
   - [学习中心](#学习中心)
 - [🟢 为什么选择Yi？](#-为什么选择Yi?)
@@ -254,26 +254,26 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 
 # 🟢 如何使用 Yi?
-
-- [快速开始](#快速开始)
-  - [选择你的路线](#选择你的路线)
-  - [pip](#快速开始---pip)
-  - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
-  - [web demo](#web-demo)
+- [快速上手](#快速上手)
+  - [选择路径](#选择路径)
+  - [快速上手 - 使用 pip](#快速上手---pip)
+  - [快速上手 - 使用 docker](#快速上手---docker)
+  - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
+  - [快速上手 - 使用 Web Demo](#快速上手---web-demo)
 - [微调](#微调)
 - [量化](#量化)
 - [部署](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
 - [学习中心](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
 
-## 快速开始
+## 快速上手
 
-启动并开始使用 Yi 模型非常简单，有多个可用的选择。
+ 启用 Yi 模型非常简单，以下提供了多种路径供你选择。
 
-### 选择你的路线
+### 选择路径
 
-选择以下路线之一，开始你的 Yi 之旅！
+你可以根据你的需求，在下列路径中选择一条路径，开始你的 Yi 之旅～
 
- ![快速开始 - 选择你的路线](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png)
+ ![快速开始 - 选择路径](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path.png?raw=true)
 
 #### 🎯 在本地部署 Yi
 
@@ -312,13 +312,14 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 下列这些在线聊天服务提供了相似的用户体验，如果你想与Yi聊天，你可以任意选用其中一项。
 
-- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) (Yi 在 Hugging Face 上的官方空间)
+- [Yi-34B-Chat](https://huggingface.co/spaces/01-ai/Yi-34B-Chat) ( Yi 在 Hugging Face 上的官方空间）
   - 不需要注册。
 
-- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi 官方 beta 版本)
-  - 如果你申请加入白名单，就可以使用官方的在线聊天服务。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
+- [Yi-34B-Chat](https://platform.lingyiwanwu.com/) ( Yi 官方 beta 版本）
+  - 只要申请加入了白名单，就可以使用官方在线聊天服务。
+  （填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
 
-### 快速开始 - pip
+### 快速上手 - pip
 
 本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并运行推理。
 
@@ -421,7 +422,7 @@ python demo/text_generation.py  --model <your-model-path>
 
 <details>
 <summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程 👇</summary>
-<br>这个教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并执行推理。
+<br>这个教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并运行推理。
 <h4>步骤0: 准备工作</h4>
 <p>确保你已经安装了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>。</p>
 <h4>步骤1: 启动 Docker 容器</h4>
@@ -431,14 +432,14 @@ ghcr.io/01-ai/yi:latest
 </code></pre>
 <p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
-<h4>步骤2: 执行推理</h4>
-    <p>你可以使用Yi 的聊天模型或基础模型来执行推理。</p>
+<h4>步骤2: 运行推理</h4>
+    <p>你可以使用Yi 的聊天模型或基座模型来运行推理。</p>
     
-<h5>使用 Yi 聊天模型执行推理</h5>
-    <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+<h5>使用 Yi 聊天模型运行推理</h5>
+    <p>运行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
     <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 而不是 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
-<h5>使用 Yi 基础模型执行推理</h5>
-    <p>执行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+<h5>使用 Yi 基座模型运行推理</h5>
+    <p>运行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
     <p><strong>请注意</strong> 唯一不同的是你需要设置 <code>--model &lt;your-model-mount-path&gt;'</code> 而不是 <code>model &lt;your-model-path&gt;</code>。</p>
 </details>
 
@@ -482,19 +483,19 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
 ```
 
-#### 步骤 3: 执行推理
+#### 步骤 3: 运行推理
 
 如需体验 Yi 模型（进行模型推理），你可以选择以下任意一种方法。
 
-- [方法 1：在终端中执行推理](#method-1-perform-inference-in-terminal)
+- [方法 1：在终端中运行推理](#method-1-perform-inference-in-terminal)
   
-- [方法 2：在网页上执行推理](#method-2-perform-inference-in-web)
+- [方法 2：在网页上运行推理](#method-2-perform-inference-in-web)
 
-### 方法一：在终端中执行推理
+##### 方法一：在终端中运行推理
 
 本文使用 4 个线程编译 `llama.cpp` ，之后进行推理。在 `llama.cpp` 所在的目录，运行以下命令。
 
-> ### 提示
+> ###### 提示
 >
 > - 将 `/Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf` 替换为你的模型的实际路径。
 >
@@ -526,7 +527,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 恭喜你！你已经成功地向 Yi 模型提出了问题并得到了回答！🥳
 
-### 方法二：在网页上进行推理
+##### 方法二：在网页上进行推理
 
 1. 初始化一个轻量级、快速的聊天机器人，运行以下命令。
 
@@ -578,7 +579,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ### 快速上手 - Web Demo
 
-你可以使用 Yi **聊天模型**（Yi-34B-Chat）打造一个 Web Demo。注意：Yi 基础模型（Yi-34B）不支持该功能。
+你可以使用 Yi **聊天模型**（Yi-34B-Chat）打造一个 Web Demo。注意：Yi 基座模型（Yi-34B）不支持该功能。
 
 [第一步：准备环境](#step-1-prepare-your-environment)
 
@@ -592,7 +593,7 @@ python demo/web_demo.py -c <你的模型路径>
 
 命令运行完毕后，你可以在浏览器中输入控制台提供的网址，来使用 Web Demo。
 
- ![快速上手 - Web Demo](./assets/img/yi_34b_chat_web_demo.gif)
+ ![快速上手 - Web Demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 ### 微调
 
@@ -600,27 +601,24 @@ python demo/web_demo.py -c <你的模型路径>
 bash finetune/scripts/run_sft_Yi_6b.sh
 ```
 
-Once finished, you can compare the finetuned model and the base model with the following command:
+完成后，您可以使用以下命令比较微调后的模型和基座模型：
 
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary>For advanced usage (like fine-tuning based on your custom data), see ⬇️</summary> <ul>
+<details style="display: inline;"><summary> 你可以使用Yi 6B 和 34B 基座模型的微调代码，根据你的自定义数据进行微调。 ⬇️</summary> <ul>
 
-### Finetune code for Yi 6B and 34B
+#### 准备工作
 
-#### Preparation
+###### 从镜像开始
 
-##### From Image
-
-By default, we use a small dataset from [BAAI/COIG](https://huggingface.co/datasets/BAAI/COIG) to finetune the base model.
-You can also prepare your customized dataset in the following `jsonl` format:
+默认情况下，我们使用来自[BAAI/COIG](https://huggingface.co/datasets/BAAI/COIG) 的小型数据集来微调基座模型。
+您还可以按照以下 `jsonl` 格式准备自定义数据集：
 
 ```json
 { "prompt": "Human: Who are you? Assistant:", "chosen": "I'm Yi." }
 ```
-
-And then mount them in the container to replace the default ones:
+然后将它们挂载到容器中，替换默认数据：
 
 ```bash
 docker run -it \
@@ -631,9 +629,9 @@ docker run -it \
     bash finetune/scripts/run_sft_Yi_6b.sh
 ```
 
-##### From Local Server
+###### 从本地服务器开始
 
-Make sure you have conda. If not, use
+确保你已经安装了 conda。如果还没安装，请运行以下命令。
 
 ```bash
 mkdir -p ~/miniconda3
@@ -644,7 +642,7 @@ rm -rf ~/miniconda3/miniconda.sh
 source ~/.bashrc
 ```
 
-Then, create a conda env:
+然后，创建一个 conda 环境。
 
 ```bash
 conda create -n dev_env python=3.10 -y
@@ -652,17 +650,17 @@ conda activate dev_env
 pip install torch==2.0.1 deepspeed==0.10 tensorboard transformers datasets sentencepiece accelerate ray==2.7
 ```
 
-#### Hardware Setup
+##### 配备硬件
 
-For the Yi-6B model, a node with 4 GPUs, each has GPU mem larger than 60GB is recommended.
+如果你想使用 Yi-6B 模型，建议使用具有 4 个 GPU 的节点，每个 GPU 的 GPU 内存大于 60GB。
 
-For the Yi-34B model, because the usage of zero-offload technique takes a lot CPU memory, please be careful to limit the GPU numbers in 34B finetune training. Please use CUDA_VISIBLE_DEVICES to limit the GPU number (as shown in scripts/run_sft_Yi_34b.sh).
+如果你想使用 Yi-34B 模型，因使用了零卸载技术，占用了大量 CPU 内存，你需要限制 34B 微调训练中的 GPU 数量。请使用 CUDA_VISIBLE_DEVICES 限制 GPU 数量（如 scripts/run_sft_Yi_34b.sh 中所示）。
 
-A typical hardware setup for finetuning 34B model is a node with 8GPUS (limit to 4 in running by CUDA_VISIBLE_DEVICES=0,1,2,3), each has GPU mem larger than 80GB, with total CPU mem larger than 900GB.
+用于微调 34B 模型的常用硬件具有 8 个 GPU 的节点（通过CUDA_VISIBLE_DEVICES=0,1,2,3 在运行中限制为4个 GPU），每个 GPU 的内存大于 80GB，总 CPU 内存大于900GB。
 
-#### Quick Start
+#### 快速上手
 
-Download a LLM-base model to MODEL_PATH (6B and 34B). A typical folder of models is like:
+将 LLM-base 模型下载到 MODEL_PATH（6B 和 34B）。模型常见的文件夹结构如下。
 
 ```bash
 |-- $MODEL_PATH
@@ -675,7 +673,7 @@ Download a LLM-base model to MODEL_PATH (6B and 34B). A typical folder of models
 |   |-- ...
 ```
 
-Download a dataset from huggingface to local storage DATA_PATH, e.g. Dahoas/rm-static.
+将数据集从 huggingface 下载到本地存储 DATA_PATH，例如 Dahoas/rm-static。
 
 ```bash
 |-- $DATA_PATH
@@ -686,7 +684,7 @@ Download a dataset from huggingface to local storage DATA_PATH, e.g. Dahoas/rm-s
 |   |-- README.md
 ```
 
-`finetune/yi_example_dataset` has example datasets, which are modified from [BAAI/COIG](https://huggingface.co/datasets/BAAI/COIG)
+`finetune/yi_example_dataset` 中有示例数据集，这些数据集是从 [BAAI/COIG](https://huggingface.co/datasets/BAAI/COIG)修改而来。
 
 ```bash
 |-- $DATA_PATH
@@ -695,7 +693,7 @@ Download a dataset from huggingface to local storage DATA_PATH, e.g. Dahoas/rm-s
         |-- eval.jsonl
 ```
 
-`cd` into the scripts folder, copy and paste the script, and run. For example:
+`cd` 进入 scripts 文件夹，复制并粘贴脚本，然后运行。你可以使用以下代码完成此项。
 
 ```bash
 cd finetune/scripts
@@ -703,11 +701,11 @@ cd finetune/scripts
 bash run_sft_Yi_6b.sh
 ```
 
-For the Yi-6B base model, setting training_debug_steps=20 and num_train_epochs=4 can output a chat model, which takes about 20 minutes.
+对于 Yi-6B 基座模型，设置 training_debug_steps=20 和 num_train_epochs=4， 就可以输出一个聊天模型，大约需要 20 分钟。
 
-For the Yi-34B base model, it takes a relatively long time for initialization. Please be patient.
+对于 Yi-34B 基座模型，初始化时间相对较长，请耐心等待。
 
-#### Evaluation
+#### 评估
 
 ```bash
 cd finetune/scripts
@@ -715,13 +713,13 @@ cd finetune/scripts
 bash run_eval.sh
 ```
 
-Then you'll see the answer from both the base model and the finetuned model
+然后，您将看到基座模型和微调模型的回复。
 </ul>
 </details>
 
 ### 量化
 
-#### GPT-Q
+#### GPT-Q 量化
 ```bash
 python quantization/gptq/quant_autogptq.py \
   --model /base_model                      \
@@ -729,7 +727,7 @@ python quantization/gptq/quant_autogptq.py \
   --trust_remote_code
 ```
 
-Once finished, you can then evaluate the resulting model as follows:
+完成后，您可以用以下代码对生成的模型进行评估。
 
 ```bash
 python quantization/gptq/eval_quantized_model.py \
@@ -737,35 +735,28 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary> 以下是量化详细的过程。 ⬇️</summary> <ul>
 
-#### GPT-Q quantization
+[GPT-Q](https://github.com/IST-DASLab/gptq)是一种后训练量化方法，能够帮助大型语言模型在使用时节省内存，保持模型的准确性，可能会加快模型的运行速度。
 
-[GPT-Q](https://github.com/IST-DASLab/gptq) is a PTQ(Post-Training Quantization)
-method. It's memory saving and provides potential speedups while retaining the accuracy
-of the model. 
+使用以下教程，对Yi 模型进行 GPT-Q 量化，毫不费力。
 
-Yi models can be GPT-Q quantized without a lot of efforts. 
-We provide a step-by-step tutorial below.
-
-To run GPT-Q, we will use [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) and
+要运行 GPT-Q，你需要用到[AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) 和
 [exllama](https://github.com/turboderp/exllama).
-And the huggingface transformers has integrated optimum and auto-gptq to perform
-GPTQ quantization on language models.
+此外，huggingface transformers 已经集成了 optimum 和 auto-gptq，能够实现语言模型的 GPT-Q 量化。
 
-##### Do Quantization
+##### 运行量化
 
-The `quant_autogptq.py` script is provided for you to perform GPT-Q quantization:
+为了运行 GPT-Q 量化，您可以使用提供的 `quant_autogptq.py` 脚本。
 
 ```bash
 python quant_autogptq.py --model /base_model \
     --output_dir /quantized_model --bits 4 --group_size 128 --trust_remote_code
 ```
 
+##### 运行量化模型
 
-##### Run Quantized Model
-
-You can run a quantized model using the `eval_quantized_model.py`:
+你可以使用`eval_quantized_model.py`来运行量化模型。
 
 ```bash
 python eval_quantized_model.py --model /quantized_model --trust_remote_code
@@ -773,7 +764,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </ul>
 </details>
 
-#### AWQ
+#### AWQ 量化
 ```bash
 python quantization/awq/quant_autoawq.py \
   --model /base_model                      \
@@ -781,37 +772,33 @@ python quantization/awq/quant_autoawq.py \
   --trust_remote_code
 ```
 
-Once finished, you can then evaluate the resulting model as follows:
+完成后，你可以使用以下脚本对生成的模型进行评估。
 
 ```bash
 python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see ⬇️</summary> <ul>
+<details style="display: inline;"><summary> 关于 AWQ 量化的细节，见以下内容。⬇️</summary> <ul>
 
-#### AWQ quantization
+[AWQ](https://github.com/mit-han-lab/llm-awq)是一种用于大型语言模型（LLMs）的后训练量化方法，可以将模型的权重数据高效准确地转化成低位数据（比如INT3或INT4），因此可以减小模型在内存中的占用空间，保持模型的准确性。
 
-[AWQ](https://github.com/mit-han-lab/llm-awq) is a PTQ(Post-Training Quantization)
-method. It's an efficient and accurate low-bit weight quantization (INT3/4) for LLMs.
+使用以下教程，对Yi 模型进行 AWQ 量化，毫不费力。
 
-Yi models can be AWQ quantized without a lot of efforts. 
-We provide a step-by-step tutorial below.
+要运行 AWQ，我们会用到 [AutoAWQ](https://github.com/casper-hansen/AutoAWQ).
 
-To run AWQ, we will use [AutoAWQ](https://github.com/casper-hansen/AutoAWQ).
+##### 运行量化
 
-##### Do Quantization
-
-The `quant_autoawq.py` script is provided for you to perform AWQ quantization:
+你可以使用 `quant_autoawq.py` 脚本运行 AWQ 量化。
 
 ```bash
 python quant_autoawq.py --model /base_model \
     --output_dir /quantized_model --bits 4 --group_size 128 --trust_remote_code
 ```
 
-##### Run Quantized Model
+##### 运行量化模型
 
-You can run a quantized model using the `eval_quantized_model.py`:
+你可以使用 `eval_quantized_model.py`脚本来运行量化后的模型。
 
 ```bash
 python eval_quantized_model.py --model /quantized_model --trust_remote_code
@@ -820,7 +807,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 </ul>
 </details>
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">回到顶部 ⬆️ </a> ] </div>
 
 ### 部署
 
@@ -861,7 +848,7 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 | Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
 | Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
 
-##### 基础模型
+##### 基座模型
 
 |模型                   |最低显存      |        推荐GPU示例                     |
 |:----------------------|:--------------|:-------------------------------------:|
@@ -911,7 +898,7 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
       - [API](#api)
   - [📌 基准测试](#-基准测试)
     - [📊 聊天模型性能](#-聊天模型性能)
-    - [📊 基础模型性能](#-基础模型性能)
+    - [📊 基座模型性能](#-基座模型性能)
 
 ## 🌎 生态系统
 
