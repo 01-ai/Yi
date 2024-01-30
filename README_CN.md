@@ -70,8 +70,8 @@
     - [选择路径](#选择路径)
     - [快速上手 - 使用 pip](#快速上手---pip)
     - [快速上手 - 使用 docker](#快速上手---docker)
-    - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
     - [快速上手 - 使用 conda-lock](#快速上手---conda-lock)
+    - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
     - [快速上手 - 使用网页演示](#快速上手---使用网页演示)
   - [微调](#微调)
   - [量化](#量化)
@@ -261,8 +261,8 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [选择路径](#选择路径)
   - [快速上手 - 使用 pip](#快速上手---pip)
   - [快速上手 - 使用 docker](#快速上手---docker)
-  - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
   - [快速上手 - 使用 conda-lock](#快速上手---conda-lock)
+  - [快速上手 - 使用 llama.cpp](#快速上手---llamacpp)
   - [快速上手 - 使用网页演示](#快速上手---网页演示)
 - [微调](#微调)
 - [量化](#量化)
@@ -326,7 +326,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 ### 快速上手 - pip
 
-本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并运行推理。
+本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并进行推理。
 
 #### Step 0: 前提条件
  
@@ -352,11 +352,11 @@ pip install -r requirements.txt
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
 - [WiseModel](https://wisemodel.cn/organization/01.AI)
 
-#### Step 3: 运行推理
+#### Step 3: 进行推理
 
-你可以使用 Yi 聊天模型或基座模型运行推理，如下所示。
+你可以使用 Yi 聊天模型或基座模型进行推理，如下所示。
 
-##### 使用 Yi chat 模型运行推理
+##### 使用 Yi 聊天模型进行推理
 
 1. 创建一个名为 `quick_start.py` 的文件，并将以下内容复制到其中。
 
@@ -393,15 +393,15 @@ pip install -r requirements.txt
     python quick_start.py
     ```
 
-    然后你将看到一个类似于以下的输出。🥳
+    然后你将看到一个类似于以下的回复。🥳
 
     ```bash
     Hello! How can I assist you today?
     ```
 
-##### 使用 Yi base 模型运行推理
+##### 使用 Yi 基座模型进行推理
 
-步骤和[使用 Yi chat 模型运行推理](#使用-Yi-chat-模型运行推理)很相似。
+步骤和[使用 Yi 聊天模型进行推理](#使用-Yi-chat-模型进行推理)很相似。
 
 你可以使用现有的文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)。
 
@@ -409,25 +409,23 @@ pip install -r requirements.txt
 python demo/text_generation.py  --model <your-model-path>
 ```
 
-然后你将看到一个类似于以下的输出。🥳
-
 <details>
 
-<summary>输出 ⬇️ </summary>
+<summary> 然后你将看到一个类似于以下的回复。🥳 ⬇️ </summary>
 
 <br>
 
-**Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
+**指令**: Let me tell you an interesting story about cat Tom and mouse Jerry,
 
-**Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
+**回复**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
 
 </details>
 
 ### 快速上手 - Docker
 
 <details>
-<summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程 👇</summary>
-<br>这个教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并运行推理。
+<summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程。⬇️</summary>
+<br>本教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并进行推理。
 <h4>步骤0: 准备工作</h4>
 <p>确保你已经安装了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>。</p>
 <h4>步骤1: 启动 Docker 容器</h4>
@@ -437,23 +435,35 @@ ghcr.io/01-ai/yi:latest
 </code></pre>
 <p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
-<h4>步骤2: 运行推理</h4>
-    <p>你可以使用 Yi 的聊天模型或基座模型来运行推理。</p>
+<h4>步骤2: 进行推理</h4>
+    <p>你可以使用 Yi 的聊天模型或基座模型来进行推理。</p>
     
-<h5>使用 Yi 聊天模型运行推理</h5>
-    <p>运行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+<h5>使用 Yi 聊天模型进行推理</h5>
+    <p>进行推理的步骤与使用<a href="#使用-yi-聊天模型进行推理"> pip 安装指南</a>类似。</p>
     <p><strong>注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 而不是 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
-<h5>使用 Yi 基座模型运行推理</h5>
-    <p>运行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
+<h5>使用 Yi 基座模型进行推理</h5>
+    <p>进行推理的步骤与使用<a href="#使用-yi-聊天模型进行推理"> pip 安装指南</a>类似。</p>
     <p><strong>注意</strong> 唯一不同的是你需要设置 <code>--model &lt;your-model-mount-path&gt;'</code> 而不是 <code>model &lt;your-model-path&gt;</code>。</p>
 </details>
 
+### 快速上手 - conda-lock
 
+<details>
+<summary> 🚀 如果你想创建一个可以完全重现的 conda 环境锁定文件，你可以使用 <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> 工具。 ⬇️</summary>
+<br>
+你可以参考  <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a> 文件，该文件包含了所需依赖项的具体版本信息。此外，你还可以使用<code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code>工具来安装这些依赖项。
+<br>
+安装这些依赖项的步骤，如下所示。
+
+1. 根据<a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">指南</a>安装 "micromamba"。 
+
+2. 运行命令 <code>micromamba install -y -n yi -f conda-lock.yml</code> ，创建一个名为<code>yi</code> conda 环境，并安装所需的依赖项。
+</details>
 
 ### 快速上手 - llama.cpp
 <details>
-<summary> 🚀 以下是使用 llama.cpp 在本地运行 Yi-chat-6B-2bits 模型的详细教程👇 </summary> 
-<br>该教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
+<summary> 🚀 以下是使用 llama.cpp 在本地运行 Yi-chat-6B-2bits 模型的详细教程。⬇️ </summary> 
+<br>本教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
 
 - [步骤 0: 前提条件](#step-0-prerequisites)
 - [步骤 1: 下载 llama.cpp](#step-1-download-llamacpp)
@@ -462,7 +472,7 @@ ghcr.io/01-ai/yi:latest
 
 #### 步骤 0: 前提条件
 
-- 该教程在 MacBook Pro（16GB 内存和 Apple M2 Pro 芯片）上运行 。
+- 该教程适用于 MacBook Pro（16GB 内存和 Apple M2 Pro 芯片）。
 
 - 确保你的电脑上安装了 [`git-lfs`](https://git-lfs.com/) 。
   
@@ -488,15 +498,15 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
 ```
 
-#### 步骤 3: 运行推理
+#### 步骤 3: 进行推理
 
 如需体验 Yi 模型（进行模型推理），你可以选择以下任意一种方法。
 
-- [方法 1：在终端中运行推理](#method-1-perform-inference-in-terminal)
+- [方法 1：在终端中进行推理](#method-1-perform-inference-in-terminal)
   
-- [方法 2：在网页上运行推理](#method-2-perform-inference-in-web)
+- [方法 2：在网页上进行推理](#method-2-perform-inference-in-web)
 
-##### 方法一：在终端中运行推理
+##### 方法一：在终端中进行推理
 
 本文使用 4 个线程编译 `llama.cpp` ，之后进行推理。在 `llama.cpp` 所在的目录，运行以下命令。
 
@@ -530,11 +540,11 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 ```
 
-恭喜你！你已经成功地向 Yi 模型提出了问题并得到了回答！🥳
+恭喜你！你已经成功地向 Yi 模型提出了问题，得到了回复！🥳
 
 ##### 方法二：在网页上进行推理
 
-1. 初始化一个轻量级、快速的聊天机器人，运行以下命令。
+1. 如果你想启用一个轻便敏捷的聊天机器人，可以运行以下命令。
 
     ```bash
     ./server --ctx-size 2048 --host 0.0.0.0 --n-gpu-layers 64 --model /Users/yu/yi-chat-6B-GGUF/yi-chat-6b.Q2_K.gguf
@@ -571,29 +581,15 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
     llama server listening at http://0.0.0.0:8080
     ```
 
-2. 访问聊天机器人界面，打开你的网络浏览器，在地址栏中输入 `http://0.0.0.0:8080`。
+2. 如果你想访问聊天机器人界面，可以打开网络浏览器，在地址栏中输入 `http://0.0.0.0:8080`。
 
     ![Yi模型聊天机器人界面 - LLaMA.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp1.png?raw=true)
 
-3. 在提示窗口中输入一个问题，例如，“如何喂养你的宠物狐狸？请用 6 个简单的步骤回答”，你将会收到一个答案。
+3. 如果你在提示窗口中输入问题，例如，“如何喂养你的宠物狐狸？请用 6 个简单的步骤回答”，你就会收到回复。
 
     ![向 Yi 模型提问 - LLaMA.cpp](https://github.com/01-ai/Yi/blob/main/assets/img/yi_llama_cpp2.png?raw=true)
 
 </ul>
-</details>
-
-### 快速上手 - conda-lock
-
-<details>
-<summary>如果你想创建一个可以完全重现的 conda 环境锁定文件，你可以使用 <code><a href="https://github.com/conda/conda-lock">conda-lock</a></code> 工具。 ⬇️</summary>
-<br>
-你可以参考  <a href="https://github.com/01-ai/Yi/blob/ebba23451d780f35e74a780987ad377553134f68/conda-lock.yml">conda-lock.yml</a> 文件，该文件包含了所需依赖项的具体版本信息。此外，你还可以使用<code><a href="https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html">micromamba</a></code>工具来安装这些依赖项。
-<br>
-以下是安装这些依赖项的步骤。
-
-1. 根据<a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">该指南</a>安装 "micromamba"。 
-
-2. 运行命令 <code>micromamba install -y -n yi -f conda-lock.yml</code> ，创建一个名为<code>yi</code> conda 环境，并安装所需的依赖项。
 </details>
 
 ### 快速上手 - 使用网页演示
@@ -620,12 +616,12 @@ python demo/web_demo.py -c <你的模型路径>
 bash finetune/scripts/run_sft_Yi_6b.sh
 ```
 
-完成后，你可以使用以下命令比较微调后的模型和基座模型。
+完成后，你可以使用以下命令，比较微调后的模型与基座模型。
 
 ```bash
 bash finetune/scripts/run_eval.sh
 ```
-<details style="display: inline;"><summary> 你可以使用Yi 6B 和 34B 基座模型的微调代码，根据你的自定义数据进行微调。 ⬇️</summary> <ul>
+<details style="display: inline;"><summary> 你可以使用 Yi 6B 和 34B 基座模型的微调代码，根据你的自定义数据进行微调。 ⬇️</summary> <ul>
 
 #### 准备工作
 
@@ -637,7 +633,7 @@ bash finetune/scripts/run_eval.sh
 ```json
 { "prompt": "Human: Who are you? Assistant:", "chosen": "I'm Yi." }
 ```
-然后将它们挂载到容器中，替换默认数据。
+然后将自定义数据集挂载到容器中，替换默认数据。
 
 ```bash
 docker run -it \
@@ -650,7 +646,7 @@ docker run -it \
 
 ###### 从本地服务器开始
 
-确保你已经安装了 conda。如果还没安装，就运行以下命令。
+确保你已经安装了 conda。如果还没安装，可以运行以下命令。
 
 ```bash
 mkdir -p ~/miniconda3
@@ -671,9 +667,9 @@ pip install torch==2.0.1 deepspeed==0.10 tensorboard transformers datasets sente
 
 ##### 配备硬件
 
-如果你想使用 Yi-6B 模型，建议使用具有 4 个 GPU 的节点，每个 GPU 的 GPU 内存大于 60GB。
+如果你想使用 Yi-6B 模型，建议使用具有 4 个 GPU 的节点，每个 GPU 内存大于 60GB。
 
-如果你想使用 Yi-34B 模型，因使用了零卸载技术，占用了大量 CPU 内存，你需要限制 34B 微调训练中的 GPU 数量。使用 CUDA_VISIBLE_DEVICES 限制 GPU 数量（如 scripts/run_sft_Yi_34b.sh 中所示）。
+如果你想使用 Yi-34B 模型，注意此模式采用零卸载技术，占用了大量 CPU 内存，因此需要限制 34B 微调训练中的 GPU 数量。你可以使用 CUDA_VISIBLE_DEVICES 限制 GPU 数量（如 scripts/run_sft_Yi_34b.sh 中所示）。
 
 用于微调 34B 模型的常用硬件具有 8 个 GPU 的节点（通过CUDA_VISIBLE_DEVICES=0,1,2,3 在运行中限制为4个 GPU），每个 GPU 的内存大于 80GB，总 CPU 内存大于900GB。
 
@@ -756,9 +752,9 @@ python quantization/gptq/eval_quantized_model.py \
 
 <details style="display: inline;"><summary> 以下是量化详细的过程。 ⬇️</summary> <ul>
 
-[GPT-Q](https://github.com/IST-DASLab/gptq)是一种后训练量化方法，能够帮助大型语言模型在使用时节省内存，保持模型的准确性，可能会加快模型的运行速度。
+[GPT-Q](https://github.com/IST-DASLab/gptq)是一种后训练量化方法，能够帮助大型语言模型在使用时节省内存，保持模型的准确性，可以加快模型的运行速度。
 
-使用以下教程，对Yi 模型进行 GPT-Q 量化，毫不费力。
+使用以下教程，对 Yi 模型进行 GPT-Q 量化，毫不费力。
 
 要运行 GPT-Q，你需要用到[AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ) 和
 [exllama](https://github.com/turboderp/exllama).
@@ -802,7 +798,7 @@ python quantization/awq/eval_quantized_model.py \
 
 [AWQ](https://github.com/mit-han-lab/llm-awq)是一种用于大型语言模型（LLMs）的后训练量化方法，可以将模型的权重数据高效准确地转化成低位数据（比如INT3或INT4），因此可以减小模型在内存中的占用空间，保持模型的准确性。
 
-使用以下教程，对Yi 模型进行 AWQ 量化，毫不费力。
+使用以下教程，对 Yi 模型进行 AWQ 量化，毫不费力。
 
 要运行 AWQ，我们会用到 [AutoAWQ](https://github.com/casper-hansen/AutoAWQ).
 
@@ -830,11 +826,11 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 ### 部署
 
-如果你想部署Yi模型，确保满足以下软件和硬件要求。
+如果你想部署 Yi 模型，确保满足以下软件和硬件要求。
 
 #### 软件要求
 
-在使用Yi量化模型之前，确保已经安装以下列出的软件。
+在使用 Yi 量化模型之前，确保已经安装以下列出的软件。
 
 | 模型 | 软件 |
 |:---|:---|
@@ -843,7 +839,7 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 
 #### 硬件要求
 
-在环境中部署Yi之前，确保硬件满足以下要求。
+在环境中部署 Yi 之前，确保硬件满足以下要求。
 
 ##### 聊天模型
 
@@ -882,15 +878,15 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 <summary> 如果你想学习Yi，你可以在这里找到大量的有用的学习资源。 ⬇️</summary>
 <br>
 
-欢迎来到Yi学习中心！
+欢迎来到 Yi 学习中心！
 
-无论你是经验丰富的开发者还是新手，你都可以找到大量有用的学习资源，以提高你对Yi模型的理解和技能，包括深入的博客文章、全面的视频教程、实践指南等等。
+无论你是经验丰富的开发者还是新手，你都可以在这里找到大量有用的学习资源，更加了解 Yi 模型，增强相关技能。在这里，你可以学习见解深刻的博客文章、深度全面的视频教程以及实践指南等精彩内容。
 
-在这里，你能找到的内容是由知识渊博的Yi专家和热情的爱好者慷慨贡献的。我们对各位小伙伴宝贵的贡献表示衷心的感谢！
+在这里，知识渊博的 Yi 专家和热情的爱好者慷慨分享了许多深度内容。我们对各位小伙伴宝贵的贡献表示衷心的感谢！
 
-同时，我们也热烈邀请你加入我们的协作努力，为Yi做出贡献。如果你已经对Yi做出了贡献，不要犹豫，在下面的表格中展示你杰出的工作。
+在此，我们也热烈邀请你加入我们，为 Yi 做出贡献。如果你已经对 Yi 做出了贡献，不要犹豫，在下面的表格中展示你杰出的工作。
 
-相信有了这些唾手可得的资源，你就准备好开始 Yi 学习之旅啦。祝学习愉快！🥳
+有了这些唾手可得的资源，你就可以即刻踏上 Yi 学习之旅啦～祝学习愉快！🥳
 
 #### 教程
 
@@ -905,7 +901,7 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 | 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
 </details>
 
-# 🟢 为什么选择Yi？
+# 🟢 为什么选择 Yi？
 
   - [🌎 生态系统](#-生态系统)
     - [💦 上游](#-上游)
@@ -931,7 +927,7 @@ Yi 拥有一个全面的生态系统，为你提供一系列工具、服务和�
 
 ### 💦 上游
 
-Yi 系列模型遵循与Llama相同的模型架构。选择 Yi ，你可以利用Llama生态系统中现有的工具、库和资源，无需创建新工具，提高开发效率。
+Yi 系列模型遵循与Llama相同的模型架构。选择 Yi，你可以利用Llama生态系统中现有的工具、库和资源，无需创建新工具，提高开发效率。
 
 例如，Yi 系列模型以Llama模型的格式保存。你可以直接使用`LlamaForCausalLM`和`LlamaTokenizer`加载模型。更多信息，详见[使用聊天模型](#31-使用聊天模型)。
 
@@ -953,21 +949,21 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 
 #### 🔗 服务
 
-如果你想在几分钟内开始使用Yi，你可以使用以下基于 Yi 构建的服务。
+如果你想在几分钟内开始使用 Yi，你可以使用以下基于 Yi 构建的服务。
 
-- Yi-34B-Chat：你可以通过以下平台与Yi聊天。
+- Yi-34B-Chat：你可以通过以下平台与 Yi 聊天。
   - [Yi-34B-Chat | Hugging Face](https://huggingface.co/spaces/01-ai/Yi-34B-Chat)
-  - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/)：**注意**目前仅通过白名单提供。欢迎申请（填写[英文](https://cn.mikecrm.com/l91ODJf)或[中文](https://cn.mikecrm.com/gnEZjiQ)表格）并亲身体验！
+  - [Yi-34B-Chat | Yi Platform](https://platform.lingyiwanwu.com/)：**注意**目前只有加入了我们的白名单，才可以使用此平台。欢迎你申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf)或[中文申请表](https://cn.mikecrm.com/gnEZjiQ)）加入，亲身体验！
 
-- [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai)：你可以通过设置额外参数和调用APIs，以更多选项使用此模型。
+- [Yi-6B-Chat (Replicate)](https://replicate.com/01-ai)：你可以通过设置更多的参数，调用 APIs 使用此模型，这里有更多选项。
 
-- [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models)：你可以使用此服务在本地运行Yi模型，增加灵活性和定制性。
+- [ScaleLLM](https://github.com/vectorch-ai/ScaleLLM#supported-models)：你可以使用这项服务，在本地运行Yi模型，更灵活，可以根据自己的偏好进行个性化调整。
 
 #### ⚙️ 量化
 
-如果你的计算能力有限，你可以使用Yi的量化模型，如下所示。
+如果你的计算能力有限，你可以使用 Yi 的量化模型，如下所示。
 
-这些量化模型虽然精度降低，但提供了更高的效率，例如更快的推理速度和更小的RAM使用量。
+这些量化模型虽然精度降低，但提供了更高的效率，推理速度更快，RAM 使用量更小。
 
 - [TheBloke/Yi-34B-GPTQ](https://huggingface.co/TheBloke/Yi-34B-GPTQ)
 - [TheBloke/Yi-34B-GGUF](https://huggingface.co/TheBloke/Yi-34B-GGUF)
@@ -975,25 +971,25 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 
 #### 🛠️ 微调
 
-如果你希望探索Yi庞大家族中的多样化能力，你可以深入了解下面的Yi微调模型。
+如果你希望探索 Yi 庞大家族中的多样化能力，你可以深入了解下面的 Yi 微调模型。
 
-- [TheBloke 模型](https://huggingface.co/TheBloke)：这个网站托管了许多从包括Yi在内的各种大型语言模型（LLMs）派生的微调模型。
+- [TheBloke 模型](https://huggingface.co/TheBloke)：这个网站提供很多微调模型，这些微调模型来源于 Yi 等大型语言模型（LLMs）。
   
-  这不是Yi的详尽列表，但以下是基于下载量排序的几个例子。
+  以下是 Yi 的微调模型，根据下载量排序，但这不是 Yi 的全部内容。
   - [TheBloke/dolphin-2_2-yi-34b-AWQ](https://huggingface.co/TheBloke/dolphin-2_2-yi-34b-AWQ)
   - [TheBloke/Yi-34B-Chat-AWQ](https://huggingface.co/TheBloke/Yi-34B-Chat-AWQ)
   - [TheBloke/Yi-34B-Chat-GPTQ](https://huggingface.co/TheBloke/Yi-34B-Chat-GPTQ)
   
-- [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)：这个模型在所有70B以下的模型中排名第一，并且超越了体量是其两倍的deepseek-llm-67b-chat。你可以在[开放LLM排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)上查看结果。
+- [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)：这个模型在所有 70B 以下的模型中排名第一，并且超越了体量是其两倍的deepseek-llm-67b-chat。你可以在[开放 LLM 排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)上查看结果。
   
-- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：这个模型在C-Eval和CMMLU评估中超越了其他模型（如GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat）, 在[OpenCompass LLM 排行榜](https://opencompass.org.cn/leaderboard-llm)上表现出色。
+- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：这个模型在C-Eval和CMMLU评估中超越了其他模型（如 GPT-4, Qwen-14B-Chat, Baichuan2-13B-Chat）, 在 [OpenCompass LLM 排行榜](https://opencompass.org.cn/leaderboard-llm) 上表现出色。
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)：这个模型在Capybara数据集上使用200K上下文长度和3个训练周期进行训练。
 
 #### API
 
-- [amazing-openai-api](https://github.com/soulteary/amazing-openai-api)：这个工具可以将Yi模型API转换成OpenAI API格式。
-- [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：这个工具使用可移植的Wasm（WebAssembly）文件构建了一个与OpenAI兼容的API服务器，用于Yi-34B-Chat，由Rust驱动。
+- [amazing-openai-api](https://github.com/soulteary/amazing-openai-api)：这个工具可以将 Yi 模型API转换成OpenAI API格式。
+- [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：这个工具使用可移植的 Wasm（WebAssembly）文件构建了一个与 OpenAI 兼容的 API 服务器，用于 Yi-34B-Chat，由 Rust 驱动。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
@@ -1049,7 +1045,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 ### 致谢
 
-我们对每位火炬手都深表感激，感谢您们为Yi社区所做的贡献。因为有您们，Yi成为了一个项目，也成为了充满活力、不断发展的创新之地。我们由衷感谢您们！
+我们对每位火炬手都深表感激，感谢您们为 Yi 社区所做的贡献。因为有您们，Yi 成为了一个项目，也成为了充满活力、不断发展的创新之地。我们由衷感谢各位小伙伴！
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
@@ -1057,14 +1053,12 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 ### 📡 免责声明
 
-在训练过程中，我们使用数据合规性检查算法，最大程度确保了训练出的模型合法合规。因数据复杂，语言模型用途多样，我们无法保证模型在所有情况下都能生成正确合理的回复。请注意，模型仍可能生成有误的回复。对于因误用、误导、非法使用、相关错误信息以及与之相关的数据安全问题而导致的任何风险和问题，我们不承担责任。
-
+在训练过程中，我们使用数据合规性检查算法，最大程度确保了训练出的模型合法合规。因数据复杂，语言模型用途多样，我们无法保证模型在所有情况下都能生成正确合理的回复。请注意，模型仍可能生成有误的回复。因误用、误导、非法使用、相关错误信息以及与之相关的数据安全问题而导致的任何风险和问题，均在我们的责任范围之外。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 ### 🪪 许可证
 
-此仓库中的源代码已经获得了 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE) 的合法授权。Yi 系列模型完全开放，供学术研究使用，也可以免费商用（用户申请后将自动获得许可）。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)。
-如果你想将 Yi 系列模型用于商业用途，你只需要[发送电子邮件就可以马上获得官方商业许可](https://www.lingyiwanwu.com/yi-license)。Yi 欢迎大家！
+本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。Yi 系列模型完全开放，你可以免费用于学术研究和商业用途。如需商用，你仅需[提交申请](https://www.lingyiwanwu.com/yi-license)，即能立刻自动获取商用许可，而无需等待官方审批。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
