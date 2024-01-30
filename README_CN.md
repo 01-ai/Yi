@@ -332,7 +332,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
  
 - 确保安装了 Python 3.10 以上版本。
 
-- 如果你想运行的不是Yi-34B-Chat，而是其他 Yi 模型，请参阅[部署要求](#部署)。
+- 如果你想运行的不是 Yi-34B-Chat，而是其他 Yi 模型，请参阅[部署要求](#部署)。
 
 #### Step 1: 准备你的环境 
 
@@ -354,7 +354,7 @@ pip install -r requirements.txt
 
 #### Step 3: 运行推理
 
-你可以使用 Yi chat 或 base 模型运行推理，如下所示。
+你可以使用 Yi 聊天模型或基座模型运行推理，如下所示。
 
 ##### 使用 Yi chat 模型运行推理
 
@@ -438,7 +438,7 @@ ghcr.io/01-ai/yi:latest
 <p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
 <h4>步骤2: 运行推理</h4>
-    <p>你可以使用Yi 的聊天模型或基座模型来运行推理。</p>
+    <p>你可以使用 Yi 的聊天模型或基座模型来运行推理。</p>
     
 <h5>使用 Yi 聊天模型运行推理</h5>
     <p>运行推理的步骤与使用<a href="#perform-inference-with-yi-chat-model">pip安装指南</a>类似。</p>
