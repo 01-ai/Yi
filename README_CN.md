@@ -22,6 +22,8 @@
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
 
+[//]: #(Top)
+
 </div>
 <div align="center">
   <h3 align="center">打造新一代开源双语大语言模型</h3>
@@ -52,6 +54,7 @@
   
   <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅 <a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
 </ul>
+
 
 <!-- DO NOT REMOVE ME -->
 <div id="top"></div>
@@ -1058,8 +1061,11 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。Yi 系列模型完全开放，你可以免费用于学术研究和商业用途。如需商用，你仅需[提交申请](https://www.lingyiwanwu.com/yi-license)，即能立刻自动获取商用许可，而无需等待官方审批。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
-<a href="#top" style="position: fixed; bottom: 80px; right: 20px;">
-   ⬆️ <span style="text-decoration: underline;"> 返回顶部</span> ⬆️
-</a>
+
+
+
+
