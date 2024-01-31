@@ -1,3 +1,8 @@
+<p align="left">
+    <a href="https://github.com/01-ai/Yi/blob/main/README.md">English</a> &nbsp; | &nbsp; <a href="https://github.com/01-ai/Yi/blob/main/README_CN.md">中文</a>
+</p>
+<br><br>
+
 <div align="center">
 
 <picture>
@@ -23,6 +28,8 @@
 </a>
 
 </div>
+
+<div id="top"></div>  
 
 <div align="center">
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
@@ -126,7 +133,9 @@
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ## 🎉 News 
 
@@ -180,7 +189,9 @@ sequence length and can be extended to 32K during inference time.
 
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ## 🎯 Models
 
@@ -241,7 +252,9 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 
 # 🟢 How to use Yi?
@@ -829,7 +842,9 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 </ul>
 </details>
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Deployment
 
@@ -998,7 +1013,9 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 - [amazing-openai-api](https://github.com/soulteary/amazing-openai-api): this tool converts Yi model APIs into the OpenAI API format out of the box.
 - [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model): this tool builds an OpenAI-compatible API server for Yi-34B-Chat using a portable Wasm (WebAssembly) file, powered by Rust.
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ## 📌 Benchmarks 
 
@@ -1024,7 +1041,7 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 ### 📊 Base model performance
 
-The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMML, common-sense reasoning, reading comprehension, and more.
+The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMMLU, common-sense reasoning, reading comprehension, and more.
 
 ![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
 
@@ -1048,7 +1065,9 @@ Everyone! 🙌 ✅
   
 - For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 # 🟢 Misc.
 
@@ -1058,7 +1077,9 @@ A heartfelt thank you to each of you who have made contributions to the Yi commu
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### 📡 Disclaimer
 
@@ -1071,7 +1092,9 @@ problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### 🪪 License
 
@@ -1079,4 +1102,6 @@ The source code in this repo is licensed under the [Apache 2.0
 license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use, with automatic permission granted upon application. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
 For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">Back to top ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
