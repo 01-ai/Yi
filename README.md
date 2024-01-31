@@ -66,7 +66,7 @@
     - [docker](#quick-start---docker)
     - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
-    - [LM Studio](#quick-start---lms-tudio)
+    - [LM Studio](#quick-start---lm-studio)
     - [Web demo](#web-demo)
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
@@ -587,7 +587,7 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### Quick start - LM Studio
+### Quick start - LM-studio
 <details>
   <summary>📚 Familiar with AI terminology but still find it incomprehensible? 🤔 Continuously encountering bugs 🐛 after deploying your model? Is operating with Docker command line just too counterintuitive? 😩 If you're struggling with these issues, LM Studio is your best choice! ✨🚀</summary>
 
