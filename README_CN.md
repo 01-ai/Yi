@@ -47,7 +47,7 @@
 </p> 
 
 <p align="center">
-    📚 欢迎你来 <a href="#learning-hub"> Yi 学习俱乐部 </a>探索新知
+    📚 欢迎你来 <a href="#学习俱乐部"> Yi 学习俱乐部 </a>探索新知
 </p> 
 
 <hr>
@@ -85,7 +85,7 @@
   - [微调](#微调)
   - [量化](#量化)
   - [部署](#部署)
-  - [学习中心](#学习中心)
+  - [学习俱乐部](#学习俱乐部)
 - [🟢 为什么选择Yi？](#-为什么选择yi)
   - [🌎 生态系统](#-生态系统)
     - [💦 上游](#-上游)
@@ -275,8 +275,8 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [快速上手 - 使用网页演示](#快速上手---网页演示)
 - [微调](#微调)
 - [量化](#量化)
-- [部署](https://github.com/01-ai/Yi/blob/main/docs/deployment.md)
-- [学习中心](https://github.com/01-ai/Yi/blob/main/docs/learning_hub.md)
+- [部署](#部署)
+- [学习俱乐部](#学习俱乐部)
 
 ## 快速上手
 
@@ -883,13 +883,13 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
-### 学习中心
+### 学习俱乐部
 
 <details>
-<summary> 如果你想学习Yi，你可以在这里找到大量的有用的学习资源。 ⬇️</summary>
+<summary> 如果你想学习Yi，这里有大量的学习资源供你选择。 ⬇️</summary>
 <br>
 
-欢迎来到 Yi 学习中心！
+欢迎来到 Yi 学习俱乐部！
 
 无论你是经验丰富的开发者还是新手，你都可以在这里找到大量有用的学习资源，更加了解 Yi 模型，增强相关技能。在这里，你可以学习见解深刻的博客文章、深度全面的视频教程以及实践指南等精彩内容。
 
