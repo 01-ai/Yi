@@ -260,7 +260,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
   - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
-  - [快速上手 - 使用 LM Studio](#快速上手---lm-studio)
+  - [快速上手 - LM Studio](#快速上手-lm-studio)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
