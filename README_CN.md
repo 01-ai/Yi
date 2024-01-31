@@ -335,7 +335,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 ### 快速上手 - pip
 
-本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并进行推理。
+本教程将指导你在 **A800（80G）上本地运行 Yi-34B-Chat**，并运行推理。
 
 #### Step 0: 前提条件
  
@@ -361,11 +361,11 @@ pip install -r requirements.txt
 - [ModelScope](https://www.modelscope.cn/organization/01ai/)
 - [WiseModel](https://wisemodel.cn/organization/01.AI)
 
-#### Step 3: 进行推理
+#### Step 3: 运行推理
 
-你可以使用 Yi 聊天模型或基座模型进行推理，如下所示。
+你可以使用 Yi 聊天模型或基座模型运行推理，如下所示。
 
-##### 使用 Yi 聊天模型进行推理
+##### 使用 Yi 聊天模型运行推理
 
 1. 创建一个名为 `quick_start.py` 的文件，并将以下内容复制到其中。
 
@@ -408,9 +408,9 @@ pip install -r requirements.txt
     Hello! How can I assist you today?
     ```
 
-##### 使用 Yi 基座模型进行推理
+##### 使用 Yi 基座模型运行推理
 
-步骤和[使用 Yi 聊天模型进行推理](#使用-Yi-chat-模型进行推理)很相似。
+步骤和[使用 Yi 聊天模型运行推理](#使用-Yi-chat-模型运行推理)很相似。
 
 你可以使用现有的文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)。
 
@@ -434,7 +434,7 @@ python demo/text_generation.py  --model <your-model-path>
 
 <details>
 <summary> 🚀 以下是如何在本地运行 Yi-34B-Chat 模型的详细教程。⬇️</summary>
-<br>本教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并进行推理。
+<br>本教程将指导你如何在本地 A800 GPU 上运行 <strong>Yi-34B-Chat</strong> 模型，并运行推理。
 <h4>步骤0: 准备工作</h4>
 <p>确保你已经安装了 <a href="https://docs.docker.com/engine/install/?open_in_browser=true">Docker</a> 和 <a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html">nvidia-container-toolkit</a>。</p>
 <h4>步骤1: 启动 Docker 容器</h4>
@@ -444,14 +444,14 @@ ghcr.io/01-ai/yi:latest
 </code></pre>
 <p>或者，你也可以从<code>registry.lingyiwanwu.com/ci/01-ai/yi:latest</code> 拉取已经构建好的 Yi Docker 镜像。</p>
 
-<h4>步骤2: 进行推理</h4>
-    <p>你可以使用 Yi 的聊天模型或基座模型来进行推理。</p>
+<h4>步骤2: 运行推理</h4>
+    <p>你可以使用 Yi 的聊天模型或基座模型来运行推理。</p>
     
-<h5>使用 Yi 聊天模型进行推理</h5>
-    <p>进行推理的步骤与使用<a href="#使用-yi-聊天模型进行推理"> pip 安装指南</a>类似。</p>
+<h5>使用 Yi 聊天模型运行推理</h5>
+    <p>运行推理的步骤与使用<a href="#使用-yi-聊天模型运行推理"> pip 安装指南</a>类似。</p>
     <p><strong>注意</strong> 唯一不同的是你需要设置 <code>model_path = '&lt;your-model-mount-path&gt;'</code> 而不是 <code>model_path = '&lt;your-model-path&gt;'</code>。</p>
-<h5>使用 Yi 基座模型进行推理</h5>
-    <p>进行推理的步骤与使用<a href="#使用-yi-聊天模型进行推理"> pip 安装指南</a>类似。</p>
+<h5>使用 Yi 基座模型运行推理</h5>
+    <p>运行推理的步骤与使用<a href="#使用-yi-聊天模型运行推理"> pip 安装指南</a>类似。</p>
     <p><strong>注意</strong> 唯一不同的是你需要设置 <code>--model &lt;your-model-mount-path&gt;'</code> 而不是 <code>model &lt;your-model-path&gt;</code>。</p>
 </details>
 
@@ -472,12 +472,12 @@ ghcr.io/01-ai/yi:latest
 ### 快速上手 - llama.cpp
 <details>
 <summary> 🚀 以下是使用 llama.cpp 在本地运行 Yi-chat-6B-2bits 模型的详细教程。⬇️ </summary> 
-<br>本教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且进行推理。</p>
+<br>本教程分享如何在本地运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并且运行推理。</p>
 
 - [步骤 0: 前提条件](#step-0-prerequisites)
 - [步骤 1: 下载 llama.cpp](#step-1-download-llamacpp)
 - [步骤 2: 下载 Yi 模型](#step-2-download-yi-model)
-- [步骤 3: 进行推理](#step-3-perform-inference)
+- [步骤 3: 运行推理](#step-3-perform-inference)
 
 #### 步骤 0: 前提条件
 
@@ -507,17 +507,17 @@ GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/XeIaso/yi-chat-6B-GGUF
 git-lfs pull --include yi-chat-6b.Q2_K.gguf
 ```
 
-#### 步骤 3: 进行推理
+#### 步骤 3: 运行推理
 
-如需体验 Yi 模型（进行模型推理），你可以选择以下任意一种方法。
+如需体验 Yi 模型（运行模型推理），你可以选择以下任意一种方法。
 
-- [方法 1：在终端中进行推理](#method-1-perform-inference-in-terminal)
+- [方法 1：在终端中运行推理](#method-1-perform-inference-in-terminal)
   
-- [方法 2：在网页上进行推理](#method-2-perform-inference-in-web)
+- [方法 2：在网页上运行推理](#method-2-perform-inference-in-web)
 
-##### 方法一：在终端中进行推理
+##### 方法一：在终端中运行推理
 
-本文使用 4 个线程编译 `llama.cpp` ，之后进行推理。在 `llama.cpp` 所在的目录，运行以下命令。
+本文使用 4 个线程编译 `llama.cpp` ，之后运行推理。在 `llama.cpp` 所在的目录，运行以下命令。
 
 > ###### 提示
 >
@@ -551,7 +551,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 
 恭喜你！你已经成功地向 Yi 模型提出了问题，得到了回复！🥳
 
-##### 方法二：在网页上进行推理
+##### 方法二：在网页上运行推理
 
 1. 如果你想启用一个轻便敏捷的聊天机器人，可以运行以下命令。
 
