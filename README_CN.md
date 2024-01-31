@@ -25,24 +25,26 @@
 </div>
 
 <div align="center">
-  <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
+  <h3 align="center">打造新一代开源双语大语言模型</h3>
 </div>
 
 <p align="center">
-🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">WiseModel</a>
+🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">魔搭社区 ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">始智AI WiseModel</a>
 </p> 
 
 <p align="center">
-    👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>!
+    👩‍🚀 欢迎你来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a> 提问讨论
 </p> 
 
 <p align="center">
-    👋 Join us on 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+    👋 欢迎你加入我们的 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="#learning-hub">Yi Learning Hub</a>!
-</p>
+
+    📚 欢迎你来 <a href="#learning-hub"> Yi 学习俱乐部 </a>探索新知
+</p> 
+
 <hr>
 
 <ul>
