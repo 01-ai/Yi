@@ -134,7 +134,7 @@
 </details>
 
 <p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  
+  <a href="#top">Back to top </a> ⬆️ 
   ] 
 </p>
 
