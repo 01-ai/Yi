@@ -40,7 +40,6 @@
 </p> 
 
 <p align="center">
-
     📚 欢迎你来 <a href="#learning-hub"> Yi 学习俱乐部 </a>探索新知
 </p> 
 
