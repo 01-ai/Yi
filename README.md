@@ -67,6 +67,7 @@
     - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
     - [Web demo](#web-demo)
+    - [LM Studio](#LM Studio)
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
@@ -602,6 +603,25 @@ python demo/web_demo.py -c <your-model-path>
 You can access the web UI by entering the address provided in the console into your browser. 
 
  ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
+
+### Quick Start Guide - LM Studio
+<details>
+  <summary>📚 Familiar with AI terminology but still find it incomprehensible? 🤔 Continuously encountering bugs 🐛 after deploying your model? Is operating with Docker command line just too counterintuitive? 😩 If you're struggling with these issues, LM Studio is your best choice! ✨🚀</summary>
+
+  #### Step 1: Download and Install
+  Visit the [LM Studio official website](https://lmstudio.ai) to download the version of LM Studio that's compatible with your operating system, and complete the installation.
+
+  #### Step 2: Model Selection and Download
+  After launching LM Studio, search for the Yi series models within the software, and download based on the model's system compatibility recommendations.
+  
+  #### Step 3: Configure Model Parameters
+  Follow the prompts in LM Studio to configure model parameters, ensuring that the hardware settings match your system resources.
+
+  #### Step 4: Launch the Model
+  Once configuration is complete, you can locally launch the Yi model and start using it.
+  
+  LM Studio also provides convenient and efficient tools compatible with OpenAI interfaces. For personal daily use, whether it's chatting or configuring servers, deploying Yi through LM Studio will be a great starting point! ✨🚀
+</details>
 
 ### Fine-tuning
 
