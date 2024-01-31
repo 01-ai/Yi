@@ -135,10 +135,6 @@
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
 
-<a href="#top" style="position: fixed; bottom: 80px; right: 20px;">
-   ⬆️ <span style="text-decoration: underline;"> 返回顶部</span> ⬆️
-</a>
-
 
 
 ## 🎉 最新动态
@@ -1045,7 +1041,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 ### 致谢
 
-我们对每位火炬手都深表感激，感谢您们为 Yi 社区所做的贡献。因为有您们，Yi 成为了一个项目，也成为了充满活力、不断发展的创新之地。我们由衷感谢各位小伙伴！
+我们对每位火炬手都深表感激，感谢你们为 Yi 社区所做的贡献。因为有你们，Yi 成为了一个项目，也成为了一个充满活力的创新社区。我们由衷地感谢各位小伙伴！
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
@@ -1053,7 +1049,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 ### 📡 免责声明
 
-在训练过程中，我们使用数据合规性检查算法，最大程度确保了训练出的模型合法合规。因数据复杂，语言模型用途多样，我们无法保证模型在所有情况下都能生成正确合理的回复。请注意，模型仍可能生成有误的回复。因误用、误导、非法使用、相关错误信息以及与之相关的数据安全问题而导致的任何风险和问题，均在我们的责任范围之外。
+在训练过程中，我们使用数据合规性检查算法，最大程度地确保训练模型的合规性。由于数据复杂且语言模型使用场景多样，我们无法保证模型在所有场景下均能生成正确合理的回复。请注意，模型仍可能生成有误的回复。对于任何因误用、误导、非法使用、错误使用导致的风险和问题，以及与之相关的数据安全问题，我们均不承担责任。
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
 
@@ -1062,3 +1058,7 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。Yi 系列模型完全开放，你可以免费用于学术研究和商业用途。如需商用，你仅需[提交申请](https://www.lingyiwanwu.com/yi-license)，即能立刻自动获取商用许可，而无需等待官方审批。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
 
 <div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+
+<a href="#top" style="position: fixed; bottom: 80px; right: 20px;">
+   ⬆️ <span style="text-decoration: underline;"> 返回顶部</span> ⬆️
+</a>
