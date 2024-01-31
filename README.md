@@ -66,7 +66,7 @@
     - [docker](#quick-start---docker)
     - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
-    - [LM Studio](#quick-start---lmstudio)
+    - [LM Studio](#quick-start---lms-tudio)
     - [Web demo](#web-demo)
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
@@ -253,7 +253,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [docker](#quick-start---docker)
   - [conda-lock](#quick-start---conda-lock)
   - [llama.cpp](#quick-start---llamacpp)
-  - [LM Studio](#quick-start---lmstudio)
+  - [LM Studio](#quick-start---lm-studio)
   - [Web demo](#web-demo)
 - [Fine tune](#finetuning)
 - [Quantization](#quantization)
@@ -587,7 +587,7 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### Quick Start - LM Studio
+### Quick start - LM Studio
 <details>
   <summary>📚 Familiar with AI terminology but still find it incomprehensible? 🤔 Continuously encountering bugs 🐛 after deploying your model? Is operating with Docker command line just too counterintuitive? 😩 If you're struggling with these issues, LM Studio is your best choice! ✨🚀</summary>
 
