@@ -293,11 +293,11 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 如果你更喜欢在本地部署 Yi 模型，
 
   - 🙋‍♀️ 并且你有**足够**的资源（例如，NVIDIA A800 80GB），你可以从以下方法中选择一种方法：
-    - [pip](#快速开始---pip)
-    - [Docker](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#11-docker)
-    - [conda-lock](https://github.com/01-ai/Yi/blob/main/docs/README_legacy.md#12-local-development-environment)
+    - [pip](#快速上手---pip)
+    - [Docker](#快速上手---docker)
+    - [conda-lock](#快速上手---conda-lock)
 
-  - 🙋‍♀️ 但是你的资源很有限（例如，一台 MacBook Pro），你可以使用[llama.cpp](#快速开始---llamacpp)
+  - 🙋‍♀️ 但是你的资源很有限（例如，一台 MacBook Pro），你可以使用 [llama.cpp](#快速上手---llamacpp)
 
 #### 🎯 不在本地部署 Yi 模型
 
@@ -317,8 +317,8 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 如果你想和 Yi 聊天，还想有更多可定制的选项（例如，系统提示、温度、重复惩罚等），你可以从以下选项中选用一种。
   
   - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) (Yi 官方)
-    - 如果你提交申请，加入了白名单，就可以使用官方的交互式平台。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者 [中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
-  
+    - 如果你提交申请，加入了白名单，就可以使用官方的交互式平台。欢迎申请（填写[英文申请表](https://cn.mikecrm.com/l91ODJf) 或者[中文申请表](https://cn.mikecrm.com/gnEZjiQ)）。
+
   - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate，第三方网站) 
 
 ##### 🙋‍♀️ 与 Yi 聊天
@@ -410,7 +410,7 @@ pip install -r requirements.txt
 
 ##### 使用 Yi 基座模型运行推理
 
-步骤和[使用 Yi 聊天模型运行推理](#使用-Yi-chat-模型运行推理)很相似。
+步骤和[使用 Yi 聊天模型运行推理](#使用-yi-聊天模型运行推理)很相似。
 
 你可以使用现有的文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)。
 
