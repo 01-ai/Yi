@@ -136,9 +136,9 @@
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
-
-
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 
 ## 🎉 最新动态
@@ -195,7 +195,9 @@
 
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 ## 🎯 模型
 Yi模型有多种参数规模，适用于不同的使用场景。你也可以对Yi模型进行微调，从而满足特定需求。
@@ -253,7 +255,9 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 </ul>
 </details>
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 
 # 🟢 如何使用 Yi?
@@ -822,7 +826,9 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 </ul>
 </details>
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 ### 部署
 
@@ -991,7 +997,9 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 - [amazing-openai-api](https://github.com/soulteary/amazing-openai-api)：这个工具可以将 Yi 模型API转换成OpenAI API格式。
 - [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：这个工具使用可移植的 Wasm（WebAssembly）文件构建了一个与 OpenAI 兼容的 API 服务器，用于 Yi-34B-Chat，由 Rust 驱动。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 ## 📌 基准测试 
 
@@ -1039,7 +1047,9 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
   
 - Yi 可以免费商用——你只需要[填写这份表单](https://www.lingyiwanwu.com/yi-license)，就可以获得Yi系列模型的商业许可证。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 # 🟢 其他内容
 
@@ -1049,13 +1059,17 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 ### 📡 免责声明
 
 在训练过程中，我们使用数据合规性检查算法，最大程度地确保训练模型的合规性。由于数据复杂且语言模型使用场景多样，我们无法保证模型在所有场景下均能生成正确合理的回复。请注意，模型仍可能生成有误的回复。对于任何因误用、误导、非法使用、错误使用导致的风险和问题，以及与之相关的数据安全问题，我们均不承担责任。
 
-<div align="right"> [ <a href="#building-the-next-generation-of-open-source-and-bilingual-llms">返回顶部 ⬆️ </a> ] </div>
+<p align="right"> [
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
+</p>
 
 ### 🪪 许可证
 
