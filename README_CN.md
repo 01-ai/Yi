@@ -22,7 +22,7 @@
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
 
-[//]: #(Top)
+<div id="top"></div>
 
 </div>
 <div align="center">
@@ -57,7 +57,7 @@
 
 
 <!-- DO NOT REMOVE ME -->
-<div id="top"></div>
+
 <hr>
 <details open>
 <summary></b>📕 目录</b></summary>
