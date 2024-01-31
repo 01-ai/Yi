@@ -587,7 +587,7 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### Quick Start Guide - LM Studio
+### Quick Start - LM Studio
 <details>
   <summary>📚 Familiar with AI terminology but still find it incomprehensible? 🤔 Continuously encountering bugs 🐛 after deploying your model? Is operating with Docker command line just too counterintuitive? 😩 If you're struggling with these issues, LM Studio is your best choice! ✨🚀</summary>
 
