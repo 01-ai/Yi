@@ -77,7 +77,7 @@
     - [快速上手 - 使用 llama.cpp 量化运行](#llamacpp-快速入门)
     - [快速上手 - 使用 Web Demo](#网页版演示应用web-demo)
     - [快速上手 - 使用 Docker](#docker-快速入门)
-    - [快速上手 - 使用 LM Studio](#LM_Studio-快速入门)
+    - [快速上手 - 使用 LM Studio](#LM-Studio)
   - [Fine tune](#fine-tune)
   - [Quantization](#quantization)
   - [部署](#部署)
@@ -260,6 +260,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [Choose your path](#choose-your-parth)
   - [pip](#pip)
   - [llama.cpp](https://github.com/01-ai/Yi/blob/main/docs/yi_llama.cpp.md)
+  - [快速上手 - 使用 LM Studio](#LM-Studio)
   - [Web demo](#web-demo)
 - [Fine tune](#fine-tune)
 - [Quantization](#quantization)
@@ -595,7 +596,7 @@ python demo/web_demo.py -c <你的模型路径>
 
  ![快速上手 - Web Demo](./assets/img/yi_34b_chat_web_demo.gif)
 
-### 快速上手-LM Studio
+### 快速上手-LM-Studio
 <details>
   <summary>AI专业术语📚字全都认识但就是看不懂🤔? 模型部署运行后bug🐛不断? docker命令行操作实在是太反人类😩? 如果你正在为上述问题发愁😰, LM Studio将会是你最好的选择✨🚀.</summary>
 
