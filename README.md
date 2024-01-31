@@ -1,5 +1,5 @@
 <p align="left">
-    <a href="https://github.com/01-ai/Yi/blob/main/README.md">English</a> &nbsp; | &nbsp; <a href="https://github.com/01-ai/Yi/blob/main/README_CN.md">中文</a>
+    &nbspEnglish&nbsp | &nbsp; <a href="README_CN.md">中文</a>
 </p>
 <br><br>
 
