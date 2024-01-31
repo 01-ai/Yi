@@ -1079,10 +1079,5 @@ Yi-34B 和 Yi-34B-200K 模型作为开源模型中的佼佼者脱颖而出，尤
   <a href="#top">返回顶部 ⬆️ </a>  ] 
 </p>
 
- <a href="#top" style="position: fixed; bottom: 80px; right: 20px;">
-   ⬆️ <span style="text-decoration: underline;"> 返回顶部</span> ⬆️
-</a>
-
-
 
 
