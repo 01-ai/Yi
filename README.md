@@ -66,8 +66,8 @@
     - [docker](#quick-start---docker)
     - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
+    - [LM Studio](#quick-start---lmstudio)
     - [Web demo](#web-demo)
-    - [LM Studio](#LM Studio)
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
@@ -253,6 +253,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
   - [docker](#quick-start---docker)
   - [conda-lock](#quick-start---conda-lock)
   - [llama.cpp](#quick-start---llamacpp)
+  - [LM Studio](#quick-start---lmstudio)
   - [Web demo](#web-demo)
 - [Fine tune](#finetuning)
 - [Quantization](#quantization)
@@ -586,24 +587,6 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
-### Web demo
-
-You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
-
-[Step 1: Prepare your environment](#step-1-prepare-your-environment). 
-
-[Step 2: Download the Yi model](#step-2-download-the-yi-model).
-
-Step 3. To start a web service locally, run the following command.
-
-```bash
-python demo/web_demo.py -c <your-model-path>
-```
-
-You can access the web UI by entering the address provided in the console into your browser. 
-
- ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
-
 ### Quick Start Guide - LM Studio
 <details>
   <summary>📚 Familiar with AI terminology but still find it incomprehensible? 🤔 Continuously encountering bugs 🐛 after deploying your model? Is operating with Docker command line just too counterintuitive? 😩 If you're struggling with these issues, LM Studio is your best choice! ✨🚀</summary>
@@ -622,6 +605,24 @@ You can access the web UI by entering the address provided in the console into y
   
   LM Studio also provides convenient and efficient tools compatible with OpenAI interfaces. For personal daily use, whether it's chatting or configuring servers, deploying Yi through LM Studio will be a great starting point! ✨🚀
 </details>
+
+### Web demo
+
+You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
+
+[Step 1: Prepare your environment](#step-1-prepare-your-environment). 
+
+[Step 2: Download the Yi model](#step-2-download-the-yi-model).
+
+Step 3. To start a web service locally, run the following command.
+
+```bash
+python demo/web_demo.py -c <your-model-path>
+```
+
+You can access the web UI by entering the address provided in the console into your browser. 
+
+ ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 ### Fine-tuning
 
