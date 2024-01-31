@@ -56,8 +56,42 @@ Human: what are they eating
 Assistant: cat food
 ```
 
+## Finetuning
+1. Prepare data
 
+Prepare your own data into the following JSON format.
+```json
+[
+  {
+    "image": "images/cat.jpg",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image_placeholder>\nDescribe the cats and what they are doing in detail."
+      },
+      {
+        "from": "assistant",
+        "value": "In the image, there are three cats situated on a stone floor. The cat on the left is a calico cat, its coat a mix of white, orange, and black. It's eating from a metal bowl. In the middle, there's a gray cat, also eating from a metal bowl. On the right, there's a black cat, eating from a plastic bowl. The cats are all facing away from the camera, engrossed in their meal. The stone floor they're on is gray, and a concrete wall forms the backdrop of the scene. The image captures a peaceful moment of these cats enjoying their food."
+      },
+    ]
+  },
+  ...
+]
+```
 
+2. Finetune Yi-VL
+
+Training scripts are provided in the `scripts` folder. You can use `scripts/finetune.sh`, `scripts/finetune_lora.sh` or `scripts/finetune_qlora.sh` to finetune Yi-VL with your own dataset.
+
+Before running the scrips, you should specify the following parameters. 
+- `--model_name_or_path`: the path to Yi-VL model; you can use 6B or 34B model.
+- `--data_path`: the path to your own dataset.
+- `--image_folder`: the path to the image data folder.
+- `--vision_tower`: the path to the ViT model, usually found in the Yi-VL base model folder.
+
+3. Merge lora (Optional)
+
+If you use `lora` or `qlora` for finetuning, you need to merge the lora parameters into the Yi-VL model after finetuning. You can use `scripts/merge_lora.sh` to merge the lora parameters.
 
 ## Major difference with LLaVA
 1. We change the image token from ```<image>``` to ```<image_placeholder>```. The system prompt is modified to:
