@@ -886,7 +886,7 @@ Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPT
 ### 学习俱乐部
 
 <details>
-<summary> 如果你想学习Yi，这里有大量的学习资源供你选择。 ⬇️</summary>
+<summary> 如果你想学习如何使用 Yi 系列模型，这里有大量的学习资源供你选择。 ⬇️</summary>
 <br>
 
 欢迎来到 Yi 学习俱乐部！
