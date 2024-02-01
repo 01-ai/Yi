@@ -1,6 +1,7 @@
 #!/bin/bash
 
-deepspeed --include localhost:0,1,2,3 llava/train/train_mem.py \
+PYTHONPATH=../../:$PYTHONPATH \
+deepspeed --include localhost:0,1,2,3 --master_port 1234 llava/train/train_mem.py \
     --deepspeed ./scripts/zero2.json \
     --lora_enable True \
     --bits 4 \
