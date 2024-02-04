@@ -168,7 +168,7 @@
 </details>
 
 <details>
-<summary>🔔 <b>2023-11-23</b>: Yi 系列模型社区许可协议更新至 <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">2.1 版本。</a></summary>
+<summary>🔔 <b>2023-11-23</b>: Yi 系列模型社区许可协议更新至 <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">2.1 版本</a>。</summary>
 </details>
 
 <details>  
@@ -1007,7 +1007,8 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ### Chat 模型性能
 
 Yi-34B-Chat 模型表现出色，在 MMLU、CMMLU、BBH、GSM8k 等所有开源模型的基准测试中排名第一。
-<br>![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
+<br>
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
 
 <details>
 <summary> 测评方法与挑战 ⬇️ </summary>
@@ -1023,7 +1024,8 @@ Yi-34B-Chat 模型表现出色，在 MMLU、CMMLU、BBH、GSM8k 等所有开源�
 ### Base 模型性能
 
 Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、CMMLU、常识推理、阅读理解等方面表现卓越。
-<br>![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
+<br>
+![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
 
 <details>
 <summary> 测评方法 ⬇️</summary>
