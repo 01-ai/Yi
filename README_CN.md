@@ -280,7 +280,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 你可以根据你的需求，在下列路径中选择一条路径，开始你的 Yi 之旅。
 
- ![快速开始 - 选择学习路径](.https://github.com/01-ai/Yi/blob/mainhttps://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path_CN.png?raw=true)
+ ![选择学习路径](https://github.com/01-ai/Yi/blob/main/assets/img/quick_start_path_CN.png?raw=true)
 
 #### 🎯 在本地部署 Yi
 
@@ -1045,7 +1045,7 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 答案是所有人! 🙌 ✅ 
 
-关于各方如何使用 Yi 系列模型，参阅「[许可证](#许可证)」。
+关于ß如何使用 Yi 系列模型，参阅「[许可证](#许可证)」。
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
@@ -1059,9 +1059,10 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
-- Prompt 专家：[kevinhall1998](https://github.com/kevinhall1998)
+- Prompt 专家：[@kevinhall1998](https://github.com/kevinhall1998)
 - 译员：[@202030481266](https://github.com/202030481266) [@GloriaLee01](https://github.com/GloriaLee01) [@markli404](https://github.com/markli404) [@petter529](https://github.com/petter529) [@soulteary](https://github.com/soulteary)
 - 审校：[@Anonymitaet](https://github.com/Anonymitaet) [@bltcn](https://github.com/bltcn) [@Cookize](https://github.com/Cookize) [@lljzhgxd](https://github.com/lljzhgxd) [@markli404](https://github.com/markli404)
+
 以上排名不分先后，以用户名首字母顺序排列。
 
 <p align="right"> [
