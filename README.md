@@ -936,6 +936,12 @@ At the same time, we also warmly invite you to join our collaborative effort by 
 With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
 
 #### Tutorials
+##### English tutorials
+| Type        | Deliverable                                            |      Date      |     Author     |
+|-------------|--------------------------------------------------------|----------------|----------------|
+| Blog        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
+| Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
+
 ##### Chinese tutorials
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
@@ -947,11 +953,6 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Blog        | [零一万物开源Yi-VL多模态大模型，魔搭社区推理&微调最佳实践来啦！](https://zhuanlan.zhihu.com/p/680098411) | 2024-01-26  |  [ModelScope](https://github.com/modelscope)  |
 | Video       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
 
-##### English tutorials
-| Type        | Deliverable                                            |      Date      |     Author     |
-|-------------|--------------------------------------------------------|----------------|----------------|
-| Blog        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
-| Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
 </details>
 
 
