@@ -324,6 +324,10 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
 - [Yi-34B-Chat](https://platform.lingyiwanwu.com/) (Yi official beta)
   - Access is available through a whitelist. Welcome to apply (fill out a form in [English](https://cn.mikecrm.com/l91ODJf) or [Chinese](https://cn.mikecrm.com/gnEZjiQ)).
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Quick start - pip
 
 This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
@@ -423,6 +427,10 @@ Then you can see an output similar to the one below. 🥳
 
 </details>
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Quick start - Docker 
 <details>
 <summary> Run Yi-34B-chat locally with Docker: a step-by-step guide. ⬇️</summary> 
@@ -448,6 +456,10 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Quick start - conda-lock
 
 <details>
@@ -461,6 +473,7 @@ To install the dependencies, follow these steps:
 
 2. Execute <code>micromamba install -y -n yi -f conda-lock.yml</code> to create a conda environment named <code>yi</code> and install the necessary dependencies.
 </details>
+
 
 ### Quick start - llama.cpp
 <details>
@@ -598,6 +611,10 @@ Now you have successfully asked a question to the Yi model and got an answer! �
 </ul>
 </details>
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Web demo
 
 You can build a web UI demo for Yi **chat** models (note that Yi base models are not supported in this senario).
@@ -615,6 +632,10 @@ python demo/web_demo.py -c <your-model-path>
 You can access the web UI by entering the address provided in the console into your browser. 
 
  ![Quick start - web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Fine-tuning
 
@@ -740,6 +761,10 @@ bash run_eval.sh
 Then you'll see the answer from both the base model and the finetuned model.
 </ul>
 </details>
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Quantization
 
@@ -894,6 +919,10 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 ### Learning hub
 
 <details>
@@ -929,6 +958,9 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
 </details>
 
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 # 🟢 Why Yi? 
 
@@ -967,6 +999,10 @@ tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34b", use_fast=False)
 
 model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ```
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### 🌊 Downstream
 
@@ -1063,6 +1099,10 @@ The Yi-34B and Yi-34B-200K models stand out as the top performers among open-sou
 - **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
 - **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
 </details>
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 # 🟢 Who can use Yi?
 
