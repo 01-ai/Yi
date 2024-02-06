@@ -39,7 +39,7 @@
 </p> 
 
 <p align="center">
-    👩‍🚀 欢迎你来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a> 提问与 discussions
+    👩‍🚀 欢迎你来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 提问
 </p> 
 <p align="center">
     👋 欢迎你加入💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
@@ -52,11 +52,11 @@
 <hr>
 
 <ul>
-  <li>🙌 本文由 Yi 和志愿者共同翻译完成，感谢每一位传递知识的火炬手。</li>
+  <li>🙌 本文由 Yi 和志愿者共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li>
 
   <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入我们</a>，开启知识之火旅程，共绘技术内容图谱。</li>
   
-  <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「prompt 最佳实践」和「翻译与审校的正确姿势」</a>。</li>
+  <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「如何使用 Prompt 来实现高质量翻译」和「翻译与审校的正确姿势」</a>。</li>
 </ul>
 
 
@@ -837,8 +837,8 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 
 | 模型 | 软件 |
 |:---|:---|
-Yi 4-bit 量化模型 | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
-Yi 8-bit 量化模型 |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
+Yi 4-bit 量化模型 | [AWQ 和 CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
+Yi 8-bit 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
 
 #### 硬件要求
 
@@ -1060,11 +1060,12 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
+以下排名不分先后，以用户名首字母顺序排列。
 - Prompt 专家：[@kevinhall1998](https://github.com/kevinhall1998)
-- 译员：[@202030481266](https://github.com/202030481266) [@GloriaLee01](https://github.com/GloriaLee01) [@markli404](https://github.com/markli404) [@petter529](https://github.com/petter529) [@soulteary](https://github.com/soulteary)
-- 审校：[@Anonymitaet](https://github.com/Anonymitaet) [@bltcn](https://github.com/bltcn) [@Cookize](https://github.com/Cookize) [@lljzhgxd](https://github.com/lljzhgxd) [@markli404](https://github.com/markli404)
+- 译员：[@202030481266](https://github.com/202030481266)、[@GloriaLee01](https://github.com/GloriaLee01)、[@markli404](https://github.com/markli404)、[@petter529](https://github.com/petter529) 与 [@soulteary](https://github.com/soulteary)
+- 审校：[@Anonymitaet](https://github.com/Anonymitaet)、[@bltcn](https://github.com/bltcn)、[@Cookize](https://github.com/Cookize)、[@lljzhgxd](https://github.com/lljzhgxd) 与 [@markli404](https://github.com/markli404)
 
-以上排名不分先后，以用户名首字母顺序排列。
+
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
