@@ -895,6 +895,7 @@ Yi 8-bit 量化模型 |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?ta
 ##### 中文教程
 | 类型        | 教程                                                      |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
+| 博客        | [实测零一万物Yi-VL多模态语言模型：能准确“识图吃瓜”](https://mp.weixin.qq.com/s/fu4O9XvJ03JhimsEyI-SsQ)              |  2024-02-02  |  [苏洋](https://github.com/soulteary)  |
 | 博客        | [本地运行零一万物 34B 大模型，使用 LLaMA.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
 | 博客       | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
 | 博客        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
