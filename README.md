@@ -107,29 +107,29 @@
 
 - 🙌 Targeted as a bilingual language model and trained on 3T multilingual corpus, the Yi series models become one of the strongest LLM worldwide, showing promise in language understanding, commonsense reasoning, reading comprehension, and more. For example,
 
-  - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as LLaMA2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
+  - For English language capability, the Yi series models ranked 2nd (just behind GPT-4), outperforming other LLMs (such as Llama2-chat-70B, Claude 2, and ChatGPT) on the [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) in Dec 2023.
   
   - For Chinese language capability, the Yi series models landed in 2nd place (following GPT-4), surpassing other LLMs (such as Baidu ERNIE, Qwen, and Baichuan) on the [SuperCLUE](https://www.superclueai.com/) in Oct 2023.
   
-  - 🙏 (Credits to LLaMA) Thanks to the Transformer and LLaMA open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
+  - 🙏 (Credits to Llama) Thanks to the Transformer and Llama open-source communities, as they reducing the efforts required to build from scratch and enabling the utilization of the same tools within the AI ecosystem.  
 
-  <details style="display: inline;"><summary> If you're interested in Yi's adoption of LLaMA architecture and license usage policy, see  <span style="color:  green;">Yi's relation with LLaMA.</span> ⬇️</summary> <ul> <br>
+  <details style="display: inline;"><summary> If you're interested in Yi's adoption of Llama architecture and license usage policy, see  <span style="color:  green;">Yi's relation with Llama.</span> ⬇️</summary> <ul> <br>
   
 > 💡 TL;DR
 > 
-> The Yi series models adopt the same model architecture as LLaMA but are **NOT** derivatives of LLaMA.
+> The Yi series models adopt the same model architecture as Llama but are **NOT** derivatives of Llama.
 
-- Both Yi and LLaMA are all based on the Transformer structure, which has been the standard architecture for large language models since 2018.
+- Both Yi and Llama are all based on the Transformer structure, which has been the standard architecture for large language models since 2018.
 
-- Grounded in the Transformer architecture, LLaMA has become a new cornerstone for the majority of state-of-the-art open-source models due to its excellent stability, reliable convergence, and robust compatibility. This positions LLaMA as the recognized foundational framework for models including Yi.
+- Grounded in the Transformer architecture, Llama has become a new cornerstone for the majority of state-of-the-art open-source models due to its excellent stability, reliable convergence, and robust compatibility. This positions Llama as the recognized foundational framework for models including Yi.
 
-- Thanks to the Transformer and LLaMA architectures, other models can leverage their power, reducing the effort required to build from scratch and enabling the utilization of the same tools within their ecosystems.
+- Thanks to the Transformer and Llama architectures, other models can leverage their power, reducing the effort required to build from scratch and enabling the utilization of the same tools within their ecosystems.
 
-- However, the Yi series models are NOT derivatives of LLaMA, as they do not use LLaMA's weights.
+- However, the Yi series models are NOT derivatives of Llama, as they do not use Llama's weights.
 
-  - As LLaMA's structure is employed by the majority of open-source models, the key factors of determining model performance are training datasets, training pipelines, and training infrastructure.
+  - As Llama's structure is employed by the majority of open-source models, the key factors of determining model performance are training datasets, training pipelines, and training infrastructure.
 
-  - Developing in a unique and proprietary way, Yi has independently created its own high-quality training datasets, efficient training pipelines, and robust training infrastructure entirely from the ground up. This effort has led to excellent performance with Yi series models ranking just behind GPT4 and surpassing LLaMA on the [Alpaca Leaderboard in Dec 2023](https://tatsu-lab.github.io/alpaca_eval/). 
+  - Developing in a unique and proprietary way, Yi has independently created its own high-quality training datasets, efficient training pipelines, and robust training infrastructure entirely from the ground up. This effort has led to excellent performance with Yi series models ranking just behind GPT4 and surpassing Llama on the [Alpaca Leaderboard in Dec 2023](https://tatsu-lab.github.io/alpaca_eval/). 
 </ul>
 </details>
 
@@ -290,7 +290,7 @@ If you prefer to deploy Yi models locally,
     - [Docker](#quick-start---docker)
     - [conda-lock](#quick-start---conda-lock)
 
-  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp)
+  - 🙋‍♀️ and you have **limited** resources (for example, a MacBook Pro), you can use [llama.cpp](#quick-start---llamacpp).
 
 #### 🎯 Not to deploy Yi locally
 
@@ -918,7 +918,7 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Blog        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
 | Blog        | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
 | Blog        | [CPU 混合推理，非常见大模型量化方案：“二三五六” 位量化方案](https://zhuanlan.zhihu.com/p/671698216)                  | 2023-12-12 |  [苏洋](https://github.com/soulteary)  |
-| Blog        | [单卡 3 小时训练 Yi-6B 大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)             | 2024-01-22 | [郑耀威](https://github.com/hiyouga) |
+| Blog        | [单卡 3 小时训练 Yi-6B 大模型 Agent：基于 Llama Factory 实战](https://zhuanlan.zhihu.com/p/678989191)             | 2024-01-22 | [郑耀威](https://github.com/hiyouga) |
 | Blog        | [零一万物开源Yi-VL多模态大模型，魔搭社区推理&微调最佳实践来啦！](https://zhuanlan.zhihu.com/p/680098411) | 2024-01-26  |  [ModelScope](https://github.com/modelscope)  |
 | Video       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  漆妮妮  |
 | Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  Fahd Mirza  |
@@ -951,9 +951,9 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 
 ### 💦 Upstream
 
-The Yi series models follow the same model architecture as LLaMA. By choosing Yi, you can leverage existing tools, libraries, and resources within the LLaMA ecosystem, eliminating the need to create new tools and enhancing development efficiency.
+The Yi series models follow the same model architecture as Llama. By choosing Yi, you can leverage existing tools, libraries, and resources within the Llama ecosystem, eliminating the need to create new tools and enhancing development efficiency.
 
-For example, the Yi series models are saved in the format of the LLaMA model. You can directly use `LLaMAForCausalLM` and `LLaMATokenizer` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
+For example, the Yi series models are saved in the format of the Llama model. You can directly use `LlamaForCausalLM` and `LlamaTokenizer` to load the model. For more information, see [Use the chat model](#31-use-the-chat-model).
 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
