@@ -456,10 +456,6 @@ ghcr.io/01-ai/yi:latest
     <p><strong>Note</strong> that the only difference is to set <code>--model &lt;your-model-mount-path&gt;'</code> instead of <code>model &lt;your-model-path&gt;</code>.</p>
 </details>
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
 ### Quick start - conda-lock
 
 <details>
@@ -958,9 +954,6 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
 </details>
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
 
 # 🟢 Why Yi? 
 
