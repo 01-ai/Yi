@@ -39,24 +39,24 @@
 </p> 
 
 <p align="center">
-    👩‍🚀 欢迎你来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 提问
+    👩‍🚀 欢迎来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 讨论问题
 </p> 
 <p align="center">
-    👋 欢迎你加入💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
+    👋 欢迎加入💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
 </p> 
 
 <p align="center">
-    📚 欢迎你来 <a href="#学习中心"> Yi 学习中心 </a>探索新知
+    📚 欢迎来 <a href="#学习中心"> Yi 学习中心 </a>探索新知
 </p> 
 
 <hr>
 
 <ul>
-  <li>🙌 本文由 Yi 和志愿者共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li>
+  <li>🙌 本文由 Yi 和<a href="#yi-readme-中文版贡献者">社区志愿者</a>共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li> 
 
   <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入我们</a>，开启知识之火旅程，共绘技术内容图谱。</li>
   
-  <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「如何使用 Prompt 来实现高质量翻译」和「翻译与审校的正确姿势」</a>。</li>
+  <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-prompt-%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%AB%98%E8%B4%A8%E9%87%8F%E7%BF%BB%E8%AF%91">「如何使用 Prompt 来实现高质量翻译」</a>和<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
 </ul>
 
 
@@ -112,7 +112,7 @@
 
 - 🤖 Yi 系列模型是 [01.AI](https://01.ai/) 从零训练的下一代开源大语言模型。
 
-- 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大语言模型之一。Yi 系列模型在语言认知、常识推理、阅读理解等方面展现出巨大的潜力。例如，
+- 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大语言模型之一。Yi 系列模型在语言认知、常识推理、阅读理解等方面表现优异。例如，
 
   - 英语语言能力方面，Yi 系列模型在 2023 年 12 月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) 排行榜上排名第二（仅次于 GPT-4），超过了其它大语言模型，例如， Llama2-chat-70B、Claude 2 和 ChatGPT。
 
@@ -123,10 +123,10 @@
 
 > 💡 简短总结
 > 
-> Yi 系列模型采用模型架构与Llama相同，但它们**不是**Llama的衍生品。
+> Yi 系列模型采用与Llama相同的模型架构，但它们**不是** Llama 的衍生品。
 
 
-- Yi 和 Llama 都是基于 Transformer 结构构建的。实际上，自 2018 年以来，Transformer 一直是大语言模型的常用架构。
+- Yi 和 Llama 都是基于 Transformer 结构。实际上，自 2018 年以来，Transformer 一直是大语言模型的常用架构。
 
 - 在 Transformer 架构的基础上，Llama 凭借出色的稳定性、可靠的收敛性和强大的兼容性，成为大多数先进开源模型的基石。因此，Llama 也成为 Yi 等模型的基础框架。
 
@@ -134,9 +134,9 @@
 
 - 然而，Yi 系列模型不是 Llama 的衍生品，因为它们不使用 Llama 的权重。
 
-  - 虽然大多数开源模型都采用了 Llama 的结构，但决定模型表现的关键因素是训练所使用的数据集、流水线及其基础设施。
+  - 虽然大多数开源模型都采用了 Llama 的架构，但决定模型表现的关键因素是训练所使用的数据集、训练管道及其基础设施。
 
-  - [01.AI](https://01.ai/) 用独特的方式开发了 Yi 系列模型，从零开始创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此 Yi 系列模型在性能上取得了卓越的成绩，在 2023 年 12 月的 [Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) 上排名仅次于 GPT4，超过了 Llama。
+  - [01.AI](https://01.ai/) 用独特的方式开发了 Yi 系列模型，从零开始创建了自己的高质量训练数据集、高效的训练流水线和强大的训练基础设施，因此 Yi 系列模型性能优异，在 [Alpaca Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) 上排名仅次于 GPT-4，超过了 Llama（数据截止至 2023 年 12 月）。
 </ul>
 </details>
 
@@ -990,7 +990,7 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
   
 - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)：该模型在所有 70B 以下的模型中排名第一，超越了体量是其两倍的deepseek-llm-67b-chat。你可以在[Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)上查看结果。
   
-- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：该模型在C-Eval和CMMLU评估中超越了其它模型（例如，GPT-4、Qwen-14B-Chat 和 Baichuan2-13B-Chat）, 在 [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm) 上表现出色。
+- [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：该模型在C-Eval和CMMLU评估中超越了其它模型（例如，GPT-4、Qwen-14B-Chat 和 Baichuan2-13B-Chat），在 [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm) 上表现出色。
   
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)：该模型在Capybara数据集上使用200K上下文长度和 3 个 epochs 进行训练。
 
@@ -1038,7 +1038,7 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 - **结果差异**: 在测试开源模型时，该测试的流程与其它测试方法（例如，OpenCompass）报告的结果之间存在差异。
 - **结果发现**: 测评结果显示，各种模型在 Prompt、后处理策略和采样技术上的不同之处可能导致各种模型的结果产生显著差异。
-- **该测试过程统一**: 该测试的方法论与原始基准一致，即在评估时使用相同的提示语和后处理策略，并在评估时应用贪心解码（greedy decoding），不对生成内容进行任何后处理。
+- **相同的测试过程**: 该测试的方法论与原始基准一致，即在评估时使用相同的提示语和后处理策略，并在评估时应用贪心解码（greedy decoding），不对生成内容进行任何后处理。
 - **测评其它模型**: 对于未提供测评结果的模型（包括以不同设置报告的分数），该测评尝试使用自身的流程获取结果。
 - **评估维度全面**: 为了全面评估模型的能力，该测评采用了在 Llama2 中概述的方法。具体而言，针对尝试推理方面，该测评使用了 PIQA、SIQA、HellaSwag、WinoGrande、ARC、OBQA 和 CSQA 等方法。针对阅读理解方面，该测评使用了 SquAD、QuAC 和 BoolQ 等方法。
 - **特殊设置**: CSQA 专门使用 7-shot 设置进行测试，而其它所有测试都使用 0-shot 设置进行。此外，该测评在“数学和编码”类别下引入了 GSM8K（8-shot@1）、MATH（4-shot@1）、HumanEval（0-shot@1）和 MBPP（3-shot@1）。
@@ -1063,7 +1063,8 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 [![yi contributors](https://contrib.rocks/image?repo=01-ai/yi&max=2000&columns=15)](https://github.com/01-ai/yi/graphs/contributors)
 
-以下排名不分先后，以用户名首字母顺序排列。
+#### Yi Readme 中文版贡献者
+本文由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%93%9A-Yi-Translation-Plan#contributor-list)完成，排名不分先后，以用户名首字母顺序排列。
 - Prompt 专家：[@kevinhall1998](https://github.com/kevinhall1998)
 - 译员：[@202030481266](https://github.com/202030481266)、[@GloriaLee01](https://github.com/GloriaLee01)、[@markli404](https://github.com/markli404)、[@petter529](https://github.com/petter529) 与 [@soulteary](https://github.com/soulteary)
 - 审校：[@Anonymitaet](https://github.com/Anonymitaet)、[@bltcn](https://github.com/bltcn)、[@Cookize](https://github.com/Cookize)、[@lljzhgxd](https://github.com/lljzhgxd) 与 [@markli404](https://github.com/markli404)
