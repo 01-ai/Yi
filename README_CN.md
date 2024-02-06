@@ -892,6 +892,11 @@ Yi 8-bit 量化模型 |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?ta
 有了这些学习资源，你可以立即开启 Yi 学习之旅。祝学习愉快！🥳
 
 #### 教程
+##### 英文教程
+| 类型        | 教程                                                      |      日期      |     作者     |
+|:-------------|:--------------------------------------------------------|:----------------|:----------------|
+| 博客        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
+| 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
 ##### 中文教程
 | 类型        | 教程                                                      |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
@@ -902,11 +907,6 @@ Yi 8-bit 量化模型 |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?ta
 | 博客        | [单卡 3 小时训练 Yi-6B 大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)             | 2024-01-22 | [郑耀威](https://github.com/hiyouga) |
 | 博客        | [零一万物开源Yi-VL多模态大模型，魔搭社区推理&微调最佳实践来啦！](https://zhuanlan.zhihu.com/p/680098411)                  | 2024-01-26 |  [ModelScope](https://github.com/modelscope)  |
 | 视频       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
-##### 英文教程
-| 类型        | 教程                                                      |      日期      |     作者     |
-|:-------------|:--------------------------------------------------------|:----------------|:----------------|
-| 博客        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
-| 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
 </details>
 
 # 📌 为什么选择 Yi？
