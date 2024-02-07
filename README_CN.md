@@ -114,9 +114,10 @@
 
 - 🙌 Yi 系列模型是一个双语语言模型，在 3T 多语言语料库上训练而成，是全球最强大的大语言模型之一。Yi 系列模型在语言认知、常识推理、阅读理解等方面表现优异。例如，
 
-  - 英语语言能力方面，Yi 系列模型在 2023 年 12 月的 [AlpacaEval Leaderboard](https://tatsu-lab.github.io/alpaca_eval/) 排行榜上排名第二（仅次于 GPT-4），超过了其它大语言模型，例如， Llama2-chat-70B、Claude 2 和 ChatGPT。
+   - Yi-34B-Chat 模型在 AlpacaEval Leaderboard [排名第二](https://twitter.com/01AI_Yi/status/1745371506623103087?s=20)，**仅次于 GPT-4 Turbo**，超过了 GPT-4、Mixtral 和 Claude 等大语言模型（数据截止至 2024 年 1 月）。
 
-  - 中文语言能力方面，Yi系列模型在2023年10月的 [SuperCLUE](https://www.superclueai.com/) 排行榜上排名第二（仅次于 GPT-4），超过了其它大语言模型，例如，百度 ERNIE、Qwen 和 Baichuan。
+  - Yi-34B 模型在 [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)（预训练）与 C-Eval 基准测试中[荣登榜首](https://mp.weixin.qq.com/s/tLP-fjwYHcXVLqDcrXva2g)，**在中文和英文语言能力方面**均超过了其它开源模型，例如，Falcon-180B、Llama-70B 和 Claude（数据截止至 2023 年 11 月）。
+
   - 🙏 （致谢 Llama ）感谢 Transformer 和 Llama 开源社区，不仅简化了开发者从零开始构建大模型的工作，开发者还可以利用 Llama 生态中现有的工具、库和资源，提高开发效率。
 
   <details style="display: inline;"><summary> 如果你对 Yi 使用 Llama 架构及其许可使用政策感兴趣，参阅 <span style="color:  green;">「Yi 与 Llama 的关系」。</span> ⬇️</summary> <ul> <br>
