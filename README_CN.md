@@ -54,7 +54,7 @@
 <ul>
   <li>🙌 本文由 Yi 和<a href="#本文贡献者">社区志愿者</a>共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li> 
 
-  <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入我们</a>，开启知识之火旅程，共绘技术内容图谱。</li>
+  <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入「Yi 起翻译」</a>，开启知识之火旅程，共绘技术内容图谱。</li>
   
   <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-prompt-%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%AB%98%E8%B4%A8%E9%87%8F%E7%BF%BB%E8%AF%91">「如何使用 Prompt 来实现高质量翻译」</a>和<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
 </ul>
