@@ -953,7 +953,7 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Blog        | [零一万物开源Yi-VL多模态大模型，魔搭社区推理&微调最佳实践来啦！](https://zhuanlan.zhihu.com/p/680098411) | 2024-01-26  |  [ModelScope](https://github.com/modelscope)  |
 | Video       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
 | Video       | [Yi-VL-34B 多模态大模型 - 用两张 A40 显卡跑起来](https://www.bilibili.com/video/BV1Q5411y7AG/)               | 2023-01-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
-
+| Video       | [龙舞春节：如何用零一AI快速制作迷人的春节对联海报](https://www.bilibili.com/video/BV1Gy421Y7wx/)               | 2023-01-28 |  [吃饭睡觉打AI](https://space.bilibili.com/524311762)  |
 </details>
 
 
