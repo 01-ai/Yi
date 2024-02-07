@@ -907,6 +907,7 @@ Yi 8-bit 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?ta
 | 博客        | [单卡 3 小时训练 Yi-6B 大模型 Agent：基于 LLaMA Factory 实战](https://zhuanlan.zhihu.com/p/678989191)             | 2024-01-22 | [郑耀威](https://github.com/hiyouga) |
 | 博客        | [零一万物开源Yi-VL多模态大模型，魔搭社区推理&微调最佳实践来啦！](https://zhuanlan.zhihu.com/p/680098411)                  | 2024-01-26 |  [ModelScope](https://github.com/modelscope)  |
 | 视频       | [只需 24G 显存，用 vllm 跑起来 Yi-34B 中英双语大模型](https://www.bilibili.com/video/BV17t4y1f7Ee/)               | 2023-12-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
+| 视频       | [Yi-VL-34B 多模态大模型 - 用两张 A40 显卡跑起来](https://www.bilibili.com/video/BV1Q5411y7AG/)               | 2023-01-28 |  [漆妮妮](https://space.bilibili.com/1262370256)  |
 </details>
 
 # 📌 为什么选择 Yi？
