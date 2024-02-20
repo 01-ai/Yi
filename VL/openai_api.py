@@ -1,3 +1,5 @@
+# Implements API for Yi-VL in OpenAI's format. (https://platform.openai.com/docs/api-reference/chat)
+# This script benefits from https://github.com/xusenlinzy/api-for-open-llm. Thanks for their wonderful works.
 import json
 import os
 import time
