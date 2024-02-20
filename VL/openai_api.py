@@ -10,8 +10,18 @@ from enum import Enum, IntEnum
 from functools import lru_cache, partial
 from threading import Thread
 from types import MethodType
-from typing import (Any, AsyncIterator, Dict, Iterator, List, Optional, Tuple,
-                    Type, Union, cast)
+from typing import (
+    Any,
+    AsyncIterator,
+    Dict,
+    Iterator,
+    List,
+    Optional,
+    Tuple,
+    Type,
+    Union,
+    cast,
+)
 
 import anyio
 import pydantic
@@ -21,11 +31,22 @@ from anyio.streams.memory import MemoryObjectSendStream
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from llava.conversation import conv_templates
+from llava.mm_utils import (
+    expand2square, 
+    get_model_name_from_path,
+    load_pretrained_model,
+    tokenizer_image_token,
+)
+from llava.model.constants import DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX, key_info
 from loguru import logger
-from openai.types.chat import (ChatCompletion, ChatCompletionChunk,
-                               ChatCompletionMessage,
-                               ChatCompletionMessageParam,
-                               ChatCompletionToolChoiceOptionParam)
+from openai.types.chat import (
+    ChatCompletion,
+    ChatCompletionChunk,
+    ChatCompletionMessage,
+    ChatCompletionMessageParam,
+    ChatCompletionToolChoiceOptionParam
+)
 from openai.types.chat.chat_completion import Choice
 from openai.types.chat.chat_completion_chunk import Choice as ChunkChoice
 from openai.types.chat.chat_completion_chunk import ChoiceDelta
@@ -36,14 +57,7 @@ from PIL import Image
 from pydantic import BaseModel
 from sse_starlette import EventSourceResponse
 from starlette.concurrency import iterate_in_threadpool, run_in_threadpool
-from transformers import (PreTrainedModel, PreTrainedTokenizer,
-                          TextIteratorStreamer)
-
-from llava.conversation import conv_templates
-from llava.mm_utils import (expand2square, get_model_name_from_path,
-                            load_pretrained_model, tokenizer_image_token)
-from llava.model.constants import (DEFAULT_IMAGE_TOKEN, IMAGE_TOKEN_INDEX,
-                                   key_info)
+from transformers import PreTrainedModel, PreTrainedTokenizer, TextIteratorStreamer
 
 
 class Role(str, Enum):
