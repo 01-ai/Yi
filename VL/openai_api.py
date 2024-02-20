@@ -33,7 +33,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from llava.conversation import conv_templates
 from llava.mm_utils import (
-    expand2square, 
+    expand2square,
     get_model_name_from_path,
     load_pretrained_model,
     tokenizer_image_token,
@@ -45,7 +45,7 @@ from openai.types.chat import (
     ChatCompletionChunk,
     ChatCompletionMessage,
     ChatCompletionMessageParam,
-    ChatCompletionToolChoiceOptionParam
+    ChatCompletionToolChoiceOptionParam,
 )
 from openai.types.chat.chat_completion import Choice
 from openai.types.chat.chat_completion_chunk import Choice as ChunkChoice
