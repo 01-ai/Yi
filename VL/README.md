@@ -56,7 +56,47 @@ Human: what are they eating
 Assistant: cat food
 ```
 
+## API
+Deploy an OpenAI-style API that supports the Yi-VL models on your own server.
 
+```python
+python openai_api.py --model-path path-to-yi-vl-model
+```
+
+Test Code:
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="EMPTY",
+    base_url="http://127.0.0.1:8000/v1/",
+)
+
+stream = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "What’s in this image?"
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        # Either an url or a local path
+                        "url": "https://github.com/01-ai/Yi/blob/main/VL/images/cats.jpg?raw=true" 
+                    }
+                }
+            ]
+        }
+    ],
+    model="yi-vl",
+    stream=True,
+)
+for part in stream:
+    print(part.choices[0].delta.content or "", end="", flush=True)
+```
 
 
 ## Major difference with LLaVA
