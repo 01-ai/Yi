@@ -22,4 +22,6 @@ deepspeed main.py \
 	--offload \
 	--lora_dim 128 \
 	--lora_module_name "layers." \
+  --lora_scaling 8 \
+  --lora_dropout 0.1 \
 	--output_dir ./output_Yi_6b_chat_sft_lora
