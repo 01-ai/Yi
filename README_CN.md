@@ -775,7 +775,7 @@ python quantization/gptq/eval_quantized_model.py \
 <details style="display: inline;"><summary> 详细的量化过程。 ⬇️</summary> <ul>
 <br>
 
-[GPT-Q](https://github.com/IST-DASLab/gptq)是一种后训练量化方法，能够帮助大型语言模型在使用时节省内存，保持模型的准确性，并加快模型的运行速度。
+[GPT-Q](https://github.com/IST-DASLab/gptq) 是一种后训练量化方法，能够帮助大型语言模型在使用时节省内存，保持模型的准确性，并加快模型的运行速度。
 
 如需对 Yi 模型进行 GPT-Q 量化，使用以下教程。
 
