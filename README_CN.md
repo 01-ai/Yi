@@ -920,6 +920,8 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
 | 博客        | [Running Yi-34B-Chat locally using LlamaEdge](https://www.secondstate.io/articles/yi-34b/)                   |  2023-11-30  |  [Second State](https://github.com/second-state)  |
 | 视频       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s)  |
+| 视频       | [Dolphin Yi 34b - Brand New Foundational Model TESTED](https://www.youtube.com/watch?v=On3Zuv27V3k&t=85s) | 2023-11-27  |  [Matthew Berman](https://www.youtube.com/@matthew_berman)  |
+
 ##### 中文教程
 | 类型        | 教程                                                      |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
