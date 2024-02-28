@@ -43,11 +43,13 @@ jobs:
           - Yi-6B-Chat
           - Yi-6B-Chat-4bits
           - Yi-6B-Chat-8bits
+          - Yi-VL-6B
           - Yi-34B
           - Yi-34B-200K
           - Yi-34B-Chat
           - Yi-34B-Chat-4bits
           - Yi-34B-Chat-8bits
+          - Yi-VL-34B
     steps:
       - uses: actions/checkout@v4
       - run: echo "REPO=${{ matrix.platform == 'huggingface' && format('https://{0}:{1}@huggingface.co/01-ai/{2}', secrets.HF_USER, secrets.HF_TOKEN, matrix.repo) || (matrix.platform == 'modelscope' && format('http://oauth2:{0}@www.modelscope.cn/01ai/{1}.git', secrets.MODELSCOPE_TOKEN, matrix.repo) || format('https://oauth2:{0}@www.wisemodel.cn/01.AI/{1}.git', secrets.WISEMODEL_TOKEN, matrix.repo))}}" >> $GITHUB_ENV
