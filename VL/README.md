@@ -21,7 +21,7 @@ A quick example:
 ```python
 CUDA_VISIBLE_DEVICES=0 python single_inference.py --model-path ../model/Yi-VL-34B --image-file images/cats.jpg --question "Describe the cats and what they are doing in detail."
 ```
-Since the temperature is set to 0.2 by default, the ourput is not always the same. An example output is:
+Since the temperature is set to 0.2 by default, the output is not always the same. An example output is:
 ```
 ----------
 question: Describe the cats and what they are doing in detail.
