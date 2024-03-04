@@ -1058,6 +1058,10 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
+#### 👨‍💻 Coding
+
+- [AutoDev](https://github.com/unit-mesh/auto-dev) is a open-source JetBrains IDE's AI assistant, support for custom LLMs, follow [零一万物 examples](https://ide.unitmesh.cc/custom/llm-server#%E9%9B%B6%E4%B8%80%E4%B8%87%E7%89%A9-examples) to config.
+
 ## 📌 Benchmarks 
 
 - [📊 Chat model performance](#-chat-model-performance)
