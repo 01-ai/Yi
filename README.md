@@ -951,6 +951,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 |----------------------|--------------|:-------------------------------------:|
 | Yi-6B                | 15 GB         | RTX3090 <br> RTX4090 <br> A10 <br> A30               |
 | Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
+| Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
