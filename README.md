@@ -140,20 +140,20 @@
 ## News 
 
 <details open>
-  <summary>🎯 <b>2024/03/06</b>: The Yi-9B is open-sourced and available to the public.</summary>
+  <summary>🎯 <b>2024-03-06</b>: The <code>Yi-9B</code> is open-sourced and available to the public.</summary>
   <br>
-  Yi-9B stands out as the top performer among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
+<code>Yi-9B</code> stands out as the top performer among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
 </details>
 
 <details open>
-  <summary>🎯 <b>2024/01/23</b>: The Yi-VL models, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are open-sourced and available to the public.</summary>
+  <summary>🎯 <b>2024-01-23</b>: The Yi-VL models, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are open-sourced and available to the public.</summary>
   <br>
   <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> (based on data available up to January 2024).</li>
 </details>
 
 
 <details>
-<summary>🎯 <b>2023/11/23</b>: <a href="#chat-models">Chat models</a> are open-sourced and available to the public.</summary>
+<summary>🎯 <b>2023-11-23</b>: <a href="#chat-models">Chat models</a> are open-sourced and available to the public.</summary>
 <br>This release contains two chat models based on previously released base models, two 8-bit models quantized by GPTQ, and two 4-bit models quantized by AWQ.
 
 - `Yi-34B-Chat`
@@ -170,11 +170,11 @@ You can try some of them interactively at:
 </details>
 
 <details>
-  <summary>🔔 <b>2023/11/23</b>: The Yi Series Models Community License Agreement is updated to <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">v2.1</a>.</summary>
+  <summary>🔔 <b>2023-11-23</b>: The Yi Series Models Community License Agreement is updated to <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">v2.1</a>.</summary>
 </details>
 
 <details> 
-<summary>🔥 <b>2023/11/08</b>: Invited test of Yi-34B chat model.</summary>
+<summary>🔥 <b>2023-11-08</b>: Invited test of Yi-34B chat model.</summary>
 <br>Application form:
 
 - [English](https://cn.mikecrm.com/l91ODJf)
@@ -182,13 +182,13 @@ You can try some of them interactively at:
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/05</b>: <a href="#base-models">The base models, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are open-sourced and available to the public.</summary>
+<summary>🎯 <b>2023-11-05</b>: <a href="#base-models">The base models, </a><code>Yi-6B-200K</code> and <code>Yi-34B-200K</code>, are open-sourced and available to the public.</summary>
 <br>This release contains two base models with the same parameter sizes as the previous
 release, except that the context window is extended to 200K.
 </details>
 
 <details>
-<summary>🎯 <b>2023/11/02</b>: <a href="#base-models">The base models, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are open-sourced and available to the public.</summary>
+<summary>🎯 <b>2023-11-02</b>: <a href="#base-models">The base models, </a><code>Yi-6B</code> and <code>Yi-34B</code>, are open-sourced and available to the public.</summary>
 <br>The first public release contains two bilingual (English/Chinese) base models
 with the parameter sizes of 6B and 34B.  Both of them are trained with 4K
 sequence length and can be extended to 32K during inference time.
@@ -927,11 +927,11 @@ Before deploying Yi in your environment, make sure your hardware meets the follo
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |----------------------|--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | RTX 3090 <br> RTX 4090 <br>  A10 <br> A30             |
-| Yi-6B-Chat-4bits     | 4 GB          | RTX 3060 <br>  RTX 4060                     |
-| Yi-6B-Chat-8bits     | 8 GB          | RTX 3070 <br> RTX 4060                     |
+| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br>  A10 <br> A30             |
+| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 <br>  1 x RTX 4060                     |
+| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 <br> 1 x RTX 4060                     |
 | Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
+| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090  <br> 1 x RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
 | Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
 
 Below are detailed minimum VRAM requirements under different batch use cases.
@@ -949,7 +949,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |----------------------|--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | RTX3090 <br> RTX4090 <br> A10 <br> A30               |
+| Yi-6B                | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br> A10 <br> A30               |
 | Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
 | Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
 | Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
@@ -1012,6 +1012,8 @@ With all these resources at your fingertips, you're ready to start your exciting
   - [Benchmarks](#benchmarks)
     - [Chat model performance](#chat-model-performance)
     - [Base model performance](#base-model-performance)
+      - [Yi-34B and Yi-34B-200K](#yi-34b-and-yi-34b-200k)
+      - [Yi-9B](#yi-9b)
  
 ## Ecosystem
 
@@ -1020,8 +1022,8 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 - [Upstream](#upstream)
 - [Downstream](#downstream)
   - [Serving](#serving)
-  - [Quantitation](#️quantitation)
-  - [Fine-tuning](#️fine-tuning)
+  - [Quantization](#quantization-1)
+  - [Fine-tuning](#fine-tuning-1)
   - [API](#api)
 
 ### Upstream
@@ -1146,7 +1148,7 @@ Yi-9B is almost the best among a range of similar-sized open-source models (incl
 
 ![Yi-9B benchmark - details](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_details.png?raw=true)
 
-- In terms of **overall** ability (`Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
+- In terms of **overall** ability (Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
 
 ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
 
