@@ -1023,7 +1023,7 @@ Yi has a comprehensive ecosystem, offering a range of tools, services, and model
 - [Downstream](#downstream)
   - [Serving](#serving)
   - [Quantization](#quantization-1)
-  - [Fine-tuning](#️fine-tuning)
+  - [Fine-tuning](#fine-tuning-1)
   - [API](#api)
 
 ### Upstream
