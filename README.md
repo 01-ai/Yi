@@ -1160,7 +1160,7 @@ Yi-9B is almost the best among a range of similar-sized open-source models (incl
 
 - In terms of **common sense and reasoning** ability (Mean-Text), Yi-9B's performance is on par with Mistral-7B, SOLAR-10.7B, and Gemma-7B.
 
-![Yi-9B benchmark - text](TBD)
+![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
