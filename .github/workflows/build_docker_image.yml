@@ -22,7 +22,7 @@ jobs:
     needs: authorize
     strategy:
       matrix:
-        runner: [public, oversea]
+        runner: [oversea] # remove public runner, 24-3-6
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
