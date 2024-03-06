@@ -43,6 +43,7 @@ jobs:
           - Yi-6B-Chat
           - Yi-6B-Chat-4bits
           - Yi-6B-Chat-8bits
+          - Yi-9B
           - Yi-34B
           - Yi-34B-200K
           - Yi-34B-Chat
