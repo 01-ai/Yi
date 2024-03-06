@@ -140,6 +140,12 @@
 ## 🎉 News 
 
 <details open>
+  <summary>🎯 <b>2024/03/06</b>: The Yi-9B is open-sourced and available to the public.</summary>
+  <br>
+  Yi-9B stands out as the top performer among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
+</details>
+
+<details open>
   <summary>🎯 <b>2024/01/23</b>: The Yi-VL models, <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> and <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code>, are open-sourced and available to the public.</summary>
   <br>
   <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> has ranked <strong>first</strong> among all existing open-source models in the latest benchmarks, including <a href="https://arxiv.org/abs/2311.16502">MMMU</a> and <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> (based on data available up to January 2024).</li>
@@ -219,26 +225,23 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
 Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
+Yi-9B|• [🤗 Hugging Face](TBD)  
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  </sup></sub>
 
-### Other info
+### Model info
 
-- For chat and base models:
+- For chat and base models
 
-  - 6B series models are suitable for personal and academic use.
+Model | Intro | Default context window | Pretrained tokens | Training Data Date
+|---|---|---|---|---
+6B series models |They are suitable for personal and academic use. | 4K | 3T | Up to June 2023
+9B model| It is the best at coding and math in the Yi series models.|4K | Yi-9B is continuously trained based on Yi-6B, using 0.8T tokens. |  Up to June 2023
+34B series models | They are suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.|4K | 3T | Up to June 2023
 
-  - 34B series models suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.
-
-  - The **default context window** is **4k tokens**.
-    
-  - The pretrained tokens are 3T.
-    
-  - The training data are up to June 2023.	
-
-- For chat models:
+- For chat models
   
   <details style="display: inline;"><summary>For chat model limitations, see the explanations below. ⬇️</summary>
    <ul>
@@ -328,7 +331,7 @@ If you want to chat with Yi with more customizable options (e.g., system prompt,
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Quick start - pip
+### Quick start - pip 
 
 This tutorial guides you through every step of running **Yi-34B-Chat locally on an A800 (80G)** and then performing inference.
 
@@ -405,31 +408,67 @@ You can perform inference with Yi chat or base models as below.
 
 ##### Perform inference with Yi base model
 
-The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
+- Yi-34B
 
-You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
+  The steps are similar to [pip - Perform inference with Yi chat model](#perform-inference-with-yi-chat-model).
 
-```bash
-python demo/text_generation.py  --model <your-model-path>
-```
+  You can use the existing file [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo).
 
-Then you can see an output similar to the one below. 🥳
+  ```bash
+  python demo/text_generation.py  --model <your-model-path>
+  ```
 
-<details>
+  Then you can see an output similar to the one below. 🥳
 
-<summary>Output. ⬇️ </summary>
+  <details>
 
-<br>
+  <summary>Output. ⬇️ </summary>
 
-**Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
+  <br>
 
-**Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
+  **Prompt**: Let me tell you an interesting story about cat Tom and mouse Jerry,
 
-</details>
+  **Generation**: Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
 
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
+  </details>
+
+- Yi-9B
+  
+  Input
+
+  ```bash
+  from transformers import AutoModelForCausalLM, AutoTokenizer
+
+  MODEL_DIR = "01-ai/Yi-9B"
+  model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, torch_dtype="auto")
+  tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, use_fast=False)
+
+  input_text = "# write the quick sort algorithm"
+  inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+  outputs = model.generate(**inputs, max_length=256)
+  print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+  ```
+
+  Output
+
+  ```bash
+  # write the quick sort algorithm
+  def quick_sort(arr):
+      if len(arr) <= 1:
+          return arr
+      pivot = arr[len(arr) // 2]
+      left = [x for x in arr if x < pivot]
+      middle = [x for x in arr if x == pivot]
+      right = [x for x in arr if x > pivot]
+      return quick_sort(left) + middle + quick_sort(right)
+
+  # test the quick sort algorithm
+  print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
+  ```
+
+    <p align="right"> [
+    <a href="#top">Back to top ⬆️ </a>  ] 
+  </p>
 
 ### Quick start - Docker 
 <details>
@@ -1082,6 +1121,8 @@ Yi-34B-Chat model demonstrates exceptional performance, ranking first among all 
 
 ### 📊 Base model performance
 
+#### Yi-34B and Yi-34B-200K 
+
 The Yi-34B and Yi-34B-200K models stand out as the top performers among open-source models, especially excelling in MMLU, CMMLU, common-sense reasoning, reading comprehension, and more.
 
 ![Base model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_base.png?raw=true)
@@ -1097,6 +1138,28 @@ The Yi-34B and Yi-34B-200K models stand out as the top performers among open-sou
 - **Special configurations**: CSQA was exclusively tested using a 7-shot setup, while all other tests were conducted with a 0-shot configuration. Additionally, we introduced GSM8K (8-shot@1), MATH (4-shot@1), HumanEval (0-shot@1), and MBPP (3-shot@1) under the category "Math & Code".
 - **Falcon-180B caveat**: Falcon-180B was not tested on QuAC and OBQA due to technical constraints. Its performance score is an average from other tasks, and considering the generally lower scores of these two tasks, Falcon-180B's capabilities are likely not underestimated.
 </details>
+
+#### Yi-9B
+
+Yi-9B is almost the best among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
+
+![Yi-9B benchmark - details](TBD)
+
+- In terms of **overall** ability (`Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
+
+![Yi-9B benchmark - overall](TBD)
+
+- In terms of **coding** ability (Mean-Code), Yi-9B's performance is second only to DeepSeek-Coder-7B, surpassing Yi-34B, SOLAR-10.7B, Mistral-7B, and Gemma-7B.
+
+![Yi-9B benchmark - code](TBD)
+
+- In terms of **math** ability (Mean-Math), Yi-9B's performance is second only to DeepSeek-Math-7B, surpassing SOLAR-10.7B, Mistral-7B, and Gemma-7B.
+
+![Yi-9B benchmark - math](TBD)
+
+- In terms of **common sense and reasoning** ability (Mean-Text), Yi-9B's performance is on par with Mistral-7B, SOLAR-10.7B, and Gemma-7B.
+
+![Yi-9B benchmark - text](TBD)
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
