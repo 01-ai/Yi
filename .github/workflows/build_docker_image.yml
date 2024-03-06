@@ -22,7 +22,7 @@ jobs:
     needs: authorize
     strategy:
       matrix:
-        runner: [public, oversea]
+        runner: [oversea] # remove public runner, 24-3-6
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
@@ -92,17 +92,17 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Build and push
-      #   id: build-image
-      #   uses: docker/build-push-action@v5
-      #   with:
-      #     build-args: |
-      #       REGISTRY=${{ matrix.runner == 'public' && format('{0}/ci', secrets.DEFAULT_REGISTRY) || 'nvcr.io'}}
-      #       HTTP_PROXY=${{ env.http_proxy }}
-      #       HTTPS_PROXY=${{ env.https_proxy }}
-      #       NO_PROXY=${{ env.no_proxy }}
-      #     push: true
-      #     tags: ${{ steps.meta.outputs.tags }}
-      #     labels: ${{ steps.meta.outputs.labels }}
-      #     cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
-      #     cache-to: ${{ github.event_name == 'pull_request_target' && '' || format('type=registry,image-manifest=true,ref={0}:buildcache,mode=max', steps.more-meta.outputs.PRIMARY_TAG_SHORT) }}
+      - name: Build and push
+        id: build-image
+        uses: docker/build-push-action@v5
+        with:
+          build-args: |
+            REGISTRY=${{ matrix.runner == 'public' && format('{0}/ci', secrets.DEFAULT_REGISTRY) || 'nvcr.io'}}
+            HTTP_PROXY=${{ env.http_proxy }}
+            HTTPS_PROXY=${{ env.https_proxy }}
+            NO_PROXY=${{ env.no_proxy }}
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=registry,ref=${{ steps.more-meta.outputs.PRIMARY_TAG_SHORT }}:buildcache
+          cache-to: ${{ github.event_name == 'pull_request_target' && '' || format('type=registry,image-manifest=true,ref={0}:buildcache,mode=max', steps.more-meta.outputs.PRIMARY_TAG_SHORT) }}
