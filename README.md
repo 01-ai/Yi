@@ -142,7 +142,7 @@
 <details open>
   <summary>🔔 <b>2024-03-07</b>: The long text capability of the Yi-34B-200K has been enhanced. </summary>
   <br>
-In the 'Needle-in-a-Haystack' test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue pretrain the model on 5B tokens long-context data mixture and demonstrates a near-all-green performance.
+In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue pretrain the model on 5B tokens long-context data mixture and demonstrates a near-all-green performance.
 </details>
 
 <details open>
