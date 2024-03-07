@@ -140,6 +140,12 @@
 ## News 
 
 <details open>
+  <summary>🔔 <b>2024-03-07</b>: The long text capability of the Yi-34B-200K has been enhanced. </summary>
+  <br>
+In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue pretrain the model on 5B tokens long-context data mixture and demonstrates a near-all-green performance.
+</details>
+
+<details open>
   <summary>🎯 <b>2024-03-06</b>: The <code>Yi-9B</code> is open-sourced and available to the public.</summary>
   <br>
 <code>Yi-9B</code> stands out as the top performer among a range of similar-sized open-source models (including Mistral-7B, SOLAR-10.7B, Gemma-7B, DeepSeek-Coder-7B-Base-v1.5 and more), particularly excelling in code, math, common-sense reasoning, and reading comprehension.
@@ -229,7 +235,7 @@ Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B)
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
-<sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  </sup></sub>
+<sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  <br> - If you want to use the previous version of the Yi-34B-200K (released on Nov 5, 2023), run `git checkout 069cd341d60f4ce4b07ec394e82b79e94f656cf` to download the weight. </sup></sub>
 
 ### Model info
 
