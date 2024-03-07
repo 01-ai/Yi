@@ -151,7 +151,7 @@
  <details open>
   <summary>🔔 <b>2024-03-07</b>: 增强了 Yi-34B-200K 长文本记忆和检索能力。</summary>
   <br>
-Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 99.8% 的比例。
+Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 99.8%。
 在 5B tokens 的长文本数据集上，对模型进行继续预训练，模型性能达到预期目标。
 
 </details>
@@ -159,7 +159,7 @@ Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 9
 <details open>
   <summary>🎯 <b>2024-03-06</b>: 发布并开源了 <code>Yi-9B</code> 模型。</summary>
   <br>
-<code>Yi-9B</code> 模型表现出色，在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中脱颖而出，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
+<code>Yi-9B</code> 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中名列前茅，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
 </details>
 <br>
 <details open>
@@ -925,12 +925,12 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 | 模型                 | 最低显存      | 推荐GPU示例                             |
 |:----------------------|:--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br>  1 x A10 <br> 1 x A30             |
-| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 <br>  1 x RTX 4060                     |
-| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 <br> 1 x RTX 4060                     |
-| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> 1 x A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090  <br> 1 x RTX 4090 <br> 1 x A10 <br> 1 x A30 <br> 1 x A100 (40GB) |
-| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> 1 x A800  (40GB) |
+| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
+| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
+| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 (8 GB) <br> 1 x RTX 4060 (8 GB)                   |
+| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 (24 GB)<br> 1 x A800 (80GB)               |
+| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)  <br> 1 x A100 (40 GB) |
+| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090 (24 GB) <br> 2 x RTX 4090 (24 GB)<br> 1 x A800  (40 GB) |
 
 以下是不同 batch 使用情况下的最低显存要求。
 
@@ -947,10 +947,10 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 |模型                   |最低显存      |        推荐GPU示例                     |
 |:----------------------|:--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br> 1 x A10 <br> 1 x A30               |
+| Yi-6B                | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)                |
 | Yi-6B-200K           | 50 GB         | 1 x A800 (80 GB)                            |
 | Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
-| Yi-34B               | 72 GB         | 4 x RTX 4090 <br> 1 x A800 (80 GB)               |
+| Yi-34B               | 72 GB         | 4 x RTX 4090 (24 GB) <br> 1 x A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
 ### 学习中心
@@ -1137,23 +1137,23 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 
 #### Yi-9B
 
-Yi-9B 模型表现出色，在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中脱颖而出，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
+Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中名列前茅，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
 
 ![Yi-9B benchmark - details](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_details.png?raw=true)
 
-- 在**综合**能力方面（Mean-All），Yi-9B 的性能在尺寸相近的开源模型中最好，超越了 DeepSeek-Coder、DeepSeek-Math、Mistral-7B、SOLAR-10.7B 和 Gemma-7B。
+- 在**综合**能力方面（Mean-All），Yi-9B 的性能**在尺寸相近的开源模型中最好，超越了** DeepSeek-Coder、DeepSeek-Math、Mistral-7B、SOLAR-10.7B 和 Gemma-7B。
 
 ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
 
-- 在**代码**能力方面（Mean-Code），Yi-9B 的性能仅次于 DeepSeek-Coder-7B，超越了 Yi-34B、SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
+- 在**代码**能力方面（Mean-Code），Yi-9B 的性能仅次于 DeepSeek-Coder-7B，**超越了** Yi-34B、SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
 
 ![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
 
-- 在**数学**能力方面（Mean-Math），Yi-9B 的性能仅次于 DeepSeek-Math-7B，超越了 SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
+- 在**数学**能力方面（Mean-Math），Yi-9B 的性能仅次于 DeepSeek-Math-7B，**超越了** SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
 
 ![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
 
-- 在**常识和推理**能力方面（Mean-Text），Yi-9B 的性能与 Mistral-7B、SOLAR-10.7B 和 Gemma-7B 不相上下。
+- 在**常识和推理**能力方面（Mean-Text），Yi-9B 的性能与 Mistral-7B、SOLAR-10.7B 和 Gemma-7B **不相上下**。
 
 ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 

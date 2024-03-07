@@ -142,7 +142,7 @@
 <details open>
   <summary>🔔 <b>2024-03-07</b>: The long text capability of the Yi-34B-200K has been enhanced. </summary>
   <br>
-In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue pretrain the model on 5B tokens long-context data mixture and demonstrates a near-all-green performance.
+In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue to pretrain the model on 5B tokens long-context data mixture and demonstrate a near-all-green performance.
 </details>
 
 <details open>
@@ -932,13 +932,13 @@ Before deploying Yi in your environment, make sure your hardware meets the follo
 ##### Chat models
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
-|----------------------|--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br>  A10 <br> A30             |
-| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 <br>  1 x RTX 4060                     |
-| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 <br> 1 x RTX 4060                     |
-| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090  <br> 1 x RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
-| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
+|:----------------------|:--------------|:-------------------------------------:|
+| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
+| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
+| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 (8 GB) <br> 1 x RTX 4060 (8 GB)                   |
+| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 (24 GB)<br> 1 x A800 (80GB)               |
+| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)  <br> 1 x A100 (40 GB) |
+| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090 (24 GB) <br> 2 x RTX 4090 (24 GB)<br> 1 x A800  (40 GB) |
 
 Below are detailed minimum VRAM requirements under different batch use cases.
 
@@ -955,10 +955,10 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |----------------------|--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br> A10 <br> A30               |
-| Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
+| Yi-6B                | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br> 1 x A10 (24 GB)  <br> 1 x A30 (24 GB)                |
+| Yi-6B-200K           | 50 GB         | 1 x A800 (80 GB)                            |
 | Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
-| Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
+| Yi-34B               | 72 GB         | 4 x RTX 4090 (24 GB) <br> 1 x A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
 <p align="right"> [
