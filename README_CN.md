@@ -148,12 +148,26 @@
 
 ## 最新动态
 
+ <details open>
+  <summary>🔔 <b>2024-03-07</b>: 增强了 Yi-34B-200K 长文本记忆和检索能力。</summary>
+  <br>
+Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 99.8% 的比例。
+在 5B tokens 的长文本数据集上，对模型进行继续预训练，模型性能达到预期目标。
+
+</details>
+<br>
+<details open>
+  <summary>🎯 <b>2024-03-06</b>: 发布并开源了 <code>Yi-9B</code> 模型。</summary>
+  <br>
+<code>Yi-9B</code> 模型表现出色，在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中脱颖而出，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
+</details>
+<br>
 <details open>
   <summary>🎯 <b> 2024-01-23</b>: 发布并开源了 <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code> 和 <code><a href="https://huggingface.co/01-ai/Yi-VL-6B">Yi-VL-6B</a></code> 多模态语言大模型。</summary>
   <br>
    <code><a href="https://huggingface.co/01-ai/Yi-VL-34B">Yi-VL-34B</a></code>在 <a href="https://arxiv.org/abs/2311.16502">MMMU</a> 和 <a href="https://arxiv.org/abs/2401.11944">CMMMU</a> 最新的基准测试中荣登榜首（数据截止至 2024 年 1 月）。</li>
 </details>
-
+<br>
 <details>
 <summary>🎯 <b>2023-11-23</b>: 发布并开源了六大 Chat 模型。</summary>
 <br>
@@ -222,24 +236,22 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
 Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
+Yi-9B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B) 
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
-<sub><sup> - 200K 大约相当于 40 万个汉字。</sup></sub>
+<sub><sup> - 200K 大约相当于 40 万个汉字。<br> - 如果你想用 Yi-34B-200K 更早的版本 （即 2023 年 11 月 5 日发布的版本），可以运行代码 `git checkout 069cd341d60f4ce4b07ec394e82b79e94f656cf`，下载权重。</sup></sub>
 
-### 其它信息
 
-- Chat 和 Base 模型：
+### 模型信息
 
-  - 6B 系列模型适合个人和学术使用。
+- For chat and base models
 
-  - 34B 系列模型适合个人、学术和商业用途（尤其对中小型企业友好）。34B 模型尺寸在开源社区属于稀缺的“黄金比例”尺寸，已具大模型涌现能力，适合发挥于多元场景，满足开源社区的刚性需求。
-
-  - **默认的上下文窗口**是 **4k tokens**。
-
-  - 预训练的 tokens 数量是 3T。
-
-  - 训练数据截至 2023 年 6 月。
+Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练数据
+|---|---|---|---|---
+6B 系列模型 |适合个人和学术使用。| 4K | 3T | 截至 2023 年 6 月。
+9B 模型| 是 Yi 系列模型中代码和数学能力最强的模型。|4K | Yi-9B 是在 Yi-6B 的基础上，使用了 0.8T tokens 进行继续训练。| 截至 2023 年 6 月。
+34B 系列模型 | 适合个人、学术和商业用途（尤其对中小型企业友好）。<br>34B 模型尺寸在开源社区属于稀缺的“黄金比例”尺寸，已具大模型涌现能力，适合发挥于多元场景，满足开源社区的刚性需求。|4K | 3T | 截至 2023 年 6 月。
 
 - Chat 模型
   
@@ -406,6 +418,8 @@ pip install -r requirements.txt
 
 ##### 使用 Yi Base 模型进行推理
 
+- Yi-34B
+
 步骤与「[使用 Yi Chat 模型进行推理](#使用-yi-chat-模型进行推理)」类似。
 
 你可以使用现有文件 [`text_generation.py`](https://github.com/01-ai/Yi/tree/main/demo)进行推理。
@@ -425,6 +439,46 @@ python demo/text_generation.py  --model <your-model-path>
 **回复**： Let me tell you an interesting story about cat Tom and mouse Jerry, which happened in my childhood. My father had a big house with two cats living inside it to kill mice. One day when I was playing at home alone, I found one of the tomcats lying on his back near our kitchen door, looking very much like he wanted something from us but couldn’t get up because there were too many people around him! He kept trying for several minutes before finally giving up...
 
 </details>
+<br>
+
+- Yi-9B
+  
+  输入
+
+  ```bash
+  from transformers import AutoModelForCausalLM, AutoTokenizer
+
+  MODEL_DIR = "01-ai/Yi-9B"
+  model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, torch_dtype="auto")
+  tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, use_fast=False)
+
+  input_text = "# write the quick sort algorithm"
+  inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
+  outputs = model.generate(**inputs, max_length=256)
+  print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+  ```
+
+  输出
+
+  ```bash
+  # write the quick sort algorithm
+  def quick_sort(arr):
+      if len(arr) <= 1:
+          return arr
+      pivot = arr[len(arr) // 2]
+      left = [x for x in arr if x < pivot]
+      middle = [x for x in arr if x == pivot]
+      right = [x for x in arr if x > pivot]
+      return quick_sort(left) + middle + quick_sort(right)
+
+  # test the quick sort algorithm
+  print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
+  ```
+
+    <p align="right"> [
+    <a href="#top">Back to top ⬆️ </a>  ] 
+  </p>
+
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
@@ -871,12 +925,12 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 | 模型                 | 最低显存      | 推荐GPU示例                             |
 |:----------------------|:--------------|:-------------------------------------:|
-| Yi-6B-Chat           | 15 GB         | RTX 3090 <br> RTX 4090 <br>  A10 <br> A30             |
-| Yi-6B-Chat-4bits     | 4 GB          | RTX 3060 <br>  RTX 4060                     |
-| Yi-6B-Chat-8bits     | 8 GB          | RTX 3070 <br> RTX 4060                     |
-| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> A800 (80GB)               |
-| Yi-34B-Chat-4bits    | 20 GB         | RTX 3090  <br> RTX 4090 <br> A10 <br> A30 <br> A100 (40GB) |
-| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> A800  (40GB) |
+| Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br>  1 x A10 <br> 1 x A30             |
+| Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 <br>  1 x RTX 4060                     |
+| Yi-6B-Chat-8bits     | 8 GB          | 1 x RTX 3070 <br> 1 x RTX 4060                     |
+| Yi-34B-Chat          | 72 GB         | 4 x RTX 4090 <br> 1 x A800 (80GB)               |
+| Yi-34B-Chat-4bits    | 20 GB         | 1 x RTX 3090  <br> 1 x RTX 4090 <br> 1 x A10 <br> 1 x A30 <br> 1 x A100 (40GB) |
+| Yi-34B-Chat-8bits    | 38 GB         | 2 x RTX 3090  <br> 2 x RTX 4090 <br> 1 x A800  (40GB) |
 
 以下是不同 batch 使用情况下的最低显存要求。
 
@@ -893,9 +947,10 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 |模型                   |最低显存      |        推荐GPU示例                     |
 |:----------------------|:--------------|:-------------------------------------:|
-| Yi-6B                | 15 GB         | RTX3090 <br> RTX4090 <br> A10 <br> A30               |
-| Yi-6B-200K           | 50 GB         | A800 (80 GB)                            |
-| Yi-34B               | 72 GB         | 4 x RTX 4090 <br> A800 (80 GB)               |
+| Yi-6B                | 15 GB         | 1 x RTX 3090 <br> 1 x RTX 4090 <br> 1 x A10 <br> 1 x A30               |
+| Yi-6B-200K           | 50 GB         | 1 x A800 (80 GB)                            |
+| Yi-9B                | 20 GB         | 1 x RTX 4090 (24 GB)                           |
+| Yi-34B               | 72 GB         | 4 x RTX 4090 <br> 1 x A800 (80 GB)               |
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
 ### 学习中心
@@ -947,7 +1002,8 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
   - [基准测试](#-基准测试)
     - [Chat 模型性能](#chat-模型性能)
     - [Base 模型性能](#base-模型性能)
-
+      - [Yi-34B 和 Yi-34B-200K](#yi-34b-和-yi-34b-200k)
+      - [Yi-9B](#yi-9b)
 ## 生态
 
 Yi 生态为你提供一系列工具、服务和模型，你将获得丰富的体验，最大程度提升工作工作效率。
@@ -1058,6 +1114,9 @@ Yi-34B-Chat 模型表现出色，在 MMLU、CMMLU、BBH、GSM8k 等所有开源�
 
 ### Base 模型性能
 
+
+#### Yi-34B 和 Yi-34B-200K 
+
 Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、CMMLU、常识推理、阅读理解等方面表现卓越。
 <br>
 
@@ -1074,6 +1133,34 @@ Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、C
 - **特殊设置**： CSQA 专门使用 7-shot 设置进行测试，而其它所有测试都使用 0-shot 设置进行。此外，该测评在“数学和编码”类别下引入了 GSM8K（8-shot@1）、MATH（4-shot@1）、HumanEval（0-shot@1）和 MBPP（3-shot@1）。
 - **Falcon-180B 注意事项**： 由于技术限制，Falcon-180B 没有在 QuAC 和 OBQA 上进行测试。评测结果是其它任务的平均分数，通常而言， QuAC 和 OBQA 的分数较低。本次评估结果可能相对合理地反映了 Falcon-180B 的表现，没有低估它的性能。
 </details>
+
+
+#### Yi-9B
+
+Yi-9B 模型表现出色，在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.5 等相近尺寸的模型中脱颖而出，具有出色的代码能力、数学能力、常识推理能力以及阅读理解能力。
+
+![Yi-9B benchmark - details](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_details.png?raw=true)
+
+- 在**综合**能力方面（Mean-All），Yi-9B 的性能在尺寸相近的开源模型中最好，超越了 DeepSeek-Coder、DeepSeek-Math、Mistral-7B、SOLAR-10.7B 和 Gemma-7B。
+
+![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
+
+- 在**代码**能力方面（Mean-Code），Yi-9B 的性能仅次于 DeepSeek-Coder-7B，超越了 Yi-34B、SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
+
+![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
+
+- 在**数学**能力方面（Mean-Math），Yi-9B 的性能仅次于 DeepSeek-Math-7B，超越了 SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
+
+![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
+
+- 在**常识和推理**能力方面（Mean-Text），Yi-9B 的性能与 Mistral-7B、SOLAR-10.7B 和 Gemma-7B 不相上下。
+
+![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
+
 
 # 📌 谁可以使用 Yi？
 
