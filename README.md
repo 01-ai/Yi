@@ -40,17 +40,20 @@
 </p> 
 
 <p align="center">
-    👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>!
+    👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>
 </p> 
 
 <p align="center">
-    👋 Join us on 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+    👋 Join us on <a href="https://discord.gg/zQ4A6b6H" target="_blank"> 👾 Discord </a> or <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 💬 WeChat </a>
 </p> 
 
 <p align="center">
-    📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>!
+    📝 Check out  <a href="#tech-report"> Yi Tech Report </a>
 </p> 
 
+<p align="center">
+    📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>
+</p> 
 
 <!-- DO NOT REMOVE ME -->
 
@@ -89,6 +92,8 @@
   - [Benchmarks](#benchmarks)
     - [Base model performance](#base-model-performance)
     - [Chat model performance](#chat-model-performance)
+  - [Tech report](#tech-report)
+    - [Citation](#citation)
 - [Who can use Yi?](#who-can-use-yi)
 - [Misc.](#misc)
   - [Acknowledgements](#acknowledgments)
@@ -1105,6 +1110,23 @@ If you're seeking to explore the diverse capabilities within Yi's thriving famil
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
+
+## Tech report
+
+For detailed capabilities of the Yi series model, see [Yi: Open Foundation Models by 01.AI](https://arxiv.org/abs/2403.04652).
+
+### Citation
+
+```
+@misc{ai2024yi,
+    title={Yi: Open Foundation Models by 01.AI},
+    author={01. AI and : and Alex Young and Bei Chen and Chao Li and Chengen Huang and Ge Zhang and Guanwei Zhang and Heng Li and Jiangcheng Zhu and Jianqun Chen and Jing Chang and Kaidong Yu and Peng Liu and Qiang Liu and Shawn Yue and Senbin Yang and Shiming Yang and Tao Yu and Wen Xie and Wenhao Huang and Xiaohui Hu and Xiaoyi Ren and Xinyao Niu and Pengcheng Nie and Yuchi Xu and Yudong Liu and Yue Wang and Yuxuan Cai and Zhenyu Gu and Zhiyuan Liu and Zonghong Dai},
+    year={2024},
+    eprint={2403.04652},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
 
 ## Benchmarks 
 
