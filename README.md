@@ -48,7 +48,7 @@
 </p> 
 
 <p align="center">
-    📝 Check out  <a href="#learning-hub"> Yi Tech Report </a>
+    📝 Check out  <a href="#tech-report"> Yi Tech Report </a>
 </p> 
 
 <p align="center">
