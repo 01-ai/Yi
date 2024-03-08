@@ -48,7 +48,7 @@
 </p> 
 
 <p align="center">
-    📝 Check out  <a href="#tech-report"> Yi Tech Report </a>
+    📝 Check out  <a href="https://arxiv.org/abs/2403.04652"> Yi Tech Report </a>
 </p> 
 
 <p align="center">
@@ -124,7 +124,7 @@
 > 
 > The Yi series models adopt the same model architecture as Llama but are **NOT** derivatives of Llama.
 
-- Both Yi and Llama are all based on the Transformer structure, which has been the standard architecture for large language models since 2018.
+- Both Yi and Llama are based on the Transformer structure, which has been the standard architecture for large language models since 2018.
 
 - Grounded in the Transformer architecture, Llama has become a new cornerstone for the majority of state-of-the-art open-source models due to its excellent stability, reliable convergence, and robust compatibility. This positions Llama as the recognized foundational framework for models including Yi.
 
@@ -145,9 +145,14 @@
 ## News 
 
 <details open>
+  <summary>🎯 <b>2024-03-08</b>: <a href="https://arxiv.org/abs/2403.04652">Yi Tech Report</a> is published! </summary>
+</details>
+
+
+<details open>
   <summary>🔔 <b>2024-03-07</b>: The long text capability of the Yi-34B-200K has been enhanced. </summary>
   <br>
-In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue to pretrain the model on 5B tokens long-context data mixture and demonstrate a near-all-green performance.
+In the "Needle-in-a-Haystack" test, the Yi-34B-200K's performance is improved by 10.5%, rising from 89.3% to an impressive 99.8%. We continue to pre-train the model on 5B tokens long-context data mixture and demonstrate a near-all-green performance.
 </details>
 
 <details open>
