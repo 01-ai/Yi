@@ -1174,7 +1174,7 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
 
 ## 技术报告
 
-更多关于 Yi 系列模型性能的详细信息，查阅 [Yi: Open Foundation Models by 01.AI](https://arxiv.org/abs/2403.04652)。
+更多关于 Yi 系列模型性能的详细信息，参阅 [Yi: Open Foundation Models by 01.AI](https://arxiv.org/abs/2403.04652)。
 
 ### 引用
 
