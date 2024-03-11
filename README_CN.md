@@ -101,8 +101,8 @@
   - [基准测试](#基准测试)
     - [Chat 模型性能](#chat-模型性能)
     - [Base 模型性能](#base-模型性能)
-  - [技术报告]
-    - [引用]
+  - [技术报告](#技术报告)
+    - [引用](#引用)
 - [📌 谁可以使用 Yi？](#-谁可以使用-yi)
 - [📌 其它](#-其它)
   - [致谢](#致谢)
@@ -1173,7 +1173,6 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
 </p>
 
 ## 技术报告
-
 
 更多关于 Yi 系列模型性能的详细信息，查阅 [Yi: Open Foundation Models by 01.AI](https://arxiv.org/abs/2403.04652)。
 
