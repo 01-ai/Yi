@@ -156,7 +156,7 @@
 ## 最新动态
 
  <details open>
-  <summary>🎯 <b>2024-03-08</b>: 发布了 Yi 技术报告！</summary>
+  <summary>🎯 <b>2024-03-08</b>: 发布了 <a href="https://arxiv.org/abs/2403.04652">Yi 技术报告！</a></summary>
   <br>
 
  <details open>
