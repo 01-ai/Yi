@@ -42,12 +42,17 @@
     👩‍🚀 欢迎来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 讨论问题
 </p> 
 <p align="center">
-    👋 欢迎加入💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
+    👋 欢迎加入<a href="https://discord.gg/zQ4A6b6H" target="_blank"> 👾 Discord </a> 或者 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
+</p> 
+
+<p align="center">
+    📝 欢迎查阅<a href="https://arxiv.org/abs/2403.04652"> Yi 技术报告 </a>了解更多
 </p> 
 
 <p align="center">
     📚 欢迎来 <a href="#学习中心"> Yi 学习中心 </a>探索新知
 </p> 
+
 
 <hr>
 
@@ -96,6 +101,8 @@
   - [基准测试](#基准测试)
     - [Chat 模型性能](#chat-模型性能)
     - [Base 模型性能](#base-模型性能)
+  - [技术报告]
+    - [引用]
 - [📌 谁可以使用 Yi？](#-谁可以使用-yi)
 - [📌 其它](#-其它)
   - [致谢](#致谢)
@@ -147,6 +154,10 @@
 
 
 ## 最新动态
+
+ <details open>
+  <summary>🎯 <b>2024-03-08</b>: 发布了 Yi 技术报告！</summary>
+  <br>
 
  <details open>
   <summary>🔔 <b>2024-03-07</b>: 增强了 Yi-34B-200K 长文本记忆和检索能力。</summary>
@@ -1161,6 +1172,23 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
+## 技术报告
+
+
+更多关于 Yi 系列模型性能的详细信息，查阅 [Yi: Open Foundation Models by 01.AI](https://arxiv.org/abs/2403.04652)。
+
+### 引用
+
+```
+@misc{ai2024yi,
+    title={Yi: Open Foundation Models by 01.AI},
+    author={01. AI and : and Alex Young and Bei Chen and Chao Li and Chengen Huang and Ge Zhang and Guanwei Zhang and Heng Li and Jiangcheng Zhu and Jianqun Chen and Jing Chang and Kaidong Yu and Peng Liu and Qiang Liu and Shawn Yue and Senbin Yang and Shiming Yang and Tao Yu and Wen Xie and Wenhao Huang and Xiaohui Hu and Xiaoyi Ren and Xinyao Niu and Pengcheng Nie and Yuchi Xu and Yudong Liu and Yue Wang and Yuxuan Cai and Zhenyu Gu and Zhiyuan Liu and Zonghong Dai},
+    year={2024},
+    eprint={2403.04652},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
 
 # 📌 谁可以使用 Yi？
 
