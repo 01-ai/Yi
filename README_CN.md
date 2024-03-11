@@ -487,7 +487,7 @@ python demo/text_generation.py  --model <your-model-path>
   ```
 
     <p align="right"> [
-    <a href="#top">Back to top ⬆️ </a>  ] 
+    <a href="#top">返回顶部 ⬆️ </a>  ] 
   </p>
 
 
@@ -1169,7 +1169,7 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
 ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 
 <p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ] 
 </p>
 
 ## 技术报告
