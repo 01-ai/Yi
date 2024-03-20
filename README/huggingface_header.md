@@ -60,7 +60,18 @@ pipeline_tag: text-generation
 </p> 
 
 <p align="center">
-    👋 Join us 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> WeChat (Chinese) </a>!
+    👩‍🚀 Ask questions or discuss ideas on <a href="01-ai/Yi · Discussions" target="_blank"> GitHub </a>
 </p> 
 
+<p align="center">
+    👋 Join us on <a href="https://discord.gg/hYUwWddeAu" target="_blank"> 👾 Discord </a> or <a href="有官方的微信群嘛 · Issue #43 · 01-ai/Yi" target="_blank"> 💬 WeChat </a>
+</p> 
+
+<p align="center">
+    📝 Check out  <a href="https://arxiv.org/abs/2403.04652"> Yi Tech Report </a>
+</p> 
+
+<p align="center">
+    📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>
+</p>
 
