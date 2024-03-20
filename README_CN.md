@@ -939,7 +939,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 ##### Chat 模型
 
-| 模型                 | 最低显存      | 推荐GPU示例                             |
+| 模型                 | 最低显存      | 推荐 GPU 示例                             |
 |:----------------------|:--------------|:-------------------------------------:|
 | Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
 | Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
