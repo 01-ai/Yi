@@ -155,11 +155,15 @@
 
 ## 最新动态
 
- <details open>
+<details>
+<summary>🎯 <b>2023-03-16</b>：发布并开源了 <code>Yi-9B-200K</code> 模型。</summary>
+</details>
+
+<details open>
   <summary>🎯 <b>2024-03-08</b>: 发布了 <a href="https://arxiv.org/abs/2403.04652">Yi 技术报告</a>！</summary>
   <br>
 
- <details open>
+<details open>
   <summary>🔔 <b>2024-03-07</b>: 增强了 Yi-34B-200K 长文本记忆和检索能力。</summary>
   <br>
 Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 99.8%。
@@ -247,7 +251,8 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
 Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
-Yi-9B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B) 
+Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B) • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B)
+Yi-9B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B-200K)   • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B-200K)
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
@@ -934,7 +939,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 ##### Chat 模型
 
-| 模型                 | 最低显存      | 推荐GPU示例                             |
+| 模型                 | 最低显存      | 推荐 GPU 示例                             |
 |:----------------------|:--------------|:-------------------------------------:|
 | Yi-6B-Chat           | 15 GB         | 1 x RTX 3090 (24 GB) <br> 1 x RTX 4090 (24 GB) <br>  1 x A10 (24 GB)  <br> 1 x A30 (24 GB)              |
 | Yi-6B-Chat-4bits     | 4 GB          | 1 x RTX 3060 (12 GB)<br> 1 x RTX 4060 (8 GB)                   |
