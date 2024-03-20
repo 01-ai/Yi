@@ -144,6 +144,10 @@
 
 ## News 
 
+<details>
+  <summary>🎯 <b>2023-03-16</b>: The <code>Yi-9B-200K</code> is open-sourced and available to the public.</summary>
+</details>
+
 <details open>
   <summary>🎯 <b>2024-03-08</b>: <a href="https://arxiv.org/abs/2403.04652">Yi Tech Report</a> is published! </summary>
 </details>
@@ -241,8 +245,8 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
 Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
-Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B)
-Yi-9B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B-200K)
+Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B) • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B)
+Yi-9B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B-200K)   • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B-200K)
 Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)
 Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)
 
