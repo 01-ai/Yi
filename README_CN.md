@@ -42,7 +42,7 @@
     👩‍🚀 欢迎来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 讨论问题
 </p> 
 <p align="center">
-    👋 欢迎加入<a href="https://discord.gg/zQ4A6b6H" target="_blank"> 👾 Discord </a> 或者 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
+    👋 欢迎加入<a href="https://discord.gg/hYUwWddeAu" target="_blank"> 👾 Discord </a> 或者 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
 </p> 
 
 <p align="center">

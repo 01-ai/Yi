@@ -44,7 +44,7 @@
 </p> 
 
 <p align="center">
-    👋 Join us on <a href="https://discord.gg/zQ4A6b6H" target="_blank"> 👾 Discord </a> or <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 💬 WeChat </a>
+    👋 Join us on <a href="https://discord.gg/hYUwWddeAu" target="_blank"> 👾 Discord </a> or <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 💬 WeChat </a>
 </p> 
 
 <p align="center">
