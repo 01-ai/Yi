@@ -256,11 +256,11 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat and base models
 
-Model | Intro | Default context window | Pretrained tokens | Training Data Date
-|---|---|---|---|---
-6B series models |They are suitable for personal and academic use. | 4K | 3T | Up to June 2023
-9B model| It is the best at coding and math in the Yi series models.|4K | Yi-9B is continuously trained based on Yi-6B, using 0.8T tokens. |  Up to June 2023
-34B series models | They are suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.|4K | 3T | Up to June 2023
+  Model | Intro | Default context window | Pretrained tokens | Training Data Date
+  |---|---|---|---|---
+  6B series models |They are suitable for personal and academic use. | 4K | 3T | Up to June 2023
+  9B model| It is the best at coding and math in the Yi series models.|4K | Yi-9B is continuously trained based on Yi-6B, using 0.8T tokens. |  Up to June 2023
+  34B series models | They are suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It's a cost-effective solution that's affordable and equipped with emergent ability.|4K | 3T | Up to June 2023
 
 - For chat models
   
@@ -753,11 +753,11 @@ pip install torch==2.0.1 deepspeed==0.10 tensorboard transformers datasets sente
 
 #### Hardware Setup
 
-For the Yi-6B model, a node with 4 GPUs, each has GPU mem larger than 60GB is recommended.
+For the Yi-6B model, a node with 4 GPUs, each with GPU memory larger than 60GB, is recommended.
 
-For the Yi-34B model, because the usage of zero-offload technique takes a lot CPU memory, please be careful to limit the GPU numbers in 34B finetune training. Please use CUDA_VISIBLE_DEVICES to limit the GPU number (as shown in scripts/run_sft_Yi_34b.sh).
+For the Yi-34B model, because the usage of the zero-offload technique consumes a lot of CPU memory, please be careful to limit the number of GPUs in the 34B finetune training. Please use CUDA_VISIBLE_DEVICES to limit the number of GPUs (as shown in scripts/run_sft_Yi_34b.sh).
 
-A typical hardware setup for finetuning 34B model is a node with 8GPUS (limit to 4 in running by CUDA_VISIBLE_DEVICES=0,1,2,3), each has GPU mem larger than 80GB, with total CPU mem larger than 900GB.
+A typical hardware setup for finetuning the 34B model is a node with 8 GPUs (limited to 4 in running by CUDA_VISIBLE_DEVICES=0,1,2,3), each with GPU memory larger than 80GB, and total CPU memory larger than 900GB.
 
 #### Quick Start
 
@@ -844,8 +844,8 @@ python quantization/gptq/eval_quantized_model.py \
 
 #### GPT-Q quantization
 
-[GPT-Q](https://github.com/IST-DASLab/gptq) is a PTQ(Post-Training Quantization)
-method. It's memory saving and provides potential speedups while retaining the accuracy
+[GPT-Q](https://github.com/IST-DASLab/gptq) is a PTQ (Post-Training Quantization)
+method. It saves memory and provides potential speedups while retaining the accuracy
 of the model. 
 
 Yi models can be GPT-Q quantized without a lot of efforts. 
@@ -891,11 +891,11 @@ python quantization/awq/eval_quantized_model.py \
   --model /quantized_model                       \
   --trust_remote_code
 ```
-<details style="display: inline;"><summary>For detailed explanations, see the explanations below. ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For details, see the explanations below. ⬇️</summary> <ul>
 
 #### AWQ quantization
 
-[AWQ](https://github.com/mit-han-lab/llm-awq) is a PTQ(Post-Training Quantization)
+[AWQ](https://github.com/mit-han-lab/llm-awq) is a PTQ (Post-Training Quantization)
 method. It's an efficient and accurate low-bit weight quantization (INT3/4) for LLMs.
 
 Yi models can be AWQ quantized without a lot of efforts. 
