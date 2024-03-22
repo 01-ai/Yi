@@ -1159,19 +1159,19 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
 
 - 在**综合**能力方面（Mean-All），Yi-9B 的性能**在尺寸相近的开源模型中最好，超越了** DeepSeek-Coder、DeepSeek-Math、Mistral-7B、SOLAR-10.7B 和 Gemma-7B。
 
-![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
+  ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
 
 - 在**代码**能力方面（Mean-Code），Yi-9B 的性能仅次于 DeepSeek-Coder-7B，**超越了** Yi-34B、SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
 
-![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
+  ![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
 
 - 在**数学**能力方面（Mean-Math），Yi-9B 的性能仅次于 DeepSeek-Math-7B，**超越了** SOLAR-10.7B、Mistral-7B 和 Gemma-7B。
 
-![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
+  ![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
 
 - 在**常识和推理**能力方面（Mean-Text），Yi-9B 的性能与 Mistral-7B、SOLAR-10.7B 和 Gemma-7B **不相上下**。
 
-![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
+  ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 

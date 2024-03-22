@@ -840,7 +840,7 @@ python quantization/gptq/eval_quantized_model.py \
   --trust_remote_code
 ```
 
-<details style="display: inline;"><summary>For a more detailed explanation, see the explanations below. ⬇️</summary> <ul>
+<details style="display: inline;"><summary>For details, see the explanations below. ⬇️</summary> <ul>
 
 #### GPT-Q quantization
 
@@ -865,7 +865,6 @@ python quant_autogptq.py --model /base_model \
     --output_dir /quantized_model --bits 4 --group_size 128 --trust_remote_code
 ```
 
-
 ##### Run Quantized Model
 
 You can run a quantized model using the `eval_quantized_model.py`:
@@ -877,6 +876,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </details>
 
 #### AWQ
+
 ```bash
 python quantization/awq/quant_autoawq.py \
   --model /base_model                      \
@@ -997,7 +997,9 @@ At the same time, we also warmly invite you to join our collaborative effort by 
 With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
 
 #### Tutorials
+
 ##### English tutorials
+
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
 | Video     | [Run dolphin-2.2-yi-34b on IoT Devices](https://www.youtube.com/watch?v=NJ89T5mO25Y)           |  2023-11-30  |  [Second State](https://github.com/second-state)  |
@@ -1005,8 +1007,8 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/@fahdmirza)  |
 | Video       | [Dolphin Yi 34b - Brand New Foundational Model TESTED](https://www.youtube.com/watch?v=On3Zuv27V3k&t=85s) | 2023-11-27  |  [Matthew Berman](https://www.youtube.com/@matthew_berman)  |
 
-
 ##### Chinese tutorials
+
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
 | Blog        | [实测零一万物Yi-VL多模态语言模型：能准确“识图吃瓜”](https://mp.weixin.qq.com/s/fu4O9XvJ03JhimsEyI-SsQ)              |  2024-02-02  |  [苏洋](https://github.com/soulteary)  |
@@ -1140,8 +1142,8 @@ For detailed capabilities of the Yi series model, see [Yi: Open Foundation Model
 
 ## Benchmarks 
 
-- [Chat model performance](#-chat-model-performance)
-- [Base model performance](#-base-model-performance)
+- [Chat model performance](#chat-model-performance)
+- [Base model performance](#base-model-performance)
 
 ### Chat model performance
 
@@ -1188,19 +1190,19 @@ Yi-9B is almost the best among a range of similar-sized open-source models (incl
 
 - In terms of **overall** ability (Mean-All), Yi-9B performs the best among similarly sized open-source models, surpassing DeepSeek-Coder, DeepSeek-Math, Mistral-7B, SOLAR-10.7B, and Gemma-7B.
 
-![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
+  ![Yi-9B benchmark - overall](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_overall.png?raw=true)
 
 - In terms of **coding** ability (Mean-Code), Yi-9B's performance is second only to DeepSeek-Coder-7B, surpassing Yi-34B, SOLAR-10.7B, Mistral-7B, and Gemma-7B.
 
-![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
+  ![Yi-9B benchmark - code](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_code.png?raw=true)
 
 - In terms of **math** ability (Mean-Math), Yi-9B's performance is second only to DeepSeek-Math-7B, surpassing SOLAR-10.7B, Mistral-7B, and Gemma-7B.
 
-![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
+  ![Yi-9B benchmark - math](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_math.png?raw=true)
 
 - In terms of **common sense and reasoning** ability (Mean-Text), Yi-9B's performance is on par with Mistral-7B, SOLAR-10.7B, and Gemma-7B.
 
-![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
+  ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
