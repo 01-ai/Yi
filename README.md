@@ -271,19 +271,17 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 <td>They are suitable for personal and academic use.</td>
 <td rowspan="3">4K</td>
 <td>3T</td>
-<td>Up to June 2023</td>
+<td rowspan="3">Up to June 2023</td>
 </tr>
 <tr>
 <td>9B series models</td>
 <td>It is the best at coding and math in the Yi series models.</td>
 <td>Yi-9B is continuously trained based on Yi-6B, using 0.8T tokens.</td>
-<td>Up to June 2023</td>
 </tr>
 <tr>
 <td>34B series models</td>
 <td>They are suitable for personal, academic, and commercial (particularly for small and medium-sized enterprises) purposes. It&#39;s a cost-effective solution that&#39;s affordable and equipped with emergent ability.</td>
 <td>3T</td>
-<td>Up to June 2023</td>
 </tr>
 </tbody></table>
 
