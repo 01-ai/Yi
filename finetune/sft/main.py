@@ -192,6 +192,18 @@ def parse_args():
         help="The scope of LoRA.",
     )
     parser.add_argument(
+        "--lora_scaling",
+        type=int,
+        default=1,
+        help="LoRA alpha, lora_scaling helps to reduce the need to retune hyperparameters when we vary lora_dim.",
+    )
+    parser.add_argument(
+        "--lora_dropout",
+        type=float,
+        default=0.0,
+        help="LoRA dropout probability.",
+    )
+    parser.add_argument(
         "--only_optimize_lora",
         action="store_true",
         help="Only optimize the LoRA parameters.",
@@ -260,7 +272,7 @@ def main():
 
     if args.lora_dim > 0:
         model = convert_linear_layer_to_lora(
-            model, args.lora_module_name, args.lora_dim
+            model, args.lora_module_name, args.lora_dim, args.lora_scaling, args.lora_dropout
         )
         if args.only_optimize_lora:
             model = only_optimize_lora_parameters(model)
