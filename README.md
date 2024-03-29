@@ -64,18 +64,18 @@
 
 - [What is Yi?](#what-is-yi)
   - [Introduction](#introduction)
+  - [News](#news)
   - [Models](#models)
     - [Chat models](#chat-models)
     - [Base models](#base-models)
     - [Model info](#model-info)
-  - [News](#news)
 - [How to use Yi?](#how-to-use-yi)
   - [Quick start](#quick-start)
     - [Choose your path](#choose-your-path)
     - [pip](#quick-start---pip)
     - [docker](#quick-start---docker)
-    - [llama.cpp](#quick-start---llamacpp)
     - [conda-lock](#quick-start---conda-lock)
+    - [llama.cpp](#quick-start---llamacpp)
     - [Web demo](#web-demo)
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
@@ -89,11 +89,11 @@
       - [Quantization](#quantization-1)
       - [Fine-tuning](#fine-tuning-1)
       - [API](#api)
+  - [Tech report](#tech-report)
+    - [Citation](#citation)
   - [Benchmarks](#benchmarks)
     - [Base model performance](#base-model-performance)
     - [Chat model performance](#chat-model-performance)
-  - [Tech report](#tech-report)
-    - [Citation](#citation)
 - [Who can use Yi?](#who-can-use-yi)
 - [Misc.](#misc)
   - [Acknowledgements](#acknowledgments)
@@ -717,7 +717,7 @@ You can access the web UI by entering the address provided in the console into y
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Fine-tuning
+## Fine-tuning
 
 ```bash
 bash finetune/scripts/run_sft_Yi_6b.sh
@@ -846,9 +846,9 @@ Then you'll see the answer from both the base model and the finetuned model.
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Quantization
+## Quantization
 
-#### GPT-Q
+### GPT-Q
 ```bash
 python quantization/gptq/quant_autogptq.py \
   --model /base_model                      \
@@ -899,7 +899,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </ul>
 </details>
 
-#### AWQ
+### AWQ
 
 ```bash
 python quantization/awq/quant_autoawq.py \
@@ -951,11 +951,11 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Deployment
+## Deployment
 
 If you want to deploy Yi models, make sure you meet the software and hardware requirements. 
 
-#### Software requirements
+### Software requirements
 
 Before using Yi quantized models, make sure you've installed the correct software listed below.
 
@@ -964,11 +964,11 @@ Before using Yi quantized models, make sure you've installed the correct softwar
 Yi 4-bit quantized models | [AWQ and CUDA](https://github.com/casper-hansen/AutoAWQ?tab=readme-ov-file#install-from-pypi)
 Yi 8-bit quantized models |  [GPTQ and CUDA](https://github.com/PanQiWei/AutoGPTQ?tab=readme-ov-file#quick-installation)
 
-#### Hardware requirements
+### Hardware requirements
 
 Before deploying Yi in your environment, make sure your hardware meets the following requirements.
 
-##### Chat models
+#### Chat models
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |:----------------------|:--------------|:-------------------------------------:|
@@ -990,7 +990,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 | Yi-34B-Chat-4bits | 19 GB   | 20 GB   | 30 GB    | 40 GB    |
 | Yi-34B-Chat-8bits | 35 GB   | 37 GB   | 46 GB    | 58 GB    |
 
-##### Base models
+#### Base models
 
 | Model                | Minimum VRAM |        Recommended GPU Example       |
 |----------------------|--------------|:-------------------------------------:|
@@ -1004,7 +1004,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
 
-### Learning hub
+## Learning hub
 
 <details>
 <summary> If you want to learn Yi, you can find a wealth of helpful educational resources here. ⬇️</summary> 
@@ -1020,9 +1020,9 @@ At the same time, we also warmly invite you to join our collaborative effort by 
 
 With all these resources at your fingertips, you're ready to start your exciting journey with Yi. Happy learning! 🥳
 
-#### Tutorials
+### Tutorials
 
-##### English tutorials
+#### English tutorials
 
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
@@ -1031,7 +1031,7 @@ With all these resources at your fingertips, you're ready to start your exciting
 | Video       | [Install Yi 34B Locally - Chinese English Bilingual LLM](https://www.youtube.com/watch?v=CVQvj4Wrh4w&t=476s) | 2023-11-05  |  [Fahd Mirza](https://www.youtube.com/@fahdmirza)  |
 | Video       | [Dolphin Yi 34b - Brand New Foundational Model TESTED](https://www.youtube.com/watch?v=On3Zuv27V3k&t=85s) | 2023-11-27  |  [Matthew Berman](https://www.youtube.com/@matthew_berman)  |
 
-##### Chinese tutorials
+#### Chinese tutorials
 
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
@@ -1056,6 +1056,8 @@ With all these resources at your fingertips, you're ready to start your exciting
       - [Quantization](#quantization-1)
       - [Fine-tuning](#fine-tuning-1)
       - [API](#api)
+  - [Tech report](#tech-report)
+    - [Citation](#citation)
   - [Benchmarks](#benchmarks)
     - [Chat model performance](#chat-model-performance)
     - [Base model performance](#base-model-performance)
