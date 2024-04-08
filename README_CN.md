@@ -156,7 +156,7 @@
 ## 最新动态
 
 <details>
-<summary>🎯 <b>2023-03-16</b>：发布并开源了 <code>Yi-9B-200K</code> 模型。</summary>
+<summary>🎯 <b>2024-03-16</b>：发布并开源了 <code>Yi-9B-200K</code> 模型。</summary>
 </details>
 
 <details open>

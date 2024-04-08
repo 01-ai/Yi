@@ -145,7 +145,7 @@
 ## News 
 
 <details>
-  <summary>🎯 <b>2023-03-16</b>: The <code>Yi-9B-200K</code> is open-sourced and available to the public.</summary>
+  <summary>🎯 <b>2024-03-16</b>: The <code>Yi-9B-200K</code> is open-sourced and available to the public.</summary>
 </details>
 
 <details open>
