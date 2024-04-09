@@ -1011,7 +1011,7 @@ def _get_args():
     parser.add_argument(
         "--model-path",
         type=str,
-        default="/ML-A100/public/tmp/pretrain_weights/Yi-VL-6B",
+        default="01-ai/Yi-VL-6B",
     )
     parser.add_argument("--model-name", type=str, default="yi-vl")
 
