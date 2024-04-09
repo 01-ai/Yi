@@ -487,14 +487,30 @@ class DefaultEngine(ABC):
         Returns:
             Tuple containing the converted inputs and the prompt or messages.
         """
-        query = prompt_or_messages[0]["content"][0]["text"]
-        image_file = prompt_or_messages[0]["content"][1]["image_url"]["url"]
-        if image_file != "" and image_file != None:
-            query = DEFAULT_IMAGE_TOKEN + "\n" + query
-
         conv = conv_templates["mm_default"].copy()
         stop_str = conv.sep
-        conv.append_message(conv.roles[0], query)
+        image_file = ""
+        for message in prompt_or_messages:
+            role = message["role"]
+            content = message["content"]
+            if role != "user":
+                conv.append_message(conv.roles[1], content)
+                continue
+            elif isinstance(content, str):
+                conv.append_message(conv.roles[0], content)
+                continue
+
+            num_images = 0
+            for item in content:
+                if item["type"] == "image_url":
+                    num_images += 1
+                    image_file = item["image_url"]["url"]
+                elif item["type"] == "text":
+                    prompt = item["text"]
+            if image_file != "" and image_file != None:
+                query = DEFAULT_IMAGE_TOKEN * num_images + "\n" + prompt
+                conv.append_message(conv.roles[0], query)
+
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()
         input_ids = tokenizer_image_token(prompt, self.tokenizer, IMAGE_TOKEN_INDEX)
@@ -992,7 +1008,11 @@ def _get_args():
     parser.add_argument("--port", type=int, default=8000, help="Demo server port.")
 
     # model related
-    parser.add_argument("--model-path", type=str, default="01-ai/Yi-VL-34B")
+    parser.add_argument(
+        "--model-path",
+        type=str,
+        default="/ML-A100/public/tmp/pretrain_weights/Yi-VL-6B",
+    )
     parser.add_argument("--model-name", type=str, default="yi-vl")
 
     args = parser.parse_args()
