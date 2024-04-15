@@ -80,6 +80,7 @@
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
+  - [FAQ](#faq)
   - [Learning hub](#learning-hub)
 - [Why Yi?](#why-yi)
   - [Ecosystem](#ecosystem)
@@ -1003,6 +1004,48 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
+
+### FAQ
+
+<details>
+<summary> If you need further assistance or information, you can refer to the following FAQs. ⬇️</summary> 
+<br> 
+
+#### 💡Fine-tuning FAQ
+-  <strong>Base model or Chat model - which to fine-tune?</strong>
+The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task.
+   - If you are working with a substantial volume of fine-tuning data (say, over 10,000 samples), the Base model could be your go-to choice.
+   - On the other hand, if your fine-tuning data is not quite as extensive, opting for the Chat model might be a more fitting choice.
+   - It is generally advisable to fine-tune both the Base and Chat models, compare their performance, and then pick the model that best aligns with your specific requirements.
+In a more idiomatic English, you could phrase this as:
+- <strong>Yi-34B versus Yi-34B-Chat for full-scale fine-tuning - what is the difference?</strong>
+The key distinction between full-scale fine-tuning on `Yi-34B`and `Yi-34B-Chat` comes down to the fine-tuning approach and outcomes.
+   - Yi-34B-Chat employs a Special Fine-Tuning (SFT) method, resulting in responses that mirror human conversation style more closely.
+   - The Base model's fine-tuning is more versatile, with a relatively high performance potential.
+   - If you are confident in the quality of your data, fine-tuning with `Yi-34B` could be your go-to.
+   - If you are aiming for model-generated responses that better mimic human conversational style, or if you have doubts about your data quality, `Yi-34B-Chat` might be your best bet.
+
+#### 💡Quantization FAQ
+- <strong>Quantized model versus original model - what is the performance gap?</strong>
+    - The performance variance is largely contingent on the quantization method employed and the specific use cases of these models. For instance, when it comes to models provided by the AWQ official, from a Benchmark standpoint, quantization might result in a minor performance drop of a few percentage points.
+    - Subjectively speaking, in situations like logical reasoning, even a 1% performance shift could impact the accuracy of the output results.
+
+- <strong>What is the performance difference between the quantized model and the original model?</strong>
+    - The performance difference largely depends on the quantization method used and the specific scenarios in which these models are applied. For example, in the case of the models provided by AWQ official, from an objective Benchmark perspective, quantization may cause a few percentage points of performance degradation.
+    - From a subjective perspective, for example, in scenarios such as logical reasoning, even a 1% performance difference may affect the correctness of the output results.
+
+#### 💡Additional FAQ
+- **Where can I source fine-tuning question answering datasets?**
+  - You can find fine-tuning question answering datasets on platforms like Hugging Face, with datasets like [m-a-p/COIG-CQIA](https://huggingface.co/datasets/m-a-p/COIG-CQIA) readily available. 
+  - Additionally, Github offers fine-tuning frameworks, such as [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), which integrates pre-made datasets.
+
+- **What is the GPU memory requirement for fine-tuning Yi-34B FP16?**
+The GPU memory needed for fine-tuning 34B FP16 hinges on the specific fine-tuning method employed. For full parameter fine-tuning, you'll need 8 GPUs each with 80 GB; however, more economical solutions like Lora require less. For more details, check out [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Also, consider using BF16 instead of FP16 for fine-tuning to optimize performance.
+
+- **Are there third-party Chats available for Yi-34b-200k?**
+  - At present, the official yi-34b-chat-200k by LingYi WanWu provides an [API for user experience](https://platform.lingyiwanwu.com/).
+  - If you're looking for third-party Chats, options include [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat).
+</details>
 
 ### Learning hub
 
