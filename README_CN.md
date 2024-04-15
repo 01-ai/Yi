@@ -995,6 +995,11 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 | Yi-34B-200K          | 200 GB        | 4 x A800 (80 GB)                        |
 
 ### FAQ
+<details>
+<summary> 如果你想了解更多关于微调和量化等方面的内容，你可以参考以下的问答。⬇️</summary> 
+<br> 
+<br>
+
 #### 💡微调 FAQ
 -  <strong>如何选择在 Base 模型上微调还是在 Chat 模型上微调？</strong>
 选择适合微调的预训练语言模型时，你需要根据可用的计算资源和具体任务的需求来做出决定。
@@ -1021,6 +1026,7 @@ Yi-34B 和 Yi-34B-Chat 在进行全量微调时的主要区别在于微调的策
 - <strong>Yi-34b-200k有第三方 Chat 吗？</strong>
   - 目前零一万物官方 yi-34b-chat-200k 提供了[API，欢迎前来体验](https://platform.lingyiwanwu.com/)。
   - 如果你想访问第三方 Chat，可以选择 [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat)。
+</details>
 
 ### 学习中心
 

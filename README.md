@@ -1006,7 +1006,6 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 </p>
 
 ### FAQ
-
 <details>
 <summary> If you need further assistance or information, you can refer to the following FAQs. ⬇️</summary> 
 <br> 
