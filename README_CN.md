@@ -997,8 +997,6 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 ### FAQ
 <details>
 <summary> 如果你想了解更多关于微调和量化等方面的内容，你可以参考以下的问答。⬇️</summary> 
-<br> 
-<br>
 
 #### 💡微调 FAQ
 -  <strong>如何选择在 Base 模型上微调还是在 Chat 模型上微调？</strong>
