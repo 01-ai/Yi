@@ -318,6 +318,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 - [Fine-tuning](#fine-tuning)
 - [Quantization](#quantization)
 - [Deployment](#deployment)
+- [FAQ](#faq)
 - [Learning hub](#learning-hub)
 
 ## Quick start
