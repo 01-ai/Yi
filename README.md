@@ -1007,12 +1007,13 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 </p>
 
 ### FAQ
-<details open>
+<details>
 <summary> If you have any questions while using the Yi series models, the answers provided below could serve as a helpful reference for you. ⬇️</summary> 
 <br> 
 
 #### 💡Fine-tuning
 -  <strong>Base model or Chat model - which to fine-tune?</strong>
+
 The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task.
    - If you are working with a substantial volume of fine-tuning data (say, over 10,000 samples), the Base model could be your go-to choice.
    - On the other hand, if your fine-tuning data is not quite as extensive, opting for the Chat model might be a more fitting choice.
@@ -1027,6 +1028,7 @@ The choice of pre-trained language model for fine-tuning hinges on the computati
 
 #### 💡Quantization
 - <strong>Quantized model versus original model - what is the performance gap?</strong>
+
     - The performance variance is largely contingent on the quantization method employed and the specific use cases of these models. For instance, when it comes to models provided by the AWQ official, from a Benchmark standpoint, quantization might result in a minor performance drop of a few percentage points.
     - Subjectively speaking, in situations like logical reasoning, even a 1% performance shift could impact the accuracy of the output results.
     
@@ -1036,9 +1038,11 @@ The choice of pre-trained language model for fine-tuning hinges on the computati
   - Additionally, Github offers fine-tuning frameworks, such as [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), which integrates pre-made datasets.
 
 - **What is the GPU memory requirement for fine-tuning Yi-34B FP16?**
+
 The GPU memory needed for fine-tuning 34B FP16 hinges on the specific fine-tuning method employed. For full parameter fine-tuning, you'll need 8 GPUs each with 80 GB; however, more economical solutions like Lora require less. For more details, check out [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Also, consider using BF16 instead of FP16 for fine-tuning to optimize performance.
 
 - **Are there any third-party platforms that support chat functionality for the Yi-34b-200k model?**
+
 If you're looking for third-party Chats, options include [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat).
 </details>
 
