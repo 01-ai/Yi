@@ -80,6 +80,7 @@
   - [Fine-tuning](#fine-tuning)
   - [Quantization](#quantization)
   - [Deployment](#deployment)
+  - [FAQ](#faq)
   - [Learning hub](#learning-hub)
 - [Why Yi?](#why-yi)
   - [Ecosystem](#ecosystem)
@@ -317,6 +318,7 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 - [Fine-tuning](#fine-tuning)
 - [Quantization](#quantization)
 - [Deployment](#deployment)
+- [FAQ](#faq)
 - [Learning hub](#learning-hub)
 
 ## Quick start
@@ -1003,6 +1005,44 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
+
+### FAQ
+<details>
+<summary> If you have any questions while using the Yi series models, the answers provided below could serve as a helpful reference for you. ⬇️</summary> 
+<br> 
+
+#### 💡Fine-tuning
+- <strong>Base model or Chat model - which to fine-tune?</strong>
+  <br>The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task.
+    - If you are working with a substantial volume of fine-tuning data (say, over 10,000 samples), the Base model could be your go-to choice.
+    - On the other hand, if your fine-tuning data is not quite as extensive, opting for the Chat model might be a more fitting choice.
+    - It is generally advisable to fine-tune both the Base and Chat models, compare their performance, and then pick the model that best aligns with your specific requirements.
+- <strong>Yi-34B versus Yi-34B-Chat for full-scale fine-tuning - what is the difference?</strong>
+  <br>
+  The key distinction between full-scale fine-tuning on `Yi-34B`and `Yi-34B-Chat` comes down to the fine-tuning approach and outcomes.
+    - Yi-34B-Chat employs a Special Fine-Tuning (SFT) method, resulting in responses that mirror human conversation style more closely.
+    - The Base model's fine-tuning is more versatile, with a relatively high performance potential.
+    - If you are confident in the quality of your data, fine-tuning with `Yi-34B` could be your go-to.
+    - If you are aiming for model-generated responses that better mimic human conversational style, or if you have doubts about your data quality, `Yi-34B-Chat` might be your best bet.
+
+#### 💡Quantization
+- <strong>Quantized model versus original model - what is the performance gap?</strong>
+    - The performance variance is largely contingent on the quantization method employed and the specific use cases of these models. For instance, when it comes to models provided by the AWQ official, from a Benchmark standpoint, quantization might result in a minor performance drop of a few percentage points.
+    - Subjectively speaking, in situations like logical reasoning, even a 1% performance shift could impact the accuracy of the output results.
+    
+#### 💡General
+- <strong>Where can I source fine-tuning question answering datasets?</strong>
+    - You can find fine-tuning question answering datasets on platforms like Hugging Face, with datasets like [m-a-p/COIG-CQIA](https://huggingface.co/datasets/m-a-p/COIG-CQIA) readily available. 
+    - Additionally, Github offers fine-tuning frameworks, such as [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), which integrates pre-made datasets.
+
+- <strong>What is the GPU memory requirement for fine-tuning Yi-34B FP16?</strong>
+  <br>
+  The GPU memory needed for fine-tuning 34B FP16 hinges on the specific fine-tuning method employed. For full parameter fine-tuning, you'll need 8 GPUs each with 80 GB; however, more economical solutions like Lora require less. For more details, check out [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Also, consider using BF16 instead of FP16 for fine-tuning to optimize performance.
+
+- <strong>Are there any third-party platforms that support chat functionality for the Yi-34b-200k model?</strong>
+  <br>
+  If you're looking for third-party Chats, options include [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat).
+</details>
 
 ### Learning hub
 
