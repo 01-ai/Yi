@@ -1000,36 +1000,31 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 <summary> 如果你在使用 Yi 系列模型过程中遇到任何疑问，以下的答疑内容可以为你提供参考。⬇️</summary> 
 
 #### 💡微调
--  <strong>如何选择在 Base 模型上微调还是在 Chat 模型上微调？</strong>
-
-选择适合微调的预训练语言模型时，你需要根据可用的计算资源和具体任务的需求来做出决定。
-
-   - 如果你有大量的微调数据（例如，超过 10,000 条样本），可以选择 Base 模型。
-   - 如果你的微调数据量不大，选择 Chat 模型更合适。
-   - 建议在 Base 模型和 Chat 模型上都进行微调，比较两者的性能，选择适合的模型，满足特定需求。
+- <strong>如何选择在 Base 模型上微调还是在 Chat 模型上微调？</strong>
+  <br>选择适合微调的预训练语言模型时，你需要根据可用的计算资源和具体任务的需求来做出决定。
+    - 如果你有大量的微调数据（例如，超过 10,000 条样本），可以选择 Base 模型。
+    - 如果你的微调数据量不大，选择 Chat 模型更合适。
+    - 建议在 Base 模型和 Chat 模型上都进行微调，比较两者的性能，选择适合的模型，满足特定需求。
 - <strong>使用 Yi-34B 和 Yi-34B-Chat 进行全量微调，两者之间有什么区别？</strong>
-
-Yi-34B 和 Yi-34B-Chat 在进行全量微调时的主要区别在于微调的策略和结果。
-   - Chat 模型采用特殊的微调（SFT）方式，生成的回答更符合人类的交谈风格。
-   - Base 模型的微调则更加通用，性能上限相对较高。
-   - 如果你对自己的数据质量有充足的信心，可以选择使用 Yi-34B 进行微调。
-   - 如果你希望模型生成的回答能更好地模仿人类的交谈风格，或对自己的数据质量不够自信，可以选择使用 Yi-34B-Chat 进行微调。
+  <br>Yi-34B 和 Yi-34B-Chat 在进行全量微调时的主要区别在于微调的策略和结果。
+    - Chat 模型采用特殊的微调（SFT）方式，生成的回答更符合人类的交谈风格。
+    - Base 模型的微调则更加通用，性能上限相对较高。
+    - 如果你对自己的数据质量有充足的信心，可以选择使用 Yi-34B 进行微调。
+    - 如果你希望模型生成的回答能更好地模仿人类的交谈风格，或对自己的数据质量不够自信，可以选择使用 Yi-34B-Chat 进行微调。
 #### 💡量化
 - <strong>量化版模型和原版模型在性能上有何差异？</strong>
     - 性能差异在很大程度上取决于所使用的量化方法，以及这些模型应用的具体场景。以 AWQ 官方提供的模型为例，从客观的 Benchmark 来看，量化可能会导致性能下降几个百分点。
     - 从主观的角度来看，例如，在逻辑推理这类场景中，即使只有 1% 的性能差异，也可能影响输出结果的正确性。
 #### 💡通用
 - <strong>我可以在哪里获取微调的问答数据集？</strong>
-
-你可以在Hugging Face 上可以微调的问答数据集，例如 [m-a-p/COIG-CQIA](https://huggingface.co/datasets/m-a-p/COIG-CQIA)。另外，你可以在 Github 上获取微调框架，例如，[hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) 整合了现成的数据集。
+  - 你可以在Hugging Face 上可以微调的问答数据集，例如 [m-a-p/COIG-CQIA](https://huggingface.co/datasets/m-a-p/COIG-CQIA)。
+  - 另外，你可以在 Github 上获取微调框架，例如，[hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) 整合了现成的数据集。
 
 - <strong>Yi-34B FP16 的微调需要多少 GPU 内存？</strong>
-
-进行 34B FP16 的微调，所需的 GPU 内存量取决于具体的微调方式。进行全参数微调，需要 8 张 80 GB的显卡；而Lora 等低资源方案，需要的资源较少。你可以参考 [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)，获取更多信息。同时，建议你使用 BF16 代替 FP16 来进行微调，优化性能。
+  <br>进行 34B FP16 的微调，所需的 GPU 内存量取决于具体的微调方式。进行全参数微调，需要 8 张 80 GB的显卡；而Lora 等低资源方案，需要的资源较少。你可以参考 [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)，获取更多信息。同时，建议你使用 BF16 代替 FP16 来进行微调，优化性能。
 
 - <strong>Yi-34b-200k 有第三方 Chat 平台吗？</strong>
-
-如果你想访问第三方 Chat，可以选择人工智能平台 [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat)。
+  <br>如果你想访问第三方 Chat，可以选择人工智能平台 [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat)。
 </details>
 
 ### 学习中心
