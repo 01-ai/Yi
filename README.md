@@ -1012,9 +1012,8 @@ Below are detailed minimum VRAM requirements under different batch use cases.
 <br> 
 
 #### 💡Fine-tuning
--  <strong>Base model or Chat model - which to fine-tune?</strong>
-  <br>
-  The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task.
+- <strong>Base model or Chat model - which to fine-tune?</strong>
+  <br>The choice of pre-trained language model for fine-tuning hinges on the computational resources you have at your disposal and the particular demands of your task.
     - If you are working with a substantial volume of fine-tuning data (say, over 10,000 samples), the Base model could be your go-to choice.
     - On the other hand, if your fine-tuning data is not quite as extensive, opting for the Chat model might be a more fitting choice.
     - It is generally advisable to fine-tune both the Base and Chat models, compare their performance, and then pick the model that best aligns with your specific requirements.
@@ -1023,7 +1022,7 @@ Below are detailed minimum VRAM requirements under different batch use cases.
   The key distinction between full-scale fine-tuning on `Yi-34B`and `Yi-34B-Chat` comes down to the fine-tuning approach and outcomes.
     - Yi-34B-Chat employs a Special Fine-Tuning (SFT) method, resulting in responses that mirror human conversation style more closely.
     - The Base model's fine-tuning is more versatile, with a relatively high performance potential.
-   - If you are confident in the quality of your data, fine-tuning with `Yi-34B` could be your go-to.
+    - If you are confident in the quality of your data, fine-tuning with `Yi-34B` could be your go-to.
     - If you are aiming for model-generated responses that better mimic human conversational style, or if you have doubts about your data quality, `Yi-34B-Chat` might be your best bet.
 
 #### 💡Quantization
