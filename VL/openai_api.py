@@ -1,5 +1,6 @@
 # Implements API for Yi-VL in OpenAI's format. (https://platform.openai.com/docs/api-reference/chat)
 # This script benefits from https://github.com/xusenlinzy/api-for-open-llm. Thanks for their wonderful works.
+import gc
 import json
 import os
 import time
@@ -262,12 +263,20 @@ class ChatCompletionCreateParams(BaseModel):
     min_p: Optional[float] = 0.0
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):  # collects GPU memory
-    yield
+def torch_gc() -> None:
+    r"""
+    Collects GPU memory.
+    """
+    gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         torch.cuda.ipc_collect()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):  # collects GPU memory
+    yield
+    torch_gc()
 
 
 app = FastAPI(lifespan=lifespan)
@@ -490,6 +499,7 @@ class DefaultEngine(ABC):
         conv = conv_templates["mm_default"].copy()
         stop_str = conv.sep
         image_file = ""
+        has_image = False
         for message in prompt_or_messages:
             role = message["role"]
             content = message["content"]
@@ -505,6 +515,7 @@ class DefaultEngine(ABC):
                 if item["type"] == "image_url":
                     num_images += 1
                     image_file = item["image_url"]["url"]
+                    has_image = True
                 elif item["type"] == "text":
                     prompt = item["text"]
             if image_file != "" and image_file != None:
@@ -536,7 +547,7 @@ class DefaultEngine(ABC):
         else:
             image_tensor = None
 
-        return input_ids, image_tensor, stop_str
+        return input_ids, image_tensor, stop_str, has_image
 
     def _generate(self, params: Dict[str, Any]) -> Iterator[dict]:
         """
@@ -549,9 +560,9 @@ class DefaultEngine(ABC):
             Iterator: A dictionary containing the generated text and error code.
         """
         prompt_or_messages = params.get("prompt_or_messages")
-        input_ids, image_tensor, stop_str = self.convert_to_inputs(prompt_or_messages)
-        image_file = prompt_or_messages[0]["content"][1]["image_url"]["url"]
-        has_image = image_file != "" and image_file != None
+        input_ids, image_tensor, stop_str, has_image = self.convert_to_inputs(
+            prompt_or_messages
+        )
 
         params.update(
             dict(inputs=input_ids, image_tensor=image_tensor, has_image=has_image)
