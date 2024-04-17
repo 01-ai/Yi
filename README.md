@@ -1031,15 +1031,15 @@ Below are detailed minimum VRAM requirements under different batch use cases.
     - Subjectively speaking, in situations like logical reasoning, even a 1% performance shift could impact the accuracy of the output results.
     
 #### 💡General
-- **Where can I source fine-tuning question answering datasets?**
+- <strong>Where can I source fine-tuning question answering datasets?</strong>
     - You can find fine-tuning question answering datasets on platforms like Hugging Face, with datasets like [m-a-p/COIG-CQIA](https://huggingface.co/datasets/m-a-p/COIG-CQIA) readily available. 
     - Additionally, Github offers fine-tuning frameworks, such as [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), which integrates pre-made datasets.
 
-- **What is the GPU memory requirement for fine-tuning Yi-34B FP16?**
+- <strong>What is the GPU memory requirement for fine-tuning Yi-34B FP16?</strong>
   <br>
   The GPU memory needed for fine-tuning 34B FP16 hinges on the specific fine-tuning method employed. For full parameter fine-tuning, you'll need 8 GPUs each with 80 GB; however, more economical solutions like Lora require less. For more details, check out [hiyouga/LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Also, consider using BF16 instead of FP16 for fine-tuning to optimize performance.
 
-- **Are there any third-party platforms that support chat functionality for the Yi-34b-200k model?**
+- <strong>Are there any third-party platforms that support chat functionality for the Yi-34b-200k model?</strong>
   <br>
   If you're looking for third-party Chats, options include [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat).
 </details>
