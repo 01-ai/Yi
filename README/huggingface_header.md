@@ -60,7 +60,7 @@ pipeline_tag: text-generation
 </p> 
 
 <p align="center">
-    👩‍🚀 Ask questions or discuss ideas on <a href="01-ai/Yi · Discussions" target="_blank"> GitHub </a>
+    👩‍🚀 Ask questions or discuss ideas on <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub </a>
 </p> 
 
 <p align="center">
