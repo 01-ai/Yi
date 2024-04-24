@@ -513,9 +513,10 @@ You can perform inference with Yi chat or base models as below.
   print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
   ```
 
-    <p align="right"> [
-    <a href="#top">Back to top ⬆️ </a>  ] 
-  </p>
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Quick start - Docker 
 <details>
