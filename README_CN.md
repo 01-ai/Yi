@@ -1096,6 +1096,8 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 ##### 中文教程
 | 类型        | 教程                                                      |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
+| 博客       | [基于零一万物yi-vl-plus大模型简单几步就能批量生成Anki图片笔记](https://mp.weixin.qq.com/s/_ea6g0pzzeO4WyYtuWycWQ)              |  2024-04-24  |  [正经人王同学](https://github.com/zjrwtx)  |
+| GitHub 项目       | [基于零一万物yi-34b-chat-200k输入任意文章地址，点击按钮即可生成无广告或推广内容的简要笔记，并生成分享图给好友](https://github.com/zjrwtx/open_summary)              |  2024-04-24  |  [正经人王同学](https://github.com/zjrwtx)  |
 | 博客        | [实测零一万物Yi-VL多模态语言模型：能准确“识图吃瓜”](https://mp.weixin.qq.com/s/fu4O9XvJ03JhimsEyI-SsQ)              |  2024-02-02  |  [苏洋](https://github.com/soulteary)  |
 | 博客        | [本地运行零一万物 34B 大模型，使用 LLaMA.cpp & 21G 显存](https://zhuanlan.zhihu.com/p/668921042)                  |  2023-11-26  |  [苏洋](https://github.com/soulteary)  |
 | 博客       | [零一万物模型折腾笔记：官方 Yi-34B 模型基础使用](https://zhuanlan.zhihu.com/p/671387298)                           | 2023-12-10 |  [苏洋](https://github.com/soulteary)  |
