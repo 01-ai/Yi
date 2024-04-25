@@ -513,9 +513,10 @@ You can perform inference with Yi chat or base models as below.
   print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
   ```
 
-    <p align="right"> [
-    <a href="#top">Back to top ⬆️ </a>  ] 
-  </p>
+
+<p align="right"> [
+  <a href="#top">Back to top ⬆️ </a>  ] 
+</p>
 
 ### Quick start - Docker 
 <details>
@@ -558,9 +559,10 @@ To install the dependencies, follow these steps:
 
 
 ### Quick start - llama.cpp
+<a href="https://github.com/01-ai/Yi/blob/main/docs/README_llama.cpp.md">The following tutorial </a> will guide you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.
 <details>
 <summary> Run Yi-chat-6B-2bits locally with llama.cpp: a step-by-step guide. ⬇️</summary> 
-<br>This tutorial guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
+<br><a href="https://github.com/01-ai/Yi/blob/main/docs/README_llama.cpp.md">This tutorial</a> guides you through every step of running a quantized model (<a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a>) locally and then performing inference.</p>
 
 - [Step 0: Prerequisites](#step-0-prerequisites)
 - [Step 1: Download llama.cpp](#step-1-download-llamacpp)
