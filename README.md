@@ -1077,6 +1077,7 @@ With all these resources at your fingertips, you're ready to start your exciting
 
 | Type        | Deliverable                                            |      Date      |     Author     |
 |-------------|--------------------------------------------------------|----------------|----------------|
+| GitHub project  | [基于bilibili和零一万物大模型构建大语言模型高质量训练数据集](https://github.com/zjrwtx/bilibiliQA_databuilder)              |  2024-04-29  |  [正经人王同学](https://github.com/zjrwtx)  |
 | GitHub project  | [基于视频网站和零一万物大模型构建大语言模型高质量训练数据集](https://github.com/zjrwtx/VideoQA_databuilder)              |  2024-04-25  |  [正经人王同学](https://github.com/zjrwtx)  |
 | Blog       | [基于零一万物yi-vl-plus大模型简单几步就能批量生成Anki图片笔记](https://mp.weixin.qq.com/s/_ea6g0pzzeO4WyYtuWycWQ)              |  2024-04-24  |  [正经人王同学](https://github.com/zjrwtx)  |
 | GitHub project  | [基于零一万物yi-34b-chat-200k输入任意文章地址，点击按钮即可生成无广告或推广内容的简要笔记，并生成分享图给好友](https://github.com/zjrwtx/open_summary)              |  2024-04-24  |  [正经人王同学](https://github.com/zjrwtx)  |
