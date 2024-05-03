@@ -1054,7 +1054,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 ##### 中文教程
 | 类型        | 教程                                                      |      日期      |     作者     |
 |:-------------|:--------------------------------------------------------|:----------------|:----------------|
-| GitHub 项目  | [基于零一万物 Yi 模型或ollama的本地小模型对输入的webpage网页地址的内容合成高质量的questions数据供微调数据合成使用](https://github.com/zjrwtx/WebQuestions_databuilder)              |  2024-04-29  |  [正经人王同学](https://github.com/zjrwtx)  |
+| GitHub 项目  | [基于零一万物 Yi 模型或 Ollama 本地小模型对网站内容合成高质量问题](https://github.com/zjrwtx/WebQuestions_databuilder)              |  2024-04-29  |  [正经人王同学](https://github.com/zjrwtx)  |
 | GitHub 项目  | [基于零一万物 Yi 模型和 B 站构建大语言模型高质量训练数据集](https://github.com/zjrwtx/bilibiliQA_databuilder)              |  2024-04-29  |  [正经人王同学](https://github.com/zjrwtx)  |
 | GitHub 项目  | [基于视频网站和零一万物大模型构建大语言模型高质量训练数据集](https://github.com/zjrwtx/VideoQA_databuilder)              |  2024-04-25  |  [正经人王同学](https://github.com/zjrwtx)  |
 | 博客       | [基于零一万物yi-vl-plus大模型简单几步就能批量生成Anki图片笔记](https://mp.weixin.qq.com/s/_ea6g0pzzeO4WyYtuWycWQ)              |  2024-04-24  |  [正经人王同学](https://github.com/zjrwtx)  |
