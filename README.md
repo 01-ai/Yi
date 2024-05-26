@@ -1319,9 +1319,7 @@ as well as any associated data security concerns.
 
 ### License
 
-The source code in this repo is licensed under the [Apache 2.0
-license](https://github.com/01-ai/Yi/blob/main/LICENSE). The Yi series models are fully open for academic research and free for commercial use, with automatic permission granted upon application. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt).
-For free commercial use, you only need to send an email to [get official commercial permission](https://www.lingyiwanwu.com/yi-license).
+The code and weights of the Yi series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
