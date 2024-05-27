@@ -29,7 +29,7 @@
   <h3 align="center">Building the Next Generation of Open-Source and Bilingual LLMs</h3>
 </div>
 <p align="center">
-🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • 🟣 <a href="https://wisemodel.cn/organization/01.AI" target="_blank">wismodel</a>
+🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">ModelScope</a> • 🟣 <a href="https://wisemodel.cn/organization/01.AI" target="_blank">wisemodel</a>
 </p> 
 
 <p align="center">
