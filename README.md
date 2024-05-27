@@ -224,12 +224,12 @@ If you want to deploy Yi models, make sure you meet the [software and hardware r
 
 | Model | Download  |
 |---|---|
-|Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat) |
-|Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat-4bits) |
-|Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat-8bits) |
-|Yi-6B-Chat| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat) |
-|Yi-6B-Chat-4bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-4bits) |
-|Yi-6B-Chat-8bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
+|Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat) |
+|Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat-4bits) |
+|Yi-34B-Chat-8bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-8bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-8bits/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-34B-Chat-8bits) |
+|Yi-6B-Chat| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat) |
+|Yi-6B-Chat-4bits | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-4bits/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-4bits) |
+|Yi-6B-Chat-8bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-Chat-8bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-Chat-8bits/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
 
 <sub><sup> - 4-bit series models are quantized by AWQ. <br> - 8-bit series models are quantized by GPTQ <br> - All quantized models have a low barrier to use since they can be deployed on consumer-grade GPUs (e.g., 3090, 4090). </sup></sub>
 
@@ -237,12 +237,12 @@ If you want to deploy Yi models, make sure you meet the [software and hardware r
 
 | Model | Download |
 |---|---|
-|Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
-|Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits)|
-|Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B)  • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-9B)|
-|Yi-9B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B-200K)  • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B-200K)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
-|Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
-|Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)  • [🟣wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
+|Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
+|Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits)|
+|Yi-9B|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B)  • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-9B)|
+|Yi-9B-200K | • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-9B-200K)  • [🤖 ModelScope](https://wisemodel.cn/models/01.AI/Yi-9B-200K)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
+|Yi-6B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
+|Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-6B-200K/summary)  • [🟣 wisemodel](https://wisemodel.cn/models/01.AI/Yi-6B-Chat-8bits) |
 
 <sub><sup> - 200k is roughly equivalent to 400,000 Chinese characters.  <br> - If you want to use the previous version of the Yi-34B-200K (released on Nov 5, 2023), run `git checkout 069cd341d60f4ce4b07ec394e82b79e94f656cf` to download the weight. </sup></sub>
 
