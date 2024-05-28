@@ -8,6 +8,8 @@ on:
 jobs:
   detect-changes:
     runs-on: ubuntu-latest
+    env:
+      GIT_CLONE_PROTECTION_ACTIVE: false
     outputs:
       is_readme_changed: ${{ steps.changed-files.outputs.readme_any_changed }}
       is_license_changed: ${{ steps.changed-files.outputs.license_any_changed }}
