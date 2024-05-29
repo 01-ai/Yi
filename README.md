@@ -140,14 +140,14 @@
 ## News 
 
 <details>
-  <summary>🎯 <b>2024-05-13</b>: The <a href="https://github.com/01-ai/Yi-1.5">Yi-1.5 series models </a> are open-sourced, further improving coding, math, reasoning, and instruction-following abilities.</summary>
+  <summary>🎯 <b>2024-05-13</b>: The <a href="https://github.com/01-ai/Yi-1.5">Yi-1.5 series models </a> have been open-sourced, further improving coding, math, reasoning, and instruction-following abilities.</summary>
 </details>
 
 <details>
   <summary>🎯 <b>2024-03-16</b>: The <code>Yi-9B-200K</code> is open-sourced and available to the public.</summary>
 </details>
 
-<details open>
+<details>
   <summary>🎯 <b>2024-03-08</b>: <a href="https://arxiv.org/abs/2403.04652">Yi Tech Report</a> is published! </summary>
 </details>
 
