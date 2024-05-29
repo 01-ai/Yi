@@ -31,6 +31,8 @@ jobs:
             - MODEL_LICENSE_AGREEMENT.txt
   sync-readme:
     runs-on: ${{ matrix.platform == 'huggingface' && 'ubuntu-latest' || 'public' }}
+    env:
+      GIT_CLONE_PROTECTION_ACTIVE: false
     needs: detect-changes
     if: needs.detect-changes.outputs.is_readme_changed == 'true' || needs.detect-changes.outputs.is_license_changed == 'true'
     strategy:
