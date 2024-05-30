@@ -17,12 +17,6 @@
 <a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
   <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
 </a>
-<a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
-</a>
-<a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightblue">
-</a>
 <a href="mailto:oss@01.ai">
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
