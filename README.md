@@ -147,7 +147,7 @@
   <summary>🎯 <b>2024-03-16</b>: The <code>Yi-9B-200K</code> is open-sourced and available to the public.</summary>
 </details>
 
-<details open>
+<details>
   <summary>🎯 <b>2024-03-08</b>: <a href="https://arxiv.org/abs/2403.04652">Yi Tech Report</a> is published! </summary>
 </details>
 
