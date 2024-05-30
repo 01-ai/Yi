@@ -140,7 +140,7 @@
 ## News 
 
 <details>
-  <summary>🎯 <b>2024-05-13</b>: The <a href="https://github.com/01-ai/Yi-1.5">Yi-1.5 series models </a> have been open-sourced, further improving coding, math, reasoning, and instruction-following abilities.</summary>
+  <summary>🎯 <b>2024-05-13</b>: The <a href="https://github.com/01-ai/Yi-1.5">Yi-1.5 series models </a> are open-sourced, further improving coding, math, reasoning, and instruction-following abilities.</summary>
 </details>
 
 <details>

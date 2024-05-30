@@ -60,7 +60,7 @@
   <li>🙌 本文由 Yi 和<a href="#本文贡献者">社区志愿者</a>共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li> 
 
   <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入「Yi 起翻译」</a>，开启知识之火旅程，共绘技术内容图谱。</li>
-  
+
   <li>📝 本文翻译使用了 <a href="https://huggingface.co/spaces/01-ai/Yi-34B-Chat">Yi-34B-Chat</a>，关于翻译时使用的 prompt 及最佳实践，参阅<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-prompt-%E6%9D%A5%E5%AE%9E%E7%8E%B0%E9%AB%98%E8%B4%A8%E9%87%8F%E7%BF%BB%E8%AF%91">「如何使用 Prompt 来实现高质量翻译」</a>和<a href="https://github.com/01-ai/Yi/wiki/%E7%BF%BB%E8%AF%91%E4%B8%8E%E5%AE%A1%E6%A0%A1%E7%9A%84%E6%AD%A3%E7%A1%AE%E5%A7%BF%E5%8A%BF">「翻译与审校的正确姿势」</a>。</li>
 </ul>
 
@@ -305,8 +305,8 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
       <li>重新生成的回复不一致：重新生成回复或者对回复进行采样时，结果可能出现前后不一致。多样性增多会导致即使在相似的输入条件下，结果也会存在差异。</li>
       <li>累积误差：当模型回复的错误随时间累积，就会出现累计误差的现象。模型回复的多样化增加了小误差积累成大错误的可能性，这种情况常见于扩展推理、解决数学问题等复杂任务中。</li>
       <li>为了获得更连贯一致的回复，建议调整生成配置参数，例如，温度、top_p 和 top_k。这些调整既可以让模型的回复富有创意，又能保持逻辑上的连贯性。</li>
-</ul>
-</details>
+  </ul>
+  </details>
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
@@ -363,7 +363,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
 ##### 🙋‍♀️ 使用 Yi Playground
 
 如果你想与 Yi 聊天，并使用更多自定义选项（例如，系统提示、温度、重复惩罚等），你可以选择以下方式之一。
-  
+
   - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) （Yi 官方）
     - 如需使用 Yi Playground, 欢迎申请加入白名单（填写[英文](https://cn.mikecrm.com/l91ODJf)或者[中文](https://cn.mikecrm.com/gnEZjiQ)申请表）。
 
@@ -388,7 +388,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
 本教程在配置为 **A800（80GB）** 的本地机器上运行 Yi-34B-Chat， 并进行推理。
 
 #### 第 0 步：前提条件
- 
+
 - 确保安装了 Python 3.10 以上版本。
 
 - 如果你想运行 Yi 系列模型，参阅「[部署要求](#部署)」。
@@ -489,11 +489,11 @@ python demo/text_generation.py  --model <your-model-path>
 
   ```bash
   from transformers import AutoModelForCausalLM, AutoTokenizer
-
+  
   MODEL_DIR = "01-ai/Yi-9B"
   model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, torch_dtype="auto")
   tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, use_fast=False)
-
+  
   input_text = "# write the quick sort algorithm"
   inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
   outputs = model.generate(**inputs, max_length=256)
@@ -512,7 +512,7 @@ python demo/text_generation.py  --model <your-model-path>
       middle = [x for x in arr if x == pivot]
       right = [x for x in arr if x > pivot]
       return quick_sort(left) + middle + quick_sort(right)
-
+  
   # test the quick sort algorithm
   print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
   ```
@@ -542,7 +542,7 @@ ghcr.io/01-ai/yi:latest
 
 <h4>第 2 步：进行推理</h4>
     <p>你可以使用 Yi 的 Chat 模型或 Base 模型进行推理。</p>
-    
+
 <h5>使用 Yi Chat 模型进行推理</h5>
     <p>进行推理的步骤与「<a href="#使用-yi-chat-模型进行推理"> 在 pip 上使用 Yi Chat 模型进行推理 </a>」类似。</p>
     <p><strong>注意：</strong> 唯一不同的是你需要设置 <code>model_path</code> 为 <code>= '&lt;your-model-mount-path&gt;'</code> 而不是 <code>= '&lt;your-model-path&gt;'</code>。</p>
@@ -1025,7 +1025,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 - <strong>Yi-34b-200k 有第三方 Chat 平台吗？</strong>
   <br>如果你想访问第三方 Chat，可以选择人工智能平台 [fireworks.ai](https://fireworks.ai/login?callbackURL=https://fireworks.ai/models/fireworks/yi-34b-chat)。
-</details>
+  </details>
 
 ### 学习中心
 
@@ -1296,11 +1296,10 @@ Yi Readme 中文版由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%
 
 ### 许可证
 
-本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。Yi 系列模型完全开放，你可以免费用于个人用途、学术研究和商业用途。如需商用，你仅需[提交申请](https://www.lingyiwanwu.com/yi-license)，即能立刻自动获取 Yi 系列模型商用许可，而无需等待官方审批。所有使用必须遵守[《Yi系列模型社区许可协议 2.1》](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)。
+本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
 </p>
-
 
 
