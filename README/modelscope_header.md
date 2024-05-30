@@ -1,5 +1,3 @@
 ---
-license: other
-license_name: yi-license
-license_link: LICENSE
+license: apache-2.0
 ---

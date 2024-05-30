@@ -1,7 +1,5 @@
 ---
-license: other
-license_name: yi-license
-license_link: LICENSE
+license: apache-2.0
 widget:
   - example_title: "Yi-34B-Chat"
     text: "hi"
@@ -28,18 +26,6 @@ pipeline_tag: text-generation
 <div style="display: inline-block;">
 <a href="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml">
   <img src="https://github.com/01-ai/Yi/actions/workflows/build_docker_image.yml/badge.svg">
-</a>
-</div>
-
-<div style="display: inline-block;">
-<a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
-</a>
-</div>
-
-<div style="display: inline-block;">
-<a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightblue">
 </a>
 </div>
 

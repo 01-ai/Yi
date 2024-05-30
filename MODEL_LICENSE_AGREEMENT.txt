@@ -1,324 +1,201 @@
-                 Yi Series Models Community License Agreement
-                                 Version: 2.1
-                       Date of Release: November 23, 2023
- 
-1. Definition
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
 
-“Agreement” refers to the terms and conditions defined in this Yi Series Models 
-Community License Agreement for the use, reproduction and distribution of Yi 
-Series Models.
- 
-“Model” refers to associated components (including checkpoints) developed based
-on machine learning, including learned weights and parameters (including the
-status of optimizer).
- 
-“Yi Series Models” refers to opensource models with different specifications and
-capabilities named “Yi” provided by the Licensor, including Yi-6B, Yi-34B etc.
- 
-“Derivatives” refers to all modifications to Yi Series Models, work based on Yi
-Series Models, or any other models created or initialized by transferring the
-weights, parameters, activations, or output patterns of Yi Series Models to
-other models to achieve similar performance, including but not limited to
-methods that require using intermediate data representations or generating
-synthetic data based on Yi Series Models to train other models.
- 
-“Licensor” refers to Beijing Lingyiwanwu Information Technology Co., Ltd.
- 
-“you” refers to an individual or legal entity that exercises the license granted
-by this Agreement and/or uses the Yi Series Models for any purpose and in any
-field of use.
- 
-“Third Party” refers to any individuals, legal entities or non-legal 
-organizations other than you.
- 
-“Distribute” refers to transmitting, copying, publishing, or otherwise sharing 
-the Yi Series Models with third parties, including providing the Yi Series
-Models through electronic or other remote means (such as any SaaS software or
-PaaS software accessed via API or web access).
- 
-“Commercial Purposes” refers to the use of the Yi Series Models, directly or
-indirectly, for the operation, promotion, revenue generation, or any other
-profit-making purposes for entities or individuals.
- 
-“Laws and Regulations” refers to the laws and administrative regulations of the
-mainland of the People's Republic of China (for the purposes of this Agreement
-only, excluding Hong Kong, Macau, and Taiwan).
- 
-“Personal Information” refers to various information related to identified or
-identifiable natural persons recorded electronically or by other means,
-excluding information that has been anonymized.
- 
-“Logo” refers to any trademark, service mark, trade name, domain name, website
-name, or other distinctive branding marks.
- 
-2. License and License Restrictions
-The Licensor hereby grants you a non-exclusive, global, non-transferable,
-non-sub-licensable, revocable, and royalty-free copyright license. You must
-adhere to the following license restrictions:
- 
-1) Your use of the Yi Series Models must comply with the Laws and Regulations as
-well as applicable legal requirements of other countries/regions, and respect
-social ethics and moral standards, including but not limited to, not using the
-Yi Series Models for purposes prohibited by Laws and Regulations as well as
-applicable legal requirements of other countries/regions, such as harming
-national security, promoting terrorism, extremism, inciting ethnic or racial
-hatred, discrimination, violence, or pornography, and spreading false harmful
-information.
- 
-2) You shall not, for military or unlawful purposes or in ways not allowed by
-Laws and Regulations as well as applicable legal requirements of other
-countries/regions, a) use, copy or Distribute the Yi Series Models, or b) create
-complete or partial Derivatives of the Yi Series Models.
- 
-3) Your use of the Yi Series Models (including using the output of the Yi Series
-Models) and the creation of Derivatives must not infringe upon the legitimate
-rights of any Third Party, including but not limited to the rights of personal
-rights such as the right to likeness, reputation, and privacy, as well as
-intellectual property rights such as copyrights, patents, trade secrets, and
-other property rights.
- 
-4) You must clearly attribute the source of the Yi Series Models to the Licensor
-and provide a copy of this Agreement to any Third-Party users of the Yi Series
-Models and Derivatives.
- 
-5) If you modify the Yi Series Models to create Derivatives, you must clearly
-indicate the substantial modifications made, and these modifications shall not
-violate the license restrictions of this Agreement. You shall not enable,
-assist, or in any way facilitate Third Parties to violate the license
-restrictions of this Agreement.
- 
-If you plan to use the Yi Series Models and Derivatives for Commercial Purposes, 
-please refer to the Registration Form of Yi Series Models for Commercial Purposes 
-(“Registration Form”), as provided in Attachment 1 of the Yi Series Models 
-Commercial License Agreement (available at https://www.lingyiwanwu.com/yi-license) 
-and send completed Registration Form to the email: yi@01.ai to complete the 
-registration and obtain the license for Commercial Purposes. If you obtained the 
-license for Commercial Purposes and use the Yi Series Models and Derivatives for 
-Commercial Purposes, you must comply with the afore-mentioned license restrictions 
-and restrictions specified under the Yi Series Models Commercial License Agreement.
- 
- 
-3. Intellectual Property
-The ownership of the Yi Series Models and their related intellectual property
-rights is solely held by the Licensor.
- 
-In any circumstance, without the prior written consent of the Licensor, you are
-not allowed to use any Logo associated with the Licensor. If your use of
-Licensor's Logo in violation of this Agreement causes any losses to the Licensor
-or others, you will bear full legal responsibility.
- 
- 
-4. Disclaimer and Limitation of Liability
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
-The Yi Series Models are provided "AS IS." The Licensor does not provide any
-express or implied warranties for the Yi Series Models, including but not
-limited to stability, ownership, merchantability, non-infringement, or fitness
-for a specific purpose of the Yi Series Models and their output results. You
-assume all responsibilities for the risks and consequences arising from the use,
-reproduction, distribution of the Yi Series Models, and the creation of
-Derivatives.
- 
-The Licensor complies with Laws and Regulations at all stages of model training,
-maintaining the legality, authenticity, accuracy, objectivity, and diversity of
-data and algorithms. The Licensor is not liable for any direct, indirect,
-incidental consequences, and other losses or damages related to your use,
-reproduction, and distribution of the Yi Series Models, and the creation of
-Derivatives under this Agreement. This includes but is not limited to:
- 
-1) The Licensor is not responsible for data security risks resulting from your
-use of the Yi Series Models.
- 
-2) The Yi Series Models may contain Personal Information. When you use Yi Series
-Models, you acknowledge that you are the data processing entity as defined under
-the Laws and Regulations responsible for determining the processing methods and
-purposes of Personal Information. You must comply with legal requirements for
-processing any Personal Information that may be contained in the Yi Series
-Models and assume the associated legal responsibilities, as well as the risks
-and consequences of processing Personal Information.
- 
-3) The Licensor is not liable for reputation risks arising from your use of the
-Yi Series Models or the output results of the Yi Series Models.
- 
-4) The Licensor is not liable for intellectual property risks associated with
-your use of the Yi Series Models’ output results.
- 
-If your use, reproduction, distribution of the Yi Series Models, or the creation
-of Derivatives result in losses to the Licensor, the Licensor has the right to
-seek compensation from you. For any claims made by Third Parties against the
-Licensor related to your use, reproduction, and distribution of the Yi Series
-Models, or the creation of Derivatives, the Licensor has the right to demand
-that you defend, compensate, and indemnify the Licensor and protect the Licensor
-from harm.
- 
- 
-5. Dispute Resolution
+   1. Definitions.
 
-The stipulation, effectiveness, interpretation, performance, modification, and
-termination of the Agreement, the use, copy and Distribute of the Yi Series
-Models, and dispute resolution associated with your use, copy and distribution
-shall be governed by the laws of the mainland of the People's Republic of China
-(for the purposes of this agreement only, excluding Hong Kong, Macau, and
-Taiwan), and the application of conflict of laws is excluded.
- 
-Any disputes arising from the use, copy or distribution of the Yi Series Models
-should first be resolved through amicable negotiations. If negotiations fail,
-legal proceedings should be initiated in the People's Court at the location of
-the Licensor.
- 
- 
-6. Effectiveness and Termination of the Agreement
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
 
-Your use of the Yi Series Models signifies that you have read and agreed to be
-bound by the terms of the Agreement. The Agreement becomes effective from the
-date of your use of the Yi Series Models and will terminate from the date you
-cease using the Yi Series Models. If you violate any terms or restrictions in
-the Agreement, the Licensor reserves the right to terminate the Agreement.
- 
-Upon termination of the Agreement, you must immediately cease using the Yi
-Series Models. Section 4, "Disclaimer and Limitation of Liability," and Section
-5, "Dispute Resolution," of this Agreement remain in effect after the
-termination of this Agreement.
- 
- 
-7. Updates to the Agreement and Contact Information
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
 
-The Licensor reserves the right to update the Agreement from time to time. The
-latest version of the Agreement will be posted by the Licensor through
-https://01.ai.
- 
-For any questions related to licensing and copyright, please contact the
-Licensor at yi@01.ai.
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
 
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
 
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
 
-                     Yi系列模型社区许可协议
-                          版本: 2.1
-                    发布日期: 2023年11月23日
- 
-1. 定义
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
 
-“协议”是指本协议中定义Yi系列模型使用、复制和分发的条款和条件。
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
 
-“模型”是指任何附带的基于机器学习的组件(包括检查点)，包括学习的权重、参数（包括优
-化器状态）。
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
 
-“Yi系列模型”是指许可方开源的以Yi命名的不同规格、不同能力的模型，包括
-Yi-6B、Yi-34B等。
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
 
-“模型衍生品”是指对Yi系列模型的所有修改、基于Yi系列模型的工作，或通过将Yi系列模型
-的权重、参数、激活或输出模式转移到其他模型而创建或初始化的任何其他模型，以使其他
-模型的性能与Yi系列模型类似，包括但不限于需要使用中间数据表示的提取方法或基于Yi系
-列模型生成合成数据来训练其他模型的方法。
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
 
-“许可方”是指北京零一万物信息技术有限公司。
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
 
-“您”是指行使本协议授予的权限和/或出于任何目的和在任何使用领域使用Yi系列模型的个
-人或法人实体。
- 
-“第三方”是指您之外的任何个人、法人实体或非法人组织。
- 
-“分发”是指向第三方传输、复制、发布或以其他方式共享Yi系列模型，包括将Yi系列模型作
-为通过电子或其他远程方式（例如基于 API 或 Web 访问的任何 SaaS 软件或 PaaS 软
-件）提供。
- 
-“商业用途”是指使用Yi系列模型，直接或间接为实体或个人进行运营、推广或产生收入，或
-用于任何其他盈利目的。
- 
-“法律法规”是指中华人民共和国大陆地区（仅为本协议之目的，不包括香港、澳门和台湾）
-的法律及行政法规。
- 
-“个人信息”是指以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，
-不包括匿名化处理后的信息。
- 
-“标识” 是指任何商标、服务标记、商号、域名、网站名称或其他带有显著品牌特征的标记。
- 
- 
-2. 许可及许可限制
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
 
-许可方特此授予您非排他性、全球性、不可转让、不可再许可、可撤销、免版税的版权许可。
-您必须满足如下许可限制条件：
- 
-1) 您对Yi系列模型的使用应遵守法律法规以及其他国家/地区适用的法律要求、尊重社会公
-德和伦理道德。包括但不限于您不得将Yi系列模型用作危害国家安全、宣扬恐怖主义、极端
-主义，宣扬民族及种族仇恨、歧视，暴力、色情，以及虚假有害信息等法律法规以及其他国
-家/地区适用的法律要求禁止的目的。
- 
-2) 您不得出于军事或非法目的，或以法律法规以及其他国家/地区适用的法律要求所不允许
-的方式 a) 使用、复制、或分发Yi系列模型; 或 b) 创建Yi系列模型的全部或部分衍生品。
- 
-3) 您对Yi系列模型的使用（包括使用Yi系列模型的输出）以及模型衍生品的创建不得侵犯
-任何第三方的合法权益，包括但不限于他人肖像权、名誉权、隐私权等人格权，著作权、专
-利权、商业秘密等知识产权，或其他财产权益。
- 
-4) 您必须向Yi系列模型及Yi系列模型衍生品的任何第三方使用者明确Yi系列模型的来源为
-许可方并向其提供本协议的副本。
- 
-5) 若您修改Yi系列模型得到模型衍生品，您必须以显著的方式说明修改的内容，且上述修
-改不得违反本协议的许可限制条件，也不能允许、协助或以其他方式使得第三方违反本协议
-中的许可限制条件。
- 
-如果您计划将Yi系列模型及模型衍生品用作商业用途，请参见《Yi系列模型商用许可协议》
-（参见：https://www.lingyiwanwu.com/yi-license）附件一《Yi系列模型商用登
-记表》（“登记表”）并将填写完毕的登记表发送至 yi@01.ai 邮箱完成登记即可获得商用
-许可。若您获得商用许可并将Yi系列模型及模型衍生品用作商业用途，您应满足许可方上述
-许可限制条件及《Yi系列模型商用许可协议》中的商业许可限制。
- 
-3. 知识产权
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
 
-Yi系列模型的所有权及其相关知识产权，由许可方单独所有。
- 
-在任何情况下，未经许可方事先书面同意，您不得以任何方式使用许可方的任何标识。由于
-您违反本协议使用许可方的标识给许可方或他人造成损失的，由您承担全部法律责任。
- 
- 
-4. 免责声明及责任限制
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
 
-Yi系列模型按“原样”提供。许可方不对Yi系列模型提供任何明示或暗示的保证，包括但不限
-于：模型及输出结果的稳定性、所有权、适销性、非侵权性、或特定用途适用性。您将对适
-用、复制及分发Yi系列模型以及创建模型衍生品所产生的风险与后果承担所有责任。
- 
-许可方在模型训练的所有阶段都遵守法律法规，坚持维护数据和算法的合法、真实、准确、
-客观和多样性。许可方不对您根据本协议使用、复制及分发Yi系列模型，以及创建模型衍生
-品而产生或与之相关的任何直接、间接、附带的后果、以及其他损失或损害承担责任。包括
-但不限于：
- 
-1) 许可方不承担您因使用Yi系列模型而导致的数据安全风险。
- 
-2) Yi系列模型中可能包含个人信息。在您使用Yi系列模型的过程中，您承认您为法律法规
-定义下决定个人信息处理方式和目的的个人信息处理者。您应遵守法律法规要求处理Yi系列
-模型中可能包含的个人信息，并承担相应的法律责任，以及处理个人信息的风险和后果。
- 
-3) 许可方不承担您使用Yi系列模型或模型输出结果而产生的声誉风险。
- 
-4) 许可方不承担您使用Yi系列模型的输出结果涉及的知识产权风险。
- 
-若由于您对Yi系列模型的使用、复制或分发，或者创建模型衍生品而导致许可方遭受损失，
-许可方有权要求您对许可方的损失进行赔偿。对于任何第三方向许可方提出的因您使用、复
-制或分发Yi系列模型或创建模型衍生品行为的相关索赔，许可方有权要求您为许可方进行辩
-护、赔偿并使许可方免受损害。
- 
- 
-5. 争议解决
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
 
-协议的订立、效力、解释、履行、修改和终止，使用、复制和分发Yi系列模型以及争议解决
-均适用中华人民共和国大陆地区（仅为本协议之目的，不包括香港、澳门和台湾）法律，并
-排除冲突法的适用。
- 
-因使用、复制和分发Yi系列模型而发生的任何争议，各方应首先通过友好协商的方式加以解
-决。协商不成时，应向许可方所在地人民法院提起诉讼。
- 
- 
-6. 协议的生效及终止
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
 
-您使用Yi系列模型即表示您已阅读并同意接受协议的约束。协议自您使用Yi系列模型之日起
-生效并将在您停止使用Yi系列模型之日起终止。若您违反协议中的任何条款或限制，许可方
-有权终止协议。
- 
-若协议终止，您需立即停止使用Yi系列模型。本协议第4条“免责声明及责任限制”及第5条
-“争议解决”在协议终止后仍有效。
- 
- 
-7. 协议更新及联系方式
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
 
-许可方有权对协议进行不时更新。许可方将通过 https://01.ai 公布协议最新版本。有关
-许可和版权的任何问题，请通过 yi@01.ai 与许可方联系。
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright 2024 01.AI
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
