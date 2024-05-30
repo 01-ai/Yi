@@ -30,18 +30,6 @@ pipeline_tag: text-generation
 </div>
 
 <div style="display: inline-block;">
-<a href="https://github.com/01-ai/Yi/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/Code_License-Apache_2.0-lightblue">
-</a>
-</div>
-
-<div style="display: inline-block;">
-<a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">
-  <img src="https://img.shields.io/badge/Model_License-Yi_License-lightblue">
-</a>
-</div>
-
-<div style="display: inline-block;">
 <a href="mailto:oss@01.ai">
   <img src="https://img.shields.io/badge/✉️-yi@01.ai-FFE01B">
 </a>
