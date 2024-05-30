@@ -1,7 +1,5 @@
 ---
-license: other
-license_name: yi-license
-license_link: LICENSE
+license: apache-2.0
 widget:
   - example_title: "Yi-34B-Chat"
     text: "hi"
@@ -74,4 +72,3 @@ pipeline_tag: text-generation
 <p align="center">
     📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>
 </p>
-

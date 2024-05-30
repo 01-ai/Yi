@@ -2,7 +2,7 @@
 language:
   - en
   - zh
-license: other
+license: apache-2.0
 tasks:
   - text-generation
 ---
