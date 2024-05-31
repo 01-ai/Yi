@@ -1290,7 +1290,7 @@ Yi Readme 中文版由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%
 
 ### 许可证
 
-本仓库中的源代码遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。
+Yi 系列模型的代码和权重遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。
 
 <p align="right"> [
   <a href="#top">返回顶部 ⬆️ </a>  ] 
