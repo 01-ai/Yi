@@ -1356,9 +1356,7 @@ Yi-9B is almost the best among a range of similar-sized open-source models (incl
 
 Everyone! 🙌 ✅
 
-- The Yi series models are free for personal usage, academic purposes, and commercial use. All usage must adhere to the [Yi Series Models Community License Agreement 2.1](https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt)
-  
-- For free commercial use, you only need to [complete this form](https://www.lingyiwanwu.com/yi-license) to get a Yi Model Commercial License.
+The code and weights of the Yi series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE), which means the Yi series models are free for personal, academic, and commercial use.
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
@@ -1386,14 +1384,6 @@ scenarios. Please be aware that there is still a risk of the model producing
 problematic outputs. We will not be responsible for any risks and issues
 resulting from misuse, misguidance, illegal usage, and related misinformation,
 as well as any associated data security concerns.
-
-<p align="right"> [
-  <a href="#top">Back to top ⬆️ </a>  ] 
-</p>
-
-### License
-
-The code and weights of the Yi series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
