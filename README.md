@@ -1388,6 +1388,7 @@ as well as any associated data security concerns.
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
 </p>
+
 ### License
 
 The code and weights of the Yi-1.5 series models are distributed under the [Apache 2.0 license](https://github.com/01-ai/Yi/blob/main/LICENSE).
