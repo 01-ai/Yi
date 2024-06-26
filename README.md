@@ -1395,7 +1395,7 @@ The code and weights of the Yi-1.5 series models are distributed under the [Apac
 
 If you create derivative works based on this model, please include the following attribution in your derivative works:
 
-This work is a derivative of [The Yi Series Model You Base On] by 01.AI, used under the Apache 2.0 License.
+    This work is a derivative of [The Yi Series Model You Base On] by 01.AI, used under the Apache 2.0 License.
 
 <p align="right"> [
   <a href="#top">Back to top ⬆️ </a>  ] 
