@@ -10,7 +10,6 @@
 
 - **🔥2024-07-26**: 发布 Yi Cookbook 1.0 版本，包含中文和英文的教程和示例。
 
-
 ## OpenSource
 
 | Category                    | Description                                  | Notebook, Markdown                                                                                                | 
