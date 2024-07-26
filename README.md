@@ -140,6 +140,10 @@
 ## News 
 
 <details>
+  <summary>🔥 <b>2024-07-26</b>: The <a href="https://github.com/Haijian06/Yi/tree/main/Cookbook">Yi Cookbook 1.0 </a> is released, featuring tutorials and examples in both Chinese and English.</summary>
+</details>
+
+<details>
   <summary>🎯 <b>2024-05-13</b>: The <a href="https://github.com/01-ai/Yi-1.5">Yi-1.5 series models </a> are open-sourced, further improving coding, math, reasoning, and instruction-following abilities.</summary>
 </details>
 
