@@ -149,6 +149,9 @@
 
 
 ## 最新动态
+<details>
+  <summary>🔥 <b>2024-07-26</b>: 发布  <a href="https://github.com/Haijian06/Yi/tree/main/Cookbook">Yi Cookbook 1.0 </a> 版本，包含中文和英文的教程和示例。</summary>
+</details>
 
 <details>
 <summary>🎯 <b>2024-03-16</b>：发布并开源了 <code>Yi-9B-200K</code> 模型。</summary>
