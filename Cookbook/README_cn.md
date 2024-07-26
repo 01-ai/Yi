@@ -15,32 +15,32 @@
 
 | Category                    | Description                                  | Notebook,Markdown                                                                                                | 
 |:----------------------------|:---------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| infernce swift              | 利用 Swift 快速进行 Yi 模型推理。            | [Inference_using_swift.ipynb](./cn/opensource/Inference/Inference_using_swift.ipynb)                    | 
-| infernce transformers       | 使用 Transformers 高效推理 Yi 模型。         | [Inference_using_transformers.ipynb](./cn/opensource/Inference/Inference_using_transformers.ipynb)      |
-| infernce Imdeploy           | 通过 Imdeploy 快速上手 Yi 模型推理。         | [Inference_using_lmdeploy.ipynb](./cn/opensource/Inference/Inference_using_lmdeploy.ipynb)              | 
-| infernce vllm               | 使用 vllm 体验 Yi 模型的快速推理。           | [vLLM_Inference_tutorial.ipynb](./cn/opensource/Inference/vLLM_Inference_tutorial.ipynb)                | 
-| quantization swift          | 使用 Swift轻松量化您的专属 Yi 模型。        | [swift-yi-quantization.md](./cn/opensource/quantization/swift-yi-quantization.md)                       |
-| quantization autoawq        | 利用 autoawq 量化您的 Yi 模型。              | [autoawq-yi-quantization.md](./cn/opensource/quantization/autoawq-yi-quantization.md)                   | 
-| quantization autogptq       | 使用 autogptq 对 Yi 模型进行量化。           | [autogptq-yi-quantization.md](./cn/opensource/quantization/autogptq-yi-quantization.md)                 | 
-| fine-tuning  swift          | 使用 Swift 微调，打造您的个性化 Yi 模型。     | [finetune-yi-with-swift.md](./cn/opensource/fine_tune/finetune-yi-with-swift.md)                        |
-| fine-tuning  LlaMA-Factory  | 使用 LlaMA-Factory 灵活微调您的 Yi 模型。 | [finetune-yi-with-llamafactory.md](./cn/opensource/fine_tune/finetune-yi-with-llamafactory.md)          | 
-| Local Run  ollama           | 使用 ollama 在本地环境中运行 Yi 模型。     | [local-ollama.md](./cn/opensource/local/local-ollama.md)                                                | 
-| Local Run  MLX-LM           | 在 MLX-LM 环境下本地运行 Yi 模型。           | [local-mlx.md](./cn/opensource/local/local-mlx.md)                                                      | 
-| Local Run  LM Studio        | 使用 LM Studio 轻松本地运行 Yi 模型。         | [local-lm-studio.md](./cn/opensource/local/local-lm-studio.md)                                          |
-| Local Run  llama.cpp        | 使用 llama.cpp 在本地运行 Yi 模型。         | [local-llama.cpp.md](./cn/opensource/local/local-llama.cpp.md)                                          | 
-| RAG  LlamaIndex             | 基于 Yi 模型和 LlamaIndex 构建强大的 RAG 系统。| [yi_rag_llamaindex.ipynb](./cn/opensource/rag/yi_rag_llamaindex.ipynb)                                  |
-| RAG  LangChain              | 使用 LangChain 构建灵活的 RAG 系统。        | [yi_rag_langchain.ipynb](./cn/opensource/rag/yi_rag_langchain.ipynb)                                    | 
+| infernce, swift              | 利用 Swift 快速进行 Yi 模型推理。            | [Inference_using_swift.ipynb](./cn/opensource/Inference/Inference_using_swift.ipynb)                    | 
+| infernce, transformers       | 使用 Transformers 高效推理 Yi 模型。         | [Inference_using_transformers.ipynb](./cn/opensource/Inference/Inference_using_transformers.ipynb)      |
+| infernce, Imdeploy           | 通过 Imdeploy 快速上手 Yi 模型推理。         | [Inference_using_lmdeploy.ipynb](./cn/opensource/Inference/Inference_using_lmdeploy.ipynb)              | 
+| infernce, vllm               | 使用 vllm 体验 Yi 模型的快速推理。           | [vLLM_Inference_tutorial.ipynb](./cn/opensource/Inference/vLLM_Inference_tutorial.ipynb)                | 
+| quantization, swift          | 使用 Swift轻松量化您的专属 Yi 模型。        | [swift-yi-quantization.md](./cn/opensource/quantization/swift-yi-quantization.md)                       |
+| quantization, autoawq        | 利用 autoawq 量化您的 Yi 模型。              | [autoawq-yi-quantization.md](./cn/opensource/quantization/autoawq-yi-quantization.md)                   | 
+| quantization, autogptq       | 使用 autogptq 对 Yi 模型进行量化。           | [autogptq-yi-quantization.md](./cn/opensource/quantization/autogptq-yi-quantization.md)                 | 
+| fine-tuning, swift          | 使用 Swift 微调，打造您的个性化 Yi 模型。     | [finetune-yi-with-swift.md](./cn/opensource/fine_tune/finetune-yi-with-swift.md)                        |
+| fine-tuning, LlaMA-Factory  | 使用 LlaMA-Factory 灵活微调您的 Yi 模型。 | [finetune-yi-with-llamafactory.md](./cn/opensource/fine_tune/finetune-yi-with-llamafactory.md)          | 
+| Local Run, ollama           | 使用 ollama 在本地环境中运行 Yi 模型。     | [local-ollama.md](./cn/opensource/local/local-ollama.md)                                                | 
+| Local Run, MLX-LM           | 在 MLX-LM 环境下本地运行 Yi 模型。           | [local-mlx.md](./cn/opensource/local/local-mlx.md)                                                      | 
+| Local Run, LM Studio        | 使用 LM Studio 轻松本地运行 Yi 模型。         | [local-lm-studio.md](./cn/opensource/local/local-lm-studio.md)                                          |
+| Local Run, llama.cpp        | 使用 llama.cpp 在本地运行 Yi 模型。         | [local-llama.cpp.md](./cn/opensource/local/local-llama.cpp.md)                                          | 
+| RAG, LlamaIndex             | 基于 Yi 模型和 LlamaIndex 构建强大的 RAG 系统。| [yi_rag_llamaindex.ipynb](./cn/opensource/rag/yi_rag_llamaindex.ipynb)                                  |
+| RAG, LangChain              | 使用 LangChain 构建灵活的 RAG 系统。        | [yi_rag_langchain.ipynb](./cn/opensource/rag/yi_rag_langchain.ipynb)                                    | 
 | function calling            | 从零开始，实现函数调用。                     | [function_calling.ipynb](./cn/opensource/function_calling/function_calling.ipynb)                       |
-| function calling LlamaIndex | 基于 LlamaIndex，轻松实现函数调用。         | [function_calling_llamaindex.ipynb](./cn/opensource/function_calling/function_calling_llamaindex.ipynb) | 
+| function calling, LlamaIndex | 基于 LlamaIndex，轻松实现函数调用。         | [function_calling_llamaindex.ipynb](./cn/opensource/function_calling/function_calling_llamaindex.ipynb) | 
 
 
 ## API
 
 | Category                   | Description                      | Notebook,Markdown                                                                                         | 
 |:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------|
-| RAG  LlamaIndex             | 使用 Yi(api) 模型与 LlamaIndex 构建 RAG 应用。 | [yi_rag_llamaindex.ipynb](./cn/api/rag/yi_rag_llamaindex.ipynb)                                  |
-| RAG  LangChain              | 利用 LangChain，构建基于 Yi API 的 RAG 系统。| [yi_rag_langchain.ipynb](./cn/api/rag/yi_rag_langchain.ipynb)                                    |
-| function calling LlamaIndex | 使用 Yi 模型，基于 LlamaIndex 实现函数调用。   | [function_calling_llamaindex.ipynb](./cn/api/function_calling/function_calling_llamaindex.ipynb) | 
+| RAG, LlamaIndex             | 使用 Yi(api) 模型与 LlamaIndex 构建 RAG 应用。 | [yi_rag_llamaindex.ipynb](./cn/api/rag/yi_rag_llamaindex.ipynb)                                  |
+| RAG, angChain              | 利用 LangChain，构建基于 Yi API 的 RAG 系统。| [yi_rag_langchain.ipynb](./cn/api/rag/yi_rag_langchain.ipynb)                                    |
+| function calling, LlamaIndex | 使用 Yi 模型，基于 LlamaIndex 实现函数调用。   | [function_calling_llamaindex.ipynb](./cn/api/function_calling/function_calling_llamaindex.ipynb) | 
 
 ## Ecosystem
 
