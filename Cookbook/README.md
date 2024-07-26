@@ -1,7 +1,7 @@
 # 👋 Yi Cookbook
 
 <p align="center">
-  <a href="./README.md">Chinese</a> | English
+  <a href="./README_cn.md">Chinese</a> | English
 </p>
 
 Welcome to the Yi Cookbook! This is your one-stop resource for everything related to Yi models, featuring tutorials, demos, and comprehensive documentation. Whether you're just starting out or looking to explore advanced use cases, you'll find valuable information here.
