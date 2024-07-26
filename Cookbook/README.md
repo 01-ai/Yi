@@ -1,7 +1,7 @@
 # 👋 Yi Cookbook
 
 <p align="center">
-  <a href="./README.md">English</a> | 中文
+  <a href="#">English</a> | 中文
 </p>
 
 欢迎来到 Yi Cookbook！这是一个关于 Yi 模型的综合资源库，包含教程、演示和详细文档。无论您是初学者还是想要研究模型的高阶使用，这里都能找到有价值的信息。
