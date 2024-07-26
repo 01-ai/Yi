@@ -16,32 +16,32 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 | Category                    | Description                  | Notebook,Markdown                                                                                                                  | 
 |:----------------------------|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| infernce swift              | Perform efficient inference with the Yi model using Swift.    | [Inference_using_swift.ipynb](./en/opensource/Inference/Inference_using_swift.ipynb)                                      | 
-| infernce transformers       | Utilize Transformers to rapidly infer the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
-| infernce Imdeploy           | Experience fast inference with the Yi model through Imdeploy.  | [Inference_using_lmdeploy.ipynb](./en/opensource/Inference/Inference_using_lmdeploy.ipynb)                                | 
-| infernce vllm               | Deploy vllm for quick and efficient inference with the Yi model.       | [vLLM_Inference_tutorial.ipynb](./en/opensource/Inference/vLLM_Inference_tutorial.ipynb)                                  | 
-| quantization swift          | Learn how to quantize your Yi model using the power of Swift.         | [swift-yi-quantization.md](./en/opensource/quantization/swift-yi-quantization.md)                                           |
-| quantization autoawq        | Explore quantization techniques for the Yi model with autoawq.       | [autoawq-yi-quantization.md](./en/opensource/quantization/autoawq-yi-quantization.md)                                     | 
-| quantization autogptq       | Dive into quantizing the Yi model using the autogptq library.      | [autogptq-yi-quantization.md](./en/opensource/quantization/autogptq-yi-quantization.md)                                   | 
-| fine-tuning  swift          | Discover how to fine-tune your own Yi model with Swift for personalized results.    | [finetune-yi-with-swift.md](./en/opensource/fine_tune/finetune-yi-with-swift.md)                                          |
-| fine-tuning  LlaMA-Factory  | Unlock the potential of fine-tuning your Yi model with the versatile LlaMA-Factory.| [finetune-yi-with-llamafactory.md](./en/opensource/fine_tune/finetune-yi-with-llamafactory.md)                             | 
-| Local Run  ollama           | Set up and run the Yi model locally using the convenient ollama framework.     | [local-ollama.md](./en/opensource/local/local-ollama.md)                                                                   | 
-| Local Run  MLX-LM           | Explore local execution of the Yi model within the MLX-LM environment.      | [local-mlx.md](./en/opensource/local/local-mlx.md)                                                                       | 
-| Local Run  LM Studio        | Get hands-on experience running the Yi model locally using the intuitive LM Studio interface.   | [local-lm-studio.md](./en/opensource/local/local-lm-studio.md)                                                              |
-| Local Run  llama.cpp        | Leverage the llama.cpp library to run the Yi model on your local machine.   | [local-llama.cpp.md](./en/opensource/local/local-llama.cpp.md)                                                              | 
-| RAG  LlamaIndex             | Delve into the world of RAG by building a system based on the Yi model and the powerful LlamaIndex library.| [yi_rag_llamaindex.ipynb](./en/opensource/rag/yi_rag_llamaindex.ipynb)                                                |
-| RAG  LangChain              | Master the art of building robust RAG systems using LangChain as the backbone for your Yi model integration.                   | [yi_rag_langchain.ipynb](./en/opensource/rag/yi_rag_langchain.ipynb)                                                     | 
+| infernce, swift              | Perform efficient inference with the Yi model using Swift.    | [Inference_using_swift.ipynb](./en/opensource/Inference/Inference_using_swift.ipynb)                                      | 
+| infernce, transformers       | Utilize Transformers to rapidly infer the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
+| infernce, Imdeploy           | Experience fast inference with the Yi model through Imdeploy.  | [Inference_using_lmdeploy.ipynb](./en/opensource/Inference/Inference_using_lmdeploy.ipynb)                                | 
+| infernce, vllm               | Deploy vllm for quick and efficient inference with the Yi model.       | [vLLM_Inference_tutorial.ipynb](./en/opensource/Inference/vLLM_Inference_tutorial.ipynb)                                  | 
+| quantization, swift          | Learn how to quantize your Yi model using the power of Swift.         | [swift-yi-quantization.md](./en/opensource/quantization/swift-yi-quantization.md)                                           |
+| quantization, autoawq        | Explore quantization techniques for the Yi model with autoawq.       | [autoawq-yi-quantization.md](./en/opensource/quantization/autoawq-yi-quantization.md)                                     | 
+| quantization, autogptq       | Dive into quantizing the Yi model using the autogptq library.      | [autogptq-yi-quantization.md](./en/opensource/quantization/autogptq-yi-quantization.md)                                   | 
+| fine-tuning, swift          | Discover how to fine-tune your own Yi model with Swift for personalized results.    | [finetune-yi-with-swift.md](./en/opensource/fine_tune/finetune-yi-with-swift.md)                                          |
+| fine-tuning, LlaMA-Factory  | Unlock the potential of fine-tuning your Yi model with the versatile LlaMA-Factory.| [finetune-yi-with-llamafactory.md](./en/opensource/fine_tune/finetune-yi-with-llamafactory.md)                             | 
+| Local Run, ollama           | Set up and run the Yi model locally using the convenient ollama framework.     | [local-ollama.md](./en/opensource/local/local-ollama.md)                                                                   | 
+| Local Run, MLX-LM           | Explore local execution of the Yi model within the MLX-LM environment.      | [local-mlx.md](./en/opensource/local/local-mlx.md)                                                                       | 
+| Local Run, LM Studio        | Get hands-on experience running the Yi model locally using the intuitive LM Studio interface.   | [local-lm-studio.md](./en/opensource/local/local-lm-studio.md)                                                              |
+| Local Run, llama.cpp        | Leverage the llama.cpp library to run the Yi model on your local machine.   | [local-llama.cpp.md](./en/opensource/local/local-llama.cpp.md)                                                              | 
+| RAG, LlamaIndex             | Delve into the world of RAG by building a system based on the Yi model and the powerful LlamaIndex library.| [yi_rag_llamaindex.ipynb](./en/opensource/rag/yi_rag_llamaindex.ipynb)                                                |
+| RAG, LangChain              | Master the art of building robust RAG systems using LangChain as the backbone for your Yi model integration.                   | [yi_rag_langchain.ipynb](./en/opensource/rag/yi_rag_langchain.ipynb)                                                     | 
 | function calling            | Embark on a journey to implement function calling from the ground up.      | [function_calling.ipynb](./en/opensource/function_calling/function_calling.ipynb)                                           |
-| function calling LlamaIndex | Discover the seamless integration of function calling with the Yi model and LlamaIndex. | [function_calling_llamaindex.ipynb](./en/opensource/function_calling/function_calling_llamaindex.ipynb)                    | 
+| function calling, LlamaIndex | Discover the seamless integration of function calling with the Yi model and LlamaIndex. | [function_calling_llamaindex.ipynb](./en/opensource/function_calling/function_calling_llamaindex.ipynb)                    | 
 
 
 ## API
 
 | Category                   | Description                      | Notebook,Markdown                                                                                               | 
 |:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------|
-| RAG  LlamaIndex             | Integrate the Yi(api) model with LlamaIndex to build a powerful RAG system.| [yi_rag_llamaindex.ipynb](./en/api/rag/yi_rag_llamaindex.ipynb)                                     |
-| RAG  LangChain              | Explore building feature-rich RAG applications by harnessing the capabilities of LangChain with the Yi API.              | [yi_rag_langchain.ipynb](./en/api/rag/yi_rag_langchain.ipynb)                                         |
-| function calling LlamaIndex | Learn how to effortlessly implement function calling using the Yi model, powered by the intuitive LlamaIndex framework.     | [function_calling_llamaindex.ipynb](./en/api/function_calling/function_calling_llamaindex.ipynb)     | 
+| RAG, LlamaIndex             | Integrate the Yi(api) model with LlamaIndex to build a powerful RAG system.| [yi_rag_llamaindex.ipynb](./en/api/rag/yi_rag_llamaindex.ipynb)                                     |
+| RAG, LangChain              | Explore building feature-rich RAG applications by harnessing the capabilities of LangChain with the Yi API.              | [yi_rag_langchain.ipynb](./en/api/rag/yi_rag_langchain.ipynb)                                         |
+| function calling, LlamaIndex | Learn how to effortlessly implement function calling using the Yi model, powered by the intuitive LlamaIndex framework.     | [function_calling_llamaindex.ipynb](./en/api/function_calling/function_calling_llamaindex.ipynb)     | 
 
 ## Ecosystem
 
