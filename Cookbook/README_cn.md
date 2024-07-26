@@ -13,7 +13,7 @@
 
 ## OpenSource
 
-| Category                    | Description                                  | Notebook,Markdown                                                                                                | 
+| Category                    | Description                                  | Notebook, Markdown                                                                                                | 
 |:----------------------------|:---------------------------------------------|:--------------------------------------------------------------------------------------------------------|
 | infernce, swift              | 利用 Swift 快速进行 Yi 模型推理。            | [Inference_using_swift.ipynb](./cn/opensource/Inference/Inference_using_swift.ipynb)                    | 
 | infernce, transformers       | 使用 Transformers 高效推理 Yi 模型。         | [Inference_using_transformers.ipynb](./cn/opensource/Inference/Inference_using_transformers.ipynb)      |
@@ -36,7 +36,7 @@
 
 ## API
 
-| Category                   | Description                      | Notebook,Markdown                                                                                         | 
+| Category                   | Description                      | Notebook, Markdown                                                                                         | 
 |:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------|
 | RAG, LlamaIndex             | 使用 Yi(api) 模型与 LlamaIndex 构建 RAG 应用。 | [yi_rag_llamaindex.ipynb](./cn/api/rag/yi_rag_llamaindex.ipynb)                                  |
 | RAG, angChain              | 利用 LangChain，构建基于 Yi API 的 RAG 系统。| [yi_rag_langchain.ipynb](./cn/api/rag/yi_rag_langchain.ipynb)                                    |
@@ -44,7 +44,7 @@
 
 ## Ecosystem
 
-| Category    | Description                           | Notebook,Markdown                                                                                         | 
+| Category    | Description                           | Notebook, Markdown                                                                                         | 
 |:------------|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------|
 | fine-tuning | 强化 Yi-1.5-6B-Chat 开源模型的数学与逻辑能力。   | [强化Yi-1.5-6B-Chat的数学和逻辑能力.md](./cn/ecosystem/强化Yi-1.5-6B-Chat的数学和逻辑能力.md)                            |
 | RAG         | 基于 LlamaIndex 和 Yi-large 构建智能问答系统。 | [基于LlamaIndex和Yi-large构建智能问答系统.md](./cn/ecosystem/基于LlamaIndex和Yi-large构建智能问答系统.md)                                  | 
