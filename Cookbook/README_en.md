@@ -7,7 +7,7 @@
 Welcome to the Yi Cookbook! This is your one-stop resource for everything related to Yi models, featuring tutorials, demos, and comprehensive documentation. Whether you're just starting out or looking to explore advanced use cases, you'll find valuable information here.
 
 
-## What's New
+## News
 
 - **2024-07-26**: Yi Cookbook 1.0 is released, featuring tutorials and examples in both Chinese and English.
 
