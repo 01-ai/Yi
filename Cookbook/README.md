@@ -14,7 +14,7 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 ## OpenSource
 
-| Category                    | Description                  | Notebook,Markdown                                                                                                                  | 
+| Category                    | Description                  | Notebook, Markdown                                                                                                                  | 
 |:----------------------------|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | infernce, swift              | Perform efficient inference with the Yi model using Swift.    | [Inference_using_swift.ipynb](./en/opensource/Inference/Inference_using_swift.ipynb)                                      | 
 | infernce, transformers       | Utilize Transformers to rapidly infer the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
@@ -37,7 +37,7 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 ## API
 
-| Category                   | Description                      | Notebook,Markdown                                                                                               | 
+| Category                   | Description                      | Notebook, Markdown                                                                                               | 
 |:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------|
 | RAG, LlamaIndex             | Integrate the Yi(api) model with LlamaIndex to build a powerful RAG system.| [yi_rag_llamaindex.ipynb](./en/api/rag/yi_rag_llamaindex.ipynb)                                     |
 | RAG, LangChain              | Explore building feature-rich RAG applications by harnessing the capabilities of LangChain with the Yi API.              | [yi_rag_langchain.ipynb](./en/api/rag/yi_rag_langchain.ipynb)                                         |
@@ -45,7 +45,7 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 ## Ecosystem
 
-| Category    | Description                   | Notebook,Markdown                                                                                                                                                                                                 | 
+| Category    | Description                   | Notebook, Markdown                                                                                                                                                                                                 | 
 |:------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | fine-tuning | Unlock enhanced mathematical and logical abilities by fine-tuning the Yi-1.5-6B-Chat open-source model.  | [Enhancing the mathematical and logical abilities of Yi-1.5-6B-Chat.md](./en/ecosystem/Enhancing_the_Mathematical_and_Logical_Reasoning_Abilities_of_Yi-1.5-6B-Chat.md)                                           |
 | RAG         | Construct an intelligent question answering system by combining the strengths of LlamaIndex and the Yi-large model. | [Building an Intelligent Question Answering System Based on LlamaIndex and Yi-large.md](./en/ecosystem/Building_an_Intelligent_Q&A_System_Based_on_LlamaIndex_and_Yi-large.md)                                    | 
