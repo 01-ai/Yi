@@ -6,7 +6,7 @@ We appreciate your interest in contributing to our repository! To ensure a smoot
 
 - **Notebook**: Jupyter Notebook (.ipynb)
 - **Markdown**: Markdown file (.md)
-
+  
 ## Guidelines
 
 1. **Originality**: Ensure your content is original and not plagiarized.
