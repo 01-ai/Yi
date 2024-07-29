@@ -9,7 +9,7 @@
 
 ## 声明
 
-本文章作者为 swift 成员 Jintao Huang 提供。
+本文章作者为 swift 成员 Jintao Huang。
 
 原文链接🔗: https://github.com/modelscope/swift/blob/main/docs/source/Multi-Modal/yi-vl最佳实践.md
 ## 环境准备
