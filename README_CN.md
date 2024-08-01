@@ -47,6 +47,9 @@
     📚 欢迎来 <a href="#学习中心"> Yi 学习中心 </a>探索新知
 </p> 
 
+<p align="center">
+    💪 欢迎来 <a href="https://01-ai.github.io/"> Yi 技术博客 </a>学习技术
+</p> 
 
 <hr>
 
