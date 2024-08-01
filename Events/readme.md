@@ -4,13 +4,14 @@
   <img src="https://github.com/01-ai/Yi/blob/main/assets/img/Apply_04.png?raw=true" alt="Apply_04.png" width="600"/>
 </p>
 
-👏Welcome to the Community Events folder! Here, you can find information about all the events related to our open-source project. This folder aims to keep our community engaged and informed about upcoming and past events.
+👏 Welcome to the Community Events folder! Here, you can find information about all the events related to our open-source project. This folder aims to keep our community engaged and informed about upcoming and past events.
 
 ## 📅 Upcoming Events
 
 Stay tuned for our upcoming events! You can find detailed information about each event below:
 
 - **[AICon Shanghai](https://aicon.infoq.cn/202408/shanghai/)**
+  
   - 📅 Date: August 18-19, 2024
   - 📍 Location: 上海中谷小南国花园酒店
 
