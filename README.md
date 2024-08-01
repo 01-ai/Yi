@@ -48,6 +48,10 @@
     📚 Grow at <a href="#learning-hub"> Yi Learning Hub </a>
 </p> 
 
+<p align="center">
+    💪 Learn at <a href="https://01-ai.github.io/"> Yi Tech Blog </a>
+</p> 
+
 <!-- DO NOT REMOVE ME -->
 
 <hr>
