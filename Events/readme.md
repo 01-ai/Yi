@@ -30,9 +30,14 @@ Browse through our past events to see what we've been up to:
   - 📍 Location: KerryHotel Pudong, Shanghai
   - 📝 Info: 中国国际数字娱乐产业大会（以下简称：CDEC）是中国国际数码互动娱乐展览会同期举办的产业权威高端会议。自2003年创立, 至今已有20年的辉煌历史。历届大会得到我国数字出版产业政府主管部门高度重视和深度参与，大会每年邀请海内外知名数字娱乐企业高层参加，已发展成最具专业性、权威性和国际性的数字娱乐产业顶级盛会。 大会彰显数字娱乐跨界融合的独特魅力，全息透视全球网络游戏、影视、网络文学、音乐及动漫等主要数字娱乐产业发展前沿，将娱乐数字化的全新技术趋势、我国数字娱乐产业政策与市场前景全景呈现，让全球数字娱乐界专业听众共享我国数字娱乐产业全生态发展的先机。
 
-## 🤝 How to Contribute
+## How to Get Involved
 
-🎉 We welcome contributions from the community! Here’s how you can contribute:
+🎉 Students and faculty members are encouraged to collaborate with us. Here's how you can get involved:
+
+1. **Organize a Campus Tour**: We are eager to visit college campuses and explore the limitless possibilities of large models with students.
+2. **Collaborate on Projects**: Work with our team on real-world projects involving large models.
+3. **Join Our Community**: Stay connected with us through our online platforms and contribute to the development of open-source projects.
+   
 
 ### Updating Event Information
 
