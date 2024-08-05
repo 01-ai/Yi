@@ -1,12 +1,10 @@
 # Community Events
 
-<p align="left">
-  <img src="https://github.com/01-ai/Yi/blob/main/assets/img/Apply_04.png?raw=true" alt="Apply_04.png" width="600"/>
-</p>
 
 <p align="left"> 
   <img src="https://github.com/01-ai/Yi/blob/main/assets/img/events/down.gif?raw=true" alt="Event Highlights" width="600"/> 
 </p>
+
 
 👏 Welcome to the Community Events folder! Here, you can find information about all the events related to our open-source project. This folder aims to keep our community engaged and informed about upcoming and past events.
 
