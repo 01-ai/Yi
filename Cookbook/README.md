@@ -9,7 +9,7 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 ## News
 
-- **🔥2024-**: Yi Cookbook 1.0 is released, featuring tutorials and examples in both Chinese and English.
+- **🔥2024-08-09**: Yi Cookbook 1.0 is released, featuring tutorials and examples in both Chinese and English.
 
 
 ## OpenSource
