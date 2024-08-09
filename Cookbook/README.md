@@ -1,58 +1,61 @@
 # 👋 Yi Cookbook
 
 <p align="center">
-  <a href="./README.md">English</a> | 中文
+  <a href="./README_cn.md">Chinese</a> | English
 </p>
 
-欢迎来到 Yi Cookbook！这是一个关于 Yi 模型的综合资源库，包含教程、演示和详细文档。无论您是初学者还是想要研究模型的高阶使用，这里都能找到有价值的信息。
+Welcome to the Yi Cookbook! This is your one-stop resource for everything related to Yi models, featuring tutorials, demos, and comprehensive documentation. Whether you're just starting out or looking to explore advanced use cases, you'll find valuable information here.
 
-## 最新动态
-- **🔥2024-**: English version coming soon.
-- **🔥2024-07-29**: 发布 Yi Cookbook 1.0 版本，包含中文教程和示例。
+
+## News
+
+- **🔥2024-08-09**: Yi Cookbook 1.0 is released, featuring tutorials and examples in both Chinese and English.
+
 
 ## OpenSource
 
-| Category                    | Description                                  | Notebook, Markdown                                                                                                | 
-|:----------------------------|:---------------------------------------------|:--------------------------------------------------------------------------------------------------------|
-| infernce, swift              | 利用 Swift 快速进行 Yi 模型推理。            | [Inference_using_swift.ipynb](./cn/opensource/Inference/Inference_using_swift.ipynb)                    | 
-| infernce, transformers       | 使用 Transformers 高效推理 Yi 模型。         | [Inference_using_transformers.ipynb](./cn/opensource/Inference/Inference_using_transformers.ipynb)      |
-| infernce, Imdeploy           | 通过 Imdeploy 快速上手 Yi 模型推理。         | [Inference_using_lmdeploy.ipynb](./cn/opensource/Inference/Inference_using_lmdeploy.ipynb)              | 
-| infernce, vllm               | 使用 vllm 体验 Yi 模型的快速推理。           | [vLLM_Inference_tutorial.ipynb](./cn/opensource/Inference/vLLM_Inference_tutorial.ipynb)                | 
-| quantization, swift          | 使用 Swift轻松量化您的专属 Yi 模型。        | [swift-yi-quantization.md](./cn/opensource/quantization/swift-yi-quantization.md)                       |
-| quantization, autoawq        | 利用 autoawq 量化您的 Yi 模型。              | [autoawq-yi-quantization.md](./cn/opensource/quantization/autoawq-yi-quantization.md)                   | 
-| quantization, autogptq       | 使用 autogptq 对 Yi 模型进行量化。           | [autogptq-yi-quantization.md](./cn/opensource/quantization/autogptq-yi-quantization.md)                 | 
-| fine-tuning, swift          | 使用 Swift 微调，打造您的个性化 Yi 模型。     | [finetune-yi-with-swift.md](./cn/opensource/fine_tune/finetune-yi-with-swift.md)                        |
-| fine-tuning, LlaMA-Factory  | 使用 LlaMA-Factory 灵活微调您的 Yi 模型。 | [finetune-yi-with-llamafactory.md](./cn/opensource/fine_tune/finetune-yi-with-llamafactory.md)          | 
-| Local Run, ollama           | 使用 ollama 在本地环境中运行 Yi 模型。     | [local-ollama.md](./cn/opensource/local/local-ollama.md)                                                | 
-| Local Run, MLX-LM           | 在 MLX-LM 环境下本地运行 Yi 模型。           | [local-mlx.md](./cn/opensource/local/local-mlx.md)                                                      | 
-| Local Run, LM Studio        | 使用 LM Studio 轻松本地运行 Yi 模型。         | [local-lm-studio.md](./cn/opensource/local/local-lm-studio.md)                                          |
-| Local Run, llama.cpp        | 使用 llama.cpp 在本地运行 Yi 模型。         | [local-llama.cpp.md](./cn/opensource/local/local-llama.cpp.md)                                          | 
-| RAG, LlamaIndex             | 基于 Yi 模型和 LlamaIndex 构建强大的 RAG 系统。| [yi_rag_llamaindex.ipynb](./cn/opensource/rag/yi_rag_llamaindex.ipynb)                                  |
-| RAG, LangChain              | 使用 LangChain 构建灵活的 RAG 系统。        | [yi_rag_langchain.ipynb](./cn/opensource/rag/yi_rag_langchain.ipynb)                                    | 
-| function calling            | 从零开始，实现函数调用。                     | [function_calling.ipynb](./cn/opensource/function_calling/function_calling.ipynb)                       |
-| function calling, LlamaIndex | 基于 LlamaIndex，轻松实现函数调用。         | [function_calling_llamaindex.ipynb](./cn/opensource/function_calling/function_calling_llamaindex.ipynb) | 
+| Category                    | Description                  | Notebook, Markdown                                                                                                                  | 
+|:----------------------------|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| infernce, swift              | Perform efficient inference with the Yi model using Swift.    | [Inference_using_swift.ipynb](./en/opensource/Inference/Inference_using_swift.ipynb)                                      | 
+| infernce, transformers       | Utilize Transformers to rapidly infer the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
+| infernce, Imdeploy           | Experience fast inference with the Yi model through Imdeploy.  | [Inference_using_lmdeploy.ipynb](./en/opensource/Inference/Inference_using_lmdeploy.ipynb)                                | 
+| infernce, vllm               | Deploy vllm for quick and efficient inference with the Yi model.       | [vLLM_Inference_tutorial.ipynb](./en/opensource/Inference/vLLM_Inference_tutorial.ipynb)                                  | 
+| quantization, swift          | Learn how to quantize your Yi model using the power of Swift.         | [swift-yi-quantization.md](./en/opensource/quantization/swift-yi-quantization.md)                                           |
+| quantization, autoawq        | Explore quantization techniques for the Yi model with autoawq.       | [autoawq-yi-quantization.md](./en/opensource/quantization/autoawq-yi-quantization.md)                                     | 
+| quantization, autogptq       | Dive into quantizing the Yi model using the autogptq library.      | [autogptq-yi-quantization.md](./en/opensource/quantization/autogptq-yi-quantization.md)                                   | 
+| fine-tuning, swift          | Discover how to fine-tune your own Yi model with Swift for personalized results.    | [finetune-yi-with-swift.md](./en/opensource/fine_tune/finetune-yi-with-swift.md)                                          |
+| fine-tuning, LlaMA-Factory  | Unlock the potential of fine-tuning your Yi model with the versatile LlaMA-Factory.| [finetune-yi-with-llamafactory.md](./en/opensource/fine_tune/finetune-yi-with-llamafactory.md)                             | 
+| Local Run, ollama           | Set up and run the Yi model locally using the convenient ollama framework.     | [local-ollama.md](./en/opensource/local/local-ollama.md)                                                                   | 
+| Local Run, MLX-LM           | Explore local execution of the Yi model within the MLX-LM environment.      | [local-mlx.md](./en/opensource/local/local-mlx.md)                                                                       | 
+| Local Run, LM Studio        | Get hands-on experience running the Yi model locally using the intuitive LM Studio interface.   | [local-lm-studio.md](./en/opensource/local/local-lm-studio.md)                                                              |
+| Local Run, llama.cpp        | Leverage the llama.cpp library to run the Yi model on your local machine.   | [local-llama.cpp.md](./en/opensource/local/local-llama.cpp.md)                                                              | 
+| RAG, LlamaIndex             | Delve into the world of RAG by building a system based on the Yi model and the powerful LlamaIndex library.| [yi_rag_llamaindex.ipynb](./en/opensource/rag/yi_rag_llamaindex.ipynb)                                                |
+| RAG, LangChain              | Master the art of building robust RAG systems using LangChain as the backbone for your Yi model integration.                   | [yi_rag_langchain.ipynb](./en/opensource/rag/yi_rag_langchain.ipynb)                                                     | 
+| function calling            | Embark on a journey to implement function calling from the ground up.      | [function_calling.ipynb](./en/opensource/function_calling/function_calling.ipynb)                                           |
+| function calling, LlamaIndex | Discover the seamless integration of function calling with the Yi model and LlamaIndex. | [function_calling_llamaindex.ipynb](./en/opensource/function_calling/function_calling_llamaindex.ipynb)                    | 
 
 
 ## API
 
-| Category                   | Description                      | Notebook, Markdown                                                                                         | 
-|:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------|
-| RAG, LlamaIndex             | 使用 Yi(api) 模型与 LlamaIndex 构建 RAG 应用。 | [yi_rag_llamaindex.ipynb](./cn/api/rag/yi_rag_llamaindex.ipynb)                                  |
-| RAG, angChain              | 利用 LangChain，构建基于 Yi API 的 RAG 系统。| [yi_rag_langchain.ipynb](./cn/api/rag/yi_rag_langchain.ipynb)                                    |
-| function calling, LlamaIndex | 使用 Yi 模型，基于 LlamaIndex 实现函数调用。   | [function_calling_llamaindex.ipynb](./cn/api/function_calling/function_calling_llamaindex.ipynb) | 
+| Category                   | Description                      | Notebook, Markdown                                                                                               | 
+|:---------------------------|:---------------------------------|:-------------------------------------------------------------------------------------------------------|
+| RAG, LlamaIndex             | Integrate the Yi(api) model with LlamaIndex to build a powerful RAG system.| [yi_rag_llamaindex.ipynb](./en/api/rag/yi_rag_llamaindex.ipynb)                                     |
+| RAG, LangChain              | Explore building feature-rich RAG applications by harnessing the capabilities of LangChain with the Yi API.              | [yi_rag_langchain.ipynb](./en/api/rag/yi_rag_langchain.ipynb)                                         |
+| function calling, LlamaIndex | Learn how to effortlessly implement function calling using the Yi model, powered by the intuitive LlamaIndex framework.     | [function_calling_llamaindex.ipynb](./en/api/function_calling/function_calling_llamaindex.ipynb)     | 
 
 ## Ecosystem
 
-| Category    | Description                           | Notebook, Markdown                                                                                         | 
-|:------------|:-----------------------------------------------|:-------------------------------------------------------------------------------------------------|
-| fine-tuning | 强化 Yi-1.5-6B-Chat 开源模型的数学与逻辑能力。   | [强化Yi-1.5-6B-Chat的数学和逻辑能力.md](./cn/ecosystem/强化Yi-1.5-6B-Chat的数学和逻辑能力.md)                            |
-| RAG         | 基于 LlamaIndex 和 Yi-large 构建智能问答系统。 | [基于LlamaIndex和Yi-large构建智能问答系统.md](./cn/ecosystem/基于LlamaIndex和Yi-large构建智能问答系统.md)                                  | 
-| demo        | 大模型玩游戏？探索 Yi 玩转街霸三的奥秘！         | [使用Yi大模型玩转街霸三.md](./cn/ecosystem/使用Yi大模型玩转街霸三.md)                                    |
-| demo        | 基于 yi-large，打造高效的思维导图生成器。      | [基于yi-large构建思维导图生成器.md](./cn/ecosystem/基于yi-large构建思维导图生成器.md) | 
-| fine-tuning | 掌握 yi-vl 微调的最佳实践，事半功倍。         | [yi-vl最佳实践.md](./cn/ecosystem/yi-vl最佳实践.md)                                    |
-## 社区贡献
+| Category    | Description                   | Notebook, Markdown                                                                                                                                                                                                 | 
+|:------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| fine-tuning | Unlock enhanced mathematical and logical abilities by fine-tuning the Yi-1.5-6B-Chat open-source model.  | [Enhancing the mathematical and logical abilities of Yi-1.5-6B-Chat.md](./en/ecosystem/Enhancing_the_Mathematical_and_Logical_Reasoning_Abilities_of_Yi-1.5-6B-Chat.md)                                           |
+| RAG         | Construct an intelligent question answering system by combining the strengths of LlamaIndex and the Yi-large model. | [Building an Intelligent Question Answering System Based on LlamaIndex and Yi-large.md](./en/ecosystem/Building_an_Intelligent_Q&A_System_Based_on_LlamaIndex_and_Yi-large.md)                                    | 
+| demo        | Witness the capabilities of large models beyond traditional tasks with a demonstration of Yi playing Street Fighter III.             | [Playing Street Fighter III with Yi large model.md](./en/ecosystem/Mastering_Street_Fighter_III_with_the_Yi_Language_Model.md)                                                                                    |
+| demo        | Explore the creative potential of Yi by diving into a mind map generator application.                        | [Building a Mind Map Generator Based on yi-large.md](./en/ecosystem/Building_a_Mind_Map_Generator_Powered_by_Yi-Large.md)                                                                                         | 
+| fine-tuning | Maximize your fine-tuning efforts with a comprehensive guide to best practices for the yi-vl model.                 | [Best Practices for yi-vl Fine-tuning.md](./en/ecosystem/yi-vl-best-practice.md)                                                                                                                                  | 
 
-我们热烈欢迎社区贡献！以下是参与方式：
+## Community Contributions
 
-- **问题报告**：发现 bug 或有功能建议？请在 [GitHub Issues](https://github.com/01-ai/Yi/issues) 提交。
-- **展示你的作品!**：如果你有基于Yi模型做的有趣的、实用的应用或者教学，我们非常欢迎你提交PR到我们的仓库！请遵循我们的 [贡献指南](./CONTRIBUTING_cn.md)。
+We warmly welcome contributions from the community! Here are some ways you can get involved:
+
+- **Report Issues**: Found a bug or have a feature suggestion? Please submit it to [GitHub Issues](https://github.com/01-ai/Yi/issues).
+- **Contribute Demo**: Pull requests are highly appreciated! Please follow our [Contribution Guidelines](./CONTRIBUTING.md).
