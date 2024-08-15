@@ -57,5 +57,5 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 
 We warmly welcome contributions from the community! Here are some ways you can get involved:
 
-- **Report Issues**: Found a bug or have a feature suggestion? Please submit it to [GitHub Issues](https://github.com/01-ai/Yi/issues).
+- **Report Issues**: Find a bug or have a feature suggestion? Please submit it to [GitHub Issues](https://github.com/01-ai/Yi/issues).
 - **Contribute Demo**: Pull requests are highly appreciated! Please follow our [Contribution Guidelines](./CONTRIBUTING.md).
