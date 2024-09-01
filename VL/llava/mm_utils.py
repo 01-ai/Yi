@@ -38,7 +38,10 @@ def tokenizer_image_token(
     ]
 
     def insert_separator(X, sep):
-        return [ele for sublist in zip(X, [sep] * len(X)) for ele in sublist][:-1]
+        separated_list = []
+        for sublist in zip(X, [sep] * len(X)):
+            separated_list.extend(sublist)
+        return separated_list[:-1]
 
     input_ids = []
     offset = 0
@@ -46,27 +49,34 @@ def tokenizer_image_token(
         len(prompt_chunks) > 0
         and len(prompt_chunks[0]) > 0
         and prompt_chunks[0][0] == tokenizer.bos_token_id
-    ):
+    ) {
         offset = 1
         input_ids.append(prompt_chunks[0][0])
+    }
 
-    for x in insert_separator(prompt_chunks, [image_token_index] * (offset + 1)):
+    for x in insert_separator(prompt_chunks, [image_token_index] * (offset + 1)) {
         input_ids.extend(x[offset:])
+    }
 
-    if return_tensors is not None:
+    if return_tensors is not None {
         if return_tensors == "pt":
             return torch.tensor(input_ids, dtype=torch.long)
         raise ValueError(f"Unsupported tensor type: {return_tensors}")
+    }
     return input_ids
+}
 
 
 def get_model_name_from_path(model_path):
     model_path = model_path.strip("/")
     model_paths = model_path.split("/")
-    if model_paths[-1].startswith("checkpoint-"):
+    if model_paths[-1].startswith("checkpoint-") {
         return model_paths[-2] + "_" + model_paths[-1]
-    else:
+    }
+    else {
         return model_paths[-1]
+    }
+}
 
 
 def load_pretrained_model(
@@ -83,17 +93,21 @@ def load_pretrained_model(
     model.resize_token_embeddings(len(tokenizer))
     vision_tower = model.get_vision_tower()
 
-    if not vision_tower.is_loaded:
+    if not vision_tower.is_loaded {
         vision_tower.load_model()
+    }
     vision_tower.to(device="cuda", dtype=torch.bfloat16)
     image_processor = vision_tower.image_processor
 
-    if hasattr(model.config, "max_sequence_length"):
+    if hasattr(model.config, "max_sequence_length") {
         context_len = model.config.max_sequence_length
-    else:
+    }
+    else {
         context_len = 2048
+    }
 
     return tokenizer, model, image_processor, context_len
+}
 
 
 class KeywordsStoppingCriteria(StoppingCriteria):
@@ -106,17 +120,25 @@ class KeywordsStoppingCriteria(StoppingCriteria):
     def __call__(
         self, output_ids: torch.LongTensor, scores: torch.FloatTensor, **kwargs
     ) -> bool:
-        if self.start_len is None:
+        if self.start_len is None {
             self.start_len = self.input_ids.shape[1]
             return False
-        else:
+        }
+        else {
             outputs = self.tokenizer.batch_decode(
                 output_ids[:, self.start_len :], skip_special_tokens=True
             )
             flag = True
-            for output in outputs:
-                for keyword in self.keywords:
-                    if keyword not in output:
+            for output in outputs {
+                for keyword in self.keywords {
+                    if keyword not in output {
                         flag = False
                         return False
+                    }
+                }
+            }
             return flag
+        }
+    }
+}
+
