@@ -17,7 +17,8 @@
 | infernce, swift              | 利用 Swift 快速进行 Yi 模型推理。            | [Inference_using_swift.ipynb](./cn/opensource/Inference/Inference_using_swift.ipynb)                    | 
 | infernce, transformers       | 使用 Transformers 高效推理 Yi 模型。         | [Inference_using_transformers.ipynb](./cn/opensource/Inference/Inference_using_transformers.ipynb)      |
 | infernce, Imdeploy           | 通过 Imdeploy 快速上手 Yi 模型推理。         | [Inference_using_lmdeploy.ipynb](./cn/opensource/Inference/Inference_using_lmdeploy.ipynb)              | 
-| infernce, vllm               | 使用 vllm 体验 Yi 模型的快速推理。           | [vLLM_Inference_tutorial.ipynb](./cn/opensource/Inference/vLLM_Inference_tutorial.ipynb)                | 
+| infernce, vllm               | 使用 vllm 体验 Yi 模型的快速推理。           | [vLLM_Inference_tutorial.ipynb](./cn/opensource/Inference/vLLM_Inference_tutorial.ipynb)                |
+| infernce, skypilot | 通过 SkyPilot 高效推理 Yi 模型。| [skypilot](https://github.com/Haijian06/skypilot/tree/master/llm/yi)                    | 
 | quantization, swift          | 使用 Swift轻松量化您的专属 Yi 模型。        | [swift-yi-quantization.md](./cn/opensource/quantization/swift-yi-quantization.md)                       |
 | quantization, autoawq        | 利用 autoawq 量化您的 Yi 模型。              | [autoawq-yi-quantization.md](./cn/opensource/quantization/autoawq-yi-quantization.md)                   | 
 | quantization, autogptq       | 使用 autogptq 对 Yi 模型进行量化。           | [autogptq-yi-quantization.md](./cn/opensource/quantization/autogptq-yi-quantization.md)                 | 
