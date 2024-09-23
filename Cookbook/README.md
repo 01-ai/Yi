@@ -17,7 +17,7 @@ Welcome to the Yi Cookbook! This is your one-stop resource for everything relate
 | Category                    | Description                  | Notebook, Markdown                                                                                                                  | 
 |:----------------------------|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | inference, swift              | Perform efficient inference with the Yi model using Swift.    | [Inference_using_swift.ipynb](./en/opensource/Inference/Inference_using_swift.ipynb)                                      | 
-| inference, transformers       | Utilize Transformers to rapidly run inference the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
+| inference, transformers       | Utilize Transformers to rapidly run inference with the Yi model.  | [Inference_using_transformers.ipynb](./en/opensource/Inference/Inference_using_transformers.ipynb)                           |
 | inference, Imdeploy           | Experience fast inference with the Yi model through Imdeploy.  | [Inference_using_lmdeploy.ipynb](./en/opensource/Inference/Inference_using_lmdeploy.ipynb)                                | 
 | inference, vllm               | Deploy vllm for quick and efficient inference with the Yi model.       | [vLLM_Inference_tutorial.ipynb](./en/opensource/Inference/vLLM_Inference_tutorial.ipynb)                                  | 
 | skypilot | Running Yi with SkyPilot on Your Cloud | [Running_yi_with_skyPilot.md](https://github.com/Haijian06/skypilot/tree/master/llm/yi)                    | 
