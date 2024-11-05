@@ -328,7 +328,7 @@ If you want to deploy Yi models, make sure you meet the [software and hardware r
 
 ## Quick start
 
-Getting up and running with Yi models is simple with multiple choices available. 
+Getting up and running with Yi models is simple with multiple choices available. If you want more inference refer to the [Cookbook](https://github.com/01-ai/Yi/tree/main/Cookbook)
 
 ### Choose your path
 
