@@ -264,7 +264,6 @@ Yi-6B-200K	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-200K) �
 
 - For chat and base models
 
-Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练数据
 <table>
 <thead>
 <tr>
