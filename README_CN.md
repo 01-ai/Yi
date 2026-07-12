@@ -7,7 +7,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/01-ai/Yi/main/assets/img/Yi_logo_icon_dark.svg" width="200px">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/01-ai/Yi/main/assets/img/Yi_logo_icon_light.svg" width="200px"> 
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/01-ai/Yi/main/assets/img/Yi_logo_icon_light.svg" width="200px">
   <img alt="specify theme context for images" src="https://raw.githubusercontent.com/01-ai/Yi/main/assets/img/Yi_logo_icon_light.svg" width="200px">
 </picture>
 
@@ -30,31 +30,31 @@
 
 <p align="center">
 🤗 <a href="https://huggingface.co/01-ai" target="_blank">Hugging Face</a> • 🤖 <a href="https://www.modelscope.cn/organization/01ai/" target="_blank">魔搭 ModelScope</a> • ✡️ <a href="https://wisemodel.cn/organization/01.AI" target="_blank">始智 WiseModel</a>
-</p> 
+</p>
 
 <p align="center">
     👩‍🚀 欢迎来 <a href="https://github.com/01-ai/Yi/discussions" target="_blank"> GitHub Discussions</a> 讨论问题
-</p> 
+</p>
 <p align="center">
     👋 欢迎加入<a href="https://discord.gg/hYUwWddeAu" target="_blank"> 👾 Discord </a> 或者 💬 <a href="https://github.com/01-ai/Yi/issues/43#issuecomment-1827285245" target="_blank"> 微信群 </a>一起交流
-</p> 
+</p>
 
 <p align="center">
     📝 欢迎查阅<a href="https://arxiv.org/abs/2403.04652"> Yi 技术报告 </a>了解更多
-</p> 
+</p>
 
 <p align="center">
     📚 欢迎来 <a href="#学习中心"> Yi 学习中心 </a>探索新知
-</p> 
+</p>
 
 <p align="center">
     💪 欢迎来 <a href="https://01-ai.github.io/"> Yi 技术博客 </a>学习技术
-</p> 
+</p>
 
 <hr>
 
 <ul>
-  <li>🙌 本文由 Yi 和<a href="#本文贡献者">社区志愿者</a>共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li> 
+  <li>🙌 本文由 Yi 和<a href="#本文贡献者">社区志愿者</a>共同翻译完成，感谢每一位传递知识的<a href="#致谢">火炬手</a>。</li>
 
   <li>🤗 欢迎大家<a href="https://github.com/01-ai/Yi/discussions/314">加入「Yi 起翻译」</a>，开启知识之火旅程，共绘技术内容图谱。</li>
 
@@ -128,7 +128,7 @@
   <details style="display: inline;"><summary> 如果你对 Yi 使用 Llama 架构及其许可使用政策感兴趣，参阅 <span style="color:  green;">「Yi 与 Llama 的关系」。</span> ⬇️</summary> <ul> <br>
 
 > 💡 简短总结
-> 
+>
 > Yi 系列模型采用与Llama相同的模型架构，但它们**不是** Llama 的衍生品。
 
 
@@ -147,7 +147,7 @@
 </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 
@@ -202,7 +202,7 @@ Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 9
 <summary>🔔 <b>2023-11-23</b>： Yi 系列模型社区许可协议更新至 <a href="https://github.com/01-ai/Yi/blob/main/MODEL_LICENSE_AGREEMENT.txt">2.1 版本</a>。</summary>
 </details>
 
-<details>  
+<details>
 <summary>🔥 <b>2023-11-08</b>： Yi-34B-Chat 模型开始邀请测试。</summary>
 <br>
 
@@ -225,7 +225,7 @@ Yi-34B-200K 的“大海捞针”能力增强了 10.5%, 从 89.3% 提升到了 9
 </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ## 模型
@@ -235,7 +235,7 @@ Yi 系列模型有多种参数规模，适用于不同的使用场景。你也�
 
 ### Chat 模型
 
-| 模型 | 下载 
+| 模型 | 下载
 |---|---
 Yi-34B-Chat	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat/summary)
 Yi-34B-Chat-4bits	| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-Chat-4bits)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-Chat-4bits/summary)
@@ -248,7 +248,7 @@ Yi-6B-Chat-8bits	|  • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-6B-C
 
 ### Base 模型
 
-| 模型 | 下载 | 
+| 模型 | 下载 |
 |---|---|
 Yi-34B| • [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B/summary)
 Yi-34B-200K|• [🤗 Hugging Face](https://huggingface.co/01-ai/Yi-34B-200K)  • [🤖 ModelScope](https://www.modelscope.cn/models/01ai/Yi-34B-200K/summary)
@@ -295,8 +295,8 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
 </tbody></table>
 
 - Chat 模型
-  
-  <details style="display: inline;"><summary>关于 Chat 模型的局限性，参阅以下解释。 ⬇️</summary> 
+
+  <details style="display: inline;"><summary>关于 Chat 模型的局限性，参阅以下解释。 ⬇️</summary>
    <ul>
    <br> Chat 模型在训练中采用了监督微调（SFT）技术。与其它常规 Chat 模型相比， Yi 系列模型生成的回复更加多样化，（1）因此适用于各种下游任务，例如，创意场景；（2）有利于提高回复的质量，对后续的强化学习（RL）训练帮助很大。
 
@@ -309,7 +309,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
   </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 
@@ -367,7 +367,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
   - [Yi-34B-Chat-Playground](https://platform.lingyiwanwu.com/prompt/playground) （Yi 官方）
     - 如需使用 Yi Playground, 欢迎申请加入白名单（填写[英文](https://cn.mikecrm.com/l91ODJf)或者[中文](https://cn.mikecrm.com/gnEZjiQ)申请表）。
 
-  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate，第三方网站) 
+  - [Yi-34B-Chat-Playground](https://replicate.com/01-ai/yi-34b-chat) (Replicate，第三方网站)
 
 ##### 🙋‍♀️ 使用 Yi Chat
 
@@ -380,7 +380,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
   - 如需使用官方在线聊天服务，欢迎申请加入白名单（填写[英文](https://cn.mikecrm.com/l91ODJf)或[中文](https://cn.mikecrm.com/gnEZjiQ)申请表）。
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 快速上手 - PyPi (pip install)
@@ -393,7 +393,7 @@ Model | Intro | 默认的上下文窗口 | 预训练的 tokens 数量 | 训练�
 
 - 如果你想运行 Yi 系列模型，参阅「[部署要求](#部署)」。
 
-#### 第 1 步：准备环境 
+#### 第 1 步：准备环境
 
 如需设置环境，安装所需要的软件包，运行下面的命令。
 
@@ -484,16 +484,16 @@ python demo/text_generation.py  --model <your-model-path>
 <br>
 
 - Yi-9B
-  
+
   输入
 
   ```bash
   from transformers import AutoModelForCausalLM, AutoTokenizer
-  
+
   MODEL_DIR = "01-ai/Yi-9B"
   model = AutoModelForCausalLM.from_pretrained(MODEL_DIR, torch_dtype="auto")
   tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR, use_fast=False)
-  
+
   input_text = "# write the quick sort algorithm"
   inputs = tokenizer(input_text, return_tensors="pt").to(model.device)
   outputs = model.generate(**inputs, max_length=256)
@@ -512,18 +512,18 @@ python demo/text_generation.py  --model <your-model-path>
       middle = [x for x in arr if x == pivot]
       right = [x for x in arr if x > pivot]
       return quick_sort(left) + middle + quick_sort(right)
-  
+
   # test the quick sort algorithm
   print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
   ```
 
     <p align="right"> [
-    <a href="#top">返回顶部 ⬆️ </a>  ] 
+    <a href="#top">返回顶部 ⬆️ </a>  ]
   </p>
 
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 快速上手 - Docker
@@ -560,14 +560,14 @@ ghcr.io/01-ai/yi:latest
 <br>
 安装这些依赖项的步骤，如下所示。
 
-1. 根据<a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">指南</a>安装 "micromamba"。 
+1. 根据<a href="https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html">指南</a>安装 "micromamba"。
 
 2. 运行命令 <code>micromamba install -y -n yi -f conda-lock.yml</code> ，创建一个名为<code>yi</code> conda 环境，并安装所需的依赖项。
 </details>
 
 ### 快速上手 - llama.cpp
 <details>
-<summary> 🚀 教程：在本地 llama.cpp 上运行 Yi-chat-6B-2bits。⬇️ </summary> 
+<summary> 🚀 教程：在本地 llama.cpp 上运行 Yi-chat-6B-2bits。⬇️ </summary>
 <br>本教程在本地 llama.cpp 上运行 <a href="https://huggingface.co/XeIaso/yi-chat-6B-GGUF/tree/main">Yi-chat-6B-2bits</a> 量化模型，并进行推理。</p>
 
 - [步骤 0：前提条件](#步骤-0前提条件)
@@ -580,7 +580,7 @@ ghcr.io/01-ai/yi:latest
 - 该教程适用于 MacBook Pro（16GB 内存和 Apple M2 Pro 芯片）。
 
 - 确保你的电脑上安装了 [`git-lfs`](https://git-lfs.com/) 。
-  
+
 #### 步骤 1：下载 `llama.cpp`
 
 如需克隆 [`llama.cpp`](https://github.com/ggerganov/llama.cpp) 仓库，运行以下命令。
@@ -608,7 +608,7 @@ git-lfs pull --include yi-chat-6b.Q2_K.gguf
 如需体验 Yi 模型（运行模型推理），你可以选择以下方式之一。
 
 - [方式 1：在终端中进行推理](#方式-1在终端中进行推理)
-  
+
 - [方式 2：在 Web上进行推理](#方式-2在 Web上进行推理)
 
 ##### 方式 1：在终端中进行推理
@@ -698,7 +698,7 @@ Step 6: Educate yourself about the needs of your pet fox and be aware of any pot
 </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 快速上手 - 使用 Web demo
@@ -721,7 +721,7 @@ python demo/web_demo.py -c <你的模型路径>
  ![快速上手 -  Web demo](https://github.com/01-ai/Yi/blob/main/assets/img/yi_34b_chat_web_demo.gif?raw=true)
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 微调
@@ -847,7 +847,7 @@ bash run_eval.sh
 </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 量化
@@ -943,7 +943,7 @@ python eval_quantized_model.py --model /quantized_model --trust_remote_code
 </details>
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 部署
@@ -997,7 +997,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 ### FAQ
 <details>
-<summary> 如果你在使用 Yi 系列模型过程中遇到任何疑问，以下的答疑内容可以为你提供参考。⬇️</summary> 
+<summary> 如果你在使用 Yi 系列模型过程中遇到任何疑问，以下的答疑内容可以为你提供参考。⬇️</summary>
 
 #### 💡微调
 - <strong>如何选择在 Base 模型上微调还是在 Chat 模型上微调？</strong>
@@ -1039,7 +1039,7 @@ Yi 8-bits 量化模型 |  [GPTQ 和 CUDA](https://github.com/PanQiWei/AutoGPTQ?t
 
 感谢各位 Yi 专家和用户分享了许多深度的技术内容，我们对各位小伙伴的宝贵贡献表示衷心的感谢！
 
-在此，我们也热烈邀请你加入我们，为 Yi 做出贡献。如果你创作了关于 Yi 系列模型的内容，欢迎提交 PR 分享！🙌 
+在此，我们也热烈邀请你加入我们，为 Yi 做出贡献。如果你创作了关于 Yi 系列模型的内容，欢迎提交 PR 分享！🙌
 
 有了这些学习资源，你可以立即开启 Yi 学习之旅。祝学习愉快！🥳
 
@@ -1107,13 +1107,13 @@ tokenizer = AutoTokenizer.from_pretrained("01-ai/Yi-34b", use_fast=False)
 model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 ```
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 下游
 
 > 💡 提示
-> 
+>
 > - 如果你开发了与 Yi 相关的服务、模型、工具、平台或其它内容，欢迎提交 PR，将你的成果展示在 [Yi 生态](#下游---服务)。
 >
 > - 为了帮助他人快速理解你的工作，建议使用`<模型名称>: <模型简介> + <模型亮点>`的格式。
@@ -1146,16 +1146,16 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 如果你希望探索 Yi 的其它微调模型，你可以尝试以下方式。
 
 - [TheBloke 模型](https://huggingface.co/TheBloke)：该网站提供了大量微调模型，这些微调模型基于多种大语言模型，包括 Yi 模型。
-  
+
   以下是 Yi 的微调模型，根据下载量排序，包括但不限于以下模型。
   - [TheBloke/dolphin-2_2-yi-34b-AWQ](https://huggingface.co/TheBloke/dolphin-2_2-yi-34b-AWQ)
   - [TheBloke/Yi-34B-Chat-AWQ](https://huggingface.co/TheBloke/Yi-34B-Chat-AWQ)
   - [TheBloke/Yi-34B-Chat-GPTQ](https://huggingface.co/TheBloke/Yi-34B-Chat-GPTQ)
-  
+
 - [SUSTech/SUS-Chat-34B](https://huggingface.co/SUSTech/SUS-Chat-34B)：该模型在所有 70B 以下的模型中排名第一，超越了体量是其两倍的 deepseek-llm-67b-chat。你可以在 [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) 上查看结果。
-  
+
 - [OrionStarAI/OrionStar-Yi-34B-Chat-Llama](https://huggingface.co/OrionStarAI/OrionStar-Yi-34B-Chat-Llama)：该模型在 C-Eval 和 CMMLU 评估中超越了其它模型（例如，GPT-4、Qwen-14B-Chat 和 Baichuan2-13B-Chat），在 [OpenCompass LLM Leaderboard](https://opencompass.org.cn/leaderboard-llm) 上表现出色。
-  
+
 - [NousResearch/Nous-Capybara-34B](https://huggingface.co/NousResearch/Nous-Capybara-34B)：该模型在 Capybara 数据集上使用 200K 上下文长度和 3 个 epochs 进行训练。
 
 #### 下游 - API
@@ -1164,10 +1164,10 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 - [LlamaEdge](https://www.secondstate.io/articles/yi-34b/#create-an-openai-compatible-api-service-for-the-yi-34b-chat-model)：你可以通过该工具快速部署 Yi-34B-Chat 并开始聊天。该工具由 Rust 语言开发，使用可移植的 Wasm（WebAssembly）文件构建了一个与 OpenAI 兼容的 API 服务器。
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
-## 基准测试 
+## 基准测试
 
 - [Chat 模型性能](#chat-模型性能)
 - [Base 模型性能](#base-模型性能)
@@ -1177,7 +1177,7 @@ model = AutoModelForCausalLM.from_pretrained("01-ai/Yi-34b", device_map="auto")
 Yi-34B-Chat 模型表现出色，在 MMLU、CMMLU、BBH、GSM8k 等所有开源模型的基准测试中排名第一。
 <br>
 
-![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true) 
+![Chat model performance](https://github.com/01-ai/Yi/blob/main/assets/img/benchmark_chat.png?raw=true)
 
 <details>
 <summary> 测评方法与挑战 ⬇️ </summary>
@@ -1193,7 +1193,7 @@ Yi-34B-Chat 模型表现出色，在 MMLU、CMMLU、BBH、GSM8k 等所有开源�
 ### Base 模型性能
 
 
-#### Yi-34B 和 Yi-34B-200K 
+#### Yi-34B 和 Yi-34B-200K
 
 Yi-34B 和 Yi-34B-200K 模型在开源模型中脱颖而出，尤其在 MMLU、CMMLU、常识推理、阅读理解等方面表现卓越。
 <br>
@@ -1236,7 +1236,7 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
   ![Yi-9B benchmark - text](https://github.com/01-ai/Yi/blob/main/assets/img/Yi-9B_benchmark_text.png?raw=true)
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ## 技术报告
@@ -1258,12 +1258,12 @@ Yi-9B 模型在 Mistral-7B、SOLAR-10.7B、Gemma-7B、DeepSeek-Coder-7B-Base-v1.
 
 # 📌 谁可以使用 Yi？
 
-答案是所有人! 🙌 ✅ 
+答案是所有人! 🙌 ✅
 
 关于如何使用 Yi 系列模型，参阅「[许可证](#许可证)」。
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 # 📌 其它
@@ -1283,7 +1283,7 @@ Yi Readme 中文版由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%
 
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 免责声明
@@ -1291,7 +1291,7 @@ Yi Readme 中文版由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%
 在训练过程中，我们使用数据合规性检查算法，最大程度地确保训练模型的合规性。由于数据复杂且语言模型使用场景多样，我们无法保证模型在所有场景下均能生成正确合理的回复。注意，模型仍可能生成有误的回复。对于任何因误用、误导、非法使用、错误使用导致的风险和问题，以及与之相关的数据安全问题，我们均不承担责任。
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 ### 许可证
@@ -1299,7 +1299,7 @@ Yi Readme 中文版由以下[贡献者](https://github.com/01-ai/Yi/wiki/%F0%9F%
 Yi 系列模型的代码和权重遵循 [Apache 2.0 许可证](https://github.com/01-ai/Yi/blob/main/LICENSE)。即 Yi 系列模型可免费用于个人使用、学术研究和商业用途。
 
 <p align="right"> [
-  <a href="#top">返回顶部 ⬆️ </a>  ] 
+  <a href="#top">返回顶部 ⬆️ </a>  ]
 </p>
 
 
