@@ -5,9 +5,7 @@ To run text generation task in the streaming mode:
 ```shell
 python text_generation.py \
     --model 01-ai/Yi-6B \
-    --tokenizer 01-ai/Yi-6B \
     --max-tokens 512 \
-    --eos-token $'\n' \
     --streaming
 ```
 
