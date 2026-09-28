@@ -34,7 +34,7 @@ from anyio.streams.memory import MemoryObjectSendStream
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from llava.conversation import conv_templates
+from llava.conversation import append_chat_messages, conv_templates
 from llava.mm_utils import (
     expand2square,
     get_model_name_from_path,
@@ -498,29 +498,9 @@ class DefaultEngine(ABC):
         """
         conv = conv_templates["mm_default"].copy()
         stop_str = conv.sep
-        image_file = ""
-        has_image = False
-        for message in prompt_or_messages:
-            role = message["role"]
-            content = message["content"]
-            if role != "user":
-                conv.append_message(conv.roles[1], content)
-                continue
-            elif isinstance(content, str):
-                conv.append_message(conv.roles[0], content)
-                continue
-
-            num_images = 0
-            for item in content:
-                if item["type"] == "image_url":
-                    num_images += 1
-                    image_file = item["image_url"]["url"]
-                    has_image = True
-                elif item["type"] == "text":
-                    prompt = item["text"]
-            if image_file != "" and image_file != None:
-                query = DEFAULT_IMAGE_TOKEN * num_images + "\n" + prompt
-                conv.append_message(conv.roles[0], query)
+        image_file, has_image = append_chat_messages(
+            conv, prompt_or_messages, DEFAULT_IMAGE_TOKEN
+        )
 
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()

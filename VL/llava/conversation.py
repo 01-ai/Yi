@@ -181,6 +181,42 @@ class Conversation:
         }
 
 
+def render_user_content(content, image_token):
+    if isinstance(content, str):
+        return content, ""
+    num_images = 0
+    image_url = ""
+    texts = []
+    for item in content:
+        if item["type"] == "image_url":
+            num_images += 1
+            image_url = item["image_url"]["url"]
+        elif item["type"] == "text":
+            texts.append(item["text"])
+    prompt = "\n".join(texts)
+    if num_images:
+        return image_token * num_images + "\n" + prompt, image_url
+    return prompt, ""
+
+
+def append_chat_messages(conv, messages, image_token):
+    image_file = ""
+    has_image = False
+    for message in messages:
+        role = message["role"]
+        content = message["content"]
+        if role != "user":
+            conv.append_message(conv.roles[1], content)
+            continue
+        query, message_image = render_user_content(content, image_token)
+        if message_image:
+            image_file = message_image
+            has_image = True
+        if query or message_image:
+            conv.append_message(conv.roles[0], query)
+    return image_file, has_image
+
+
 mm_default_conv = Conversation(
     system="This is a chat between an inquisitive human and an AI assistant. "
     "Assume the role of the AI assistant. "
